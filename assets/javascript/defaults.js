@@ -128,22 +128,22 @@ function defaults() {
 		'<div class="sidebarBlur sidebarClose" onclick="sidebarClose()"></div>';
 	// Tạo tag script sidebar
 	var script = document.createElement('script');
-	script.src = "D:/My%20program/Project/html2/assets/javascript/sidebar.js";
+	script.src = "https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/javascript/sidebar.js";
 	document.getElementById("script").appendChild(script);
 	// ======================================================================
 	// Tạo tag script filter
 	var script = document.createElement('script');
-	script.src = "D:/My%20program/Project/html2/assets/javascript/filter.js";
+	script.src = "https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/javascript/filter.js";
 	document.getElementById("script").appendChild(script);
 	// ======================================================================
 	// Tạo tag script search
 	var script = document.createElement('script');
-	script.src = "D:/My%20program/Project/html2/assets/javascript/search.js";
+	script.src = "https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/javascript/search.js";
 	document.getElementById("script").appendChild(script);
 	// ======================================================================
 	// Tạo tag script và chạy dropdown
 	var script = document.createElement('script');
-	script.src = "D:/My%20program/Project/html2/assets/javascript/dropdown.js";
+	script.src = "https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/javascript/dropdown.js";
 	document.getElementById("script").appendChild(script);
 	// ======================================================================
 	// Tạo tag script textHere
@@ -153,7 +153,7 @@ function defaults() {
 	// ======================================================================
 	// Tạo tag script theme
 	var script = document.createElement('script');
-	script.src = "D:/My%20program/Project/html2/assets/javascript/theme.js";
+	script.src = "https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/javascript/theme.js";
 	document.getElementById("script").appendChild(script);
 	// ======================================================================
 	// Footer
