@@ -21,7 +21,7 @@ function defaults() {
 		'<div class="sidebar sidebarClose">' +
 		'<div class="sidebarTitle">Mục lục</div>' +
 		'<div class="sidebarLine"></div>' +
-		'<li><a class="textLink" href="index.html">Trang chủ</a></li>' +
+		'<li><a class="textLink" href="https://hgvn23.github.io/index.html">Trang chủ</a></li>' +
 		'<div>' +
 		'<li class="dropdown">Commands</li>' +
 		'<div class="dropdownHide">' +
