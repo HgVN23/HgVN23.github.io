@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/schedule | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/schedule | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/schedule | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Thực hiện Function 1 lần khi Chunk được Load qua tầm của Player hoặc qua tickingarea">
+	<meta property="og:description" content="Thực hiện Function 1 lần khi Chunk được Load qua tầm của Player hoặc qua tickingarea">
+	<meta name="twitter:description" content="Thực hiện Function 1 lần khi Chunk được Load qua tầm của Player hoặc qua tickingarea">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/schedule.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/schedule.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/schedule</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Thực hiện Function 1 lần khi Chunk được Load qua tầm của Player hoặc qua tickingarea</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/schedule on_area_loaded add &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;function: filepath&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">on_area_loaded</span> là Chunk được Load</div>
+					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
+					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
+					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
+					<div class="contentText"><span class="textSyntax">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction</div>
+					<div class="contentText"><span class="textCommand">/schedule on_area_loaded add 0 0 0 10 0 10 test</span> — Function tên test sẽ chạy khi tọa độ 0 0 0 đến 10 0 10 thuộc Chunk (0,0;15,15) trong tầm của Player</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/schedule on_area_loaded add cirle &lt;center: x y z&gt; &lt;radius: int&gt; &lt;function: filepath&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">on_area_loaded</span> là Chunk được Load</div>
+					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
+					<div class="contentText"><span class="textSyntax">circle</span> là hình tròn <span class="textNote">nhưng trong Game nó là hình vuông</span></div>
+					<div class="contentText"><span class="textSyntax">&lt;center: x y z&gt;</span> là tọa độ trung tâm</div>
+					<div class="contentText"><span class="textSyntax">&lt;radius: int&gt;</span> là bán kính</div>
+					<div class="contentText"><span class="textSyntax">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction</div>
+					<div class="contentText"><span class="textCommand">/schedule on_area_loaded add circle 0 0 0 2 test</span> — Function tên test sẽ chạy khi có trung tâm tọa độ 0 0 0 thuộc Chunk (0,0;15,15) bán kính 2 Chunk là 5 x 5 Chunk trong tầm của Player</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/schedule on_area_loaded add tickingarea &lt;name: string&gt; &lt;function: filepath&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">on_area_loaded</span> là Chunk được Load</div>
+					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
+					<div class="contentText"><span class="textSyntax">tickingarea</span> là Load Chunk <span class="textNote">chỉ tính x z</span> khi ngoài tầm nhìn của Player</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id của tickingarea</div>
+					<div class="contentText"><span class="textSyntax">&lt;function: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction</div>
+					<div class="contentText"><span class="textCommand">/schedule on_area_loaded add tickingarea a test</span> — Function tên test sẽ chạy khi tickingarea tên a tồn tại</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText dropdown">Command có thể được lưu cộng dồn nếu chưa thực hiện được</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText">Ví dụ 1: nếu dùng 3 lần schedule khi Chunk chưa được Load thì sẽ lưu lại schedule đó cho đến khi nào Chunk được Load sẽ chạy 3 lần schedule đó</div>
+				<div class="contentText">Ví dụ 2: nếu dùng 3 lần schedule khi tickingarea chưa tồn tại thì sẽ lưu lại schedule đó cho đến khi nào tickingarea tồn tại sẽ chạy 3 lần schedule đó</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

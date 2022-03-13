@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/clone | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/clone | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/clone | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Nhân bản 1 hay nhiều Block tới 1 vị trí">
+	<meta property="og:description" content="Nhân bản 1 hay nhiều Block tới 1 vị trí">
+	<meta name="twitter:description" content="Nhân bản 1 hay nhiều Block tới 1 vị trí">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/clone.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/clone.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/clone</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Nhân bản 1 hay nhiều Block tới 1 vị trí</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [maskMode: MaskMode] [cloneMode: CloneMode]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản</div>
+					<div class="contentText"><span class="textSyntax">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản</div>
+					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[maskMode: MaskMode]</span> là lọc Block. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div>
+								<div class="contentText dropdown"><span class="textSyntax">masked</span> là chọn All Block trừ Air, nhân bản đè vào tọa độ xuất nhân bản</div>
+								<div class="dropdownTab dropdownHide">
+									<div class="contentText">Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng masked thì ở 123 sẽ thay thành ABC còn 4 là Block sẽ vẫn được giữ nguyên</div>
+								</div>
+							</div>
+							<div>
+								<div class="contentText dropdown"><span class="textSyntax">replace</span> là chọn All Block, nhân bản đè vào tọa độ xuất nhân</div>
+								<div class="dropdownTab dropdownHide">
+									<div class="contentText">Ví dụ hình vuông ABCD có ABC là Block còn D là Air, hình vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng replace thì ở 1234 sẽ thay thành ABCD</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[cloneMode: CloneMode]</span> là cách xử lí. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">force</span> là trùng nhau vẫn nhân bản (hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha)</div>
+							<div class="contentText"><span class="textSyntax">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản</div>
+							<div class="contentText"><span class="textSyntax">normal</span> là bình thường</div>
+						</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/clone 0 1 0 1 1 1 2 1 2 masked move</span> — di chuyển khối vuông ABCD</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;blockStates: block states&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản</div>
+					<div class="contentText"><span class="textSyntax">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản</div>
+					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra</div>
+					<div class="contentText"><span class="textSyntax">filtered</span> là chọn Block</div>
+					<div class="contentText dropdown"><span class="textSyntax">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">force</span> là trùng nhau vẫn nhân bản <span class="textNote">hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha</span></div>
+						<div class="contentText"><span class="textSyntax">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản</div>
+						<div class="contentText"><span class="textSyntax">normal</span> là bình thường, không force hay move</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
+					<div class="contentText"><span class="textSyntax">&lt;blockStates: block states&gt;</span> là trạng thái Block. <a class="textLink" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a></div>
+					<div class="contentText"><span class="textCommand">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool ["color":14]</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; filtered &lt;cloneMode: CloneMode&gt; &lt;tileName: Block&gt; &lt;tileData: int&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu nhân bản</div>
+					<div class="contentText"><span class="textSyntax">&lt;end: x y z&gt;</span> là tọa độ kết thúc nhân bản</div>
+					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ xuất nhân bản ra</div>
+					<div class="contentText"><span class="textSyntax">filtered</span> là chọn Block</div>
+					<div class="contentText dropdown"><span class="textSyntax">&lt;cloneMode: CloneMode&gt;</span> là cách xử lí. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">force</span> là trùng nhau vẫn nhân bản <span class="textNote">hiện tại mình vẫn chưa hiểu cơ chế của nó, bạn nào hiểu thì Feedback cho mình nha</span></div>
+						<div class="contentText"><span class="textSyntax">move</span> là di chuyển All Block được nhân bản tới tọa độ xuất nhân bản</div>
+						<div class="contentText"><span class="textSyntax">normal</span> là bình thường</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
+					<div class="contentText"><span class="textSyntax">&lt;tileData: int&gt;</span> là data Block</div>
+					<div class="contentText"><span class="textCommand">/clone 0 1 0 1 1 1 2 1 2 filtered normal wool 14</span> — khối vuông ABCD có AB là Block còn CD là len đỏ, khối vuông 1234 có 1234 là Block; nhân bản ABCD tới 1234 sử dụng filtered thì ở 34 sẽ thay thành CD là len đỏ, 12 vẫn giữ nguyên</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Nếu bạn muốn nhân bản bình thường thì dùng <span class="textSyntax">/clone &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt;</span>, nó sẽ tương ứng với <span class="textSyntax">replace normal</span></div>
+			<div class="contentText">Không thể Clone tới hay Clone đi chỗ khác nếu tọa độ bắt đầu và tọa độ kết thúc hay tọa độ xuất nhân bản không nằm trong Chunk của Player</div>
+			<div class="contentText">Sử dụng lệnh này các bạn cần chú ý tới tọa độ xuất nhân bản <a class="textLink textNote" href="https://youtu.be/4Npz-rY1LE4" target="_blank">Ấn vào đây để xem Video hướng dẫn xác định hướng</a></div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/execute | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/execute | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/execute | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Khiến Entity thực hiện Command">
+	<meta property="og:description" content="Khiến Entity thực hiện Command">
+	<meta name="twitter:description" content="Khiến Entity thực hiện Command">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/execute.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/execute.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/execute</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Khiến Entity thực hiện Command</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/execute &lt;origin: target&gt; &lt;position: x y z&gt; &lt;command: command&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;origin: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ</div>
+					<div class="contentText"><span class="textSyntax">&lt;command: command&gt;</span> là Command</div>
+					<div class="contentText"><span class="textCommand">/execute @a ~~~ setblock ~~-1 ~ dirt</span> — All Player sẽ Setblock Dirt dữ liệu 0 dưới chân</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/execute &lt;origin: target&gt; &lt;position: x y z&gt; detect &lt;detectPos: x y z&gt; &lt;block: Block&gt; &lt;data: int&gt; &lt;command: command&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;origin: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ</div>
+					<div class="contentText"><span class="textSyntax">detect</span> là kiểm tra</div>
+					<div class="contentText"><span class="textSyntax">&lt;detectPos: x y z&gt;</span> là tọa độ kiểm tra</div>
+					<div class="contentText"><span class="textSyntax">&lt;block: Block&gt;</span> là id Block</div>
+					<div class="contentText"><span class="textSyntax">&lt;data: int&gt;</span> là dữ liệu Block</div>
+					<div class="contentText"><span class="textSyntax">&lt;command: command&gt;</span> là Command</div>
+					<div class="contentText"><span class="textCommand">/execute @a ~~~ detect stone 0 setblock ~~-1 ~ dirt</span> — All Player có Stone dữ liệu bằng 0 dưới chân sẽ bị Setblock Dirt dữ liệu 0 dưới chân, nếu không có thì không bị Setblock Dirt dưới chân</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> nên để mặc định là <span class="textSyntax">~~~</span> cho mọi <span class="textSyntax">/execute</span></div>
+			<div class="contentText"><span class="textSyntax">&lt;block: Block&gt;</span> = <span class="textSyntax">-1</span> là mọi loại Block chung id</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

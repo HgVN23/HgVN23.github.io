@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/setblock | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/setblock | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/setblock | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Đặt 1 Block">
+	<meta property="og:description" content="Đặt 1 Block">
+	<meta name="twitter:description" content="Đặt 1 Block">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/setblock.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/setblock.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/setblock</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Đặt 1 Block</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/setblock &lt;position: x y z&gt; &lt;tileName: Block&gt; [blockStates: block states] [replace|destroy|keep]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ</div>
+					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
+					<div class="contentText"><span class="textSyntax">&lt;blockStates: block states&gt;</span> là trạng thái Block. <a class="link_text" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a></div>
+					<div class="contentText dropdown"><span class="textSyntax">[replace|destroy|keep]</span> là thao tác. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">replace</span> là thay thế (không rơi ra Block)</div>
+						<div class="contentText"><span class="textSyntax">destroy</span> là phá hủy (rơi ra Block)</div>
+						<div class="contentText"><span class="textSyntax">keep</span> là giữ nguyên</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/setblock 1 1 1 wool ["color":14] replace</span> — Đặt len đỏ vào 1 1 1 thay thế Block cũ ở đó</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/setblock &lt;position: x y z&gt; &lt;tileName: Block&gt; [tileData: int] [replace|destroy|keep]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ</div>
+					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
+					<div class="contentText"><span class="textSyntax">&lt;tileData: int&gt;</span> là dữ liệu Block</div>
+					<div class="contentText dropdown"><span class="textSyntax">[replace|destroy|keep]</span> là thao tác. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">replace</span> là thay thế (không rơi ra Block)</div>
+						<div class="contentText"><span class="textSyntax">destroy</span> là phá hủy (rơi ra Block)</div>
+						<div class="contentText"><span class="textSyntax">keep</span> là giữ nguyên</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/setblock 1 1 1 wool 14 replace</span> — Đặt len đỏ vào 1 1 1 thay thế Block cũ ở đó</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

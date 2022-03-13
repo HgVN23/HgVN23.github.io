@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/dialogue | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/dialogue | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/dialogue | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Hiện hoặc thay đổi bảng tương tác của NPC cho Player">
+	<meta property="og:description" content="Hiện hoặc thay đổi bảng tương tác của NPC cho Player">
+	<meta name="twitter:description" content="Hiện hoặc thay đổi bảng tương tác của NPC cho Player">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/dialogue.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/dialogue.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/dialogue</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Hiện hoặc thay đổi bảng tương tác của NPC cho Player</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/dialogue change &lt;npc: target&gt; &lt;sceneName: string&gt; [players: target]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">change</span> là thay đổi</div>
+					<div class="contentText"><span class="textSyntax">&lt;npc: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (NPC)</div>
+					<div class="contentText"><span class="textSyntax">&lt;sceneName: string&gt;</span> là id bảng NPC tạo trong Addon</div>
+					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText"><span class="textCommand">/dialogue change @e[type=npc,tag=a] test1 @a</span> — All Player tương tác với NPC có tag=a sẽ là bảng test1, Player không bị Command đổi thì vẫn là bảng có từ trước của NPC có tag=a</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/dialogue open &lt;npc: target&gt; &lt;player: target&gt; [sceneName: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">open</span> là mở</div>
+					<div class="contentText"><span class="textSyntax">&lt;npc: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (NPC)</div>
+					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText"><span class="textSyntax">[sceneName: string]</span> là id bảng NPC tạo trong Addon</div>
+					<div class="contentText"><span class="textCommand">/dialogue open @e[type=npc,tag=a] @a test1</span> — All Player sẽ có bảng NPC test1 hiện lên trước mặt</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Cần 1 NPC tồn tại trong bán kính 64 Block của Player</div>
+			<div class="contentText">Nếu bỏ qua <span class="textSyntax">[sceneName: string]</span> thì sẽ mở bảng đã có của NPC</div>
+			<div class="contentText"><a class="textLink textNote" href="https://youtu.be/YUxGWfr8z_A" target="_blank">Ấn vào đây để xem Video giải thích về Command cũng như cách tạo bảng NPC bằng Addon</a></div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

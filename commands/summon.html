@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/summon | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/summon | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/summon | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Triệu hồi Entity">
+	<meta property="og:description" content="Triệu hồi Entity">
+	<meta name="twitter:description" content="Triệu hồi Entity">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/summon.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/summon.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/summon</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Triệu hồi Entity</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/summon &lt;entityType: EntityType&gt; &lt;nameTag: string&gt; [spawnPos: x y z]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;entityType: EntityType&gt;</span> là id Entity</div>
+					<div class="contentText"><span class="textSyntax">&lt;nameTag: string&gt;</span> là đặt tên cho Entity</div>
+					<div class="contentText"><span class="textSyntax">[spawnPos: x y z]</span> là tọa độ triệu hồi</div>
+					<div class="contentText"><span class="textCommand">/summon armor_stand test 1 1 1</span> — Triệu hồi armor_stand tên test ở tọa độ 1 1 1</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/summon &lt;entityType: EntityType&gt; [spawnPos: x y z] [spawnEvent: string] [nameTag: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;entityType: EntityType&gt;</span> là id Entity</div>
+					<div class="contentText"><span class="textSyntax">[spawnPos: x y z]</span> là tọa độ triệu hồi</div>
+					<div class="contentText"><span class="textSyntax">[spawnEvent: string]</span> là Event của Entity. <a class="link_text" href="../danh-sach/eventName-string.html" target="_blank">Danh sách</a></div>
+					<div class="contentText"><span class="textSyntax">[nameTag: string]</span> là đặt tên cho Entity</div>
+					<div class="contentText"><span class="textCommand">/summon creeper 1 1 1 minecraft:become_charged bomber</span> — Triệu hồi creeper ở tọa độ 1 1 1 có Event là minecraft:become_charged được đặt tên bomber</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText dropdown">Nếu muốn đặt tên có màu hoặc kí tự đặc biệt hoặc có cách cần thêm " "</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textCommand">/summon armor_stand "§aArmor Stand" 1 1 1</span></div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

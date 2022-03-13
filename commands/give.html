@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/give | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/give | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/give | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Đưa Item cho Player">
+	<meta property="og:description" content="Đưa Item cho Player">
+	<meta name="twitter:description" content="Đưa Item cho Player">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/give.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/give.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/give</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Đưa Item cho Player</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div class="contentText dropdown">/give &lt;player: target&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+				<div class="contentText"><span class="textSyntax">&lt;itemName: Item&gt;</span> là id Item</div>
+				<div class="contentText"><span class="textSyntax">[amount: int]</span> là số lượng Item</div>
+				<div class="contentText"><span class="textSyntax">[data: int]</span> là dữ liệu Item</div>
+				<div class="contentText"><span class="textCommand">/give @a apple 1 0</span> — All Player sẽ có 1 Apple</div>
+				<div class="contentText"><span class="textSyntax">[components: json]</span> là thành phần. <a class="textLink" href="../danh-sach/components-json.html" target="_blank">Danh sách</a></div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Command vẫn sẽ hoạt động kể cả khi kho đồ đã Full, Item sẽ bị Drop ra ngoài</div>
+			<div class="contentText">Nếu bạn chỉ ghi <span class="textSyntax">/give &lt;player: target&gt; &lt;itemName: Item&gt;</span> thì mặc định số lượng = 1 và dữ liệu = 0</div>
+			<div class="contentText dropdown">Các [components: json] có thể ghép lại với nhau</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"minecraft:can_place_on":{"blocks":["grass","stone"]},"minecraft:can_destroy":{"blocks":["grass"]}}</span> — All Player có 1 Dirt chỉ đặt được lên Grass và Stone, chỉ đập được Grass</div>
+			</div>
+			<div class="contentText">Trong <span class="textSyntax">can_place_on</span> và <span class="textSyntax">can_destroy</span>, các Block không phân biệt được Data. Bạn muốn Dirt đặt lên Wool màu đỏ nhưng vì không có phân biệt Data nên Dirt có thể đặt lên các Wool màu khác</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

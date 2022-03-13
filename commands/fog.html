@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/fog | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/fog | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/fog | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Tạo hoặc xóa sương mù cho Player">
+	<meta property="og:description" content="Tạo hoặc xóa sương mù cho Player">
+	<meta name="twitter:description" content="Tạo hoặc xóa sương mù cho Player">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/fog.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/fog.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/fog</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Tạo hoặc xóa sương mù cho Player</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/fog &lt;victim: target&gt; push &lt;fogId: string&gt; &lt;userProvideId: string&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText"><span class="textSyntax">push</span> là đẩy, xuất hiện</div>
+					<div class="contentText"><span class="textSyntax">&lt;fogId: string&gt;</span> là id của Fog. Danh sách &lt;xem tại đây&gt;</div>
+					<div class="contentText"><span class="textSyntax">&lt;userProvideId: string&gt;</span> là set id Fog cho Player</div>
+					<div class="contentText"><span class="textCommand">/fog @a push minecraft:fog_soulsand_valley a</span> — All Player sẽ có Fog của Soulsand Valley id là a</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/fog &lt;victim: target&gt; &lt;mode: delete&gt; &lt;userProvideId: string&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText dropdown"><span class="textSyntax">&lt;mode: delete&gt;</span> là chế độ xóa. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">pop</span> là từ từ tan biến</div>
+						<div class="contentText"><span class="textSyntax">delete</span> là biến mất luôn</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">&lt;userProvideId: string&gt;</span> là set id Fog cho Player</div>
+					<div class="contentText"><span class="textCommand">/fog @a pop a</span> — All Player có Fog id là a sẽ từ từ tan biến</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">1 Player có thể có nhiều Fog nhưng nó sẽ không hiện cùng lúc. Player này được Set Fog a trước sau đó là b thì cái b sẽ được hiện còn a sẽ bị ẩn</div>
+			<div class="contentText">Fog có thể Set chung id nhưng khi xóa thì sẽ phải xóa nhiều lần. Player có Fog1 là a, Fog2 là a thì khi xóa a sẽ xóa cái Fog2 trước sau đó mới xóa được Fog1</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/structure | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/structure | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/structure | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Thay thế cho Structure Block, để Save hoặc Load công trình">
+	<meta property="og:description" content="Thay thế cho Structure Block, để Save hoặc Load công trình">
+	<meta name="twitter:description" content="Thay thế cho Structure Block, để Save hoặc Load công trình">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/structure.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/structure.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/structure</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Thay thế cho Structure Block, để Save hoặc Load công trình</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/structure delete &lt;name: string&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">delete</span> là xóa</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id cấu trúc</div>
+					<div class="contentText"><span class="textCommand">/structure delete wiki:hg</span> — xóa công trình wiki:hg </div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/structure load &lt;name: string&gt; &lt;to: x y z&gt; [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includesEntites: Boolean] [includesBlocks: Boolean] [integrity: float] [seed: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">load</span> là hiện</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id cấu trúc</div>
+					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ hiện</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[rotation: Rotation]</span> là xoay. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">0_degrees</span> — 0°</div>
+							<div class="contentText"><span class="textSyntax">90_degrees</span> — 90°</div>
+							<div class="contentText"><span class="textSyntax">180_degrees</span> — 180°</div>
+							<div class="contentText"><span class="textSyntax">270_degrees</span> — 270°</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[mirror: Mirror]</span> là đối xứng. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">none</span> — không</div>
+							<div class="contentText"><span class="textSyntax">x</span> — trục tọa độ x</div>
+							<div class="contentText"><span class="textSyntax">xz</span> — trục tọa độ xz</div>
+							<div class="contentText"><span class="textSyntax">z</span> — trục tọa độ z</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[animationMode: StructureAnimationMode]</span> là hoạt ảnh cấu trúc xuất hiện. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">block_by_block</span> — từng Block</div>
+							<div class="contentText"><span class="textSyntax">layer_by_layer</span> — từng tằng</div>
+						</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">[animationSeconds: float]</span> là khoảng thời gian Delay của hoạt ảnh cấu trúc xuất hiện</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[includesEntites: Boolean]</span> là chứa Entity. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">false</span> — tắt</div>
+							<div class="contentText"><span class="textSyntax">true</span> — bật</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[includesBlocks: Boolean]</span> là chứa Block. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">false</span> — tắt</div>
+							<div class="contentText"><span class="textSyntax">true</span> — bật</div>
+						</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">[integrity: float]</span> là tỉ lệ load được hết công trình</div>
+					<div class="contentText"><span class="textSyntax">[seed: string]</span> <span class="textNote">cần 1 ai đó giải thích hộ</span></div>
+					<div class="contentText"><span class="textCommand">/structure load wiki:hg 1 1 1 0_degrees none block_by_block 5 false true 100</span> — hiện công trình wiki:hg từ tọa độ 1 1 1, không xoay, không đối xứng, hiện từng Block delay 5 giây, không có Entity, có Block và 100% Load hết</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/structure load &lt;name: string&gt; &lt;to: x y z&gt; [rotation: Rotation] [mirror: Mirror] [includesEntites: Boolean] [includesBlocks: Boolean] [integrity: float] [seed: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">load</span> là hiện</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id cấu trúc</div>
+					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ hiện</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[rotation: Rotation]</span> là xoay. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">0_degrees</span> — 0°</div>
+							<div class="contentText"><span class="textSyntax">90_degrees</span> — 90°</div>
+							<div class="contentText"><span class="textSyntax">180_degrees</span> — 180°</div>
+							<div class="contentText"><span class="textSyntax">270_degrees</span> — 270°</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[mirror: Mirror]</span> là đối xứng. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">none</span> — không</div>
+							<div class="contentText"><span class="textSyntax">x</span> — trục tọa độ x</div>
+							<div class="contentText"><span class="textSyntax">xz</span> — trục tọa độ xz</div>
+							<div class="contentText"><span class="textSyntax">z</span> — trục tọa độ z</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[includesEntites: Boolean]</span> là chứa Entity. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">false</span> — tắt</div>
+							<div class="contentText"><span class="textSyntax">true</span> — bật</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[includesBlocks: Boolean]</span> là chứa Block. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">false</span> — tắt</div>
+							<div class="contentText"><span class="textSyntax">true</span> — bật</div>
+						</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">[integrity: float]</span> là tỉ lệ load được hết công trình</div>
+					<div class="contentText"><span class="textSyntax">[seed: string]</span> <span class="textNote">cần 1 ai đó giải thích hộ</span></div>
+					<div class="contentText"><span class="textCommand">/structure load wiki:hg 1 1 1 0_degrees none false true 100</span> — hiện công trình wiki:hg từ tọa độ 1 1 1, không xoay, không đối xứng, không có Entity, có Block và 100% Load hết</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/structure save &lt;name: string&gt; &lt;from: x y z&gt; &lt;to: x y z&gt; [includesEntites: Boolean] [saveMode: StructureSaveMode] [includesBlocks: Boolean]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">save</span> là lưu</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id cấu trúc</div>
+					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
+					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[includesEntites: Boolean]</span> là chứa Entity. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">false</span> — tắt</div>
+							<div class="contentText"><span class="textSyntax">true</span> — bật</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[saveMode: StructureSaveMode]</span> là cách lưu. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">disk</span> — lưu vĩnh viễn, Rejoin Map không mất</div>
+							<div class="contentText"><span class="textSyntax">memory</span> — lưu tạm thời, Rejoin Map sẽ mất</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[includesBlocks: Boolean]</span> là chứa Block. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">false</span> — tắt</div>
+							<div class="contentText"><span class="textSyntax">true</span> — bật</div>
+						</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/structure save wiki:hg 0 0 0 2 2 2 false disk true</span> — lưu công trình trong id wiki:hg từ 0 0 0 đến 2 2 2, không có Entity, lưu trong Disk và có Block</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/structure save &lt;name: string&gt; &lt;from: x y z&gt; &lt;to: x y z&gt; [saveMode: StructureSaveMode]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">save</span> là lưu</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id cấu trúc</div>
+					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
+					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
+					<div class="contentText dropdown"><span class="textSyntax">[saveMode: StructureSaveMode]</span> là cách lưu. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">disk</span> — lưu vĩnh viễn, Rejoin Map không mất</div>
+						<div class="contentText"><span class="textSyntax">memory</span> — lưu tạm thời, Rejoin Map sẽ mất</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/structure save wiki:hg 0 0 0 2 2 2 disk</span> — lưu công trình trong id wiki:hg từ 0 0 0 đến 2 2 2 trong Disk</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Công trình sẽ được Load theo chiều x, y, z tăng</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

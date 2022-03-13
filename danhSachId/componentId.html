@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>Danh sách Id Component | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="Danh sách Id Component | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="Danh sách Id Component | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Danh sách Id Component">
+	<meta property="og:description" content="Danh sách Id Component">
+	<meta name="twitter:description" content="Danh sách Id Component">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/component_id.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/component_id.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">Danh sách Id Component</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">can_place_on</span> là chỉ có thể đặt lên Block</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"minecraft:can_place_on":{"blocks":["grass"]}}</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">can_destroy</span> là chỉ có thể đập Block</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"minecraft:can_destroy":{"blocks":["grass"]}}</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">keep_on_death</span> là khi chết Item vẫn còn trong Inventory</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"keep_on_death":{}}</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">item_lock</span> là khóa Item. Danh sách:</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">lock_in_inventory</span> là chỉ có thể di chuyển trong Inventoy, không thể Drop hoặc Craft</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"item_lock":{"mode":"lock_in_inventory"}}</span></div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">lock_in_slot</span> là không thể di chuyển ra khỏi Slot đó, không thể Drop hoặc Craft</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"item_lock":{"mode":"lock_in_slot"}}</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

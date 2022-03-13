@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/gamemode | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/gamemode | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/gamemode | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Tùy chỉnh chế độ chơi của Player">
+	<meta property="og:description" content="Tùy chỉnh chế độ chơi của Player">
+	<meta name="twitter:description" content="Tùy chỉnh chế độ chơi của Player">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/gamemode.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/gamemode.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/gamemode</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Tùy chỉnh chế độ chơi của Player</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/gamemode &lt;gameMode: GameMode&gt; [player: target]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText dropdown"><span class="textSyntax">&lt;gameMode: GameMode&gt;</span> là chế độ. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">default</span> là mặc định theo cài đặt Map</div>
+						<div class="contentText"><span class="textSyntax">adventure</span> là phiêu lưu</div>
+						<div class="contentText"><span class="textSyntax">creative</span> là sáng tạo</div>
+						<div class="contentText"><span class="textSyntax">survival</span> là sinh tồn</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText"><span class="textCommand">/gamemode adventure @a</span> — All Player chuyển sang chế độ phiêu lưu</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/gamemode &lt;gameMode: int&gt; [player: target]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText dropdown"><span class="textSyntax">&lt;gameMode: int&gt;</span> là chế độ biểu thị bằng số. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">0</span> là survival</div>
+						<div class="contentText"><span class="textSyntax">1</span> là creative</div>
+						<div class="contentText"><span class="textSyntax">2</span> là adventure</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText dropdown">Các chế độ có thể được viết tắt:</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textSyntax">d</span> là <span class="textSyntax">default</span></div>
+				<div class="contentText"><span class="textSyntax">a</span> là <span class="textSyntax">adventure</span></div>
+				<div class="contentText"><span class="textSyntax">c</span> là <span class="textSyntax">creative</span></div>
+				<div class="contentText"><span class="textSyntax">s</span> là <span class="textSyntax">survival</span></div>
+				<div class="contentText"><span class="textCommand">/gamemode a @a</span> — All Player chuyển sang chế độ phiêu lưu</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

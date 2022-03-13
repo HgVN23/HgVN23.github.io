@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/setmaxplayers | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/setmaxplayers | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/setmaxplayers | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Đặt số lượng Player nhất định tham gia Map">
+	<meta property="og:description" content="Đặt số lượng Player nhất định tham gia Map">
+	<meta name="twitter:description" content="Đặt số lượng Player nhất định tham gia Map">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/setmaxplayers.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/setmaxplayers.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/setmaxplayers</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Đặt số lượng Player nhất định tham gia Map</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Chủ Map</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div class="contentText dropdown">/setmaxplayers &lt;maxPlayers: int&gt;</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textSyntax">&lt;maxPlayers: int&gt;</span> là số lượng Player</div>
+				<div class="contentText"><span class="textCommand">/setmaxplayers 2</span> — Map tối đa chỉ được 2 Player trong Map</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Không thể dùng Command khi số lượng Player đang trong Map lớn hơn giới hạn bạn định đặt. Nếu Map đang có 3 Player (tính cả bạn) mà bạn sử dụng giới hạn là 2 thì không được, phải lớn hoặc bằng 3 thì mới được</div>
+			<div class="contentText"><span class="textSyntax">&lt;maxPlayers: int&gt;</span> tối đa là 40</div>
+			<div class="contentText"><span class="textSyntax">&lt;maxPlayers: int&gt;</span> nhỏ hơn 1 thì sẽ tính là 1</div>
+			<div class="contentText"><span class="textSyntax">&lt;maxPlayers: int&gt;</span> lớn hơn 40 thì sẽ tính là 40</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

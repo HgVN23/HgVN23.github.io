@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/ability | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/ability | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/ability | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<meta property="og:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<meta name="twitter:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/ability.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/ability.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/ability</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/ability &lt;player: target&gt; &lt;ability: Ability&gt; &lt;value: Boolean&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">&lt;ability: Ability&gt;</span> là khả năng. Danh sách:</span></div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">mayfly</span> là khả năng bay</div>
+							<div class="contentText"><span class="textSyntax">mute</span> là khả năng mất Chat</div>
+							<div class="contentText"><span class="textSyntax">worldbuilder</span> là khả năng đặt/phá Block</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">&lt;value: Boolean&gt;</span> là phần trạng trái. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">true</span> là bật</div>
+							<div class="contentText"><span class="textSyntax">false</span> là tắt</div>
+						</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/ability @a mayfly true</span> — All Player sẽ có khả năng bay</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/ability &lt;player: target&gt; [ability: Ability]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText dropdown"><span class="textSyntax">[ability: Ability]</span> là khả năng. Danh sách:</span></div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">worldbuilder</span> là khả năng đặt/phá Block</div>
+						<div class="contentText"><span class="textSyntax">mayfly</span> là khả năng bay</div>
+						<div class="contentText"><span class="textSyntax">mute</span> là khả năng mất Chat</div>
+					</div>
+				<div class="contentText"><span class="textCommand">/ability @a mayfly</span> — All Player sẽ có khả năng bay. Cấu trúc này sẽ bớt phần true nhưng để tắt khả năng đó đi thì cần thêm false cuối Command</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Cần bật chế độ EDU để dùng Command</div>
+			<div class="contentText"><span class="textSyntax">worldbuilder</span> đang bị lỗi nên không thực hiện được bật/tắt</div>
+			<div class="contentText">Thoát Map và vào lại thì phải dùng lại lệnh đế bật/tắt khả năng lại</div>
+			<div class="contentText">Khi chuyển gamemode sẽ reset lại khả năng</div>
+			<div class="contentText">Thông báo Command hoạt động thành công sẽ không bị <span class="textCommand"><a class="textLink" href="gamerule.html">/gamerule</a> sendcommandfeedback false</span> ẩn</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

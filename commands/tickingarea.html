@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/tickingarea | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/tickingarea | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/tickingarea | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Load Chunk (chỉ tính x z) khi ngoài tầm nhìn của Player">
+	<meta property="og:description" content="Load Chunk (chỉ tính x z) khi ngoài tầm nhìn của Player">
+	<meta name="twitter:description" content="Load Chunk (chỉ tính x z) khi ngoài tầm nhìn của Player">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/tickingarea.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/tickingarea.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/tickingarea</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Load Chunk (chỉ tính x z) khi ngoài tầm nhìn của Player</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/tickingarea add &lt;from: x y z&gt; &lt;to: x y z&gt; [name: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
+					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
+					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
+					<div class="contentText"><span class="textSyntax">[name: string]</span> là đặt id cho tickingarea</div>
+					<div class="contentText"><span class="textCommand">/tickingarea add 0 0 0 1 1 1 test1</span> — tạo vùng Load Chunk tên test1 chứa tọa độ 0 0 0 đến 1 1 1. Vì tọa độ 0 0 0 và 1 1 1 đều trong Chunk (0,0;15,15) nên sẽ Load 1 Chunk (0,0;15,15)</div>
+					<div class="contentText"><span class="textCommand">/tickingarea add 0 0 0 17 17 17 test2</span> — tạo vùng Load Chunk tên test2 chứa tọa độ 0 0 0 đến 17 17 17. Vì tọa độ 0 0 0 trong Chunk (0,0;15,15), tọa độ 17 17 17 trong Chunk (16,16;31,31) nên sẽ Load 4 Chunk gồm Chunk (0,0;15,15), Chunk (0,16;15,31), Chunk (16,0;31,15) và Chunk (16,16;31,31)</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/tickingarea add circle &lt;center: x y z&gt; &lt;radius: int&gt; [name:string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
+					<div class="contentText"><span class="textSyntax">circle</span> là hình tròn <span class="note">(nhưng trong Game nó là hình vuông)</span></div>
+					<div class="contentText"><span class="textSyntax">&lt;center: x y z&gt;</span> là tọa độ trung tâm</div>
+					<div class="contentText"><span class="textSyntax">&lt;radius: int&gt;</span> là bán kính</div>
+					<div class="contentText"><span class="textSyntax">[name: string]</span> là đặt id cho tickingarea</div>
+					<div class="contentText"><span class="textCommand">/tickingarea add circle 0 0 0 2 test3</span> — tạo vùng Load Chunk vuông tên test3 trung tâm là Chunk (0,0;15,15) vì có chứa 0 0 0 với bán kính là 2 Chunk. Tức là sẽ Load 25 Chunk với kích thước 5 x 5 Chunk</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/tickingarea list [all-dimensions: AllDimensions]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">list</span> là danh sách tickingarea</div>
+					<div class="contentText"><span class="textSyntax">[all-dimensions: AllDimensions]</span> là tất cả chiều không gian</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/tickingarea remove &lt;name: string&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">remove</span> là bỏ</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id của tickingarea</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/tickingarea remove &lt;position: x y z&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">remove</span> là bỏ</div>
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ tickingarea được sử dụng</div>
+					<div class="contentText"><span class="textCommand">/tickingarea remove 0 0 0</span> — bỏ tất cả tickingarea chứa Chunk (0,0;15,15) vì 0 0 0 thuộc Chunk đó</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/tickingarea remove_all</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">remove_all</span> là bỏ tất cả</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText"><span class="textSyntax">/tickingarea</span> có tối đa 10 lần sử dụng</div>
+			<div class="contentText">1 tickingarea có thể Load tối đa 100 Chunk. Suy ra là 25600 Block (chưa kể chiều cao y)</div>
+			<div class="contentText">1 tickingarea circle có thể Load tối đa 9 x 9 Chunk, tức là 81 Chunk. Suy ra là 20736 Block (chưa kể chiều cao y)</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

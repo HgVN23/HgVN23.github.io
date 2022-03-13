@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/effect | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/effect | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/effect | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Gây hiệu ứng lên Entity">
+	<meta property="og:description" content="Gây hiệu ứng lên Entity">
+	<meta name="twitter:description" content="Gây hiệu ứng lên Entity">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/effect.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/effect.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/effect</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Gây hiệu ứng lên Entity</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/effect &lt;player: target&gt; &lt;effect: Effect&gt; [seconds: int] [amplifier: int] [hideParticles: Boolean]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Mob)</div>
+					<div class="contentText"><span class="textSyntax">&lt;effect: Effect&gt;</span> là id của hiệu ứng. Danh sách hiện thị khi ghi Command hoặc &lt;Xem tại đây&gt;</div>
+					<div class="contentText"><span class="textSyntax">[seconds: int]</span> là thời gian tồn tại của Effect</div>
+					<div class="contentText"><span class="textSyntax">[amplifier: int]</span> là cấp độ của Effect</div>
+					<div class="contentText dropdown"><span class="textSyntax">[hideParticles: Boolean]</span> là ẩn hạt hiệu ứng xung quanh Entity. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">true</span> là có</div>
+						<div class="contentText"><span class="textSyntax">false</span> là không</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/effect @a haste 10 0 true</span> — All Player có đào nhanh cấp 1 với thời gian 10 giây không có hạt hiệu ứng xung quanh</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/effect &lt;player: target&gt; clear</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Mob)</div>
+					<div class="contentText"><span class="textSyntax">clear</span> là loại bỏ tất cả Effect</div>
+					<div class="contentText"><span class="textCommand">/effect @a clear</span> — All Player mất hết All Effect</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Nếu bạn chỉ ghi <span class="textSyntax">/effect &lt;player: target&gt; &lt;effect: Effect&gt;</span> thì mặc định thời gian = 30 giây, cấp độ = 1 và hiệu ứng xung quanh Player sẽ hiệnd</div>
+			<div class="contentText">Nếu bạn đang có Effect thời gian và cấp độ nhỏ hơn thì sẽ bị Effect cùng loại có thời gian và cấp độ lớn hơn ghi đèd</div>
+			<div class="contentText">Cấp độ bắt đầu từ 0 là level 1, 1 là level 2, ...</div>
+			<div class="contentText dropdown">Thời gian = 0 thì loại bỏ Effect đó</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textCommand">/effect @a haste 0</span> — All Player sẽ bị mất haste, các Effect khác sẽ vẫn tồn tại</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

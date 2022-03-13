@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/ride | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/ride | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/ride | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Khiến Entity cưỡi được 1 Entity có khả năng cưỡi">
+	<meta property="og:description" content="Khiến Entity cưỡi được 1 Entity có khả năng cưỡi">
+	<meta name="twitter:description" content="Khiến Entity cưỡi được 1 Entity có khả năng cưỡi">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/ride.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/ride.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/ride</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Khiến Entity cưỡi được 1 Entity có khả năng cưỡi</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/ride &lt;riders: target&gt; start_riding &lt;ride: target&gt; [teleportRules: TeleportRules] [howToFill: FillType]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;riders: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> được cưỡi (Entity)</div>
+					<div class="contentText"><span class="textSyntax">start_riding</span> là bắt đầu cưỡi</div>
+					<div class="contentText"><span class="textSyntax">&lt;ride: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị cưỡi (Entity)</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[teleportRules: TeleportRules]</span> là dịch chuyển đối tượng. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">teleport_ride</span> — dịch chuyển mục tiêu bị cưỡi tới mục tiêu được cưỡi</div>
+							<div class="contentText"><span class="textSyntax">teleport_rider</span> — dịch chuyển mục tiêu được cưỡi tới mục tiêu bị cưỡi</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown"><span class="textSyntax">[howToFill: FillType]</span> là đầy chỗ cưỡi. Danh sách:</div>
+						<div class="dropdownTab dropdownHide">
+							<div class="contentText"><span class="textSyntax">if_group_fits</span> — nếu vừa</div>
+							<div class="contentText"><span class="textSyntax">until_full</span> — cho đến khi đầy</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/ride &lt;riders: target&gt; stop_riding</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;riders: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> được cưỡi (Entity)</div>
+					<div class="contentText"><span class="textSyntax">stop_riding</span> là dừng cưỡi</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/ride &lt;riders: target&gt; summon_ride &lt;entityType: EntityType&gt; [rideRules: RideRules] [spawnEvent: string] [nameTag: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;riders: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> được cưỡi (Entity)</div>
+					<div class="contentText"><span class="textSyntax">summon_ride</span> là triệu hồi Entity bị cưỡi</div>
+					<div class="contentText"><span class="textSyntax">&lt;entityType: EntityType&gt;</span> là id Entity</div>
+					<div class="contentText dropdown"><span class="textSyntax">[rideRules: RideRules]</span> là luật cưỡi. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">no_ride_change</span> — không thay đổi Entity bị cưỡi</div>
+						<div class="contentText"><span class="textSyntax">reassign_rides</span> — thay đổi Entity bị cưỡi</div>
+						<div class="contentText"><span class="textSyntax">skip_riders</span> — bỏ qua những Entity đang cưỡi</div>
+					</div>
+					<div class="contentText"><span class="textSyntax">[spawnEvent: string]</span> là Event của Entity. Danh sách &lt;Xem tại đây&gt;</div>
+					<div class="contentText"><span class="textSyntax">[nameTag: string]</span> là đặt tên cho Entity</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/ride &lt;rides: target&gt; evict_riders</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;rides: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị cưỡi (Entity)</div>
+					<div class="contentText"><span class="textSyntax">evict_riders</span> là không cho cưỡi nữa</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/ride &lt;rides: target&gt; summon_rider &lt;entityType: EntityType&gt; [spawnEvent: string] [nameTag: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;rides: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị cưỡi (Entity)</div>
+					<div class="contentText"><span class="textSyntax">summon_rider</span> là triệu hồi Entity được cưỡi</div>
+					<div class="contentText"><span class="textSyntax">&lt;entityType: EntityType&gt;</span> là id Entity</div>
+					<div class="contentText"><span class="textSyntax">[spawnEvent: string]</span> là Event của Entity. Danh sách &lt;Xem tại đây></div>
+					<div class="contentText"><span class="textSyntax">[nameTag: string]</span> là đặt tên cho Entity</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div class="contentText">Không phải Entity nào cũng có thể cưỡi được và bị cưỡi</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

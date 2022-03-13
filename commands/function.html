@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/function | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/function | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/function | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction">
+	<meta property="og:description" content="Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction">
+	<meta name="twitter:description" content="Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/function.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/function.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/function</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Thực hiện tập hợp Command được ghi trong tệp tin có đuôi .mcfunction</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/function &lt;name: filepath&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;name: filepath&gt;</span> là tên tệp tin có đuôi .mcfunction</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">Hướng dẫn tạo File Function</div>
+			</div>
+			<div class="contentText">Trước tiên ấn <a class="textLink" download href="https://github.com/HgVN23/HgVN23.github.io/blob/main/assets/download/Function.zip?raw=true">Download</a> để tải Pack mẫu về, sau đó giải nén và chuyển thư mục đó vào behavior_packs</div>
+			<div class="contentText">B1: Mở thư mục function</div>
+			<div class="contentText dropdown">B2: Tạo 1 tệp tin với tên bất kì và thêm đuôi .mcfunction</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText">Lưu ý: nên ghi bình thường, không viết hoa, không cách (có thể dùng _ thay cho cách)</div>
+				<div class="contentText">Ví dụ: give_stuff.mcfunction</div>
+			</div>
+			<div class="contentText">B3: Mở tệp tin vừa tạo, ghi các Command. Ghi xong 1 Command thì xuống dòng để ghi Command tiếp theo. Sau khi xong nhớ ấn lưu</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Nếu có quá nhiều tệp tin Function mà muốn phân biệt dễ dàng thì có thể tạo thư mục mới trong thư mục function để chứa các tệp tin đó</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText dropdown">Ví dụ: tạo 1 thư mục mới tên abc trong thư mục functions và chuyển give_stuff.mcfunction vào abc thì khi <span class="textSyntax">/function</span> bạn phải ghi:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textCommand">/function abc/give_stuff</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Có thể tạo thêm các thư mục khác trong các thư mục và khi <span class="textSyntax">/function</span> chỉ cần ghi:</span>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/function thu_muc_2/thu_muc_1/ten_tep_tin</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>

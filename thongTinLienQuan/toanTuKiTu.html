@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>Toán tử đặc biệt | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="Toán tử đặc biệt | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="Toán tử đặc biệt | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Toán tử đặc biệt">
+	<meta property="og:description" content="Toán tử đặc biệt">
+	<meta name="twitter:description" content="Toán tử đặc biệt">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/toan_tu_ki_tu.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/toan_tu_ki_tu.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">Toán tử kí tự</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">!</div>
+			</div>
+			<div class="contentText">Dùng để loại trừ trong Target</div>
+			<div class="contentText"><span class="textCommand">/kill @e[type=!player]</span> — All Entity bị kill ngoại trừ Player</div>
+			<div class="contentText dropdown">Dùng được trong:</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textSyntax">[scores={&lt;objective&gt;=!&lt;value&gt;}]</span></div>
+				<div class="contentText"><span class="textSyntax">[tag=!&lt;string&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[m=!&lt;gamemodeName&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[name=!&lt;givenName&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[type=!&lt;entityType&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[family=!&lt;family&gt;]</span></div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">~</div>
+			</div>
+			<div class="contentText">Tính từ nơi đối tượng dùng Command</div>
+			<div class="contentText"><span class="textCommand">/setblock ~ ~-1 ~ dirt</span> — dirt sẽ được setblock ngay phía dưới</div>
+			<div class="contentText">Các Command có x y z đều có thể dùng ~</div>
+			<div>
+				<div class="contentText dropdown">Không nhất thiết phải dùng 3 ~</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/setblock ~ 1 ~ dirt</span> — dirt sẽ được setblock ở tầng y=1 tại vị trí dùng Command</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">~ và ^ không thể sử dụng cùng nhau</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> — Command bị lỗi</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">^</div>
+			</div>
+			<div class="contentText">Tính từ hướng nhìn của đối tượng dùng Command</div>
+			<div class="contentText"><span class="textCommand">/setblock ^ ^ ^1 dirt</span> — dirt sẽ được setblock ngay phía trước theo hướng nhìn</div>
+			<div class="contentText">Các Command có x y z đều có thể dùng ^</div>
+			<div class="contentText">Bắt buộc phải dùng cả 3 ^</div>
+			<div class="contentText dropdown">~ và ^ không thể sử dụng cùng lúc</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> — Command bị lỗi</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">§</div>
+			</div>
+			<div>
+				<div class="contentText">Định dạng văn bản</div>
+				<div>
+					<div class="contentText dropdown">Danh sách mã màu:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span style="color: #000000">§0 ◼◼◼◼◼◼◼◼◼</span><span style="color: #FFFFFF"> (Đen)</span></div>
+						<div class="contentText"><span style="color: #0000AA">§1 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #00AA00">§2 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #00AAAA">§3 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #AA0000">§4 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #AA00AA">§5 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #FFAA00">§6 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #AAAAAA">§7 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #555555">§8 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #5555FF">§9 ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #55FF55">§a ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #55FFFF">§b ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #FF5555">§c ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #FF55FF">§d ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #FFFF55">§e ◼◼◼◼◼◼◼◼◼</span></div>
+						<div class="contentText"><span style="color: #FFFFFF">§f  ◼◼◼◼◼◼◼◼◼</span><span style="color: #000000"> (Trắng)</span></div>
+						<div class="contentText"><span style="color: #DDD605">§g ◼◼◼◼◼◼◼◼◼</span></div>
+					</div>
+				</div>
+				<div>
+					<div class="contentText dropdown">Danh sách mã định dạng:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText">§k (Ngẫu nhiên kí tự)</div>
+						<div class="contentText"><b>§l (Bôi đậm kí tự)</b></div>
+						<div class="contentText"><del>§m (Gạch ngang kí tự)</del> <a class="textLink textNote" href="https://bugs.mojang.com/browse/MCPE-41729" target="_blank">Định dạng này không hoạt động trong Game, ấn vào đây để xem báo cáo Bug</a></div>
+						<div class="contentText"><ins>§n (Gạch chân kí tự)</ins>  <a class="textLink textNote" href="https://bugs.mojang.com/browse/MCPE-41729" target="_blank">Định dạng này không hoạt động trong Game, ấn vào đây để xem báo cáo Bug</a></div>
+						<div class="contentText"><i>§o (Nghiêng kí tự)</i></div>
+						<div class="contentText">§r (Reset định dạng)</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>
