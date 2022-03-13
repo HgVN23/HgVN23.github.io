@@ -1,1 +1,1 @@
-# HgVN23.github.io
+# Minecraft Bedrock Command Wiki for Vietnamese (New version)
