@@ -1,0 +1,1 @@
+textHere = document.
