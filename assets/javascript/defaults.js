@@ -4,8 +4,8 @@ function defaults() {
 	document.getElementById("header").innerHTML =
 		'<div class="sidebarIcon sidebarIconClose" onclick="sidebarOpen()"></div>' +
 		'<div class="sidebarIcon sidebarIconOpen sidebarIconHide" onclick="sidebarClose()"></div>' +
-		'<a class="logoWiki" href="index.html"></a>' +
-		'<a class="headerTitle" href="index.html">MCBE Command Wiki</a>' +
+		'<a class="logoWiki" href="https://hgvn23.github.io/index.html"></a>' +
+		'<a class="headerTitle" href="https://hgvn23.github.io/index.html">MCBE Command Wiki</a>' +
 		'<div class="themeIcon themeIconDark" onclick="themeLight()"></div>' +
 		'<div class="themeIcon themeIconLight themeHide" onclick="themeDark()"></div>' +
 		'<div class="search">' +
@@ -120,7 +120,7 @@ function defaults() {
 		'<li class="dropdown">Thông tin liên quan</li>' +
 		'<div class="dropdownHide">' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/thongTinLienQuan/toanTuKiTu.html">Toán tử kí tự</a></li>' +
-		'<li><a class="textLink" href="https://hgvn23.github.io/thongTinLienQuan/command-block.html">Command Block</a></li>' +
+		'<li><a class="textLink" href="https://hgvn23.github.io/thongTinLienQuan/commandBlock.html">Command Block</a></li>' +
 		'</div>' +
 		'</div>' +
 		'<div class="sidebarEnd"></div>' +
