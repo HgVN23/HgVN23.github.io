@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>/damage | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="/damage | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="/damage | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Gây sát thương cho Entity (ngoại trừ Item và các vật ném, đạn bay)">
+	<meta property="og:description" content="Gây sát thương cho Entity (ngoại trừ Item và các vật ném, đạn bay)">
+	<meta name="twitter:description" content="Gây sát thương cho Entity (ngoại trừ Item và các vật ném, đạn bay)">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/damage.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/damage.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">/damage</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Công dụng</div>
+			</div>
+			<div class="contentText">Gây sát thương cho Entity (ngoại trừ Item và các vật ném, đạn bay)</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+			</div>
+			<div class="contentText">Player có OP</div>
+			<div class="contentText">Chủ Map</div>
+			<div class="contentText">Addon</div>
+			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
+			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
+			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
+			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/damage &lt;target: target&gt; &lt;amount: int&gt; &lt;cause: DamageCause&gt; entity &lt;damager: target&gt;</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;target: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> nhận sát thương (Entity)</div>
+					<div class="contentText"><span class="textSyntax">&lt;amount: int&gt;</span> là lượng sát thương</div>
+					<div class="contentText"><span class="textSyntax">&lt;cause: DamageCause&gt;</span> là loại sát thương bị nhận. <a class="textLink" href="../danhSachId/damageId.html">Danh sách</a></div>
+					<div class="contentText"><span class="textSyntax">entity</span> là thực thể</div>
+					<div class="contentText"><span class="textSyntax">&lt;damager: target&gt;</span> là mục tiêu gây sát thương (Entity)</div>
+					<div class="contentText"><span class="textCommand">/damage @a 20 entity_attack entity @e[type=cow]</span> — tất cả Player sẽ nhận 20 sát thương bị tấn công bởi Entity, cụ thể bị tấn công bởi Cow</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/damage &lt;target: target&gt; &lt;amount: int&gt; [cause: DamageCause]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">&lt;target: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> nhận sát thương (Entity)</div>
+					<div class="contentText"><span class="textSyntax">&lt;amount: int&gt;</span> là lượng sát thương</div>
+					<div class="contentText"><span class="textSyntax">[cause: DamageCause]</span> là loại sát thương bị nhận. <a class="textLink" href="../danhSachId/damageId.html">Danh sách</a></div>
+					<div class="contentText"><span class="textCommand">/damage @a 20 lightning</span> — tất cả Player sẽ nhận 20 sát thương bởi sét</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<div class="contentTitle">Lưu ý</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">1 vài <a class="textLink" href="gamerule.html">/gamerule</a> có <span class="textSyntax">false</span> sẽ khiến 1 vài <span class="textSyntax">&lt;cause: DamageCause&gt;</span> không hoạt động được</div>
+				<div class="dropdownTab dropdownHide">
+					<table>
+						<tr>
+							<th>/gamerule có false</th>
+							<th>&lt;cause: DamageCause&gt;</th>
+						</tr>
+						<tr>
+							<td class="textSyntax">drowningdamage</td>
+							<td class="textSyntax">drowning</td>
+						</tr>
+						<tr>
+							<td class="textSyntax">falldamage</td>
+							<td class="textSyntax">fall</td>
+						</tr>
+						<tr>
+							<td class="textSyntax">firedamage</td>
+							<td><span class="textSyntax">fire</span>, <span class="textSyntax">fire_tick</span>, <span class="textSyntax">lava</span>, <span class="textSyntax">magma</span></td>
+						</tr>
+						<tr>
+							<td class="textSyntax">freezedamage</td>
+							<td class="textSyntax">freezing</td>
+						</tr>
+						<tr>
+							<td class="textSyntax">pvp</td>
+							<td><span class="textSyntax">entity_attack</span> bởi Player</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="contentText"><span class="textCommand"><a class="textLink" href="difficulty.html">/difficulty</a> peaceful</span> vô hiệu hóa <span class="textCommand">/damage</span> lên Player</div>
+			<div>
+				<div class="contentText dropdown">Mục tiêu bị sát thương sẽ knockback nếu dùng <span class="textSyntax">/damage &lt;target: target&gt; &lt;amount: int&gt; &lt;cause: DamageCause&gt; entity &lt;damager: target&gt;</span></div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/damage @e[name=b] 1 anvil entity @e[name=a]</span> và ảnh minh họa hướng của knockback</div>
+					<div class="imageDamage"></div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Luật nhận và không nhận sát thương của Entity không được áp dụng</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textCommand">/damage @e[type=blaze] 20 fire</span> - Blaze vẫn bị nhận sát thương dù có khả năng chống cháy</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>
