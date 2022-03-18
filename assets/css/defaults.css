@@ -530,6 +530,12 @@ header {
 	height: 30%;
 	width: 30%;
 }
+.imageDamage {
+	content: url(../media/image/damage.png);
+	margin: 5px auto 5px auto;
+	height: 50%;
+	width: 50%;
+}
 /*==================================================*/
 /*Thuộc Footer*/
 footer {
@@ -691,6 +697,10 @@ footer {
 	.imageCmdbRedstone {
 		height: 60%;
 		width: 60%;
+	}
+	.imageDamage {
+		height: 80%;
+		width: 80%;
 	}
 	.footerLink {
 		font-size: 16px;

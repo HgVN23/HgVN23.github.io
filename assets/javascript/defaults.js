@@ -106,6 +106,7 @@ function defaults() {
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/animationId.html">Animation</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/blockStateId.html">Block state</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/componentId.html">Component</a></li>' +
+		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/damageId.html">Damage</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/effectId.html">Effect</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/enchantmentId.html">Enchantment</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/eventId.html">Event</a></li>' +
