@@ -111,6 +111,7 @@ function defaults() {
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/enchantmentId.html">Enchantment</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/eventId.html">Event</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/gameruleId.html">Gamerule</a></li>' +
+		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/lootId.html">Loot</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/particleId.html">Particle</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/rawMessageId.html">Raw message</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/target.html">Target</a></li>' +
