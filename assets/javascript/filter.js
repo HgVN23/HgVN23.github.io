@@ -90,6 +90,7 @@ let filter = [
 	"trackId",
 	
 	"toanTuKiTu",
+	"cauTrucCommand",
 	"commandBlock"
 ];
 
@@ -187,5 +188,6 @@ let danhSachId = [
 
 let thongTinLienQuan = [
 	"toanTuKiTu",
+	"cauTrucCommand",
 	"commandBlock"
 ];

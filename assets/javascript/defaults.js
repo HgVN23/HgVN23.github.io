@@ -122,6 +122,7 @@ function defaults() {
 		'<li class="dropdown">Thông tin liên quan</li>' +
 		'<div class="dropdownHide">' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/thongTinLienQuan/toanTuKiTu.html">Toán tử kí tự</a></li>' +
+		'<li><a class="textLink" href="https://hgvn23.github.io/thongTinLienQuan/cauTrucCommand.html">Cấu trúc Command</a></li>' +
 		'<li><a class="textLink" href="https://hgvn23.github.io/thongTinLienQuan/commandBlock.html">Command Block</a></li>' +
 		'</div>' +
 		'</div>' +
