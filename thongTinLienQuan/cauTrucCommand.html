@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>Cấu trúc Command | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="Cấu trúc Command | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="Cấu trúc Command | MCBE Command Wiki VN by Hg">
+	<!-- Description -->
+	<meta name="description" content="Cấu trúc Command">
+	<meta property="og:description" content="Cấu trúc Command">
+	<meta name="twitter:description" content="Cấu trúc Command">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/cau_truc_command.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/cau_truc_command.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentHeader">Cấu trúc Command</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div class="table">
+				<table>
+					<tr>
+						<td>/</td>
+						<td>Mở đầu Command</td>
+					</tr>
+					<tr>
+						<td>Không có &lt;...&gt; hoặc [...]</td>
+						<td>Bắt buộc ghi lại</td>
+					</tr>
+					<tr>
+						<td>&lt;...&gt;</td>
+						<td>Không thể bỏ qua, phải ghi 1 giá trị</td>
+					</tr>
+					<tr>
+						<td>[...]</td>
+						<td>Có thể bỏ qua, giá trị mặc định sẽ được sử dụng hoặc nếu không có giá trị mặc định thì công dụng của Command bị thay đổi</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">Kiểu dữ liệu</div>
+			</div>
+			<div class="table">
+				<table>
+					<tr>
+						<td>int</td>
+						<td>Kiểu số nguyên như <span class="textSyntax">-1</span>, <span class="textSyntax">0</span>, <span class="textSyntax">1</span>, ...</td>
+					</tr>
+					<tr>
+						<td>float</td>
+						<td>Kiểu số thực như <span class="textSyntax">-1.1</span>, <span class="textSyntax">0.1</span>, <span class="textSyntax">1.2</span>, ...</td>
+					</tr>
+					<tr>
+						<td>string</td>
+						<td>Kiểu chuỗi kí tự như <span class="textSyntax">xin_chao</span> hoặc <span class="textSyntax">hi</span>, nếu có khoảng cách hoặc kí tự đặc biệt thì phải để trong "..." như <span class="textSyntax">"Xin chào"</span> hoặc <span class="textSyntax">"§1Hg"</span></td>
+					</tr>
+					<tr>
+						<td>boolean</td>
+						<td>Kiểu đúng là <span class="textSyntax">true</span> hoặc sai là <span class="textSyntax">false</span></td>
+					</tr>
+					<tr>
+						<td>json</td>
+						<td class="textWip">JavaScript Object Notation (JSON) là một định dạng trao đổi dữ liệu nhẹ</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>
