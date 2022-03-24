@@ -28,6 +28,12 @@ th, td {
 .table {
 	margin: 0 5px 5px 5px;
 }
+iframe {
+	display: block;
+	height: 450px;
+	margin: 10px auto 10px auto;
+	width: 800px;
+}
 /*Custom Scrollbar*/
 ::-webkit-scrollbar {
 	background-color: #262626;
@@ -536,6 +542,13 @@ header {
 	height: 50%;
 	width: 50%;
 }
+.imageRick {
+	content: url(../media/image/rick_roll.gif);
+	display: none;
+	margin: 5px auto 5px auto;
+	height: 50%;
+	width: 50%;
+}
 /*==================================================*/
 /*Thuộc Footer*/
 footer {
@@ -623,6 +636,9 @@ footer {
 	table {
 		font-size: 12px;
 	}
+	iframe {
+		display: none;
+	}
 	.logoWiki {
 		margin-left: 5px;
 		order: 1;
@@ -699,6 +715,11 @@ footer {
 		width: 60%;
 	}
 	.imageDamage {
+		height: 80%;
+		width: 80%;
+	}
+	.imageRick {
+		display: block;
 		height: 80%;
 		width: 80%;
 	}
