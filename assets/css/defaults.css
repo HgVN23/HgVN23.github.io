@@ -549,6 +549,12 @@ header {
 	height: 50%;
 	width: 50%;
 }
+.imageHg {
+	content: url(../media/image/hg.png);
+	margin: 5px auto 5px auto;
+	height: 20%;
+	width: 20%;
+}
 /*==================================================*/
 /*Thuộc Footer*/
 footer {
@@ -722,6 +728,10 @@ footer {
 		display: block;
 		height: 80%;
 		width: 80%;
+	}
+	.imageHg {
+		height: 50%;
+		width: 50%;
 	}
 	.footerLink {
 		font-size: 16px;
