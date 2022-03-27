@@ -1,1 +1,0 @@
-textHere = document.
