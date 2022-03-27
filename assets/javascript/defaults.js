@@ -163,7 +163,7 @@ let footer = `
 	</div>
 	<div class="copyright">
 		<div class="copyright1">Copyright © 2021-<div class="year"></div></div><div class="copyrightSide"></div>
-		<div class="copyright2">Wiki by HgVN</div><div class="copyrightSide"></div>
+		<div class="copyright2">Wiki by <a class="textLink" href="https://hgvn23.github.io/fromHg/Hg.html">Hg</a></div><div class="copyrightSide"></div>
 		<div class="copyright3">Hosted by <a class="textLink" href="https://github.com/" target="_blank">Github</a></div>
 	</div>
 `;
