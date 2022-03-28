@@ -16,7 +16,8 @@ function copy() {
 
 	document.getElementById("copy").innerHTML = "Đã sao chép";
 
-	const myTimeout = setTimeout(
-		document.getElementById("copy").innerHTML = "Sao chép",
-	1000);
+	const myTimeout = setTimeout(reset, 1000);
+	function reset() {
+		document.getElementById("copy").innerHTML = "Sao chép";
+	}
 };
