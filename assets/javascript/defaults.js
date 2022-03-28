@@ -149,6 +149,12 @@ let sidebar = `
 				<li><a class="textLink" href="https://hgvn23.github.io/thongTinLienQuan/commandBlock.html">Command Block</a></li>
 			</div>
 		</div>
+		<div>
+			<li class="dropdown">Web Tool</li>
+			<div class="dropdownHide">
+				<li><a class="textLink" href="https://hgvn23.github.io/webTool/uuidV4Generator.html">Tạo UUID</a></li>
+			</div>
+		</div>
 		<div class="sidebarEnd"></div>
 	</div>
 	<div class="sidebarBlur sidebarClose" onclick="sidebarClose()"></div>

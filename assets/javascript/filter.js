@@ -91,7 +91,9 @@ let filter = [
 	
 	"toanTuKiTu",
 	"cauTrucCommand",
-	"commandBlock"
+	"commandBlock",
+
+	"uuidV4Generator"
 ];
 
 let commands = [
@@ -191,3 +193,7 @@ let thongTinLienQuan = [
 	"cauTrucCommand",
 	"commandBlock"
 ];
+
+let webTool = [
+	"uuidV4Generator"
+]

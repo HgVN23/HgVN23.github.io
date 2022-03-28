@@ -48,19 +48,22 @@ function searchFilter(searchValue){
 		window.open("https://hgvn23.github.io", "_self");
 	}
 	if(danhSachId.includes(searchValue)) {
-		window.open("https://hgvn23.github.io/danhSachId/" + searchValue + ".html", "_self");
+		window.open(`https://hgvn23.github.io/danhSachId/${searchValue}.html`, "_self");
 	}
 	if(thongTinLienQuan.includes(searchValue)) {
-		window.open("https://hgvn23.github.io/thongTinLienQuan/" + searchValue + ".html", "_self");
+		window.open(`https://hgvn23.github.io/thongTinLienQuan/${searchValue}.html`, "_self");
+	}
+	if(webTool.includes(searchValue)) {
+		window.open(`https://hgvn23.github.io/webTool/${searchValue}.html`, "_self");
 	}
 	if(searchValue === "?"){
 		window.open("https://hgvn23.github.io/commands/1help.html", "_self");
 	}
 	if(commands.includes(searchValue)){
-		window.open("https://hgvn23.github.io/commands/" + searchValue + ".html", "_self");
+		window.open(`https://hgvn23.github.io/commands/${searchValue}.html`, "_self");
 	}
 	if(filter.includes(searchValue) != true){
-		window.open("https://hgvn23.github.io/" + searchValue + ".html", "_self");
+		window.open(`https://hgvn23.github.io/${searchValue}.html`, "_self");
 	}
 }
 
