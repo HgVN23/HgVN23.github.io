@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>UUID v4 Generator</title>
+	<meta property="og:title" content="UUID v4 Generator">
+	<meta name="twitter:title" content="UUID v4 Generator">
+	<!-- Description -->
+	<meta name="description" content="UUID v4 Generator">
+	<meta property="og:description" content="UUID v4 Generator">
+	<meta name="twitter:description" content="UUID v4 Generator">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/uuid.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/uuid.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults(); generator()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">UUID v4 Generator</div>
+			</div>
+			<div class="uuid"></div>
+			<div class="button">
+				<button onclick="generator()">Tạo</button>
+				<button onclick="copy()" id="copy">Sao chép</button>
+			</div>
+			<script src="../assets/javascript/uuid.js"></script>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>
