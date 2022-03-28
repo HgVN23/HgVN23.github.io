@@ -18,7 +18,6 @@ function defaults() {
 	document.querySelector(".year").innerHTML = new Date().getFullYear();
 	// ======================================================================
 }
-
 let scriptList = [
 	"sidebar",
 	"filter",
@@ -166,4 +165,14 @@ let footer = `
 		<div class="copyright2">Wiki by <a class="textLink" href="https://hgvn23.github.io/fromHg/Hg.html">Hg</a></div><div class="copyrightSide"></div>
 		<div class="copyright3">Hosted by <a class="textLink" href="https://github.com/" target="_blank">Github</a></div>
 	</div>
+	<!-- Ads 1 -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-2430509461017367"
+	     data-ad-slot="6618344666"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 `;
