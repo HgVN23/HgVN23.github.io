@@ -34,6 +34,30 @@ iframe {
 	margin: 10px auto 10px auto;
 	width: 800px;
 }
+button {
+	background-color: transparent;
+	border: 2px solid #525252;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 20px;
+}
+button:hover {
+	border-color: #1d4ed8;
+}
+button:active {
+	border-color: yellow;
+}
+.button {
+	display: flex;
+	justify-content: center;
+}
+.uuid {
+	cursor: text;
+	font-size: 30px;
+	margin: 30px 0 30px 0;
+	text-align: center;
+	user-select: text;
+}
 /*Custom Scrollbar*/
 ::-webkit-scrollbar {
 	background-color: #262626;
@@ -644,6 +668,9 @@ footer {
 	}
 	iframe {
 		display: none;
+	}
+	.uuid {
+		font-size: 12px;
 	}
 	.logoWiki {
 		margin-left: 5px;
