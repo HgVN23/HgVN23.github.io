@@ -22,9 +22,9 @@
 	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
 	<meta property="og:type" content="website">
 	<meta name="twitter:card" content="summary_large_image">
-	<link href="../assets/media/logo/logo_wiki.png">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
 	<!-- Script -->
-	<script rel="icon" src="../assets/javascript/defaults.js"></script>
+	<script src="../assets/javascript/defaults.js"></script>
 </head>
 <body onload="defaults()" class="themeDark">
 	<div id="script"></div>
@@ -97,18 +97,62 @@
 					<div class="contentText"><span class="textSyntax">&lt;target: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
 					<div class="contentText dropdown"><span class="textSyntax">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:</div>
 					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">slot.armor</span> — ô giáp cho ngựa và thảm cho lạc đà</div>
-						<div class="contentText"><span class="textSyntax">slot.armor.chest</span> — ô để giáp ngực</div>
-						<div class="contentText"><span class="textSyntax">slot.armor.feet</span> — ô để giáp chân</div>
-						<div class="contentText"><span class="textSyntax">slot.armor.head</span> — ô để giáp đầu</div>
-						<div class="contentText"><span class="textSyntax">slot.armor.legs</span> — ô để giáp chân</div>
-						<div class="contentText"><span class="textSyntax">slot.chest</span> — ô để Chest cho ngựa và lạc đà</div>
-						<div class="contentText"><span class="textSyntax">slot.enderchest</span> — ô kho đồ Ender Chest</div>
-						<div class="contentText"><span class="textSyntax">slot.hotbar</span> — ô công cụ hiện trên màn hình</div>
-						<div class="contentText"><span class="textSyntax">slot.inventory</span> — ô kho đồ</div>
-						<div class="contentText"><span class="textSyntax">slot.saddle</span> — ô để yên cưỡi</div>
-						<div class="contentText"><span class="textSyntax">slot.weapon.mainhand</span> — ô tay phải</div>
-						<div class="contentText"><span class="textSyntax">slot.weapon.offhand</span> — ô tay trái</div>
+						<div class="table">
+							<table>
+								<tr>
+									<th>Id chữ</th>
+									<th>Giải thích</th>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.armor</td>
+									<td>Ô giáp cho ngựa và thảm cho lạc đà</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.armor.chest</td>
+									<td>Ô để giáp ngực</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.armor.feet</td>
+									<td>Ô để giáp chân</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.armor.head</td>
+									<td>Ô để giáp đầu</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.armor.legs</td>
+									<td>Ô để giáp chân</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.chest</td>
+									<td>Ô để Chest cho lừa, la và lạc đà</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.enderchest</td>
+									<td>Ô kho đồ Ender Chest</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.hotbar</td>
+									<td>Ô công cụ hiện trên màn hình</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.inventory</td>
+									<td>Ô kho đồ</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.saddle</td>
+									<td>Ô để yên cưỡi</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.weapon.mainhand</td>
+									<td>Ô tay phải</td>
+								</tr>
+								<tr>
+									<td class="textSyntax">slot.weapon.offhand</td>
+									<td>Ô tay trái</td>
+								</tr>
+							</table>
+						</div>
 					</div>
 					<div class="contentText"><span class="textSyntax">&lt;slotId: int&gt;</span> là Id ô</div>
 					<div class="contentText"><span class="textSyntax">&lt;itemName: Item&gt;</span> là Id Item</div>
@@ -126,18 +170,62 @@
 					<div>
 						<div class="contentText dropdown"><span class="textSyntax">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:</div>
 						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">slot.armor</span> — ô giáp cho ngựa và thảm cho lạc đà</div>
-							<div class="contentText"><span class="textSyntax">slot.armor.chest</span> — ô để giáp ngực</div>
-							<div class="contentText"><span class="textSyntax">slot.armor.feet</span> — ô để giáp chân</div>
-							<div class="contentText"><span class="textSyntax">slot.armor.head</span> — ô để giáp đầu</div>
-							<div class="contentText"><span class="textSyntax">slot.armor.legs</span> — ô để giáp quần</div>
-							<div class="contentText"><span class="textSyntax">slot.chest</span> — ô để Chest cho ngựa và lạc đà</div>
-							<div class="contentText"><span class="textSyntax">slot.enderchest</span> — ô kho đồ Ender Chest</div>
-							<div class="contentText"><span class="textSyntax">slot.hotbar</span> — ô công cụ hiện trên màn hình</div>
-							<div class="contentText"><span class="textSyntax">slot.inventory</span> — ô kho đồ</div>
-							<div class="contentText"><span class="textSyntax">slot.saddle</span> — ô để yên cưỡi</div>
-							<div class="contentText"><span class="textSyntax">slot.weapon.mainhand</span> — ô tay phải</div>
-							<div class="contentText"><span class="textSyntax">slot.weapon.offhand</span> — ô tay trái</div>
+							<div class="table">
+								<table>
+									<tr>
+										<th>Id chữ</th>
+										<th>Giải thích</th>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.armor</td>
+										<td>Ô giáp cho ngựa và thảm cho lạc đà</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.armor.chest</td>
+										<td>Ô để giáp ngực</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.armor.feet</td>
+										<td>Ô để giáp chân</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.armor.head</td>
+										<td>Ô để giáp đầu</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.armor.legs</td>
+										<td>Ô để giáp chân</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.chest</td>
+										<td>Ô để Chest cho lừa, la và lạc đà</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.enderchest</td>
+										<td>Ô kho đồ Ender Chest</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.hotbar</td>
+										<td>Ô công cụ hiện trên màn hình</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.inventory</td>
+										<td>Ô kho đồ</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.saddle</td>
+										<td>Ô để yên cưỡi</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.weapon.mainhand</td>
+										<td>Ô tay phải</td>
+									</tr>
+									<tr>
+										<td class="textSyntax">slot.weapon.offhand</td>
+										<td>Ô tay trái</td>
+									</tr>
+								</table>
+							</div>
 						</div>
 					</div>
 					<div class="contentText"><span class="textSyntax">&lt;slotId: int&gt;</span> là Id ô</div>
