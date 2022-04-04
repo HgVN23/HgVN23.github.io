@@ -56,11 +56,11 @@ function searchFilter(searchValue){
 	if(webTool.includes(searchValue)) {
 		window.open(`https://hgvn23.github.io/webTool/${searchValue}.html`, "_self");
 	}
-	if(searchValue === "?"){
-		window.open("https://hgvn23.github.io/commands/1help.html", "_self");
-	}
 	if(commands.includes(searchValue)){
 		window.open(`https://hgvn23.github.io/commands/${searchValue}.html`, "_self");
+	}
+	if(searchValue === "?"){
+		window.open("https://hgvn23.github.io/commands/1help.html", "_self");
 	}
 	if(filter.includes(searchValue) != true){
 		window.open(`https://hgvn23.github.io/${searchValue}.html`, "_self");
