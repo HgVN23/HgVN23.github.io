@@ -93,7 +93,8 @@ let filter = [
 	"cauTrucCommand",
 	"commandBlock",
 
-	"uuidV4Generator"
+	"uuidV4Generator",
+	"glyph"
 ];
 
 let commands = [
@@ -195,5 +196,6 @@ let thongTinLienQuan = [
 ];
 
 let webTool = [
-	"uuidV4Generator"
+	"uuidV4Generator",
+	"glyph"
 ]
