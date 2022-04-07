@@ -80,6 +80,30 @@ button:active {
 	text-align: center;
 	user-select: text;
 }
+.glyph {
+	cursor: text;
+	font-size: 30px;
+	margin: 10px 0 10px 0;
+	text-align: center;
+	user-select: text;
+}
+.glyphFlex {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 0 auto;
+	width: 30%;
+}
+.glyphInput {
+	background-color: transparent;
+	border: none;
+	border-bottom: var(--border);
+	font-size: 16px;
+	margin-left: 10px;
+	outline: none;
+}
+.glyphInput:hover {
+	border-bottom: 2px solid var(--hover-color);
+}
 /*==================================================*/
 /*Theme*/
 .themeLight {
@@ -440,8 +464,7 @@ header {
 	background-color: var(--bg);
 	border: var(--border);
 	font-size: 30px;
-	margin: 15px;
-	margin-bottom: 0;
+	margin: 15px 15px 0 15px;
 	padding: 10px;
 }
 .contentBox {
@@ -586,6 +609,12 @@ header {
 	height: 20%;
 	width: 20%;
 }
+.imageGlyph {
+	content: url(../media/image/glyph.png);
+	margin: 5px auto 5px auto;
+	height: 50%;
+	width: 50%;
+}
 /*==================================================*/
 /*Thuộc Footer*/
 footer {
@@ -679,6 +708,9 @@ footer {
 	.uuid {
 		font-size: 12px;
 	}
+	.glyphFlex {
+		width: 70%;
+	}
 	.logoWiki {
 		margin-left: 5px;
 		order: 1;
@@ -766,6 +798,10 @@ footer {
 	.imageHg {
 		height: 50%;
 		width: 50%;
+	}
+	.imageGlyph {
+		height: 80%;
+		width: 80%;
 	}
 	.footerLink {
 		font-size: 16px;
