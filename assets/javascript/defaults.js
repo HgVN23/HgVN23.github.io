@@ -153,6 +153,7 @@ let sidebar = `
 			<li class="dropdown">Web Tool</li>
 			<div class="dropdownHide">
 				<li><a class="textLink" href="https://hgvn23.github.io/webTool/uuidV4Generator.html">Tạo UUID</a></li>
+				<li><a class="textLink" href="https://hgvn23.github.io/webTool/glyph.html">Tra kí tự glyph</a></li>
 			</div>
 		</div>
 		<div class="sidebarEnd"></div>
