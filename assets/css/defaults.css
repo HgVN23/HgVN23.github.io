@@ -80,6 +80,30 @@ button:active {
 	text-align: center;
 	user-select: text;
 }
+.glyph {
+	cursor: text;
+	font-size: 30px;
+	margin: 10px 0 10px 0;
+	text-align: center;
+	user-select: text;
+}
+.glyphFlex {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 0 auto;
+	width: 30%;
+}
+.glyphInput {
+	background-color: transparent;
+	border: none;
+	border-bottom: var(--border);
+	font-size: 16px;
+	margin-left: 10px;
+	outline: none;
+}
+.glyphInput:hover {
+	border-bottom: 2px solid var(--hover-color);
+}
 /*==================================================*/
 /*Theme*/
 .themeLight {
@@ -440,8 +464,7 @@ header {
 	background-color: var(--bg);
 	border: var(--border);
 	font-size: 30px;
-	margin: 15px;
-	margin-bottom: 0;
+	margin: 15px 15px 0 15px;
 	padding: 10px;
 }
 .contentBox {
@@ -678,6 +701,9 @@ footer {
 	}
 	.uuid {
 		font-size: 12px;
+	}
+	.glyphFlex {
+		width: 70%;
 	}
 	.logoWiki {
 		margin-left: 5px;
