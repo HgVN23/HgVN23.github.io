@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>Glyph</title>
+	<meta property="og:title" content="Glyph">
+	<meta name="twitter:title" content="Glyph">
+	<!-- Description -->
+	<meta name="description" content="Glyph">
+	<meta property="og:description" content="Glyph">
+	<meta name="twitter:description" content="Glyph">
+	<!-- Image -->
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/glyph.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/glyph.png">
+	<!-- Something -->
+	<meta property="og:url" content="https://hgvn23.github.io">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:site_name" content="MCBE Command Wiki VN by Hg">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+	<!-- Script -->
+	<script src="../assets/javascript/defaults.js"></script>
+</head>
+<body onload="defaults()" class="themeDark">
+	<div id="script"></div>
+	<header id="header"></header>
+	<div id="sidebar"></div>
+	<div class="content">
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<div class="contentTitle">Glyph</div>
+			</div>
+			<div class="imageGlyph"></div>
+			<div class="glyphFlex">
+				<div class="contentText">Bảng glyph (0-9, A-F)</div>
+				<input class="glyphInput" id="glyphTable" type="text" placeholder="Ví dụ: 12 hoặc 3B">
+				<div class="contentText">Hàng (0-9, A-F)</div>
+				<input class="glyphInput" id="glyphRow" type="text" placeholder="Ví dụ: 1 hoặc C">
+				<div class="contentText">Cột (0-9, A-F)</div>
+				<input class="glyphInput" id="glyphCol" type="text" placeholder="Ví dụ: 1 hoặc C">
+				<div class="glyph" id="copyThis">...</div>
+			</div>
+			<div class="button">
+				<button onclick="glyph()" id="create">Tạo</button>
+				<button onclick="copy()" id="copy">Sao chép</button>
+			</div>
+			<script src="../assets/javascript/copy.js"></script>
+			<script src="../assets/javascript/glyph.js"></script>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+</body>
