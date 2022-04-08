@@ -618,12 +618,14 @@ header {
 /*==================================================*/
 /*Thuộc Footer*/
 footer {
-	align-items: center;
 	background-color: var(--bg);
 	border-top: var(--border);
+	margin-top: 15px;
+}
+.footer {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	margin-top: 15px;
 }
 .social {
 	align-items: center;
