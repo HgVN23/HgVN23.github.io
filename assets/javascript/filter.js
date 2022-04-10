@@ -87,6 +87,7 @@ let filter = [
 	"particleId",
 	"rawMessageId",
 	"target",
+	"soundId",
 	"trackId",
 	
 	"toanTuKiTu",
@@ -186,6 +187,7 @@ let danhSachId = [
 	"particleId",
 	"rawMessageId",
 	"target",
+	"soundId",
 	"trackId"
 ];
 

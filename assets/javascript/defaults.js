@@ -139,6 +139,7 @@ let sidebar = `
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/particleId.html">Particle</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/rawMessageId.html">Raw message</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/target.html">Target</a></li>
+				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/soundId.html">Sound</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/trackId.html">Track</a></li>
 			</div>
 		</div>
