@@ -16,7 +16,10 @@ let adsPhone = `
 		<div class="contentTitle">Ads</div>
 	</div>
 	<!-- Ads 4 -->
-	<ins class="adsbygoogle" style="display:block; width:300px; height:300px" data-ad-client="ca-pub-2430509461017367" data-ad-slot="1239821054"></ins>
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:260px;height:260px"
+	     data-ad-client="ca-pub-2430509461017367"
+	     data-ad-slot="1239821054"></ins>
 `;
 
 // AdsPc
