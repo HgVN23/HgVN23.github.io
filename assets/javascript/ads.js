@@ -23,17 +23,16 @@ let adsPhone = `
 `;
 
 // AdsPc
-// let adsCreatePc = document.createElement('div');
-// adsCreatePc.classList.add('contentBox', 'adsPc');
-// adsCreatePc.innerHTML = adsPc;
-// document.querySelector(".content").appendChild(adsCreatePc);
+let adsCreatePc = document.createElement('div');
+adsCreatePc.classList.add('contentBox', 'adsPc');
+adsCreatePc.innerHTML = adsPc;
+document.querySelector(".content").appendChild(adsCreatePc);
 
 // AdsPhone
 let adsCreatePhone = document.createElement('div');
-// adsCreatePhone.classList.add('contentBox', 'adsPhone');
-adsCreatePhone.classList.add('contentBox');
+adsCreatePhone.classList.add('contentBox', 'adsPhone');
 adsCreatePhone.innerHTML = adsPhone;
 document.querySelector(".content").appendChild(adsCreatePhone);
 
-for (var i = 0; i < 1; i++)
-	(adsbygoogle = window.adsbygoogle || []).push({});
+// for (var i = 0; i < 1; i++)
+(adsbygoogle = window.adsbygoogle || []).push({});
