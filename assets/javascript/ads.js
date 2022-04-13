@@ -31,5 +31,5 @@ adsCreatePhone.classList.add('contentBox', 'adsPhone');
 adsCreatePhone.innerHTML = adsPhone;
 document.querySelector(".content").appendChild(adsCreatePhone);
 
-for (var i = 0; i < 3; i++)
+for (var i = 0; i < 4; i++)
 	(adsbygoogle = window.adsbygoogle || []).push({});
