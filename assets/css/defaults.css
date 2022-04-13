@@ -104,6 +104,12 @@ button:active {
 .glyphInput:hover {
 	border-bottom: 2px solid var(--hover-color);
 }
+.adsPc {
+	display: block;
+}
+.adsPhone {
+	display: none;
+}
 /*==================================================*/
 /*Theme*/
 .themeLight {
@@ -712,6 +718,12 @@ footer {
 	}
 	.glyphFlex {
 		width: 70%;
+	}
+	.adsPc {
+		display: none;
+	}
+	.adsPhone {
+		display: block;
 	}
 	.logoWiki {
 		margin-left: 5px;
