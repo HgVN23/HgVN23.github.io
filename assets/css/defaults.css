@@ -105,8 +105,7 @@ button:active {
 	border-bottom: 2px solid var(--hover-color);
 }
 .ads {
-	height: auto;
-	width: auto;
+	display: block;
 }
 /*==================================================*/
 /*Theme*/
@@ -718,7 +717,8 @@ footer {
 		width: 70%;
 	}
 	.ads {
-		width: 280px;
+		height: 280px!important;
+		width: 280px!important;
 	}
 	.logoWiki {
 		margin-left: 5px;
