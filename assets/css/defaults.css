@@ -717,7 +717,7 @@ footer {
 		width: 70%;
 	}
 	.ads {
-		width: 220px!important;
+		display: none;
 	}
 	.logoWiki {
 		margin-left: 5px;
