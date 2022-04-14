@@ -1,38 +1,21 @@
-let adsPc = `
+let ads = `
 	<div class="contentGroup">
 		<div class="contentIcon iconLuuY"></div>
 		<div class="contentTitle">Ads</div>
 	</div>
 	<!-- Ads 1 -->
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="6618344666" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<ins class="adsbygoogle ads" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="6618344666"></ins>
 	<!-- Ads 2 -->
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="1982672065" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<ins class="adsbygoogle ads" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="1982672065"></ins>
 	<!-- Ads 3 -->
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="7686386895" data-ad-format="auto" data-full-width-responsive="true"></ins>
-`;
-let adsPhone = `
-	<div class="contentGroup">
-		<div class="contentIcon iconLuuY"></div>
-		<div class="contentTitle">Ads</div>
-	</div>
-	<!-- Ads 4 -->
-	<ins class="adsbygoogle"
-	     style="display:inline-block;width:260px;height:260px"
-	     data-ad-client="ca-pub-2430509461017367"
-	     data-ad-slot="1239821054"></ins>
+	<ins class="adsbygoogle ads" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="7686386895"></ins>
 `;
 
-// AdsPc
-let adsCreatePc = document.createElement('div');
-adsCreatePc.classList.add('contentBox', 'adsPc');
-adsCreatePc.innerHTML = adsPc;
-document.querySelector(".content").appendChild(adsCreatePc);
+// Ads
+let adsCreate = document.createElement('div');
+adsCreate.classList.add('contentBox');
+adsCreate.innerHTML = ads;
+document.querySelector(".content").appendChild(adsCreate);
 
-// AdsPhone
-let adsCreatePhone = document.createElement('div');
-adsCreatePhone.classList.add('contentBox', 'adsPhone');
-adsCreatePhone.innerHTML = adsPhone;
-document.querySelector(".content").appendChild(adsCreatePhone);
-
-// for (var i = 0; i < 1; i++)
-(adsbygoogle = window.adsbygoogle || []).push({});
+for (var i = 0; i < 3; i++)
+	(adsbygoogle = window.adsbygoogle || []).push({});
