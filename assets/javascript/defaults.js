@@ -163,17 +163,17 @@ let sidebar = `
 	<div class="sidebarBlur sidebarClose" onclick="sidebarClose()"></div>
 `;
 let footer = `
-	<div class=footer>
-		<div>
-			<a class="social footerLink linkYoutube" href="https://youtube.com/c/HgVN23?sub_confirmation=1" target="_blank"><div class="socialLogo logoYoutube"></div>Youtube HgVN</a>
-			<a class="social footerLink linkDiscord" href="https://discord.gg/4N3zuWn" target="_blank"><div class="socialLogo logoDiscord"></div>Server Discord</a>
-			<a class="social footerLink linkTwitter" href="https://twitter.com/HgVN23?s=0" target="_blank"><div class="socialLogo logoTwitter"></div>Twitter @HgVN23</a>
-			<a class="social footerLink linkFacebook" href="https://www.facebook.com/HgVN23" target="_blank"><div class="socialLogo logoFacebook"></div>Facebook Minh Hoàng</a>
-		</div>
-		<div class="copyright">
-			<div class="copyright1">Copyright © 2021-<div class="year"></div></div><div class="copyrightSide"></div>
-			<div class="copyright2">Wiki by <a class="textLink" href="https://hgvn23.github.io/fromHg/Hg.html">Hg</a></div><div class="copyrightSide"></div>
-			<div class="copyright3">Hosted by <a class="textLink" href="https://github.com/" target="_blank">Github</a></div>
-		</div>
+	<div>
+		<a class="socialLogo logoYoutube" href="https://youtube.com/c/HgVN23?sub_confirmation=1" target="_blank"></a>
+		<a class="socialLogo logoDiscord" href="https://discord.gg/4N3zuWn" target="_blank"></a>
+		<a class="socialLogo logoTwitter" href="https://twitter.com/HgVN23?s=0" target="_blank"></a>
+		<a class="socialLogo logoFacebook" href="https://www.facebook.com/HgVN23" target="_blank"></a>
+	</div>
+	<div class="copyright">
+		<div class="copyright1">Copyright © 2021-<div class="year"></div></div>
+		<div class="copyrightSide"></div>
+		<div class="copyright2">Wiki by <a class="textLink" href="https://hgvn23.github.io/fromHg/Hg.html">Hg</a></div>
+		<div class="copyrightSide"></div>
+		<div class="copyright3">Hosted by <a class="textLink" href="https://github.com/" target="_blank">Github</a></div>
 	</div>
 `;

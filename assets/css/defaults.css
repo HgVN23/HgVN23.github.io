@@ -621,27 +621,16 @@ header {
 /*==================================================*/
 /*Thuộc Footer*/
 footer {
+	align-items: center;
 	background-color: var(--bg);
 	border-top: var(--border);
-	margin-top: 15px;
-}
-.footer {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
-}
-.social {
-	align-items: center;
-	display: flex;
-}
-.footerLink {
-	font-size: 20px;
-	text-decoration: none;
+	margin-top: 15px;
 }
 .socialLogo {
 	height: 40px;
-	margin: 5px;
-	margin-right: 7px;
+	margin: 8px;
 	width: 40px;
 }
 .logoYoutube {
@@ -667,18 +656,6 @@ footer {
 }
 .logoFacebook:hover {
 	content: url(../media/logo/logo_facebook_hover.png);
-}
-.linkYoutube:hover {
-	color: #ff0000;
-}
-.linkDiscord:hover {
-	color: #404eed;
-}
-.linkTwitter:hover {
-	color: #1d9bf0;
-}
-.linkFacebook:hover {
-	color: #1877f2;
 }
 .copyright {
 	align-items: center;
@@ -728,7 +705,7 @@ footer {
 		font-size: 18px;
 		order: 2;
 	}
-	.sidebarIcon {
+	header .sidebarIcon {
 		margin-left: auto;
 		order: 3;
 	}
@@ -739,7 +716,7 @@ footer {
 		justify-content: center;
 		order: 4;
 	}
-	.themeIcon {
+	header .themeIcon {
 		order: 5;
 	}
 	.sidebar {
@@ -816,8 +793,6 @@ footer {
 	}
 	.socialLogo {
 		height: 30px;
-		margin: 2px;
-		margin-right: 4px;
 		width: 30px;
 	}
 	.copyright {
