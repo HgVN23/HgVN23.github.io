@@ -156,6 +156,7 @@ let sidebar = `
 			<div class="dropdownHide">
 				<li><a class="textLink" href="https://hgvn23.github.io/webTool/uuidV4Generator.html">Tạo UUID</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/webTool/glyph.html">Tra kí tự glyph</a></li>
+				<li><a class="textLink" href="https://hgvn23.github.io/webTool/color.html">Hex -> Dec Color Code</a></li>
 			</div>
 		</div>
 		<div class="sidebarEnd"></div>

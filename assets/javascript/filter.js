@@ -95,7 +95,8 @@ let filter = [
 	"commandBlock",
 
 	"uuidV4Generator",
-	"glyph"
+	"glyph",
+	"color"
 ];
 
 let commands = [
@@ -199,5 +200,6 @@ let thongTinLienQuan = [
 
 let webTool = [
 	"uuidV4Generator",
-	"glyph"
+	"glyph",
+	"color"
 ]
