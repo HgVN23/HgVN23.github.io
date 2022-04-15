@@ -73,19 +73,17 @@ button:active {
 	display: flex;
 	justify-content: center;
 }
-.uuid {
+.result {
 	cursor: text;
 	font-size: 30px;
-	margin: 30px 0 30px 0;
 	text-align: center;
 	user-select: text;
 }
+.uuid {
+	margin: 30px 0 30px 0;
+}
 .glyph {
-	cursor: text;
-	font-size: 30px;
 	margin: 10px 0 10px 0;
-	text-align: center;
-	user-select: text;
 }
 .glyphFlex {
 	display: flex;
@@ -93,7 +91,7 @@ button:active {
 	margin: 0 auto 0 auto;
 	width: 30%;
 }
-.glyphInput {
+.input {
 	background-color: transparent;
 	border: none;
 	border-bottom: var(--border);
@@ -101,7 +99,7 @@ button:active {
 	margin-left: 10px;
 	outline: none;
 }
-.glyphInput:hover {
+.input:hover {
 	border-bottom: 2px solid var(--hover-color);
 }
 .ads {
