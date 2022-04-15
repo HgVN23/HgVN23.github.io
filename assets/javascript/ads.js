@@ -1,6 +1,6 @@
 let ads = `
 	<div class="contentGroup">
-		<div class="contentIcon iconLuuY"></div>
+		<div class="contentIcon iconAds"></div>
 		<div class="contentTitle">Ads</div>
 	</div>
 	<!-- Ads 1 -->

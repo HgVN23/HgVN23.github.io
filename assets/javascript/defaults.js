@@ -17,6 +17,12 @@ function defaults() {
 	document.getElementById("footer").innerHTML = footer;
 	document.querySelector(".year").innerHTML = new Date().getFullYear();
 	// ======================================================================
+	// Go top
+	let goTopCreate = document.createElement('a');
+	goTopCreate.classList.add('goTop');
+	goTopCreate.href = "#";
+	document.querySelector("body").appendChild(goTopCreate);
+	// ======================================================================
 }
 let scriptList = [
 	"sidebar",

@@ -11,6 +11,7 @@
 	--bg-light: #f3f3f3;
 	--hover-color: #1d4ed8;
 	font-family: sans-serif;
+	scroll-behavior: smooth;
 	user-select: none;
 }
 /*Custom Scrollbar*/
@@ -101,9 +102,6 @@ button:active {
 }
 .input:hover {
 	border-bottom: 2px solid var(--hover-color);
-}
-.ads {
-	display: block;
 }
 /*==================================================*/
 /*Theme*/
@@ -500,6 +498,9 @@ header {
 	display: inline-block;
 	margin-right: 3px;
 }
+.ads {
+	display: block;
+}
 /*==================================================*/
 /*Icon*/
 .iconInfo {
@@ -546,6 +547,23 @@ header {
 	60% {
 		transform: translateY(-6px);
 	}
+}
+.iconAds {
+	content: url(../media/icon/icon_ads.png);
+}
+.goTop {
+	bottom: 3%;
+	content: url(../media/icon/icon_go_top.png);
+	height: 50px;
+	position: fixed;
+	right: 2%;
+	width: 50px;
+}
+.goTop:hover {
+	outline: 2px solid var(--hover-color);
+}
+.goTop:active {
+	outline: 2px solid yellow;
 }
 /*==================================================*/
 /*Image*/
@@ -691,9 +709,6 @@ footer {
 	.glyphFlex {
 		width: 70%;
 	}
-	.ads {
-		display: none;
-	}
 	.logoWiki {
 		margin-left: 5px;
 		order: 1;
@@ -740,6 +755,9 @@ footer {
 		font-size: 12px;
 		margin: 5px;
 		margin-left: 10px;
+	}
+	.ads {
+		display: none;
 	}
 	.image404 {
 		height: 80%;
