@@ -5,16 +5,16 @@
 	<link rel="stylesheet" href="../assets/css/defaults.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Title -->
-	<title>UUID v4 Generator</title>
-	<meta property="og:title" content="UUID v4 Generator">
-	<meta name="twitter:title" content="UUID v4 Generator">
+	<title>Hex -> Dex Color Code</title>
+	<meta property="og:title" content="Hex -> Dex Color Code">
+	<meta name="twitter:title" content="Hex -> Dex Color Code">
 	<!-- Description -->
-	<meta name="description" content="UUID v4 Generator">
-	<meta property="og:description" content="UUID v4 Generator">
-	<meta name="twitter:description" content="UUID v4 Generator">
+	<meta name="description" content="Hex -> Dex Color Code">
+	<meta property="og:description" content="Hex -> Dex Color Code">
+	<meta name="twitter:description" content="Hex -> Dex Color Code">
 	<!-- Image -->
-	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/uuid.png">
-	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/uuid.png">
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/color.png">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/color.png">
 	<!-- Something -->
 	<meta property="og:url" content="https://hgvn23.github.io">
 	<meta property="og:image:width" content="1280">
@@ -27,7 +27,7 @@
 	<script src="../assets/javascript/defaults.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults(); generator()" class="themeDark">
+<body onload="defaults()" class="themeDark">
 	<div id="script"></div>
 	<header id="header"></header>
 	<div id="sidebar"></div>
@@ -35,15 +35,15 @@
 		<div class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">UUID v4 Generator</div>
+				<div class="contentTitle">Hex -> Dex Color Code</div>
 			</div>
-			<div class="result uuid" id="copyThis"></div>
+			<div class="contentText" style="text-align: center;">Chọn màu <input id="color" type="color"></div>
+			<div class="result glyph" id="copyThis">...</div>
 			<div class="button">
-				<button onclick="generator()">Tạo</button>
 				<button onclick="copy()" id="copy">Sao chép</button>
 			</div>
-			<script src="../assets/javascript/uuid.js"></script>
 			<script src="../assets/javascript/copy.js"></script>
+			<script src="../assets/javascript/color.js"></script>
 		</div>
 	</div>
 	<footer id="footer"></footer>
