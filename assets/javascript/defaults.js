@@ -122,6 +122,7 @@ let sidebar = `
 				<li><a class="textLink" href="https://hgvn23.github.io/commands/titleraw.html">/titleraw</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/commands/toggledownfall.html">/toggledownfall</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/commands/tp.html">/tp</a></li>
+				<li><a class="textLink" href="https://hgvn23.github.io/commands/volumearea.html">/volumearea</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/commands/w.html">/w</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/commands/wb.html">/wb</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/commands/weather.html">/weather</a></li>
@@ -140,6 +141,7 @@ let sidebar = `
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/effectId.html">Effect</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/enchantmentId.html">Enchantment</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/eventId.html">Event</a></li>
+				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/fogId.html">Fog</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/gameruleId.html">Gamerule</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/lootId.html">Loot</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/danhSachId/particleId.html">Particle</a></li>
