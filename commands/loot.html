@@ -9,9 +9,9 @@
 	<meta property="og:title" content="/loot | MCBE Command Wiki VN by Hg">
 	<meta name="twitter:title" content="/loot | MCBE Command Wiki VN by Hg">
 	<!-- Description -->
-	<meta name="description" content="Thả Loot của Entity, công trình, ...">
-	<meta property="og:description" content="Thả Loot của Entity, công trình, ...">
-	<meta name="twitter:description" content="Thả Loot của Entity, công trình, ...">
+	<meta name="description" content="Thả chiến lợi phẩm của Entity, công trình, ... vào kho đồ hoặc vào Block có ô chứa hoặc ra World">
+	<meta property="og:description" content="Thả chiến lợi phẩm của Entity, công trình, ... vào kho đồ hoặc vào Block có ô chứa hoặc ra World">
+	<meta name="twitter:description" content="Thả chiến lợi phẩm của Entity, công trình, ... vào kho đồ hoặc vào Block có ô chứa hoặc ra World">
 	<!-- Image -->
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/loot.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/loot.png">
@@ -38,7 +38,7 @@
 				<div class="contentIcon iconCongDung"></div>
 				<div class="contentTitle">Công dụng</div>
 			</div>
-			<div class="contentText">Thả Loot của Entity, công trình, ...</div>
+			<div class="contentText">Thả chiến lợi phẩm của Entity, công trình, ... vào kho đồ hoặc vào Block có ô chứa hoặc ra World</div>
 		</div>
 		<div class="contentBox">
 			<div class="contentGroup">
@@ -57,6 +57,70 @@
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
 				<div class="contentTitle">Cú pháp</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/loot give &lt;player: target&gt; kill &lt;entity: target&gt; [&lt;tool&gt;|mainhand|offhand: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">give</span> là đưa</div>
+					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText"><span class="textSyntax">kill</span> là giết</div>
+					<div class="contentText"><span class="textSyntax">&lt;entity: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
+					<div class="contentText dropdown"><span class="textSyntax">[&lt;tool&gt;|mainhand|offhand: string]</span> là thả Loot theo điều kiện <span class="textNote">Dành cho chỉnh sửa File Loot</span></div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">&lt;tool&gt;</span> là Item</div>
+						<div class="contentText"><span class="textSyntax">mainhand</span> là tay phải</div>
+						<div class="contentText"><span class="textSyntax">offhand</span> là tay trái</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/loot give @a kill @e[type=cow] mainhand</span> - nếu có Cow trong tầm Load Chunk sẽ đưa Loot của Cow khi bị giết bằng tay phải vào kho đồ của tất cả Player</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/loot give &lt;player: target&gt; loot &lt;loot_table: string&gt; [&lt;tool&gt;|mainhand|offhand: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">give</span> là đặt</div>
+					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
+					<div class="contentText"><span class="textSyntax">loot</span> là chiến lợi phẩm</div>
+					<div class="contentText"><span class="textSyntax">&lt;loot_table: string&gt;</span> là đường dẫn File loot. <a class="textLink" href="../danhSachId/lootId.html">Danh sách</a></div>
+					<div class="contentText dropdown"><span class="textSyntax">[&lt;tool&gt;|mainhand|offhand: string]</span> là thả Loot theo điều kiện <span class="textNote">Dành cho chỉnh sửa File Loot</span></div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">&lt;tool&gt;</span> là Item</div>
+						<div class="contentText"><span class="textSyntax">mainhand</span> là tay phải</div>
+						<div class="contentText"><span class="textSyntax">offhand</span> là tay trái</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/loot give @a loot "entities/cow" mainhand</span> - đưa Loot của Cow khi bị giết bằng tay phải vào kho đồ của tất cả Player</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/loot insert &lt;position: x y z&gt; kill &lt;entity: target&gt; [&lt;tool&gt;|mainhand|offhand: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">insert</span> là thêm</div>
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ thả</div>
+					<div class="contentText"><span class="textSyntax">kill</span> là giết</div>
+					<div class="contentText"><span class="textSyntax">&lt;entity: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
+					<div class="contentText dropdown"><span class="textSyntax">[&lt;tool&gt;|mainhand|offhand: string]</span> là thả Loot theo điều kiện <span class="textNote">Dành cho chỉnh sửa File Loot</span></div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">&lt;tool&gt;</span> là Item</div>
+						<div class="contentText"><span class="textSyntax">mainhand</span> là tay phải</div>
+						<div class="contentText"><span class="textSyntax">offhand</span> là tay trái</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/loot insert 1 1 1 kill @e[type=cow] mainhand</span> - nếu có Cow trong tầm Load Chunk sẽ thêm Loot của Cow khi bị giết bằng tay phải vào Block có ô chứa ở tọa độ 1 1 1</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/loot insert &lt;position: x y z&gt; loot &lt;loot_table: string&gt; [&lt;tool&gt;|mainhand|offhand: string]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">insert</span> là thêm</div>
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ thả</div>
+					<div class="contentText"><span class="textSyntax">loot</span> là chiến lợi phẩm</div>
+					<div class="contentText"><span class="textSyntax">&lt;loot_table: string&gt;</span> là đường dẫn File loot. <a class="textLink" href="../danhSachId/lootId.html">Danh sách</a></div>
+					<div class="contentText dropdown"><span class="textSyntax">[&lt;tool&gt;|mainhand|offhand: string]</span> là thả Loot theo điều kiện <span class="textNote">Dành cho chỉnh sửa File Loot</span></div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">&lt;tool&gt;</span> là Item</div>
+						<div class="contentText"><span class="textSyntax">mainhand</span> là tay phải</div>
+						<div class="contentText"><span class="textSyntax">offhand</span> là tay trái</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/loot insert 1 1 1 loot "entities/cow" mainhand</span> - thêm Loot của Cow khi bị giết bằng tay phải vào Block có ô chứa ở tọa độ 1 1 1</div>
+				</div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/loot spawn &lt;position: x y z&gt; kill &lt;entity: target&gt; [&lt;tool&gt;|mainhand|offhand: string]</div>
@@ -98,6 +162,7 @@
 			</div>
 			<div class="contentText"><span class="textSyntax">&lt;loot_table: string&gt;</span> có thể được tạo hoặc chỉnh sửa thông quá Addon</div>
 			<div class="contentText"><span class="textSyntax">&lt;loot_table: string&gt;</span> phải để ở trong "..."</div>
+			<div class="contentText">Ở Command <span class="textSyntax">insert</span> tạo độ phải là Block có thể chưa vật phẩm. Tọa độ không có Block có thể chứa vật phẩm</div>
 		</div>
 	</div>
 	<footer id="footer"></footer>
