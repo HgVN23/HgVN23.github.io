@@ -59,25 +59,35 @@
 				<div class="contentTitle">Cú pháp</div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tickingarea add &lt;from: x y z&gt; &lt;to: x y z&gt; [name: string]</div>
+				<div class="contentText dropdown">/tickingarea add &lt;from: x y z&gt; &lt;to: x y z&gt; [name: string] [preload: Boolean]</div>
 				<div class="dropdownTab dropdownHide">
 					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
 					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
 					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
 					<div class="contentText"><span class="textSyntax">[name: string]</span> là đặt id cho tickingarea</div>
-					<div class="contentText"><span class="textCommand">/tickingarea add 0 0 0 1 1 1 test1</span> — tạo vùng Load Chunk tên test1 chứa tọa độ 0 0 0 đến 1 1 1. Vì tọa độ 0 0 0 và 1 1 1 đều trong Chunk (0,0;15,15) nên sẽ Load 1 Chunk (0,0;15,15)</div>
-					<div class="contentText"><span class="textCommand">/tickingarea add 0 0 0 17 17 17 test2</span> — tạo vùng Load Chunk tên test2 chứa tọa độ 0 0 0 đến 17 17 17. Vì tọa độ 0 0 0 trong Chunk (0,0;15,15), tọa độ 17 17 17 trong Chunk (16,16;31,31) nên sẽ Load 4 Chunk gồm Chunk (0,0;15,15), Chunk (0,16;15,31), Chunk (16,0;31,15) và Chunk (16,16;31,31)</div>
+					<div class="contentText dropdown"><span class="textSyntax">[preload: Boolean]</span> là phần ưu tiên Load Chunk trước. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">true</span> là bật</div>
+						<div class="contentText"><span class="textSyntax">false</span> là tắt</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/tickingarea add 0 0 0 1 1 1 test1 false</span> - tạo vùng Load Chunk tên test1 chứa tọa độ 0 0 0 đến 1 1 1. Vì tọa độ 0 0 0 và 1 1 1 đều trong Chunk (0,0;15,15) nên sẽ Load 1 Chunk (0,0;15,15)</div>
+					<div class="contentText"><span class="textCommand">/tickingarea add 0 0 0 17 17 17 test2 false</span> - tạo vùng Load Chunk tên test2 chứa tọa độ 0 0 0 đến 17 17 17. Vì tọa độ 0 0 0 trong Chunk (0,0;15,15), tọa độ 17 17 17 trong Chunk (16,16;31,31) nên sẽ Load 4 Chunk gồm Chunk (0,0;15,15), Chunk (0,16;15,31), Chunk (16,0;31,15) và Chunk (16,16;31,31)</div>
 				</div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tickingarea add circle &lt;center: x y z&gt; &lt;radius: int&gt; [name:string]</div>
+				<div class="contentText dropdown">/tickingarea add circle &lt;center: x y z&gt; &lt;radius: int&gt; [name:string] [preload: Boolean]</div>
 				<div class="dropdownTab dropdownHide">
 					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
 					<div class="contentText"><span class="textSyntax">circle</span> là hình tròn <span class="note">(nhưng trong Game nó là hình vuông)</span></div>
 					<div class="contentText"><span class="textSyntax">&lt;center: x y z&gt;</span> là tọa độ trung tâm</div>
 					<div class="contentText"><span class="textSyntax">&lt;radius: int&gt;</span> là bán kính</div>
 					<div class="contentText"><span class="textSyntax">[name: string]</span> là đặt id cho tickingarea</div>
-					<div class="contentText"><span class="textCommand">/tickingarea add circle 0 0 0 2 test3</span> — tạo vùng Load Chunk vuông tên test3 trung tâm là Chunk (0,0;15,15) vì có chứa 0 0 0 với bán kính là 2 Chunk. Tức là sẽ Load 25 Chunk với kích thước 5 x 5 Chunk</div>
+					<div class="contentText dropdown"><span class="textSyntax">[preload: Boolean]</span> là phần ưu tiên Load Chunk trước. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">true</span> là bật</div>
+						<div class="contentText"><span class="textSyntax">false</span> là tắt</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/tickingarea add circle 0 0 0 2 test3 false</span> - tạo vùng Load Chunk vuông tên test3 trung tâm là Chunk (0,0;15,15) vì có chứa 0 0 0 với bán kính là 2 Chunk. Tức là sẽ Load 25 Chunk với kích thước 5 x 5 Chunk</div>
 				</div>
 			</div>
 			<div>
@@ -88,18 +98,45 @@
 				</div>
 			</div>
 			<div>
+				<div class="contentText dropdown">/tickingarea preload &lt;name: string&gt; [preload: Boolean]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">preload</span> là ưu tiên Load Chunk trước</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id của tickingarea đã tạo</div>
+					<div class="contentText dropdown"><span class="textSyntax">[preload: Boolean]</span> là phần trạng thái. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">true</span> là bật</div>
+						<div class="contentText"><span class="textSyntax">false</span> là tắt</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/tickingarea preload test false</span> - tắt ưu tiên Load Chunk của test</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown">/tickingarea preload &lt;position: x y z&gt; [preload: Boolean]</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText"><span class="textSyntax">preload</span> là bỏ</div>
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ tickingarea đã tạo</div>
+					<div class="contentText dropdown"><span class="textSyntax">[preload: Boolean]</span> là phần trạng thái. Danh sách:</div>
+					<div class="dropdownTab dropdownHide">
+						<div class="contentText"><span class="textSyntax">true</span> là bật</div>
+						<div class="contentText"><span class="textSyntax">false</span> là tắt</div>
+					</div>
+					<div class="contentText"><span class="textCommand">/tickingarea preload 0 0 0 false</span> - tắt ưu tiên Load Chunk của tất cả tickingarea chứa Chunk (0,0;15,15) vì 0 0 0 thuộc Chunk đó</div>
+				</div>
+			</div>
+			<div>
 				<div class="contentText dropdown">/tickingarea remove &lt;name: string&gt;</div>
 				<div class="dropdownTab dropdownHide">
 					<div class="contentText"><span class="textSyntax">remove</span> là bỏ</div>
-					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id của tickingarea</div>
+					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id của tickingarea đã tạo</div>
+					<div class="contentText"><span class="textCommand">/tickingarea remove test</span> - bỏ test</div>
 				</div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/tickingarea remove &lt;position: x y z&gt;</div>
 				<div class="dropdownTab dropdownHide">
 					<div class="contentText"><span class="textSyntax">remove</span> là bỏ</div>
-					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ tickingarea được sử dụng</div>
-					<div class="contentText"><span class="textCommand">/tickingarea remove 0 0 0</span> — bỏ tất cả tickingarea chứa Chunk (0,0;15,15) vì 0 0 0 thuộc Chunk đó</div>
+					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ tickingarea đã tạo</div>
+					<div class="contentText"><span class="textCommand">/tickingarea remove 0 0 0</span> - bỏ tất cả tickingarea chứa Chunk (0,0;15,15) vì 0 0 0 thuộc Chunk đó</div>
 				</div>
 			</div>
 			<div>

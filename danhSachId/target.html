@@ -5,13 +5,13 @@
 	<link rel="stylesheet" href="../assets/css/defaults.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Title -->
-	<title>Target | MCBE Command Wiki VN by Hg</title>
-	<meta property="og:title" content="Target | MCBE Command Wiki VN by Hg">
-	<meta name="twitter:title" content="Target | MCBE Command Wiki VN by Hg">
+	<title>Danh sách Target | MCBE Command Wiki VN by Hg</title>
+	<meta property="og:title" content="Danh sách Target | MCBE Command Wiki VN by Hg">
+	<meta name="twitter:title" content="Danh sách Target | MCBE Command Wiki VN by Hg">
 	<!-- Description -->
-	<meta name="description" content="Xác định mục tiêu">
-	<meta property="og:description" content="Xác định mục tiêu">
-	<meta name="twitter:description" content="Xác định mục tiêu">
+	<meta name="description" content="Danh sách Target">
+	<meta property="og:description" content="Danh sách Target">
+	<meta name="twitter:description" content="Danh sách Target">
 	<!-- Image -->
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/target.png">
 	<meta name="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/target.png">
@@ -32,100 +32,147 @@
 	<header id="header"></header>
 	<div id="sidebar"></div>
 	<div class="content">
-		<div class="contentHeader">Target</div>
 		<div class="contentBox">
 			<div class="contentGroup">
-				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">Danh sách Target</div>
 			</div>
-			<div class="contentText">Xác định mục tiêu</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">@p</span>: chọn Player gần đối tượng sử dụng Command nhất</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @p</span> — ghi trong chat thì Player đang ở chế độ sinh tồn dùng Command đó bị Kill vì là người gần nhất</div>
+							<div class="contentText"><span class="textCommand">/kill @p</span> — ghi trong Command Block thì Player đứng gần Command Block nhất bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Chỉ chọn Player còn sống</div>
+							<div class="contentText">Nếu có nhiều Player trong cùng khoảng cách thì sẽ chọn Player mới vào Map (Ví dụ A vào Map trước B, A và B trong cùng khoảng cách thì B sẽ được chọn)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">@r</span>: chọn ngẫu nhiên một Entity</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @r</span> — 1 Player ngẫu nhiên bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @r[type=cow]</span> — 1 Cow ngẫu nhiên bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Chỉ chọn Player còn sống</div>
+							<div class="contentText">Nếu không có bộ lọc <span class="textSyntax">type</span> thì mặc định chọn của <span class="textSyntax">@r</span> là Player</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">@a</span>: chọn tất cả Player</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a</span> — All Player bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Chọn cả Player còn sống và chết</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">@e</span>: chọn tất cả Entity</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @e</span> — All Entity bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Chỉ chọn Entity còn sống</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">@s</span>: chọn bản thân đối tượng sử dụng</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @s</span> — bản thân đối tượng sử dụng bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Chọn cả Entity còn sống và chết</div>
+							<div class="contentText"><span class="textCommand">/kill @s</span> — ghi trong Command Block thì sẽ không có gì xảy ra vì Command Block không phải là 1 Entity (trừ Minecart with Command Block)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">@initiator</span>: chọn Player ấn nút trong bảng NPC</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText dropdown dropdownActive">Lưu ý</div>
+					<div class="dropdownTab dropdownHide dropdownShow">
+						<div class="contentText">Chỉ hoạt động trong nút bấm chạy Command của bảng NPC</div>
+						<div class="contentText">Video giải thích <a class="textLink" href="https://youtu.be/a6_tm01j778" target="_blank">Xem tại đây</a></div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="contentBox">
 			<div class="contentGroup">
-				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">Danh sách bộ lọc Target</div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@&lt;variable&gt;</span> là mục tiêu, gồm 6 loại:</div>
+				<div class="contentText dropdown"><span class="textSyntax">[x=&lt;giá trị&gt;,y=&lt;giá trị&gt;,z=&lt;giá trị&gt;]</span>: tọa độ x y z</div>
 				<div class="dropdownTab dropdownHide">
 					<div>
-						<div class="contentText dropdown"><span class="textSyntax">@p</span>: Player gần nhất</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @p</span> — ghi trong chat thì Player dùng Command đó bị Kill vì là người gần nó nhất</div>
-									<div class="contentText"><span class="textCommand">/kill @p</span> — ghi trong Command Block thì Player đứng gần Command Block nhất bị Kill</div>
-								</div>
-							</div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a[x=1,y=1,z=1,r=0]</span> — All Player trong tọa độ 1 1 1 bị Kill</div>
 						</div>
 					</div>
 					<div>
-						<div class="contentText dropdown"><span class="textSyntax">@r</span>: ngẫu nhiên một Entity</div>
-						<div class="dropdownTab dropdownHide">
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">x, y, z phải có thêm cả r hoặc dx,dy,dz vì nếu không có r hoặc dx,dy,dz thì nó vẫn sẽ chọn toàn Map</div>
 							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @r</span> — 1 Player ngẫu nhiên bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @r[type=cow]</span> — 1 Cow ngẫu nhiên bị Kill</div>
+								<div class="contentText dropdown dropdownActive">Có thể dùng x,y,z riêng biệt</div>
+								<div class="dropdownTab dropdownHide dropdownShow">
+									<div class="contentText"><span class="textCommand">/kill @a[x=1,dx=0]</span> — All Player ở x=1, y và z bất kì bị Kill</div>
+									<div class="contentText"><span class="textCommand">/kill @a[x=1,z=1,dx=0,dz=0]</span> — All Player ở x=1, z=1 và y bất kì bị Kill</div>
 								</div>
 							</div>
 							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Mặc định <span class="textSyntax">@r</span> là Player</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">@a</span>: All Player</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a</span> — All Player bị Kill</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">@e</span>: All Entity</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @e</span> — All Entity bị Kill</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">@s</span>: bản thân đối tượng sử dụng</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @s</span> — bản thân đối tượng sử dụng bị Kill</div>
+								<div class="contentText dropdown dropdownActive">Có thể dùng ~ trong x,y,z</div>
+								<div class="dropdownTab dropdownHide dropdownShow">
+									<div class="contentText"><span class="textCommand">/kill @a[x=~1,dx=0]</span> — All Player ở vị trí đối tượng dùng Command x+1, y và z bất kì bị Kill</div>
 								</div>
 							</div>
 							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @s</span> — ghi trong Command Block thì sẽ không có gì xảy ra vì Command Block không phải là 1 Entity (trừ Minecart with Command Block)</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">@initiator</span>: Player ấn nút trong bảng NPC</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Chỉ hoạt động trong nút bấm chạy Command của bảng NPC</div>
-									<div class="contentText">Video giải thích</div>
-									<!-- <iframe class="video" src="https://www.youtube.com/embed/a6_tm01j778" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+								<div class="contentText dropdown dropdownActive">Có thể kết hợp ~ với số</div>
+								<div class="dropdownTab dropdownHide dropdownShow">
+									<div class="contentText"><span class="textCommand">/kill @a[x=~1,y=1,dx=0,dy=0]</span> — All Player ở vị trí đối tượng dùng Command x+1, y=1 và z bất kì bị Kill</div>
 								</div>
 							</div>
 						</div>
@@ -133,272 +180,344 @@
 				</div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@&lt;variable&gt;[&lt;argument&gt;=&lt;value&gt;,...]</span> là bộ lọc mục tiêu. Danh sách:</div>
+				<div class="contentText dropdown"><span class="textSyntax">[dx=&lt;giá trị&gt;,dy=&lt;giá trị&gt;,dz=&lt;giá trị&gt;]</span>: tăng hoặc giảm kích thước cho tọa độ x y z</div>
 				<div class="dropdownTab dropdownHide">
 					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[x=&lt;value&gt;,y=&lt;value&gt;,z=&lt;value&gt;]</span>: tọa độ x y z</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a[x=1,y=1,z=1,r=0]</span> — All Player trong tọa độ 1 1 1 bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">x, y, z phải có thêm cả r hoặc dx,dy,dz vì nếu không có r hoặc dx,dy,dz thì nó vẫn sẽ chọn toàn Map</div>
-									<div>
-										<div class="contentText dropdown">Có thể dùng x,y,z riêng biệt</div>
-										<div class="dropdownTab dropdownHide">
-											<div class="contentText"><span class="textCommand">/kill @a[x=1,dx=0]</span> — All Player ở x=1, y và z bất kì bị Kill</div>
-											<div class="contentText"><span class="textCommand">/kill @a[x=1,z=1,dx=0,dz=0]</span> — All Player ở x=1, z=1 và y bất kì bị Kill</div>
-										</div>
-									</div>
-									<div>
-										<div class="contentText dropdown">Có thể dùng ~ trong x,y,z</div>
-										<div class="dropdownTab dropdownHide">
-											<div class="contentText"><span class="textCommand">/kill @a[x=~1,dx=0]</span> — All Player ở vị trí đối tượng dùng Command x+1, y và z bất kì bị Kill</div>
-										</div>
-									</div>
-									<div>
-										<div class="contentText dropdown">Có thể kết hợp ~ với số</div>
-										<div class="dropdownTab dropdownHide">
-											<div class="contentText"><span class="textCommand">/kill @a[x=~1,y=1,dx=0,dy=0]</span> — All Player ở vị trí đối tượng dùng Command x+1, y=1 và z bất kì bị Kill</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a[x=1,y=1,z=1,dx=2,dy=3,dz=1]</span> — All Player trong khoảng tọa độ 1 1 1 đến 3 4 2 (1+2=3, 1+3=4, 1+1=2) bị Kill</div>
 						</div>
 					</div>
 					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[dx=&lt;value&gt;,dy=&lt;value&gt;,dz=&lt;value&gt;]</span>: tăng hoặc giảm kích thước cho tọa độ x y z</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a[x=1,y=1,z=1,dx=2,dy=3,dz=1]</span> — All Player trong khoảng tọa độ 1 1 1 đến 3 4 2 (1+2=3, 1+3=4, 1+1=2) bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">dx,dy,dz phải đi kèm với x,y,z</div>
-									<div class="contentText">&lt;value&gt; nếu không ghi dấu hoặc ghi kèm dấu + là tăng (dx=1 hoặc dx=+1), kèm dấu - là giảm (dy=-1)</div>
-								</div>
-							</div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">dx,dy,dz phải đi kèm với x,y,z</div>
+							<div class="contentText">&lt;giá trị&gt; nếu không ghi dấu hoặc ghi kèm dấu + là tăng (dx=1 hoặc dx=+1), kèm dấu - là giảm (dy=-1)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[rm=&lt;giá trị&gt;,r=&lt;giá trị&gt;]</span>: khoảng cách; trong đó rm là min, r là max</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText dropdown dropdownActive">Ví dụ</div>
+					<div class="dropdownTab dropdownHide dropdownShow">
+						<div class="contentText"><span class="textCommand">/kill @e[r=3]</span> — All Entity trong khu vực rộng 3 Block tính từ đối tượng dùng Command bị Kill</div>
+						<div class="contentText"><span class="textCommand">/kill @e[rm=3,r=5]</span> — All Entity trong khu vực từ Block thứ 3 đến thứ 5 bị Kill. Nếu đứng trong Block 1, 2 hoặc 6, 7, ... thì sẽ không bị Kill</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[rxm=&lt;giá trị&gt;,rx=&lt;giá trị&gt;]</span>: xoay dọc lên xuống; trong đó rxm là min, rx là max</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive"><span class="textSyntax">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a[rxm=0,rx=0]</span> — All Player nhìn vào góc 0 độ sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[rxm=0,rx=30]</span> — All Player nhìn trong khoảng góc 0 đến 30 độ sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[rxm=30]</span> — All Player nhìn trong khoảng góc 30 độ trở lên sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[rx=30]</span> — All Player nhìn trong khoảng góc 30 độ trở xuống sẽ bị Kill</div>
 						</div>
 					</div>
 					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[rm=&lt;value&gt;,r=&lt;value&gt;]</span>: khoảng cách; trong đó rm là min, r là max</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText dropdown">Ví dụ</div>
+						<div class="contentText dropdown dropdownActive"><span class="textSyntax">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Giới hạn của rxm -&gt; rx là 0 -&gt; 180</div>
+							<div class="imageRx"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[rym=&lt;giá trị&gt;,ry=&lt;giá trị&gt;]</span>: xoay ngang trái phải; trong đó rym là min, ry là max</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a[rym=0,ry=0]</span> — All Player nhìn vào góc 0 độ sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[rym=0,ry=30]</span> — All Player nhìn trong khoảng góc 0 đến 30 độ sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[rym=30]</span> — All Player nhìn trong khoảng góc 30 độ trở lên sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[ry=30]</span> — All Player nhìn trong khoảng góc 30 độ trở xuống sẽ bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Giới hạn của rym -&gt; ry là -179,9 -&gt; 180</div>
+							<div class="imageRy"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[lm=&lt;giá trị&gt;,l=&lt;giá trị&gt;]</span>: kinh nghiệm Level; trong đó lm là min, l là max</div>
+				<div class="dropdownTab dropdownHide">
+					<div class="contentText dropdown dropdownActive">Ví dụ</div>
+					<div class="dropdownTab dropdownHide dropdownShow">
+						<div class="contentText"><span class="textCommand">/kill @a[lm=3,l=3]</span> — All Player có Level là 3 thì bị Kill</div>
+						<div class="contentText"><span class="textCommand">/kill @a[lm=3,l=5]</span> — All Player có Level từ 3 đến 5 bị Kill</div>
+						<div class="contentText"><span class="textCommand">/kill @a[lm=3]</span> — All Player có Level là 3 trở lên thì bị Kill</div>
+						<div class="contentText"><span class="textCommand">/kill @a[l=3]</span> — All Player có Level là 3 trở xuống thì bị Kill</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị&gt;}]</span>: điểm trong Scoreboard</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a[scores={test=5}]</span> — All Player trong Scoreboard test mà có điểm là 5 thì bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Bạn có thể gộp <span class="textSyntax">[scores={&lt;id bảng 1&gt;=&lt;giá trị 1&gt;,&lt;id bảng 2&gt;=&lt;giá trị 2&gt;,...}]</span></div>
+							<div class="contentText"><span class="textCommand">/kill @a[scores={test=..5}]</span> — All Player trong Scoreboard test mà có điểm nhỏ hơn hoặc bằng 5 sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[scores={test=5..}]</span> — All Player trong Scoreboard test mà có điểm lớn hơn hoặc bằng 5 sẽ bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[scores={test=0..5}]</span> — All Player trong Scoreboard test mà có điểm từ 0 đến 5 sẽ bị Kill</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[c=&lt;giá trị&gt;]</span>: giới hạn</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a[c=3]</span> — 3 Player đứng gần đối tượng sử dụng lệnh đó bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textSyntax">c=3</span> thì là 3 Player gần nhất tính từ đối tượng sử dụng Command</div>
+							<div class="contentText"><span class="textSyntax">c=-3</span> thì là 3 Player xa nhất tính từ đối tượng sử dụng Command</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[tag=&lt;chuỗi kí tự&gt;]</span>: gán thẻ</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @a[tag=live]</span> — All Player có Tag live bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Bạn có thể gộp <span class="textSyntax">[tag=&lt;chuỗi kí tự1&gt;,tag=&lt;chuỗi kí tự2&gt;,...]</span></div>
+							<div class="contentText"><span class="textCommand">/kill @a[tag=]</span> — All Player không có bất kì 1 loại Tag nào đều bị Kill</div>
+							<div class="contentText"><span class="textCommand">/kill @a[tag=!]</span> — All Player có bất kì 1 loại Tag nào đều bị Kill</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[m=&lt;loại gamemode&gt;]</span>: chế độ chơi</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/gamemode a @a[m=survival]</span> — Player đang ở chế độ sinh tồn sẽ bị chuyển sang chế độ phiêu lưu</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText dropdown dropdownActive">Có thể ghi ngắn lại thành các chữ cái đầu hoặc số</div>
+							<div class="dropdownTab dropdownHide dropdownShow">
+								<div class="contentText">s và 0 là survival; <span class="textSyntax">[m=s]</span> hoặc <span class="textSyntax">[m=0]</span></div>
+								<div class="contentText">c và 1 là creative; <span class="textSyntax">[m=c]</span> hoặc <span class="textSyntax">[m=1]</span></div>
+								<div class="contentText">a và 2 là adventure; <span class="textSyntax">[m=s]</span> hoặc <span class="textSyntax">[m=2]</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[name=&lt;tên đối tượng&gt;]</span>: tên</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @e[name=Diamond]</span> — All Entity nào có tên là Diamond thì sẽ bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText dropdown dropdownActive">Nếu tên Entity mà có khoảng trống hoặc có kí tự đặc biệt hoặc có dùng mã màu (§) thì phải dùng <span class="textSyntax">[name="..."]</span></div>
+							<div class="dropdownTab dropdownHide dropdownShow">
+								<div class="contentText"><span class="textCommand">/kill @e[name="§bDiamond §elà nhất"]</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[type=&lt;id Entity&gt;]</span>: loại</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @e[type=cow]</span> — All Cow sẽ bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Bạn không thể gộp <span class="textSyntax">[type=&lt;entityType1&gt;,type=&lt;entityType2&gt;,...]</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[family=&lt;loại family&gt;]</span>: gia đình, tập hợp 1 nhóm</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive">Danh sách</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">Dành cho riêng từng Entity như <span class="textSyntax">armor_stand</span>, <span class="textSyntax">bat</span>, ...</div>
+							<div class="contentText"><span class="textSyntax">mob</span>: các quái/động vật</div>
+							<div class="contentText"><span class="textSyntax">monster</span>: các quái vật</div>
+							<div class="contentText"><span class="textSyntax">undead</span>: các quái vốn đã chết như Zombie, Husk, ...</div>
+							<div class="contentText"><span class="textSyntax">inanimate</span>: các thứ vô tri vô giác như Boat, TNT, ...</div>
+							<div class="contentText"><span class="textSyntax">arthropod</span>: các Mob chân đốt như Spider</div>
+							<div class="contentText"><span class="textSyntax">illager</span>: các Mob trong Raid</div>
+							<div class="contentText"><span class="textSyntax">fish</span>: các Mob là cá</div>
+							<div class="contentText">Các cái khác nhỏ lẻ nữa</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Ví dụ</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/kill @e[family=mob]</span> — All Mob như Cow, Bee, Zombie,... sẽ bị Kill</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText">family phần lớn sẽ được sử dụng trong Addon là chủ yếu</div>
+							<div class="contentText">family có thể được tạo ra thông qua Behavior của Entity</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="contentText dropdown"><span class="textSyntax">[hasitem={&lt;chỉ định 1&gt;=&lt;giá trị 1&gt;,&lt;chỉ định 2&gt;=&lt;giá trị 2&gt;,...}]</span>: vật phẩm cụ thể</div>
+				<div class="dropdownTab dropdownHide">
+					<div>
+						<div class="contentText dropdown dropdownActive"><span class="textSyntax">item</span>: id vật phẩm</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=stick}]</span> - kiểm tra tất cả Player có stick trong người</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive"><span class="textSyntax">quantity</span>: số lượng</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=wool,quantity=1}]</span> - kiểm tra tất cả Player có 1 wool trong người</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive"><span class="textSyntax">data</span>: dữ liệu vật phẩm</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=wool,data=14}]</span> - kiểm tra tất cả Player có wool màu đỏ trong người</div>
+						</div>
+					</div>
+					<div>
+						<div class="contentText dropdown dropdownActive"><span class="textSyntax">location</span>: loại ô của Entity</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText dropdown">Danh sách</div>
 							<div class="dropdownTab dropdownHide">
-								<div class="contentText"><span class="textCommand">/kill @e[r=3]</span> — All Entity trong khu vực rộng 3 Block tính từ đối tượng dùng Command bị Kill</div>
-								<div class="contentText"><span class="textCommand">/kill @e[rm=3,r=5]</span> — All Entity trong khu vực từ Block thứ 3 đến thứ 5 bị Kill. Nếu đứng trong Block 1, 2 hoặc 6, 7, ... thì sẽ không bị Kill</div>
+								<div class="table">
+									<table>
+										<tr>
+											<th>Id chữ</th>
+											<th>Giải thích</th>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.armor</td>
+											<td>Ô giáp cho ngựa và thảm cho lạc đà</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.armor.chest</td>
+											<td>Ô để giáp ngực</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.armor.feet</td>
+											<td>Ô để giáp chân</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.armor.head</td>
+											<td>Ô để giáp đầu</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.armor.legs</td>
+											<td>Ô để giáp chân</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.chest</td>
+											<td>Ô để Chest cho lừa, la và lạc đà</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.enderchest</td>
+											<td>Ô kho đồ Ender Chest</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.equippable</td>
+											<td>Chưa được hỗ trợ</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.hotbar</td>
+											<td>Ô công cụ hiện trên màn hình</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.inventory</td>
+											<td>Ô kho đồ</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.saddle</td>
+											<td>Ô để yên cưỡi</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.weapon.mainhand</td>
+											<td>Ô tay phải</td>
+										</tr>
+										<tr>
+											<td class="textSyntax">slot.weapon.offhand</td>
+											<td>Ô tay trái</td>
+										</tr>
+									</table>
+								</div>
 							</div>
+							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={location=slot.hotbar,item=wool}]</span> - kiểm tra tất cả Player có wool trong thanh Hotbar</div>
 						</div>
 					</div>
 					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[rxm=&lt;value&gt;,rx=&lt;value&gt;]</span>: xoay dọc lên xuống; trong đó rxm là min, rx là max</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown"><span class="textSyntax">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a[rxm=0,rx=0]</span> — All Player nhìn vào góc 0 độ sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[rxm=0,rx=30]</span> — All Player nhìn trong khoảng góc 0 đến 30 độ sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[rxm=30]</span> — All Player nhìn trong khoảng góc 30 độ trở lên sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[rx=30]</span> — All Player nhìn trong khoảng góc 30 độ trở xuống sẽ bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown"><span class="textSyntax">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Giới hạn của rxm -&gt; rx là 0 -&gt; 180</div>
-									<div class="imageRx"></div>
-								</div>
-							</div>
+						<div class="contentText dropdown dropdownActive"><span class="textSyntax">slot</span>: vị trí ô</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=0,item=wool}]</span> - kiểm tra tất cả Player có wool trong thanh Hotbar ở ô đầu tiên</div>
 						</div>
 					</div>
 					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[rym=&lt;value&gt;,ry=&lt;value&gt;]</span>: xoay ngang trái phải; trong đó rym là min, ry là max</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a[rym=0,ry=0]</span> — All Player nhìn vào góc 0 độ sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[rym=0,ry=30]</span> — All Player nhìn trong khoảng góc 0 đến 30 độ sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[rym=30]</span> — All Player nhìn trong khoảng góc 30 độ trở lên sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[ry=30]</span> — All Player nhìn trong khoảng góc 30 độ trở xuống sẽ bị Kill</div>
-								</div>
+						<div class="contentText dropdown dropdownActive">Lưu ý</div>
+						<div class="dropdownTab dropdownHide dropdownShow">
+							<div class="contentText"><span class="textSyntax">item</span> bắt buộc phải có</div>
+							<div class="contentText"><span class="textSyntax">quantity</span> không bắt buộc phải có</div>
+							<div class="contentText"><span class="textSyntax">data</span> không bắt buộc phải có</div>
+							<div class="contentText"><span class="textSyntax">location</span> bắt buộc phải có nếu có dùng <span class="textSyntax">slot</span></div>
+							<div class="contentText"><span class="textSyntax">slot</span> không bắt buộc phải có</div>
+							<div class="contentText dropdown dropdownActive">Bạn có thể nhóm nhiều Item lại với nhau <span class="textSyntax">[hasitem=[{...},{...},...]]</span></div>
+							<div class="dropdownTab dropdownHide dropdownShow">
+								<div class="contentText"><span class="textCommand">/testfor @a[hasitem=[{item=stick},{item=wool,data=11}]]</span> - kiểm tra tất cả Player có stick và wool màu đỏ trong người</div>
 							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Giới hạn của rym -&gt; ry là -179,9 -&gt; 180</div>
-									<div class="imageRy"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[lm=&lt;value&gt;,l=&lt;value&gt;]</span>: kinh nghiệm Level; trong đó lm là min, l là max</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText dropdown">Ví dụ</div>
-							<div class="dropdownTab dropdownHide">
-								<div class="contentText"><span class="textCommand">/kill @a[lm=3,l=3]</span> — All Player có Level là 3 thì bị Kill</div>
-								<div class="contentText"><span class="textCommand">/kill @a[lm=3,l=5]</span> — All Player có Level từ 3 đến 5 bị Kill</div>
-								<div class="contentText"><span class="textCommand">/kill @a[lm=3]</span> — All Player có Level là 3 trở lên thì bị Kill</div>
-								<div class="contentText"><span class="textCommand">/kill @a[l=3]</span> — All Player có Level là 3 trở xuống thì bị Kill</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[scores={&lt;objective&gt;=&lt;value&gt;}]</span>: điểm trong Scoreboard</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a[scores={test=5}]</span> — All Player trong Scoreboard test mà có điểm là 5 thì bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Bạn có thể gộp <span class="textSyntax">[scores={&lt;objective1&gt;=&lt;value1&gt;,&lt;objective2&gt;=&lt;value2&gt;,...}]</span></div>
-									<div class="contentText"><span class="textCommand">/kill @a[scores={test=..5}]</span> — All Player trong Scoreboard test mà có điểm nhỏ hơn hoặc bằng 5 sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[scores={test=5..}]</span> — All Player trong Scoreboard test mà có điểm lớn hơn hoặc bằng 5 sẽ bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[scores={test=0..5}]</span> — All Player trong Scoreboard test mà có điểm từ 0 đến 5 sẽ bị Kill</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[c=&lt;value&gt;]</span>: giới hạn</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a[c=3]</span> — 3 Player đứng gần đối tượng sử dụng lệnh đó bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textSyntax">c=3</span> thì là 3 Player gần nhất tính từ đối tượng sử dụng Command</div>
-									<div class="contentText"><span class="textSyntax">c=-3</span> thì là 3 Player xa nhất tính từ đối tượng sử dụng Command</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[tag=&lt;string&gt;]</span>: gán thẻ</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @a[tag=live]</span> — All Player có Tag live bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Bạn có thể gộp <span class="textSyntax">[tag=&lt;string1&gt;,tag=&lt;string2&gt;,...]</span></div>
-									<div class="contentText"><span class="textCommand">/kill @a[tag=]</span> — All Player không có bất kì 1 loại Tag nào đều bị Kill</div>
-									<div class="contentText"><span class="textCommand">/kill @a[tag=!]</span> — All Player có bất kì 1 loại Tag nào đều bị Kill</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[m=&lt;gamemodeName&gt;]</span>: chế độ chơi</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/gamemode a @a[m=survival]</span> — Player đang ở chế độ sinh tồn sẽ bị chuyển sang chế độ phiêu lưu</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText dropdown">Có thể ghi ngắn lại thành các chữ cái đầu hoặc số</div>
-									<div class="dropdownTab dropdownHide">
-										<div class="contentText">s và 0 là survival; <span class="textSyntax">[m=s]</span> hoặc <span class="textSyntax">[m=0]</span></div>
-										<div class="contentText">c và 1 là creative; <span class="textSyntax">[m=c]</span> hoặc <span class="textSyntax">[m=1]</span></div>
-										<div class="contentText">a và 2 là adventure; <span class="textSyntax">[m=s]</span> hoặc <span class="textSyntax">[m=2]</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[name=&lt;givenName&gt;]</span>: tên</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @e[name=Diamond]</span> — All Entity nào có tên là Diamond thì sẽ bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText dropdown">Nếu tên Entity mà có khoảng trống hoặc có kí tự đặc biệt hoặc có dùng mã màu (§) thì phải dùng <span class="textSyntax">[name="..."]</span></div>
-									<div class="dropdownTab dropdownHide">
-										<div class="contentText"><span class="textCommand">/kill @e[name="§bDiamond §elà nhất"]</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[type=&lt;entityType&gt;]</span>: loại</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @e[type=cow]</span> — All Cow sẽ bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Bạn không thể gộp <span class="textSyntax">[type=&lt;entityType1&gt;,type=&lt;entityType2&gt;,...]</span></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[family=&lt;family&gt;]</span>: gia đình, tập hợp 1 nhóm</div>
-						<div class="dropdownTab dropdownHide">
-							<div>
-								<div class="contentText dropdown">Danh sách</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">Dành cho riêng từng Entity như <span class="textSyntax">armor_stand</span>, <span class="textSyntax">bat</span>, ...</div>
-									<div class="contentText"><span class="textSyntax">mob</span>: các quái/động vật</div>
-									<div class="contentText"><span class="textSyntax">monster</span>: các quái vật</div>
-									<div class="contentText"><span class="textSyntax">undead</span>: các quái vốn đã chết như Zombie, Husk, ...</div>
-									<div class="contentText"><span class="textSyntax">inanimate</span>: các thứ vô tri vô giác như Boat, TNT, ...</div>
-									<div class="contentText"><span class="textSyntax">arthropod</span>: các Mob chân đốt như Spider</div>
-									<div class="contentText"><span class="textSyntax">illager</span>: các Mob trong Raid</div>
-									<div class="contentText"><span class="textSyntax">fish</span>: các Mob là cá</div>
-									<div class="contentText">Các cái khác nhỏ lẻ nữa</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Ví dụ</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/kill @e[family=mob]</span> — All Mob như Cow, Bee, Zombie,... sẽ bị Kill</div>
-								</div>
-							</div>
-							<div>
-								<div class="contentText dropdown">Lưu ý</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText">family phần lớn sẽ được sử dụng trong Addon là chủ yếu</div>
-									<div class="contentText">family có thể được tạo ra thông qua Behavior của Entity</div>
-								</div>
-							</div>
+							<div class="contentText">Lời khuyên: nên sử dụng theo trình tự như dùng <a class="textLink" href="../commands/replaceitem.html">/replaceitem</a> để dễ nhớ. <span class="textSyntax">[hasitem={location, slot, item, quantity, data}]</span></div>
 						</div>
 					</div>
 				</div>
@@ -410,7 +529,7 @@
 				<div class="contentTitle">Lưu ý</div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">&lt;argument&gt;</span> có thể ghép lại với nhau</div>
+				<div class="contentText dropdown">Có thể ghép các bộ lọc lại với nhau</div>
 				<div class="dropdownTab dropdownHide">
 					<div class="contentText"><span class="textCommand">/kill @e[type=item,name=diamond]</span></div>
 				</div>
