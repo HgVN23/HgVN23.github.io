@@ -501,6 +501,10 @@ header {
 .ads {
 	display: block;
 }
+.explainButton {
+	align-items: center;
+	display: flex;
+}
 /*==================================================*/
 /*Icon*/
 .iconInfo {
@@ -553,7 +557,6 @@ header {
 }
 .goTop {
 	bottom: 3%;
-	content: url(../media/icon/icon_go_top.png);
 	height: 50px;
 	position: fixed;
 	right: 2%;
@@ -564,6 +567,14 @@ header {
 }
 .goTop:active {
 	outline: 2px solid yellow;
+}
+.goTopIcon {
+	content: url(../media/icon/icon_go_top.png);
+}
+.explainButtonIcon {
+	height: 32px;
+	margin: 0 5px 0 0;
+	width: 32px;
 }
 /*==================================================*/
 /*Image*/
@@ -718,7 +729,7 @@ footer {
 		font-size: 18px;
 		order: 2;
 	}
-	header .sidebarIcon {
+	.sidebarIcon {
 		margin-left: auto;
 		order: 3;
 	}
@@ -729,7 +740,7 @@ footer {
 		justify-content: center;
 		order: 4;
 	}
-	header .themeIcon {
+	.themeIcon {
 		order: 5;
 	}
 	.sidebar {
@@ -758,6 +769,11 @@ footer {
 	}
 	.ads {
 		display: none;
+	}
+	.explainButtonIcon {
+		height: 24px;
+		margin: 0 4px 0 0;
+		width: 24px;
 	}
 	.image404 {
 		height: 80%;
