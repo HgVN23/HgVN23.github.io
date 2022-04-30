@@ -39,15 +39,37 @@
 				<div class="contentTitle">!</div>
 			</div>
 			<div class="contentText">Dùng để loại trừ trong Target</div>
-			<div class="contentText"><span class="textCommand">/kill @e[type=!player]</span> — All Entity bị kill ngoại trừ Player</div>
+			<div class="contentText"><span class="textCommand">/testfor @e[type=!player]</span> - kiểm tra tất cả Entity ngoại trừ Player</div>
 			<div class="contentText dropdown">Dùng được trong:</div>
 			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textSyntax">[scores={&lt;objective&gt;=!&lt;value&gt;}]</span></div>
-				<div class="contentText"><span class="textSyntax">[tag=!&lt;string&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[m=!&lt;gamemodeName&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[name=!&lt;givenName&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[type=!&lt;entityType&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[family=!&lt;family&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=!&lt;giá trị&gt;}]</span></div>
+				<div class="contentText"><span class="textSyntax">[tag=!&lt;chuổi kí tự&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[m=!&lt;loại gamemode&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[name=!&lt;tên đối tượng&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[type=!&lt;id Entity&gt;]</span></div>
+				<div class="contentText"><span class="textSyntax">[family=!&lt;loại family&gt;]</span></div>
+			</div>
+		</div>
+		<div class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<div class="contentTitle">..</div>
+			</div>
+			<div class="contentText">Dùng để xét đoạn giá trị số trong Target</div>
+			<div class="contentText"><span class="textCommand">/testfor @a[scores={test=5..}]</span> - kiểm tra tất cả Player có điểm bằng 5 hoặc nhiều hơn 5 trong scoreboard test</div>
+			<div class="contentText"><span class="textCommand">/testfor @a[scores={test=..5}]</span> - kiểm tra tất cả Player có điểm bằng 5 hoặc ít hơn 5 trong scoreboard test</div>
+			<div class="contentText"><span class="textCommand">/testfor @a[scores={test=1..5}]</span> - kiểm tra tất cả Player có điểm từ 1 đến 5 trong scoreboard test</div>
+			<div class="contentText dropdown">Dùng được trong:</div>
+			<div class="dropdownTab dropdownHide">
+				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị&gt;..}]</span></div>
+				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=..&lt;giá trị&gt;}]</span></div>
+				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</span></div>
+				<div class="contentText"><span class="textSyntax">[hasitem={quantity=&lt;giá trị&gt;..}]</span></div>
+				<div class="contentText"><span class="textSyntax">[hasitem={quantity=..&lt;giá trị&gt;}]</span></div>
+				<div class="contentText"><span class="textSyntax">[hasitem={quantity=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</span></div>
+				<div class="contentText"><span class="textSyntax">[hasitem={slot=&lt;giá trị&gt;..}]</span></div>
+				<div class="contentText"><span class="textSyntax">[hasitem={slot=..&lt;giá trị&gt;}]</span></div>
+				<div class="contentText"><span class="textSyntax">[hasitem={slot=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</span></div>
 			</div>
 		</div>
 		<div class="contentBox">
@@ -56,18 +78,18 @@
 				<div class="contentTitle">~</div>
 			</div>
 			<div class="contentText">Tính từ nơi đối tượng dùng Command</div>
-			<div class="contentText"><span class="textCommand">/setblock ~ ~-1 ~ dirt</span> — dirt sẽ được setblock ngay phía dưới</div>
+			<div class="contentText"><span class="textCommand">/setblock ~ ~-1 ~ dirt</span> - dirt sẽ được setblock ngay phía dưới</div>
 			<div class="contentText">Các Command có x y z đều có thể dùng ~</div>
 			<div>
 				<div class="contentText dropdown">Không nhất thiết phải dùng 3 ~</div>
 				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/setblock ~ 1 ~ dirt</span> — dirt sẽ được setblock ở tầng y=1 tại vị trí dùng Command</div>
+					<div class="contentText"><span class="textCommand">/setblock ~ 1 ~ dirt</span> - dirt sẽ được setblock ở tầng y=1 tại vị trí dùng Command</div>
 				</div>
 			</div>
 			<div>
 				<div class="contentText dropdown">~ và ^ không thể sử dụng cùng lúc trong x y z</div>
 				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> — Command bị lỗi</div>
+					<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> - Command bị lỗi</div>
 				</div>
 			</div>
 		</div>
@@ -77,12 +99,12 @@
 				<div class="contentTitle">^</div>
 			</div>
 			<div class="contentText">Tính từ hướng nhìn của đối tượng dùng Command</div>
-			<div class="contentText"><span class="textCommand">/setblock ^ ^ ^1 dirt</span> — dirt sẽ được setblock ngay phía trước theo hướng nhìn</div>
+			<div class="contentText"><span class="textCommand">/setblock ^ ^ ^1 dirt</span> - dirt sẽ được setblock ngay phía trước theo hướng nhìn</div>
 			<div class="contentText">Các Command có x y z đều có thể dùng ^</div>
 			<div class="contentText">Bắt buộc phải dùng cả 3 ^</div>
 			<div class="contentText dropdown">~ và ^ không thể sử dụng cùng lúc trong x y z</div>
 			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> — Command bị lỗi</div>
+				<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> - Command bị lỗi</div>
 			</div>
 		</div>
 		<div class="contentBox">
