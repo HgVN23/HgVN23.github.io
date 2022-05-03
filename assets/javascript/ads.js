@@ -1,4 +1,4 @@
-let ads = `
+const ads = `
 	<div class="contentGroup">
 		<div class="contentIcon iconAds"></div>
 		<div class="contentTitle">Ads</div>
@@ -12,7 +12,7 @@ let ads = `
 `;
 
 // Ads
-let adsCreate = document.createElement('div');
+const adsCreate = document.createElement('div');
 adsCreate.classList.add('contentBox', 'ads');
 adsCreate.innerHTML = ads;
 document.querySelector(".content").appendChild(adsCreate);

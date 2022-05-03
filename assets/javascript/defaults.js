@@ -2,8 +2,10 @@ function defaults() {
 	// ======================================================================
 	// Script
 	for (let script of scriptList) {
-		let scriptCreate = document.createElement('script');
+		var scriptCreate = document.createElement('script');
 		scriptCreate.src = `https://hgvn23.github.io/assets/javascript/${script}.js`;
+		// scriptCreate.src = `../assets/javascript/${script}.js`;
+		// scriptCreate.src = `assets/javascript/${script}.js`;
 		document.getElementById("script").appendChild(scriptCreate);
 	};
 	// ======================================================================
@@ -17,22 +19,28 @@ function defaults() {
 	document.getElementById("footer").innerHTML = footer;
 	document.querySelector(".year").innerHTML = new Date().getFullYear();
 	// ======================================================================
+	// Cursor
+	var cursorCreate = document.createElement('div');
+	cursorCreate.classList.add('cursor');
+	document.querySelector("body").appendChild(cursorCreate);
+	// ======================================================================
 	// Go top
-	let goTopCreate = document.createElement('a');
+	var goTopCreate = document.createElement('a');
 	goTopCreate.classList.add('goTop', 'goTopIcon');
 	goTopCreate.href = "#";
 	document.querySelector("body").appendChild(goTopCreate);
 	// ======================================================================
 }
-let scriptList = [
+const scriptList = [
 	"sidebar",
 	"filter",
 	"search",
 	"dropdown",
 	"theme",
+	"cursor",
 	"ads"
 ];
-let header = `
+const header = `
 	<div class="sidebarIcon sidebarIconClose" onclick="sidebarOpen()"></div>
 	<div class="sidebarIcon sidebarIconOpen sidebarIconHide" onclick="sidebarClose()"></div>
 	<a class="logoWiki" href="https://hgvn23.github.io"></a>
@@ -47,7 +55,7 @@ let header = `
 		<div class="searchBox searchBoxHide"></div>
 	</div>
 `;
-let sidebar = `
+const sidebar = `
 	<div class="sidebar sidebarClose">
 		<div class="sidebarTitle">Mục lục</div>
 		<div class="sidebarLine"></div>
@@ -171,7 +179,7 @@ let sidebar = `
 	</div>
 	<div class="sidebarBlur sidebarClose" onclick="sidebarClose()"></div>
 `;
-let footer = `
+const footer = `
 	<div>
 		<a class="socialLogo logoYoutube" href="https://youtube.com/c/HgVN23?sub_confirmation=1" target="_blank"></a>
 		<a class="socialLogo logoDiscord" href="https://discord.gg/4N3zuWn" target="_blank"></a>
