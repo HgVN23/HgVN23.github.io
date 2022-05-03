@@ -1,7 +1,7 @@
-let uuidList = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f" ];
+const uuidList = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f" ];
 
 function generator() {
-	let uuid = "";
+	var uuid = "";
 	for (let i = 0; i < 32; i++) {
 		if (i == 8 || i == 12 || i == 16 || i == 20)
 			uuid += "-";

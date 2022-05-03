@@ -1,5 +1,5 @@
 function copy() {
-	let copyText = document.getElementById("copyThis").innerHTML;
+	var copyText = document.getElementById("copyThis").innerHTML;
 	navigator.clipboard.writeText(copyText);
 
 	document.getElementById("copy").innerHTML = "Đã sao chép";

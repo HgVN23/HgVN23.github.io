@@ -1,4 +1,4 @@
-let filter = [
+const filter = [
 	"Trang chủ",
 
 	"?",
@@ -101,7 +101,7 @@ let filter = [
 	"color"
 ];
 
-let commands = [
+const commands = [
 	"?",
 	"ability",
 	"alwaysday",
@@ -178,7 +178,7 @@ let commands = [
 	"xp"
 ];
 
-let danhSachId = [
+const danhSachId = [
 	"animationId",
 	"blockStateId",
 	"componentId",
@@ -196,13 +196,13 @@ let danhSachId = [
 	"trackId"
 ];
 
-let thongTinLienQuan = [
+const thongTinLienQuan = [
 	"toanTuKiTu",
 	"cauTrucCommand",
 	"commandBlock"
 ];
 
-let webTool = [
+const webTool = [
 	"uuidV4Generator",
 	"glyph",
 	"color"

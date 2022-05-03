@@ -10,6 +10,7 @@
 	--border-light: #d7d7d7;
 	--bg-light: #f3f3f3;
 	--hover-color: #1d4ed8;
+	cursor: none;
 	font-family: sans-serif;
 	scroll-behavior: smooth;
 	user-select: none;
@@ -29,8 +30,55 @@
 li::-webkit-scrollbar {
 	height: 10px;
 }
+/*Custom Cursor*/
+.cursor {
+	content: url(../media/cursor/default.png);
+	height: 40px;
+	pointer-events: none;
+	position: fixed;
+	/*transform: rotateZ(-45deg);*/
+	width: 40px;
+	z-index: 100;
+}
+.cursorTyping {
+	content: url(../media/cursor/typing.png);
+	height: 30px;
+	width: 40px;
+}
+.cursorCopy {
+	content: url(../media/cursor/copy.png);
+	height: 30px;
+	width: 30px;
+}
+.cursorWip {
+	content: url(../media/icon/icon_luu_y.png);
+	height: 30px;
+	width: 30px;
+}
+.cursorExpand {
+	content: url(../media/cursor/expand.png);
+	height: 30px;
+	width: 40px;
+}
+.cursorCollapse {
+	content: url(../media/cursor/collapse.png);
+	height: 30px;
+	width: 40px;
+}
+.cursorZoom {
+	content: url(../media/cursor/zoom.png);
+	height: 30px;
+	width: 30px;
+}
+.cursorClick {
+	content: url(../media/cursor/click.png);
+	height: 40px;
+	transform: rotateZ(-45deg);
+	width: 30px;
+}
 * {
 	color: white;
+	cursor: none;
 }
 body {
 	background-color: #262626;
@@ -60,7 +108,6 @@ iframe {
 button {
 	background-color: transparent;
 	border: var(--border);
-	cursor: pointer;
 	font-size: 20px;
 	margin: 20px;
 }
@@ -75,7 +122,6 @@ button:active {
 	justify-content: center;
 }
 .result {
-	cursor: text;
 	font-size: 30px;
 	text-align: center;
 	user-select: text;
@@ -228,7 +274,6 @@ header {
 	z-index: 3;
 }
 .sidebarIcon {
-	cursor: pointer;
 	height: 45px;
 	margin: 5px;
 	width: 45px;
@@ -259,14 +304,12 @@ header {
 	content: url(../media/logo/logo_wiki_hover.png);
 }
 .headerTitle {
-	cursor: pointer;
 	margin-top: 3px;
 	font-family: minecraft;
 	font-size: 30px;
 	text-decoration: none;
 }
 .themeIcon {
-	cursor: pointer;
 	height: 45px;
 	margin: 5px;
 	width: 45px;
@@ -296,7 +339,6 @@ header {
 }
 .searchIcon {
 	content: url(../media/header/search_icon.png);
-	cursor: pointer;
 	height: 16px;
 	margin: 5px;
 	width: 16px;
@@ -316,7 +358,6 @@ header {
 	background-color: var(--bg);
 	border: var(--border);
 	border-top: none;
-	cursor: pointer;
 	overflow-y: auto;
 }
 .searchBoxHide {
@@ -385,14 +426,13 @@ header {
 }
 /*==================================================*/
 /*Dropdown*/
-.dropdown {
-	cursor: cell;
+.contentBox .dropdown {
+	width: fit-content;
 }
 .dropdown::before {
 	color: #ff2626;
 }
 .dropdownActive {
-	cursor: not-allowed;
 }
 .dropdownActive::before {
 	color: lime;
@@ -426,17 +466,14 @@ header {
 }
 .textCommand {
 	color: #c67d4e;
-	cursor: text;
 	user-select: text;
 }
 .textSyntax {
 	color: #00e9ed;
-	cursor: text;
 	user-select: text;
 }
 .textNote {
 	color: #ff2626 !important;
-	cursor: zoom-in;
 	font-style: italic;
 }
 .textNote::before {
