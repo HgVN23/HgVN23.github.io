@@ -539,6 +539,9 @@ header {
 	display: inline-block;
 	margin-right: 3px;
 }
+.ads {
+	display: block;
+}
 .explainButton {
 	align-items: center;
 	display: flex;
@@ -736,10 +739,6 @@ footer {
 	margin-left: 3px;
 	margin-right: 3px;
 }
-.adBlock {
-	height: 300px;
-	width: auto;
-}
 /*==================================================*/
 /*Mobile*/
 @media (max-width: 767px) {
@@ -811,6 +810,9 @@ footer {
 		font-size: 12px;
 		margin: 5px;
 		margin-left: 10px;
+	}
+	.ads {
+		display: none;
 	}
 	.explainButtonIcon {
 		height: 24px;
@@ -886,10 +888,6 @@ footer {
 	}
 	.copyright1 {
 		order: 3;
-	}
-	.adBlock {
-		height: 100px;
-		width: 300px;
 	}
 }
 /*==================================================*/
