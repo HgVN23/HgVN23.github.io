@@ -539,9 +539,6 @@ header {
 	display: inline-block;
 	margin-right: 3px;
 }
-.ads {
-	display: block;
-}
 .explainButton {
 	align-items: center;
 	display: flex;
@@ -811,9 +808,6 @@ footer {
 		margin: 5px;
 		margin-left: 10px;
 	}
-	.ads {
-		display: none;
-	}
 	.explainButtonIcon {
 		height: 24px;
 		margin: 0 4px 0 0;
@@ -891,3 +885,19 @@ footer {
 	}
 }
 /*==================================================*/
+.adBlock {
+	width: 300px;
+	height: 100px; 
+}
+@media (min-width:500px) { 
+	.adBlock {
+		width: 468px;
+		height: 60px;
+	}
+}
+@media (min-width:800px) { 
+	.adBlock {
+		width: 728px;
+		height: 90px;
+	}
+}

@@ -4,11 +4,11 @@ const ads = `
 		<div class="contentTitle">Ads</div>
 	</div>
 	<!-- Ads 1 -->
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="6618344666" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<ins class="adsbygoogle adBlock" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="6618344666"></ins>
 	<!-- Ads 2 -->
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="1982672065" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<ins class="adsbygoogle adBlock" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="1982672065"></ins>
 	<!-- Ads 3 -->
-	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="7686386895" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<ins class="adsbygoogle adBlock" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="7686386895"></ins>
 `;
 
 // Ads
