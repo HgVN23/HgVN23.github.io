@@ -17,5 +17,9 @@ adsCreate.classList.add('contentBox', 'ads');
 adsCreate.innerHTML = ads;
 document.querySelector(".content").appendChild(adsCreate);
 
-for (var i = 0; i < 3; i++)
-	(adsbygoogle = window.adsbygoogle || []).push({});
+window.onload = showAds();
+
+function showAds() {
+	for (var i = 0; i < 3; i++)
+		(adsbygoogle = window.adsbygoogle || []).push({});
+}
