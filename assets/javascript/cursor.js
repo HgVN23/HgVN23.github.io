@@ -24,12 +24,12 @@ document.addEventListener('mousemove', (e) => {
 	var x = e.clientX;
 	var y = e.clientY;
 	
-	cursor.style.display = "block";
 	cursor.style.left = `${x}px`;
 	cursor.style.top = `${y}px`;
+	cursor.classList.remove("cursorOut");
 });
 document.addEventListener('mouseout', () => {
-	cursor.style.display = "none";
+	cursor.classList.add("cursorOut");
 });
 
 cursorLogoWiki.addEventListener('mouseenter', addClick)

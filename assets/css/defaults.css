@@ -33,12 +33,16 @@ li::-webkit-scrollbar {
 /*Custom Cursor*/
 .cursor {
 	content: url(../media/cursor/default.png);
+	display: block;
 	height: 40px;
 	pointer-events: none;
 	position: fixed;
 	/*transform: rotateZ(-45deg);*/
 	width: 40px;
 	z-index: 100;
+}
+.cursorOut {
+	display: none;
 }
 .cursorTyping {
 	content: url(../media/cursor/typing.png);
@@ -738,6 +742,9 @@ footer {
 /*==================================================*/
 /*Mobile*/
 @media (max-width: 767px) {
+	.cursor {
+		display: none;
+	}
 	.themeLight .sidebar {
 		border-left-color: var(--border-light);
 	}
