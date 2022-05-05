@@ -1,17 +1,26 @@
+const themeIcon = document.querySelector(".themeIcon");
+themeIcon.addEventListener("click", themeLight);
+
+const themeAll = document.querySelector(".themeDark")
+
 function themeLight() {
 	localStorage.setItem("theme", 1);
-	document.querySelector(".themeIconDark").classList.add("themeHide");
-	document.querySelector(".themeIconLight").classList.remove("themeHide");
-	document.querySelector(".themeDark").classList.add("themeLight");
-	document.querySelector(".themeLight").classList.remove("themeDark");
+	themeIcon.addEventListener("click", themeDark);
+	themeIcon.removeEventListener("click", themeLight);
+	themeIcon.classList.add("themeIconLight");
+	themeIcon.classList.remove("themeIconDark");
+	themeAll.classList.add("themeLight");
+	themeAll.classList.remove("themeDark");
 }
 
 function themeDark() {
 	localStorage.removeItem("theme");
-	document.querySelector(".themeIconLight").classList.add("themeHide");
-	document.querySelector(".themeIconDark").classList.remove("themeHide");
-	document.querySelector(".themeLight").classList.add("themeDark");
-	document.querySelector(".themeDark").classList.remove("themeLight");
+	themeIcon.addEventListener("click", themeLight);
+	themeIcon.removeEventListener("click", themeDark);
+	themeIcon.classList.add("themeIconDark");
+	themeIcon.classList.remove("themeIconLight");
+	themeAll.classList.add("themeDark");
+	themeAll.classList.remove("themeLight");
 }
 
 if (localStorage.theme == 1) {

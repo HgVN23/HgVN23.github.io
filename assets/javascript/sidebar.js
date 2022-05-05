@@ -1,13 +1,23 @@
+const sidebarIcon = document.querySelector(".sidebarIcon");
+sidebarIcon.addEventListener("click", sidebarOpen);
+
+const sidebarAll = document.querySelector(".sidebar");
+const sidebarBlur = document.querySelector(".sidebarBlur");
+
 function sidebarOpen() {
-	document.querySelector(".sidebarIconClose").classList.add("sidebarIconHide");
-	document.querySelector(".sidebarIconOpen").classList.remove("sidebarIconHide");
-	document.querySelector(".sidebar").classList.remove("sidebarClose");
-	document.querySelector(".sidebarBlur").classList.remove("sidebarClose");
+	sidebarIcon.addEventListener("click", sidebarClose);
+	sidebarIcon.removeEventListener("click", sidebarOpen);
+	sidebarIcon.classList.add("sidebarIconOpen");	
+	sidebarIcon.classList.remove("sidebarIconClose");
+	sidebarAll.classList.remove("sidebarClose");
+	sidebarBlur.classList.remove("sidebarClose");
 }
 
 function sidebarClose() {
-	document.querySelector(".sidebarIconClose").classList.remove("sidebarIconHide");
-	document.querySelector(".sidebarIconOpen").classList.add("sidebarIconHide");
-	document.querySelector(".sidebar").classList.add("sidebarClose");
-	document.querySelector(".sidebarBlur").classList.add("sidebarClose");
+	sidebarIcon.addEventListener("click", sidebarOpen);
+	sidebarIcon.removeEventListener("click", sidebarClose);
+	sidebarIcon.classList.add("sidebarIconClose");	
+	sidebarIcon.classList.remove("sidebarIconOpen");
+	sidebarAll.classList.add("sidebarClose");
+	sidebarBlur.classList.add("sidebarClose");
 }

@@ -41,12 +41,10 @@ const scriptList = [
 	"ads"
 ];
 const header = `
-	<div class="sidebarIcon sidebarIconClose" onclick="sidebarOpen()"></div>
-	<div class="sidebarIcon sidebarIconOpen sidebarIconHide" onclick="sidebarClose()"></div>
+	<div class="sidebarIcon sidebarIconClose"></div>
 	<a class="logoWiki" href="https://hgvn23.github.io"></a>
 	<a class="headerTitle" href="https://hgvn23.github.io">MCBE Command Wiki</a>
-	<div class="themeIcon themeIconDark" onclick="themeLight()"></div>
-	<div class="themeIcon themeIconLight themeHide" onclick="themeDark()"></div>
+	<div class="themeIcon themeIconDark"></div>
 	<div class="search">
 		<div class="searchBar">
 			<div class="searchIcon" onclick="searchEnter()"></div>

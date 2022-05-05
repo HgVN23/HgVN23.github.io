@@ -30,56 +30,6 @@
 li::-webkit-scrollbar {
 	height: 10px;
 }
-/*Custom Cursor*/
-.cursor {
-	content: url(../media/cursor/default.png);
-	display: block;
-	height: 40px;
-	pointer-events: none;
-	position: fixed;
-	/*transform: rotateZ(-45deg);*/
-	width: 40px;
-	z-index: 100;
-}
-.cursorOut {
-	display: none;
-}
-.cursorTyping {
-	content: url(../media/cursor/typing.png);
-	height: 30px;
-	width: 40px;
-}
-.cursorCopy {
-	content: url(../media/cursor/copy.png);
-	height: 30px;
-	width: 30px;
-}
-.cursorWip {
-	content: url(../media/icon/icon_luu_y.png);
-	height: 30px;
-	width: 30px;
-}
-.cursorExpand {
-	content: url(../media/cursor/expand.png);
-	height: 30px;
-	width: 40px;
-}
-.cursorCollapse {
-	content: url(../media/cursor/collapse.png);
-	height: 30px;
-	width: 40px;
-}
-.cursorZoom {
-	content: url(../media/cursor/zoom.png);
-	height: 30px;
-	width: 30px;
-}
-.cursorClick {
-	content: url(../media/cursor/click.png);
-	height: 40px;
-	transform: rotateZ(-45deg);
-	width: 30px;
-}
 * {
 	color: white;
 	cursor: none;
@@ -154,6 +104,57 @@ button:active {
 	border-bottom: 2px solid var(--hover-color);
 }
 /*==================================================*/
+/*Custom Cursor*/
+.cursor {
+	content: url(../media/cursor/default.png);
+	display: block;
+	height: 40px;
+	pointer-events: none;
+	position: fixed;
+	/*transform: rotateZ(-45deg);*/
+	width: 40px;
+	z-index: 100;
+}
+.cursorOut {
+	display: none;
+}
+.cursorTyping {
+	content: url(../media/cursor/typing.png);
+	height: 30px;
+	width: 40px;
+}
+.cursorCopy {
+	content: url(../media/cursor/copy.png);
+	height: 30px;
+	width: 30px;
+}
+.cursorWip {
+	content: url(../media/icon/icon_luu_y.png);
+	height: 30px;
+	width: 30px;
+}
+.cursorExpand {
+	content: url(../media/cursor/expand.png);
+	height: 30px;
+	width: 40px;
+}
+.cursorCollapse {
+	content: url(../media/cursor/collapse.png);
+	height: 30px;
+	width: 40px;
+}
+.cursorZoom {
+	content: url(../media/cursor/zoom.png);
+	height: 30px;
+	width: 30px;
+}
+.cursorClick {
+	content: url(../media/cursor/click.png);
+	height: 40px;
+	transform: rotateZ(-45deg);
+	width: 30px;
+}
+/*==================================================*/
 /*Theme*/
 .themeLight {
 	background-color: white;
@@ -190,16 +191,16 @@ button:active {
 	border: 2px solid var(--hover-color);
 }
 .themeLight .sidebarIconClose {
-	content: url(../media/header/sidebar_icon_close_light.png);
+	filter: brightness(0);
 }
 .themeLight .sidebarIconOpen {
-	content: url(../media/header/sidebar_icon_open_light.png);
+	filter: brightness(0);
 }
 .themeLight .searchBar {
 	border-bottom-color: var(--border-light);
 }
 .themeLight .searchIcon {
-	content: url(../media/header/search_icon_light.png);
+	filter: brightness(0);
 }
 .themeLight .searchBox {
 	background-color: var(--bg-light);
@@ -255,16 +256,16 @@ button:active {
 	border-top-color: var(--border-light);
 }
 .themeLight .logoYoutube {
-	content: url(../media/logo/logo_youtube_light.png);
+	filter: brightness(0);
 }
 .themeLight .logoDiscord {
-	content: url(../media/logo/logo_discord_light.png);
+	filter: brightness(0);
 }
 .themeLight .logoTwitter {
-	content: url(../media/logo/logo_twitter_light.png);
+	filter: brightness(0);
 }
 .themeLight .logoFacebook {
-	content: url(../media/logo/logo_facebook_light.png);
+	filter: brightness(0);
 }
 /*==================================================*/
 /*Thuộc Header*/
@@ -284,18 +285,17 @@ header {
 }
 .sidebarIconClose {
 	content: url(../media/header/sidebar_icon_close.png);
+	filter: brightness(100);
 }
 .sidebarIconClose:hover {
-	content: url(../media/header/sidebar_icon_close_hover.png);
+	filter: brightness(1);
 }
 .sidebarIconOpen {
 	content: url(../media/header/sidebar_icon_open.png);
+	filter: brightness(100);
 }
 .sidebarIconOpen:hover {
-	content: url(../media/header/sidebar_icon_open_hover.png);
-}
-.sidebarIconHide {
-	display: none;
+	filter: brightness(1);
 }
 .logoWiki {
 	content: url(../media/logo/logo_wiki.png);
@@ -305,7 +305,7 @@ header {
 	width: 45px;
 }
 .logoWiki:hover {
-	content: url(../media/logo/logo_wiki_hover.png);
+	filter: hue-rotate(-150deg);
 }
 .headerTitle {
 	margin-top: 3px;
@@ -324,9 +324,6 @@ header {
 .themeIconLight {
 	content: url(../media/header/theme_light.png);
 }
-.themeHide {
-	display: none;
-}
 .search {
 	margin-left: auto;
 	margin-right: 3%;
@@ -343,12 +340,13 @@ header {
 }
 .searchIcon {
 	content: url(../media/header/search_icon.png);
+	filter: brightness(100);
 	height: 16px;
 	margin: 5px;
 	width: 16px;
 }
 .searchIcon:hover {
-	content: url(../media/header/search_icon_hover.png);
+	filter: brightness(1);
 }
 .searchInput {
 	background-color: transparent;
@@ -380,10 +378,12 @@ header {
 /*Sidebar*/
 .sidebar {
 	background-color: var(--bg);
+	border-bottom: var(--border);
 	border-right: var(--border);
 	height: 90%;
 	overflow-y: auto;
 	position: fixed;
+	transition: 0.5s;
 	width: 200px;
 	z-index: 2;
 }
@@ -392,9 +392,6 @@ header {
 }
 .sidebar::-webkit-scrollbar-thumb:hover {
 	border-right: 2px solid var(--hover-color);
-}
-.sidebarClose {
-	display: none;
 }
 .sidebarTitle {
 	border-bottom: var(--border);
@@ -425,8 +422,14 @@ header {
 	background: rgba(38, 38, 38, .80);
 	height: 100%;
 	position: fixed;
+	transition: 0.5s;
 	width: 100%;
 	z-index: 1;
+}
+.sidebarClose {
+	border: none;
+	transition: 0.5s;
+	width: 0;
 }
 /*==================================================*/
 /*Dropdown*/
@@ -703,27 +706,31 @@ footer {
 }
 .logoYoutube {
 	content: url(../media/logo/logo_youtube.png);
+	filter: brightness(100);
 }
 .logoYoutube:hover {
-	content: url(../media/logo/logo_youtube_hover.png);
+	filter: brightness(1);
 }
 .logoDiscord {
 	content: url(../media/logo/logo_discord.png);
+	filter: brightness(100);
 }
 .logoDiscord:hover {
-	content: url(../media/logo/logo_discord_hover.png);
+	filter: brightness(1);
 }
 .logoTwitter {
 	content: url(../media/logo/logo_twitter.png);
+	filter: brightness(100);
 }
 .logoTwitter:hover {
-	content: url(../media/logo/logo_twitter_hover.png);
+	filter: brightness(1);
 }
 .logoFacebook {
 	content: url(../media/logo/logo_facebook.png);
+	filter: brightness(100);
 }
 .logoFacebook:hover {
-	content: url(../media/logo/logo_facebook_hover.png);
+	filter: brightness(1);
 }
 .copyright {
 	align-items: center;
@@ -800,6 +807,9 @@ footer {
 	}
 	.sidebar li {
 		font-size: 14px;
+	}
+	.sidebarBlur {
+		right: 0;
 	}
 	.contentTitle {
 		font-size: 24px;
