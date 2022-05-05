@@ -321,8 +321,14 @@ header {
 .themeIconDark {
 	content: url(../media/header/theme_dark.png);
 }
+.themeIconDark:hover {
+	content: url(../media/header/theme_light.png);
+}
 .themeIconLight {
 	content: url(../media/header/theme_light.png);
+}
+.themeIconLight:hover {
+	content: url(../media/header/theme_dark.png);
 }
 .search {
 	margin-left: auto;
