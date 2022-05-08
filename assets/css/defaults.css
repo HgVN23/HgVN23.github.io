@@ -613,6 +613,7 @@ header {
 	width: 50px;
 }
 .goTop:hover {
+	animation: luuY 1s linear infinite;
 	outline: 2px solid var(--hover-color);
 }
 .goTop:active {
