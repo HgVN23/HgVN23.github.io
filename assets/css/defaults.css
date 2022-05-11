@@ -540,12 +540,10 @@ header {
 }
 .contentText {
 	font-size: 16px;
-	margin: 5px;
-	margin-left: 10px;
+	margin: 2px 10px 2px 10px;
 }
 .contentText::before {
 	content: "▷";
-	display: inline-block;
 	margin-right: 3px;
 }
 .ads {
