@@ -4,12 +4,13 @@
 	font-family: minecraft;
 	src: url(../fonts/Minecrafter.Reg.ttf);
 }
-:root {
+* {
 	--border: 2px solid #525252;
 	--bg: #171717;
 	--border-light: #d7d7d7;
 	--bg-light: #f3f3f3;
 	--hover-color: #1d4ed8;
+	color: white;
 	cursor: none;
 	font-family: sans-serif;
 	scroll-behavior: smooth;
@@ -29,10 +30,6 @@
 }
 li::-webkit-scrollbar {
 	height: 10px;
-}
-* {
-	color: white;
-	cursor: none;
 }
 body {
 	background-color: #262626;
@@ -92,16 +89,24 @@ button:active {
 	margin: 0 auto 0 auto;
 	width: 30%;
 }
-.input {
+.input, .textarea {
 	background-color: transparent;
 	border: none;
 	border-bottom: var(--border);
 	font-size: 16px;
-	margin-left: 10px;
+	margin-left: 20px;
+	resize: none;
 	outline: none;
 }
 .input:hover {
 	border-bottom: 2px solid var(--hover-color);
+}
+.dialogueSpace {
+	margin-bottom: 20px;
+}
+.dialogueFlex {
+	display: flex;
+	flex-wrap: wrap;
 }
 /*==================================================*/
 /*Custom Cursor*/

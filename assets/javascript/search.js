@@ -75,6 +75,6 @@ enter.addEventListener("keydown", (e)=>{
 });
 
 function searchEnter(){
-	var searchEnter = document.querySelector(".searchInput").value.toLocaleLowerCase();
+	var searchEnter = enter.value.toLocaleLowerCase();
 	searchFilter(searchEnter);
 }

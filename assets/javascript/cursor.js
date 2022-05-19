@@ -1,3 +1,7 @@
+const cursorCreate = document.createElement('div');
+cursorCreate.classList.add('cursor');
+document.querySelector("body").appendChild(cursorCreate);
+
 const cursor = document.querySelector(".cursor");
 const cursorLogoWiki = document.querySelector(".logoWiki");
 const cursorHeaderTitle = document.querySelector(".headerTitle");

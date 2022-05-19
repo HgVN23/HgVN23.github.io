@@ -19,25 +19,21 @@ function defaults() {
 	document.getElementById("footer").innerHTML = footer;
 	document.querySelector(".year").innerHTML = new Date().getFullYear();
 	// ======================================================================
-	// Cursor
-	var cursorCreate = document.createElement('div');
-	cursorCreate.classList.add('cursor');
-	document.querySelector("body").appendChild(cursorCreate);
-	// ======================================================================
 	// Go top
-	var goTopCreate = document.createElement('a');
+	const goTopCreate = document.createElement('a');
 	goTopCreate.classList.add('goTop', 'goTopIcon');
 	goTopCreate.href = "#";
 	document.querySelector("body").appendChild(goTopCreate);
 	// ======================================================================
 }
 const scriptList = [
+	"theme",
+	"cursor",
 	"sidebar",
 	"filter",
 	"search",
 	"dropdown",
-	"theme",
-	"cursor",
+	// "sound",
 	"ads"
 ];
 const header = `
@@ -171,6 +167,7 @@ const sidebar = `
 				<li><a class="textLink" href="https://hgvn23.github.io/webTool/uuidV4Generator.html">Tạo UUID</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/webTool/glyph.html">Tra kí tự glyph</a></li>
 				<li><a class="textLink" href="https://hgvn23.github.io/webTool/color.html">Hex -> Dec Color Code</a></li>
+				<li><a class="textLink" href="https://hgvn23.github.io/webTool/dialogueGenerator.html">Tạo dialogue.json</a></li>
 			</div>
 		</div>
 		<div class="sidebarEnd"></div>

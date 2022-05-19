@@ -98,7 +98,8 @@ const filter = [
 
 	"uuidV4Generator",
 	"glyph",
-	"color"
+	"color",
+	"dialogueGenerator"
 ];
 
 const commands = [
@@ -205,5 +206,6 @@ const thongTinLienQuan = [
 const webTool = [
 	"uuidV4Generator",
 	"glyph",
-	"color"
+	"color",
+	"dialogueGenerator"
 ]
