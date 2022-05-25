@@ -26,12 +26,14 @@ saveFile.addEventListener('click', e => {
 	let commands6 = document.getElementById('commands6').value;
 	var on_close_commands = document.getElementById('on_close_commands').value;
 
-	checkName(npc_name);
+	npc_name = checkName(npc_name);
 
 	if(!text)
 		text = ``;
-	else
+	else {
 		text = text.replaceAll("\n", "\\n")
+		text = text.replaceAll("\"", "\\\"");
+	}
 
 	button1 = checkButton(button1, name1, commands1);
 	button2 = checkButton(button2, name2, commands2);
@@ -50,8 +52,10 @@ saveFile.addEventListener('click', e => {
 
 	if(!on_close_commands)
 		on_close_commands = ``;
-	else
+	else {
+		on_close_commands = on_close_commands.replaceAll("\"", "\\\"");
 		on_close_commands = `\n\t\t\t\t\t\"${on_close_commands.replaceAll("\n", "\",\n\t\t\t\t\t\"")}\"\n\t\t\t\t`;
+	}
 
 	const dialogue =
 	`{
@@ -76,7 +80,7 @@ saveFile.addEventListener('click', e => {
 
 function checkButton(buttonValue, nameValue, commandsValue) {
 	if(nameValue || commandsValue) {
-		nameVlaue = checkName(nameValue);
+		nameValue = checkName(nameValue);
 		commandsValue = checkCommands(commandsValue);
 		buttonValue = 
 		`\n\t\t\t\t\t{
@@ -90,17 +94,20 @@ function checkButton(buttonValue, nameValue, commandsValue) {
 }
 
 function checkName(checkValue) {
-	if(!checkValue) {
+	if(!checkValue)
 		checkValue = ``;
-		return checkValue;
-	}
+	else
+		checkValue = checkValue.replaceAll("\"", "\\\"");
+	return checkValue;
 }
 
 function checkCommands(checkValue) {
 	if(!checkValue)
 		checkValue = ``;
-	else
+	else {
+		checkValue = checkValue.replaceAll("\"", "\\\"");
 		checkValue = `\n\t\t\t\t\t\t\t\"${checkValue.replaceAll("\n", "\",\n\t\t\t\t\t\t\t\"")}\"\n\t\t\t\t\t\t`;
+	}
 	return checkValue;
 }
 

@@ -23,6 +23,7 @@ const cursorColor = document.getElementById("color");
 
 const cursorButton = document.getElementsByTagName("button");
 const cursorInput = document.getElementsByTagName("input");
+const cursorTextarea = document.getElementsByTagName("textarea");
 
 document.addEventListener('mousemove', (e) => {
 	var x = e.clientX;
@@ -171,6 +172,10 @@ for (var i = 0; i < cursorButton.length; i++) {
 for (var i = 0; i < cursorInput.length; i++) {
 	cursorInput[i].addEventListener("mouseenter", addTyping);
 	cursorInput[i].addEventListener("mouseleave", removeTyping);
+}
+for (var i = 0; i < cursorTextarea.length; i++) {
+	cursorTextarea[i].addEventListener("mouseenter", addTyping);
+	cursorTextarea[i].addEventListener("mouseleave", removeTyping);
 }
 
 function addTyping() {

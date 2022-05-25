@@ -1,7 +1,7 @@
 function defaults() {
 	// ======================================================================
 	// Script
-	for (let script of scriptList) {
+	for(let script of scriptList) {
 		var scriptCreate = document.createElement('script');
 		scriptCreate.src = `https://hgvn23.github.io/assets/javascript/${script}.js`;
 		// scriptCreate.src = `../assets/javascript/${script}.js`;
