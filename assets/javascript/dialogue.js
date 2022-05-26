@@ -24,6 +24,7 @@ saveFile.addEventListener('click', e => {
 	let button6 = ``;
 	let name6 = document.getElementById('name6').value;
 	let commands6 = document.getElementById('commands6').value;
+	var on_open_commands = document.getElementById('on_open_commands').value;
 	var on_close_commands = document.getElementById('on_close_commands').value;
 
 	npc_name = checkName(npc_name);
@@ -50,6 +51,13 @@ saveFile.addEventListener('click', e => {
 	buttons += groupButton(button6);
 	buttons = buttons.replace(`,`, ``);
 
+	if(!on_open_commands)
+		on_open_commands = ``;
+	else {
+		on_open_commands = on_open_commands.replaceAll("\"", "\\\"");
+		on_open_commands = `\n\t\t\t\t\t\"${on_open_commands.replaceAll("\n", "\",\n\t\t\t\t\t\"")}\"\n\t\t\t\t`;
+	}
+
 	if(!on_close_commands)
 		on_close_commands = ``;
 	else {
@@ -67,6 +75,7 @@ saveFile.addEventListener('click', e => {
 				"npc_name": "${npc_name}",
 				"text": "${text}",
 				"buttons": [${buttons}\n\t\t\t\t],
+				"on_open_commands": [${on_open_commands}],
 				"on_close_commands": [${on_close_commands}]
 			}
 		]
