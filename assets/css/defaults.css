@@ -4,17 +4,27 @@
 	font-family: minecraft;
 	src: url(../fonts/Minecrafter.Reg.ttf);
 }
-* {
+:root {
 	--border: 2px solid #525252;
 	--bg: #171717;
+	--hover-color: #1d4ed8;
 	--border-light: #d7d7d7;
 	--bg-light: #f3f3f3;
-	--hover-color: #1d4ed8;
-	color: white;
+}
+* {
 	cursor: none;
-	font-family: sans-serif;
-	scroll-behavior: smooth;
 	user-select: none;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	background-color: #262626;
+	font-size: 16px;
 }
 /*Custom Scrollbar*/
 ::-webkit-scrollbar {
@@ -31,16 +41,12 @@
 li::-webkit-scrollbar {
 	height: 10px;
 }
-body {
-	background-color: #262626;
-	margin: 0;
-}
 li {
 	list-style: none;
 }
 table {
 	border-collapse: collapse;
-	font-size: 16px;
+	font-size: 1rem;
 	width: 100%;
 }
 th, td {
@@ -51,16 +57,16 @@ th, td {
 	margin: 0 5px 5px 5px;
 }
 .iframe {
-	display: block;
+	width: 800px;
 	height: 450px;
 	margin: 10px auto 10px auto;
-	width: 800px;
+	display: block;
 }
 button {
 	background-color: transparent;
 	border: var(--border);
-	font-size: 20px;
 	margin: 20px;
+	font-size: 1.25rem;
 }
 button:hover {
 	border-color: var(--hover-color);
@@ -73,9 +79,9 @@ button:active {
 	justify-content: center;
 }
 .result {
-	font-size: 30px;
-	text-align: center;
 	user-select: text;
+	font-size: 1.875rem;
+	text-align: center;
 }
 .uuid {
 	margin: 30px 0 30px 0;
@@ -93,7 +99,7 @@ button:active {
 	background-color: transparent;
 	border: none;
 	border-bottom: var(--border);
-	font-size: 16px;
+	font-size: 1rem;
 	margin-left: 20px;
 	resize: none;
 	outline: none;
@@ -111,13 +117,13 @@ button:active {
 /*==================================================*/
 /*Custom Cursor*/
 .cursor {
-	content: url(../media/cursor/default.png);
-	display: block;
-	height: 40px;
 	pointer-events: none;
+	content: url(../media/cursor/default.png);
+	width: 2.5rem;
+	height: 2.5rem;
+	display: block;
 	position: fixed;
 	/*transform: rotateZ(-45deg);*/
-	width: 40px;
 	z-index: 100;
 }
 .cursorOut {
@@ -125,39 +131,27 @@ button:active {
 }
 .cursorTyping {
 	content: url(../media/cursor/typing.png);
-	height: 30px;
-	width: 40px;
 }
 .cursorCopy {
 	content: url(../media/cursor/copy.png);
-	height: 30px;
-	width: 30px;
 }
 .cursorWip {
 	content: url(../media/icon/icon_luu_y.png);
-	height: 30px;
-	width: 30px;
 }
 .cursorExpand {
 	content: url(../media/cursor/expand.png);
-	height: 30px;
-	width: 40px;
 }
 .cursorCollapse {
 	content: url(../media/cursor/collapse.png);
-	height: 30px;
-	width: 40px;
 }
 .cursorZoom {
 	content: url(../media/cursor/zoom.png);
-	height: 30px;
-	width: 30px;
 }
 .cursorClick {
 	content: url(../media/cursor/click.png);
+	width: 30px;
 	height: 40px;
 	transform: rotateZ(-45deg);
-	width: 30px;
 }
 /*==================================================*/
 /*Theme*/
@@ -168,9 +162,9 @@ button:active {
 	color: black;
 }
 .themeLight header {
-	color: black;
 	background-color: var(--bg-light);
 	border-bottom-color: var(--border-light);
+	color: black;
 }
 .themeLight th, .themeLight td {
 	border-color: var(--border-light);
@@ -275,18 +269,18 @@ button:active {
 /*==================================================*/
 /*Thuộc Header*/
 header {
-	align-items: center;
 	background-color: var(--bg);
 	border-bottom: var(--border);
 	display: flex;
+	align-items: center;
 	position: sticky;
 	top: 0;
 	z-index: 3;
 }
 .sidebarIcon {
+	width: 45px;
 	height: 45px;
 	margin: 5px;
-	width: 45px;
 }
 .sidebarIconClose {
 	content: url(../media/header/sidebar_icon_close.png);
@@ -304,10 +298,10 @@ header {
 }
 .logoWiki {
 	content: url(../media/logo/logo_wiki.png);
+	width: 45px;
 	height: 45px;
 	margin: 5px;
 	margin-left: 10px;
-	width: 45px;
 }
 .logoWiki:hover {
 	filter: hue-rotate(-150deg);
@@ -315,13 +309,13 @@ header {
 .headerTitle {
 	margin-top: 3px;
 	font-family: minecraft;
-	font-size: 30px;
+	font-size: 1.875rem;
 	text-decoration: none;
 }
 .themeIcon {
+	width: 45px;
 	height: 45px;
 	margin: 5px;
-	width: 45px;
 }
 .themeIconDark {
 	content: url(../media/header/theme_dark.png);
@@ -336,25 +330,25 @@ header {
 	content: url(../media/header/theme_dark.png);
 }
 .search {
+	width: 220px;
+	height: 30px;
 	margin-left: auto;
 	margin-right: 3%;
-	height: 30px;
-	width: 220px;
 }
 .searchBar {
-	align-items: center;
 	border-bottom: var(--border);
 	display: flex;
+	align-items: center;
 }
 .searchBar:hover {
 	border-bottom-color: var(--hover-color);
 }
 .searchIcon {
 	content: url(../media/header/search_icon.png);
-	filter: brightness(100);
-	height: 16px;
-	margin: 5px;
 	width: 16px;
+	height: 16px;
+	filter: brightness(100);
+	margin: 5px;
 }
 .searchIcon:hover {
 	filter: brightness(1);
@@ -362,10 +356,8 @@ header {
 .searchInput {
 	background-color: transparent;
 	border: none;
-	font-size: 16px;
-	height: 100%;
 	outline: none;
-	width: 100%;
+	font-size: 1rem;
 }
 .searchBox {
 	background-color: var(--bg);
@@ -377,10 +369,10 @@ header {
 	display: none;
 }
 .searchBox li {
-	display: block;
 	outline: 1px solid #525252;
-	overflow-x: auto;
 	padding: 5px;
+	display: block;
+	overflow-x: auto;
 }
 .searchBox li:hover {
 	background-color: var(--hover-color);
@@ -391,12 +383,12 @@ header {
 	background-color: var(--bg);
 	border-bottom: var(--border);
 	border-right: var(--border);
-	height: 90%;
-	overflow-y: auto;
-	position: fixed;
-	transition: 0.5s;
 	width: 200px;
+	height: 90%;
+	position: fixed;
+	overflow-y: auto;
 	z-index: 2;
+	transition: 0.5s;
 }
 .sidebar::-webkit-scrollbar-thumb {
 	border-right: none;
@@ -406,24 +398,24 @@ header {
 }
 .sidebarTitle {
 	border-bottom: var(--border);
-	font-size: 30px;
-	margin: 10px;
 	width: fit-content;
+	margin: 10px;
+	font-size: 2rem;
 }
 .sidebarLine {
 	outline: 1px solid #525252;
 }
 .sidebar li {
-	display: block;
-	font-size: 16px;
 	outline: 1px solid #525252;
-	overflow-x: auto;
 	padding: 10px;
+	display: block;
+	overflow-x: auto;
+	font-size: 1rem;
 }
 .sidebar li::before {
 	content: "▷";
-	display: inline-block;
 	margin-right: 3px;
+	display: inline-block;
 }
 .sidebarEnd {
 	border-top: var(--border);
@@ -431,16 +423,16 @@ header {
 }
 .sidebarBlur {
 	background: rgba(38, 38, 38, .80);
+	width: 100%;
 	height: 100%;
 	position: fixed;
-	transition: 0.5s;
-	width: 100%;
 	z-index: 1;
+	transition: 0.5s;
 }
 .sidebarClose {
 	border: none;
-	transition: 0.5s;
 	width: 0;
+	transition: 0.5s;
 }
 /*==================================================*/
 /*Dropdown*/
@@ -501,7 +493,7 @@ header {
 	content: ")";
 }
 .textNote:hover {
-	font-size: 25px;
+	font-size: 1.5rem;
 }
 .textWip:after {
 	content: " (WIP) ";
@@ -514,12 +506,13 @@ header {
 	flex-direction: column;
 }
 .contentHeader {
-	align-self: center;
 	background-color: var(--bg);
 	border: var(--border);
-	font-size: 30px;
 	margin: 15px 15px 0 15px;
 	padding: 10px;
+	align-self: center;
+	font-size: 2rem;
+	font-weight: bold;
 }
 .contentBox {
 	background-color: var(--bg);
@@ -528,33 +521,33 @@ header {
 	margin-bottom: 0;
 }
 .contentGroup {
-	align-items: center;
-	display: flex;
 	margin: 10px;
+	display: flex;
+	align-items: center;
 }
 .contentIcon {
-	height: 45px;
 	margin-right: 5px;
 	width: 45px;
+	height: 45px;
 }
 .contentTitle {
 	border-bottom: var(--border);
-	font-size: 30px;
-	padding-bottom: 2px;
 	width: fit-content;
+	padding-bottom: 2px;
+	font-size: 2rem;
+	font-weight: bold;
 }
 .contentText {
-	font-size: 16px;
-	margin: 2px 10px 2px 10px;
+	margin: 5px 10px 5px 10px;
 }
 .contentText::before {
 	content: "▷";
-	display: inline-block;
 	margin-right: 3px;
+	display: inline-block;
 }
 .explainButton {
-	align-items: center;
 	display: flex;
+	align-items: center;
 }
 /*==================================================*/
 /*Icon*/
@@ -607,15 +600,15 @@ header {
 	content: url(../media/icon/icon_ads.png);
 }
 .goTop {
-	bottom: 3%;
+	width: 50px;
 	height: 50px;
 	position: fixed;
 	right: 2%;
-	width: 50px;
+	bottom: 3%;
 }
 .goTop:hover {
-	animation: luuY 1s linear infinite;
 	outline: 2px solid var(--hover-color);
+	animation: luuY 1s linear infinite;
 }
 .goTop:active {
 	outline: 2px solid yellow;
@@ -624,93 +617,93 @@ header {
 	content: url(../media/icon/icon_go_top.png);
 }
 .explainButtonIcon {
-	height: 32px;
 	margin: 0 5px 0 0;
 	width: 32px;
+	height: 32px;
 }
 /*==================================================*/
 /*Image*/
 .image404 {
 	content: url(../media/image/404_error.png);
-	margin: 5px auto 5px auto;
-	height: 50%;
 	width: 50%;
+	height: 50%;
+	margin: 5px auto 5px auto;
 }
 .imageRx {
 	content: url(../media/image/rx.png);
-	margin: 5px auto 5px auto;
-	height: 40%;
 	width: 40%;
+	height: 40%;
+	margin: 5px auto 5px auto;
 }
 .imageRy {
 	content: url(../media/image/ry.png);
-	margin: 5px auto 5px auto;
-	height: 40%;
 	width: 40%;
+	height: 40%;
+	margin: 5px auto 5px auto;
 }
 .imageCmdbUi {
 	content: url(../media/image/cmdb_ui.png);
-	margin: 5px auto 5px auto;
-	height: 50%;
 	width: 50%;
+	height: 50%;
+	margin: 5px auto 5px auto;
 }
 .imageCmdbType {
 	content: url(../media/image/cmdb_type.png);
-	margin: 5px auto 5px auto;
-	height: 30%;
 	width: 30%;
+	height: 30%;
+	margin: 5px auto 5px auto;
 }
 .imageCmdbCondition {
 	content: url(../media/image/cmdb_condition.png);
-	margin: 5px auto 5px auto;
-	height: 30%;
 	width: 30%;
+	height: 30%;
+	margin: 5px auto 5px auto;
 }
 .imageCmdbRedstone {
 	content: url(../media/image/cmdb_redstone.png);
-	margin: 5px auto 5px auto;
-	height: 30%;
 	width: 30%;
+	height: 30%;
+	margin: 5px auto 5px auto;
 }
 .imageDamage {
 	content: url(../media/image/damage.png);
-	margin: 5px auto 5px auto;
-	height: 50%;
 	width: 50%;
+	height: 50%;
+	margin: 5px auto 5px auto;
 }
 .imageRick {
 	content: url(../media/image/rick_roll.gif);
-	display: none;
-	margin: 5px auto 5px auto;
-	height: 50%;
 	width: 50%;
+	height: 50%;
+	margin: 5px auto 5px auto;
+	display: none;
 }
 .imageHg {
 	content: url(../media/image/hg.png);
 	margin: 5px auto 5px auto;
-	height: 20%;
 	width: 20%;
+	height: 20%;
 }
 .imageGlyph {
 	content: url(../media/image/glyph.png);
-	margin: 5px auto 5px auto;
-	height: 50%;
 	width: 50%;
+	height: 50%;
+	margin: 5px auto 5px auto;
 }
 /*==================================================*/
 /*Thuộc Footer*/
 footer {
-	align-items: center;
 	background-color: var(--bg);
 	border-top: var(--border);
+	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
-	margin-top: 15px;
+	align-items: center;
 }
 .socialLogo {
-	height: 40px;
-	margin: 8px;
 	width: 40px;
+	height: 40px;
+	margin: 10px 8px 0 8px;
 }
 .logoYoutube {
 	content: url(../media/logo/logo_youtube.png);
@@ -741,9 +734,9 @@ footer {
 	filter: brightness(1);
 }
 .copyright {
-	align-items: center;
+	margin: 5px 0 5px 0;
 	display: flex;
-	margin: 5px 0 5px 0; 
+	align-items: center;
 }
 .copyright1 {
 	align-items: center;
@@ -751,8 +744,8 @@ footer {
 }
 .copyrightSide::before {
 	content: "|";
-	margin-left: 3px;
 	margin-right: 3px;
+	margin-left: 3px;
 }
 /*==================================================*/
 /*Mobile*/
@@ -768,36 +761,34 @@ footer {
 		flex-wrap: wrap;
 	}
 	table {
-		font-size: 12px;
+		font-size: .75rem;
 	}
 	.iframe {
 		display: none;
 	}
 	.uuid {
-		font-size: 12px;
+		font-size: .75rem;
 	}
 	.glyphFlex {
 		width: 70%;
 	}
 	.logoWiki {
-		margin-left: 5px;
 		order: 1;
+		margin-left: 5px;
 	}
 	.headerTitle {
-		margin-top: 3px;
-		font-size: 18px;
 		order: 2;
+		margin-top: 3px;
+		font-size: 1.125rem;
 	}
 	.sidebarIcon {
-		margin-left: auto;
 		order: 3;
+		margin-left: auto;
 	}
 	.search {
-		margin-bottom: 1%;
-		margin-left: auto; /*3%*/
-		margin-right: auto;
-		justify-content: center;
 		order: 4;
+		margin: 0 auto 1% auto;
+		justify-content: center;
 	}
 	.themeIcon {
 		order: 5;
@@ -811,83 +802,80 @@ footer {
 		border-right: var(--border);
 	}
 	.sidebarTitle {
-		font-size: 24px;
+		font-size: 1.5rem;
 	}
 	.sidebar li {
-		font-size: 14px;
+		font-size: .875rem;
 	}
 	.sidebarBlur {
 		right: 0;
 	}
 	.contentTitle {
-		font-size: 24px;
-		margin: 10px;
 		width: fit-content;
+		margin: 10px;
+		font-size: 1.5rem;
 	}
 	.contentText {
-		font-size: 12px;
 		margin: 5px;
 		margin-left: 10px;
+		font-size: .75rem;
 	}
 	.explainButtonIcon {
+		width: 24px;
 		height: 24px;
 		margin: 0 4px 0 0;
-		width: 24px;
 	}
 	.image404 {
-		height: 80%;
 		width: 80%;
+		height: 80%;
 	}
 	.imageRx {
-		height: 90%;
 		width: 90%;
+		height: 90%;
 	}
 	.imageRy {
-		height: 90%;
 		width: 90%;
+		height: 90%;
 	}
 	.imageCmdbUi {
-		height: 80%;
 		width: 80%;
+		height: 80%;
 	}
 	.imageCmdbType {
-		height: 60%;
 		width: 60%;
+		height: 60%;
 	}
 	.imageCmdbCondition {
-		height: 60%;
 		width: 60%;
+		height: 60%;
 	}
 	.imageCmdbRedstone {
-		height: 60%;
 		width: 60%;
+		height: 60%;
 	}
 	.imageDamage {
-		height: 80%;
 		width: 80%;
+		height: 80%;
 	}
 	.imageRick {
-		display: block;
-		height: 80%;
 		width: 80%;
+		height: 80%;
+		display: block;
 	}
 	.imageHg {
-		height: 50%;
 		width: 50%;
+		height: 50%;
 	}
 	.imageGlyph {
-		height: 80%;
 		width: 80%;
-	}
-	.footerLink {
-		font-size: 16px;
+		height: 80%;
 	}
 	.socialLogo {
-		height: 30px;
 		width: 30px;
+		height: 30px;
 	}
 	.copyright {
-		font-size: 12px;
+		font-size: .75rem;
 	}
 	.copyright {
 		flex-direction: column;
