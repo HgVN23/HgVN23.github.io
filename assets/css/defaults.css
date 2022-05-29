@@ -50,7 +50,7 @@ th, td {
 .table {
 	margin: 0 5px 5px 5px;
 }
-iframe {
+.iframe {
 	display: block;
 	height: 450px;
 	margin: 10px auto 10px auto;
@@ -552,9 +552,6 @@ header {
 	display: inline-block;
 	margin-right: 3px;
 }
-.ads {
-	display: block;
-}
 .explainButton {
 	align-items: center;
 	display: flex;
@@ -773,7 +770,7 @@ footer {
 	table {
 		font-size: 12px;
 	}
-	iframe {
+	.iframe {
 		display: none;
 	}
 	.uuid {
@@ -831,9 +828,6 @@ footer {
 		font-size: 12px;
 		margin: 5px;
 		margin-left: 10px;
-	}
-	.ads {
-		display: none;
 	}
 	.explainButtonIcon {
 		height: 24px;

@@ -13,7 +13,7 @@ const ads = `
 
 // Ads
 const adsCreate = document.createElement('div');
-adsCreate.classList.add('contentBox', 'ads');
+adsCreate.classList.add('contentBox');
 adsCreate.innerHTML = ads;
 document.querySelector(".content").appendChild(adsCreate);
 
