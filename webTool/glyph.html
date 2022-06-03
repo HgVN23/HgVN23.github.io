@@ -26,6 +26,8 @@
 
 	<!-- CSS/Script -->
 	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<link rel="stylesheet" href="../assets/css/image.css">
+	<link rel="stylesheet" href="../assets/css/webTool.css">
 	<script src="../assets/javascript/defaults.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
@@ -39,19 +41,19 @@
 				<div class="contentIcon iconCongDung"></div>
 				<div class="contentTitle">Glyph</div>
 			</div>
-			<div class="imageGlyph"></div>
+			<div class="image imageGlyph"></div>
 			<div class="glyphFlex">
 				<div class="contentText">Bảng glyph (0-9, A-F)</div>
-				<input class="input" id="glyphTable" type="text" placeholder="Ví dụ: 12 hoặc 3B">
+				<input class="cInput" id="glyphTable" type="text" placeholder="Ví dụ: 12 hoặc 3B">
 				<div class="contentText">Hàng (0-9, A-F)</div>
-				<input class="input" id="glyphRow" type="text" placeholder="Ví dụ: 1 hoặc C">
+				<input class="cInput" id="glyphRow" type="text" placeholder="Ví dụ: 1 hoặc C">
 				<div class="contentText">Cột (0-9, A-F)</div>
-				<input class="input" id="glyphCol" type="text" placeholder="Ví dụ: 1 hoặc C">
+				<input class="cInput" id="glyphCol" type="text" placeholder="Ví dụ: 1 hoặc C">
 				<div class="result glyph" id="copyThis">...</div>
 			</div>
-			<div class="button">
-				<button onclick="glyph()" id="create">Tạo</button>
-				<button onclick="copy()" id="copy">Sao chép</button>
+			<div class="buttonGroup">
+				<button class="cButton" onclick="glyph()" id="create">Tạo</button>
+				<button class="cButton" onclick="copy()" id="copy">Sao chép</button>
 			</div>
 			<script src="../assets/javascript/copy.js"></script>
 			<script src="../assets/javascript/glyph.js"></script>

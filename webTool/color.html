@@ -26,6 +26,7 @@
 
 	<!-- CSS/Script -->
 	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<link rel="stylesheet" href="../assets/css/webTool.css">
 	<script src="../assets/javascript/defaults.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
@@ -39,10 +40,10 @@
 				<div class="contentIcon iconCongDung"></div>
 				<div class="contentTitle">Hex -> Dec Color Code</div>
 			</div>
-			<div class="contentText" style="text-align: center;">Chọn màu <input id="color" type="color"></div>
+			<div class="contentText colorText">Chọn màu <input id="color" type="color" value="#0008FF"></div>
 			<div class="result glyph" id="copyThis">...</div>
-			<div class="button">
-				<button onclick="copy()" id="copy">Sao chép</button>
+			<div class="buttonGroup">
+				<button class="cButton" onclick="copy()" id="copy">Sao chép</button>
 			</div>
 			<script src="../assets/javascript/copy.js"></script>
 			<script src="../assets/javascript/color.js"></script>
