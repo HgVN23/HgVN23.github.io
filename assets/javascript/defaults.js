@@ -177,7 +177,7 @@ const sidebar = `
 const footer = `
 	<div>
 		<a class="socialLogo logoYoutube" href="https://youtube.com/c/HgVN23?sub_confirmation=1" target="_blank"></a>
-		<a class="socialLogo logoDiscord" href="https://discord.gg/4N3zuWn" target="_blank"></a>
+		<a class="socialLogo logoDiscord" href="https://discordapp.com/users/451348781460619264/" target="_blank"></a>
 		<a class="socialLogo logoTwitter" href="https://twitter.com/HgVN23?s=0" target="_blank"></a>
 		<a class="socialLogo logoFacebook" href="https://www.facebook.com/HgVN23" target="_blank"></a>
 	</div>
