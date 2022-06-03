@@ -41,13 +41,10 @@
 	li::-webkit-scrollbar {
 		height: 10px;
 	}
-	li {
-		list-style: none;
-	}
 	table {
 		border-collapse: collapse;
-		font-size: 1rem;
 		width: 100%;
+		font-size: 1rem;
 	}
 	th, td {
 		border: 1px solid #525252;
@@ -61,58 +58,6 @@
 		height: 450px;
 		margin: 10px auto 10px auto;
 		display: block;
-	}
-	button {
-		background-color: transparent;
-		border: var(--border);
-		margin: 20px;
-		font-size: 1.25rem;
-	}
-	button:hover {
-		border-color: var(--hover-color);
-	}
-	button:active {
-		border-color: yellow;
-	}
-	.button {
-		display: flex;
-		justify-content: center;
-	}
-	.result {
-		user-select: text;
-		font-size: 1.875rem;
-		text-align: center;
-	}
-	.uuid {
-		margin: 30px 0 30px 0;
-	}
-	.glyph {
-		margin: 10px 0 10px 0;
-	}
-	.glyphFlex {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto 0 auto;
-		width: 30%;
-	}
-	.input, .textarea {
-		background-color: transparent;
-		border: none;
-		border-bottom: var(--border);
-		font-size: 1rem;
-		margin-left: 20px;
-		resize: none;
-		outline: none;
-	}
-	.input:hover {
-		border-bottom: 2px solid var(--hover-color);
-	}
-	.dialogueSpace {
-		margin-bottom: 20px;
-	}
-	.dialogueFlex {
-		display: flex;
-		flex-wrap: wrap;
 	}
 /*==================================================*/
 /*Custom Cursor*/
@@ -546,10 +491,6 @@
 		margin-right: 3px;
 		display: inline-block;
 	}
-	.explainButton {
-		display: flex;
-		align-items: center;
-	}
 /*==================================================*/
 /*Icon*/
 	.iconInfo {
@@ -621,75 +562,6 @@
 		margin: 0 5px 0 0;
 		width: 32px;
 		height: 32px;
-	}
-/*==================================================*/
-/*Image*/
-	.image404 {
-		content: url(../media/image/404_error.png);
-		width: 50%;
-		height: 50%;
-		margin: 5px auto 5px auto;
-	}
-	.imageRx {
-		content: url(../media/image/rx.png);
-		width: 40%;
-		height: 40%;
-		margin: 5px auto 5px auto;
-	}
-	.imageRy {
-		content: url(../media/image/ry.png);
-		width: 40%;
-		height: 40%;
-		margin: 5px auto 5px auto;
-	}
-	.imageCmdbUi {
-		content: url(../media/image/cmdb_ui.png);
-		width: 50%;
-		height: 50%;
-		margin: 5px auto 5px auto;
-	}
-	.imageCmdbType {
-		content: url(../media/image/cmdb_type.png);
-		width: 30%;
-		height: 30%;
-		margin: 5px auto 5px auto;
-	}
-	.imageCmdbCondition {
-		content: url(../media/image/cmdb_condition.png);
-		width: 30%;
-		height: 30%;
-		margin: 5px auto 5px auto;
-	}
-	.imageCmdbRedstone {
-		content: url(../media/image/cmdb_redstone.png);
-		width: 30%;
-		height: 30%;
-		margin: 5px auto 5px auto;
-	}
-	.imageDamage {
-		content: url(../media/image/damage.png);
-		width: 50%;
-		height: 50%;
-		margin: 5px auto 5px auto;
-	}
-	.imageRick {
-		content: url(../media/image/rick_roll.gif);
-		width: 50%;
-		height: 50%;
-		margin: 5px auto 5px auto;
-		display: none;
-	}
-	.imageHg {
-		content: url(../media/image/hg.png);
-		margin: 5px auto 5px auto;
-		width: 20%;
-		height: 20%;
-	}
-	.imageGlyph {
-		content: url(../media/image/glyph.png);
-		width: 50%;
-		height: 50%;
-		margin: 5px auto 5px auto;
 	}
 /*==================================================*/
 /*Thuộc Footer*/
@@ -767,12 +639,6 @@
 	.iframe {
 		display: none;
 	}
-	.uuid {
-		font-size: .75rem;
-	}
-	.glyphFlex {
-		width: 70%;
-	}
 	.logoWiki {
 		order: 1;
 		margin-left: 5px;
@@ -820,56 +686,6 @@
 		margin: 5px;
 		margin-left: 10px;
 		font-size: .75rem;
-	}
-	.explainButtonIcon {
-		width: 24px;
-		height: 24px;
-		margin: 0 4px 0 0;
-	}
-	.image404 {
-		width: 80%;
-		height: 80%;
-	}
-	.imageRx {
-		width: 90%;
-		height: 90%;
-	}
-	.imageRy {
-		width: 90%;
-		height: 90%;
-	}
-	.imageCmdbUi {
-		width: 80%;
-		height: 80%;
-	}
-	.imageCmdbType {
-		width: 60%;
-		height: 60%;
-	}
-	.imageCmdbCondition {
-		width: 60%;
-		height: 60%;
-	}
-	.imageCmdbRedstone {
-		width: 60%;
-		height: 60%;
-	}
-	.imageDamage {
-		width: 80%;
-		height: 80%;
-	}
-	.imageRick {
-		width: 80%;
-		height: 80%;
-		display: block;
-	}
-	.imageHg {
-		width: 50%;
-		height: 50%;
-	}
-	.imageGlyph {
-		width: 80%;
-		height: 80%;
 	}
 	.socialLogo {
 		width: 30px;

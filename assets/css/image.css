@@ -1,0 +1,104 @@
+.image {
+	margin: 5px auto 5px auto;
+}
+.image404 {
+	content: url(../media/image/404_error.png);
+	width: 50%;
+	height: 50%;
+}
+.imageRx {
+	content: url(../media/image/rx.png);
+	width: 40%;
+	height: 40%;
+}
+.imageRy {
+	content: url(../media/image/ry.png);
+	width: 40%;
+	height: 40%;
+}
+.imageCmdbUi {
+	content: url(../media/image/cmdb_ui.png);
+	width: 40%;
+	height: 40%;
+}
+.imageCmdbType {
+	content: url(../media/image/cmdb_type.png);
+	width: 20%;
+	height: 20%;
+}
+.imageCmdbCondition {
+	content: url(../media/image/cmdb_condition.png);
+	width: 20%;
+	height: 20%;
+}
+.imageCmdbRedstone {
+	content: url(../media/image/cmdb_redstone.png);
+	width: 20%;
+	height: 20%;
+}
+.imageDamage {
+	content: url(../media/image/damage.png);
+	width: 50%;
+	height: 50%;
+}
+.imageRick {
+	content: url(../media/image/rick_roll.gif);
+	display: none;
+}
+.imageHg {
+	content: url(../media/image/hg.png);
+	width: 20%;
+	height: 20%;
+}
+.imageGlyph {
+	content: url(../media/image/glyph.png);
+	width: 30%;
+	height: 30%;
+}
+@media (max-width: 767px) {
+	.image404 {
+		width: 80%;
+		height: 80%;
+	}
+	.imageRx {
+		width: 90%;
+		height: 90%;
+	}
+	.imageRy {
+		width: 90%;
+		height: 90%;
+	}
+	.imageCmdbUi {
+		width: 80%;
+		height: 80%;
+	}
+	.imageCmdbType {
+		width: 60%;
+		height: 60%;
+	}
+	.imageCmdbCondition {
+		width: 60%;
+		height: 60%;
+	}
+	.imageCmdbRedstone {
+		width: 60%;
+		height: 60%;
+	}
+	.imageDamage {
+		width: 80%;
+		height: 80%;
+	}
+	.imageRick {
+		width: 80%;
+		height: 80%;
+		display: block;
+	}
+	.imageHg {
+		width: 50%;
+		height: 50%;
+	}
+	.imageGlyph {
+		width: 80%;
+		height: 80%;
+	}
+}
