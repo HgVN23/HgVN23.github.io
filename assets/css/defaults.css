@@ -21,6 +21,7 @@
 		font-family: sans-serif;
 		list-style: none;
 		text-decoration: none;
+		transition: .3s;
 	}
 	body {
 		background-color: #262626;
@@ -69,6 +70,7 @@
 		display: block;
 		position: fixed;
 		/*transform: rotateZ(-45deg);*/
+		transition: 0s;
 		z-index: 100;
 	}
 	.cursorOut {
@@ -136,15 +138,18 @@
 	}
 	.themeLight .sidebarIconClose {
 		filter: brightness(0);
+		transition: 0s;
 	}
 	.themeLight .sidebarIconOpen {
 		filter: brightness(0);
+		transition: 0s;
 	}
 	.themeLight .searchBar {
 		border-bottom-color: var(--border-light);
 	}
 	.themeLight .searchIcon {
 		filter: brightness(0);
+		transition: 0s;
 	}
 	.themeLight .searchBox {
 		background-color: var(--bg-light);
@@ -233,6 +238,7 @@
 	}
 	.sidebarIconClose:hover {
 		filter: brightness(1);
+		transition: 0s;
 	}
 	.sidebarIconOpen {
 		content: url(../media/header/sidebar_icon_open.png);
@@ -240,6 +246,7 @@
 	}
 	.sidebarIconOpen:hover {
 		filter: brightness(1);
+		transition: 0s;
 	}
 	.logoWiki {
 		content: url(../media/logo/logo_wiki.png);
@@ -250,6 +257,7 @@
 	}
 	.logoWiki:hover {
 		filter: hue-rotate(-150deg);
+		transition: 0s;
 	}
 	.headerTitle {
 		margin-top: 3px;
@@ -297,6 +305,7 @@
 	}
 	.searchIcon:hover {
 		filter: brightness(1);
+		transition: 0s;
 	}
 	.searchInput {
 		background-color: transparent;
@@ -334,7 +343,6 @@
 		overflow-x: hidden;
 		overflow-y: auto;
 		z-index: 2;
-		transition: .3s;
 	}
 	.sidebar::-webkit-scrollbar-thumb {
 		border-right: none;
@@ -372,6 +380,7 @@
 		width: 100%;
 		height: 100%;
 		position: fixed;
+		transition: 0s;
 		z-index: 1;
 	}
 	.sidebarClose {
@@ -385,14 +394,12 @@
 	}
 	.dropdown::before {
 		color: #ff2626;
-		transition: .3s;
 	}
 	.dropdownActive {
 	}
 	.dropdownActive::before {
 		color: lime;
 		transform: rotate(90deg);
-		transition: .3s;
 	}
 	.dropdownHide {
 		display: none;
@@ -551,6 +558,7 @@
 	.goTop:hover {
 		outline: 2px solid var(--hover-color);
 		animation: luuY 1s linear infinite;
+		transition: 0s;
 	}
 	.goTop:active {
 		outline: 2px solid yellow;
