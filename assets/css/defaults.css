@@ -623,21 +623,42 @@
 /*==================================================*/
 /*Mobile*/
 @media (max-width: 767px) {
+	* {
+		cursor: auto;
+	}
 	.cursor {
 		display: none;
 	}
 	.themeLight .sidebar {
 		border-left-color: var(--border-light);
 	}
-	header {
-		align-items: center;
-		flex-wrap: wrap;
-	}
 	table {
 		font-size: .75rem;
 	}
 	.iframe {
 		display: none;
+	}
+	header {
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.sidebarIcon {
+		cursor: pointer;
+	}
+	.logoWiki {
+		cursor: pointer;
+	}
+	.headerTitle {
+		cursor: pointer;
+	}
+	.themeIcon {
+		cursor: pointer;
+	}
+	.searchIcon {
+		cursor: pointer;
+	}
+	.searchBox li {
+		cursor: pointer;
 	}
 	.logoWiki {
 		order: 1;
@@ -677,6 +698,21 @@
 	.sidebarBlur {
 		right: 0;
 	}
+	.sidebarClose {
+		border: none;
+	}
+	.dropdown {
+		cursor: pointer;
+	}
+	.textLink {
+		cursor: pointer;
+	}
+	.textNote {
+		cursor: zoom-in;
+	}
+	.textWip {
+		cursor: progress;
+	}
 	.contentTitle {
 		width: fit-content;
 		margin: 10px;
@@ -687,7 +723,29 @@
 		margin-left: 10px;
 		font-size: .75rem;
 	}
+	.iconInfo {
+		cursor: help;
+	}
+	.iconCongDung {
+		cursor: help;
+	}
+	.iconDoiTuong {
+		cursor: help;
+	}
+	.iconCuPhap {
+		cursor: help;
+	}
+	.iconLuuY {
+		cursor: help;
+	}
+	.iconAds {
+		cursor: help;
+	}
+	.goTop {
+		cursor: pointer;
+	}
 	.socialLogo {
+		cursor: pointer;
 		width: 30px;
 		height: 30px;
 	}
