@@ -394,6 +394,7 @@
 	}
 	.dropdown::before {
 		color: #ff2626;
+		transition: .3s;
 	}
 	.dropdownActive {
 	}
