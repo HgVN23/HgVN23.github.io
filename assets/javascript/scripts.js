@@ -1,15 +1,17 @@
-const scriptListFirst = [
+const scriptList1 = [
 	"header",
-	"ads",
-	"goTop"
+	"ads"
 ]
 
-const scriptListSecond = [
+const scriptList2 = [
 	"theme",
 	"sidebar",
 	"filter",
 	"search",
-	// "sound",
+	"goTop"
+];
+
+const scriptList3 = [
 	"dropdown",
 	"cursor",
 	"footer"
@@ -20,21 +22,18 @@ window.onload = function() {
 	scriptsCreate.setAttribute('id','script')
 	document.querySelector("body").insertBefore(scriptsCreate, document.querySelector("body").children[0]);
 
-	for(let script of scriptListFirst) {
+	scriptF(scriptList1);
+	
+	const scriptTimeout1 = setTimeout(scriptF(scriptList2), 300);
+	const scriptTimeout2 = setTimeout(scriptF(scriptList3), 300);
+}
+
+function scriptF(scriptList) {
+	for(let script of scriptList) {
 		var scriptCreate = document.createElement('script');
 		scriptCreate.src = `https://hgvn23.github.io/assets/javascript/${script}.js`;
 		// scriptCreate.src = `../assets/javascript/${script}.js`;
 		// scriptCreate.src = `assets/javascript/${script}.js`;
 		document.getElementById("script").appendChild(scriptCreate);
 	};
-	
-	const myTimeout = setTimeout(function f() {
-		for(let script of scriptListSecond) {
-			var scriptCreate = document.createElement('script');
-			scriptCreate.src = `https://hgvn23.github.io/assets/javascript/${script}.js`;
-			// scriptCreate.src = `../assets/javascript/${script}.js`;
-			// scriptCreate.src = `assets/javascript/${script}.js`;
-			document.getElementById("script").appendChild(scriptCreate);
-		};
-	}, 300);
-}
+};
