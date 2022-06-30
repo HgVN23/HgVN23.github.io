@@ -25,200 +25,299 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/scoreboard.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/scoreboard</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/scoreboard</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Bảng điểm để tính toán và so sánh</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Bảng điểm để tính toán và so sánh</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player không có OP</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player không có OP</p>
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/scoreboard objectives add &lt;objective: string&gt; dummy [displayName: string]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">objectives</span> là điều chỉnh bảng</div>
-					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
-					<div class="contentText"><span class="textSyntax">&lt;objective: string&gt;</span> là id bảng</div>
-					<div class="contentText"><span class="textSyntax">dummy</span><span class="textNote">Mình chả biết nó là gì</span></div>
-					<div class="contentText"><span class="textSyntax">[displayName: string]</span> là tên bảng</div>
-					<div class="contentText"><span class="textCommand">/scoreboard objectives add a dummy time</span> — tạo 1 bảng có id là a với tên là time</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/scoreboard objectives list</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">objectives</span> là điều chỉnh bảng</div>
-					<div class="contentText"><span class="textSyntax">list</span> là danh sách bảng</div>
-					<div class="contentText"><span class="textCommand">/scoreboard objectives list</span> — hiện danh sách bảng</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/scoreboard objectives remove &lt;objective: string&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">objectives</span> là điều chỉnh bảng</div>
-					<div class="contentText"><span class="textSyntax">remove</span> là xóa</div>
-					<div class="contentText"><span class="textSyntax">&lt;objective: string&gt;</span> là id bảng</div>
-					<div class="contentText"><span class="textCommand">/scoreboard objectives remove a</span> — xóa bảng id là a</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/scoreboard objectives setdisplay &lt;list|sidebar&gt; [objective: string] [ascending|descending]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">objectives</span> là điều chỉnh bảng</div>
-					<div class="contentText"><span class="textSyntax">setdisplay</span> là hiện bảng</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">&lt;list|sidebar&gt;</span> là vị trí bảng. Danh sách:</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">list</span> là hiện bảng trong danh sách Player</div>
-							<div class="contentText"><span class="textSyntax">sidebar</span> là hiện bảng bên phải trên HUD</div>
-						</div>
+				<p class="contentText dropdown">/scoreboard objectives add &lt;objective: string&gt; dummy [displayName: string]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">objectives</code> là điều chỉnh bảng</p>
+					<p class="dropdownText"><code class="textSyntax">add</code> là tạo</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng</p>
+					<p class="dropdownText"><code class="textSyntax">dummy</code><span class="textNote">Mình chả biết nó là gì</span></p>
+					<div class="dropdownText">
+						<code class="textSyntax">[displayName: string]</code> là tên bảng
+						<p class="contentText">Mặc định là id bảng nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textSyntax">[objective: string]</span> là id bảng</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[ascending|descending]</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">ascending</span> là thứ tự tăng dần</div>
-							<div class="contentText"><span class="textSyntax">descending</span> là thứ tự giảm dần</div>
-						</div>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard objectives add a dummy time</code>
+						<p class="contentText">Tạo 1 bảng có id là a với tên là time</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/scoreboard objectives setdisplay sidebar a ascending</span> — hiện bảng id a trên HUD với thứ tự tăng dần</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/scoreboard objectives setdisplay belowname [objective: string]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">objectives</span> là điều chỉnh bảng</div>
-					<div class="contentText"><span class="textSyntax">setdisplay</span> là hiện bảng</div>
-					<div class="contentText"><span class="textSyntax">belowname</span> là hiển bảng bên dưới của tên Player</div>
-					<div class="contentText"><span class="textSyntax">[objective: string]</span> là id bảng</div>
-					<div class="contentText"><span class="textCommand">/scoreboard objectives setdisplay belowname a</span> — hiển bảng id a dưới tên Player</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/scoreboard players &lt;add|remove|set&gt; &lt;player: targets&gt; &lt;objective: string&gt; &lt;count: int&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">players</span> là điều chỉnh mục tiêu</div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;add|remove|set&gt;</span> là phương thức điều chỉnh. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">add</span> là thêm</div>
-						<div class="contentText"><span class="textSyntax">remove</span> là giảm</div>
-						<div class="contentText"><span class="textSyntax">set</span> là đặt</div>
+				<p class="contentText dropdown">/scoreboard objectives list</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">objectives</code> là điều chỉnh bảng</p>
+					<p class="dropdownText"><code class="textSyntax">list</code> là danh sách bảng</p>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard objectives list</code>
+						<p class="contentText">Hiện danh sách bảng</p>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;player: targets&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText"><span class="textSyntax">&lt;objective: string&gt;</span> là id bảng</div>
-					<div class="contentText"><span class="textSyntax">&lt;count:int&gt;</span> là điểm</div>
-					<div class="contentText"><span class="textCommand">/scoreboard players set @s a 1</span> — đặt 1 điểm vào bảng id a cho đối tượng dùng Command này</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/scoreboard players list [playername: target]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">players</span> là điều chỉnh mục tiêu</div>
-					<div class="contentText"><span class="textSyntax">list</span> là danh sách điểm Player có trong bảng</div>
-					<div class="contentText"><span class="textSyntax">[playername: target]</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText"><span class="textCommand">/scoreboard players list @s</span> — hiện điểm của đối tượng dùng Command này</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/scoreboard players operation &lt;player: target&gt; &lt;targetObjective: string&gt; &lt;operation: operator&gt; &lt;selector: target&gt; &lt;objective: string&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">players</span> là điều chỉnh mục tiêu</div>
-					<div class="contentText"><span class="textSyntax">operation</span> là hành động</div>
-					<div class="contentText"><span class="textSyntax">&lt;player: targets&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> bị đổi (Entity)</div>
-					<div class="contentText"><span class="textSyntax">&lt;targetObjective: string&gt;</span> là id bảng bị đổi</div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;operation: operator&gt;</span> là việc hành động. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">+=</span> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ + điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">-=</span> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ - điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">*=</span> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ × điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">/=</span> là điểm đối tượng bị đổi mới lấy phần chia được = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">%=</span> là điểm đối tượng bị đổi mới lấy phần dư = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">=</span> là điểm đối tượng bị đổi = điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">&lt;</span> là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &lt; điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">&gt;</span> là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &gt; điểm đối tượng không đổi</div>
-						<div class="contentText"><span class="textSyntax">&gt;&lt;</span> là hoán đổi điểm giữa đối tượng bị đổi với đối tượng không đổi (trường hợp này đối tượng không đổi sẽ bị thay đổi điểm)</div>
+				<p class="contentText dropdown">/scoreboard objectives remove &lt;objective: string&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">objectives</code> là điều chỉnh bảng</p>
+					<p class="dropdownText"><code class="textSyntax">remove</code> là xóa</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng</p>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard objectives remove a</code>
+						<p class="contentText">Xóa bảng id là a</p>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;selector: target&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> không đổi (Entity)</div>
-					<div class="contentText"><span class="textSyntax">&lt;objective: string&gt;</span> là id bảng không đổi</div>
-					<div class="contentText"><span class="textCommand">/scoreboard players operation Hg a += The3T b</span> — Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg là 5 còn điểm của The3T vẫn giữ nguyên là 3</div>
-					<div class="contentText"><span class="textCommand">/scoreboard players operation Hg a = The3T b</span> — Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg bị đổi thành 3 còn điểm của The3T vẫn giữ nguyên là 3</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/scoreboard players random &lt;player: target&gt; &lt;objective: string&gt; &lt;min: int&gt; &lt;max: int&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">players</span> là điều chỉnh mục tiêu</div>
-					<div class="contentText"><span class="textSyntax">random</span> cho điểm ngẫu nhiên</div>
-					<div class="contentText"><span class="textSyntax">&lt;player: targets&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText"><span class="textSyntax">&lt;objective: string&gt;</span> là id bảng</div>
-					<div class="contentText"><span class="textSyntax">&lt;min: int&gt;</span> là số nhỏ nhất</div>
-					<div class="contentText"><span class="textSyntax">&lt;max: int&gt;</span> là số lớn nhất</div>
-					<div class="contentText"><span class="textCommand">/scoreboard players random @s a 1 10</span> — đặt ngẫu nhiên điểm trong khoảng 1 đến 10 vào bảng id a cho đối tượng dùng Command này</div>
-				</div>
+				<p class="contentText dropdown">/scoreboard objectives setdisplay &lt;list|sidebar&gt; [objective: string] [ascending|descending]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">objectives</code> là điều chỉnh bảng</p>
+					<p class="dropdownText"><code class="textSyntax">setdisplay</code> là hiện bảng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;list|sidebar&gt;</code> là vị trí bảng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">list</code> là hiện bảng trong danh sách Player</p>
+							<p class="dropdownText"><code class="textSyntax">sidebar</code> là hiện bảng bên phải trên HUD</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[objective: string]</code> là id bảng
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ ẩn bảng đang hiện thị</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[ascending|descending]</code>
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">ascending</code> là thứ tự tăng dần</p>
+							<p class="dropdownText"><code class="textSyntax">descending</code> là thứ tự giảm dần</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">ascending</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/scoreboard objectives setdisplay sidebar a ascending</span>
+						<p class="contentText">Hiện bảng id a trên HUD với thứ tự tăng dần</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/scoreboard players reset &lt;player: target&gt; [objective: string]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">players</span> là điều chỉnh mục tiêu</div>
-					<div class="contentText"><span class="textSyntax">reset</span> là loại</div>
-					<div class="contentText"><span class="textSyntax">&lt;player: targets&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText"><span class="textSyntax">[objective: string]</span> là id bảng</div>
-					<div class="contentText"><span class="textCommand">/scoreboard players reset @s a</span> — loại đối tượng dùng Command này ra khỏi bảng a</div>
-				</div>
+				<p class="contentText dropdown">/scoreboard objectives setdisplay belowname [objective: string]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">objectives</code> là điều chỉnh bảng</p>
+					<p class="dropdownText"><code class="textSyntax">setdisplay</code> là hiện bảng</p>
+					<p class="dropdownText"><code class="textSyntax">belowname</code> là hiển bảng bên dưới của tên Player</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[objective: string]</code> là id bảng
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ ẩn bảng đang hiện thị</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/scoreboard objectives setdisplay belowname a</span>
+						<p class="contentText">Hiển bảng id a dưới tên Player</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/scoreboard players test &lt;player: target&gt; &lt;objective: string&gt; &lt;min: wildcard int&gt; &lt;max: wildcard int&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">players</span> là điều chỉnh mục tiêu</div>
-					<div class="contentText"><span class="textSyntax">test</span> là kiểm tra</div>
-					<div class="contentText"><span class="textSyntax">&lt;player: targets&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText"><span class="textSyntax">&lt;objective: string&gt;</span> là id bảng</div>
-					<div class="contentText"><span class="textSyntax">&lt;min: wildcard int&gt;</span> là số bé nhất</div>
-					<div class="contentText"><span class="textSyntax">&lt;max: wildcard int&gt;</span> là số lớn nhất</div>
-					<div class="contentText"><span class="textCommand">/scoreboard playres test @s a 1 10</span> — kiểm tra đối tượng dùng Command này đang có điểm trong khoảng bằng 1 đến 10 hay không</div>
-				</div>
+				<p class="contentText dropdown">/scoreboard players &lt;add|remove|set&gt; &lt;player: targets&gt; &lt;objective: string&gt; &lt;count: int&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">players</code> là điều chỉnh mục tiêu</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;add|remove|set&gt;</code> là phương thức điều chỉnh
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">add</code> là thêm</p>
+							<p class="dropdownText"><code class="textSyntax">remove</code> là giảm</p>
+							<p class="dropdownText"><code class="textSyntax">set</code> là đặt</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;count:int&gt;</code> là điểm</p>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard players set Hg a 1</code>
+						<p class="contentText">Đặt Hg 1 điểm vào bảng id a</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+			<div>
+				<p class="contentText dropdown">/scoreboard players list [playername: target]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">players</code> là điều chỉnh mục tiêu</p>
+					<p class="dropdownText"><code class="textSyntax">list</code> là danh sách điểm Player có trong bảng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[player: target]</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">@s</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/scoreboard players list Hg</span>
+						<p class="contentText">Hiện danh sách bảng điểm của Hg</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/scoreboard players operation &lt;player: target&gt; &lt;targetObjective: string&gt; &lt;operation: operator&gt; &lt;selector: target&gt; &lt;objective: string&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">players</code> là điều chỉnh mục tiêu</p>
+					<p class="dropdownText"><code class="textSyntax">operation</code> là hành động</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị đổi
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;targetObjective: string&gt;</code> là id bảng bị đổi</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;operation: operator&gt;</code> là hành động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">+=</code> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ + điểm đối tượng không đổi</p>
+							<p class="dropdownText"><code class="textSyntax">-=</code> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ - điểm đối tượng không đổi</p>
+							<p class="dropdownText"><code class="textSyntax">*=</code> là điểm đối tượng bị đổi mới = điểm đối tượng bị đổi cũ × điểm đối tượng không đổi</p>
+							<p class="dropdownText"><code class="textSyntax">/=</code> là điểm đối tượng bị đổi mới lấy phần chia được = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi</p>
+							<p class="dropdownText"><code class="textSyntax">%=</code> là điểm đối tượng bị đổi mới lấy phần dư = điểm đối tượng bị đổi cũ ÷ điểm đối tượng không đổi</p>
+							<p class="dropdownText"><code class="textSyntax">=</code> là điểm đối tượng bị đổi = điểm đối tượng không đổi</p>
+							<p class="dropdownText"><code class="textSyntax">&lt;</code> là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &lt; điểm đối tượng không đổi</p>
+							<p class="dropdownText"><code class="textSyntax">&gt;</code> là điểm đối tượng bị đổi = điểm đối tượng không đổi khi điểm đối tượng bị đổi &gt; điểm đối tượng không đổi</p>
+							<div class="dropdownText">
+								<code class="textSyntax">&gt;&lt;</code> là hoán đổi điểm giữa đối tượng bị đổi với đối tượng không đổi
+								<span class="contentText textNote">Trường hợp này đối tượng không đổi sẽ bị thay đổi điểm</span>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;selector: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> không đổi
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng không đổi</p>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard players operation Hg a += The3T b</code>
+						<p class="contentText">Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg là 5 còn điểm của The3T vẫn giữ nguyên là 3</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard players operation Hg a = The3T b</code>
+						<p class="contentText">Hg đang trong bảng id a có 2 điểm, The3T đang trong bảng id b có 3 điểm, sau khi dùng Command thì điểm của Hg bị đổi thành 3 còn điểm của The3T vẫn giữ nguyên là 3</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/scoreboard players random &lt;player: target&gt; &lt;objective: string&gt; &lt;min: int&gt; &lt;max: int&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">players</code> là điều chỉnh mục tiêu</p>
+					<p class="dropdownText"><code class="textSyntax">random</code> cho điểm ngẫu nhiên</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;min: int&gt;</code> là số nhỏ nhất</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;max: int&gt;</code> là số lớn nhất</p>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard players random Hg a 1 10</code>
+						<p class="contentText">Đặt Hg ngẫu nhiên điểm trong khoảng 1 đến 10 vào bảng id a</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/scoreboard players reset &lt;player: target&gt; [objective: string]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">players</code> là điều chỉnh mục tiêu</p>
+					<p class="dropdownText"><code class="textSyntax">reset</code> là loại</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[objective: string]</code> là id bảng
+						<p class="contentText">Mặc định là tất cả bảng nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard players reset Hg a</code>
+						<p class="contentText">Loại Hg ra khỏi bảng a</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/scoreboard players test &lt;player: target&gt; &lt;objective: string&gt; &lt;min: wildcard int&gt; &lt;max: wildcard int&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">players</code> là điều chỉnh mục tiêu</p>
+					<p class="dropdownText"><code class="textSyntax">test</code> là kiểm tra</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;min: wildcard int&gt;</code> là số bé nhất</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;max: wildcard int&gt;</code> là số lớn nhất</p>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard playres test Hg a 1 10</code>
+						<p class="contentText">Kiểm tra Hg đang có điểm trong khoảng bằng 1 đến 10 hay không</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Nếu chỉ ghi <span class="textSyntax">/scoreboard objectives setdisplay &lt;list|sidebar&gt;</span> thì sẽ ẩn bảng đã hiện trước đó</div>
-			<div class="contentText">Nếu chỉ ghi <span class="textSyntax">/scoreboard objectives setdisplay &lt;list|sidebar&gt; [objective: string]</span> thì mặc định sẽ là ascending</div>
-			<div class="contentText dropdown"><span class="textSyntax">&lt;min: wildcard int&gt;</span> và <span class="textSyntax">&lt;max: wildcard int&gt;</span> có thể điền * biểu thị cho bé vô cùng (-∞) hoặc lớn vô cùng (+∞)</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textCommand">/scoreboard playres test @s a 1 *</span> — kiểm tra đối tượng dùng Command này có đang có điểm trong khoảng bằng 1 đến +∞</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">&lt;min: wildcard int&gt;</code> và <code class="textSyntax">&lt;max: wildcard int&gt;</code> có thể điền * biểu thị cho bé vô cùng (-∞) hoặc lớn vô cùng (+∞)</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/scoreboard playres test Hg a 1 *</code>
+						<p class="contentText">Kiểm tra Hg đang có điểm trong khoảng bằng 1 đến +∞ hay không</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

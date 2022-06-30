@@ -8,89 +8,121 @@
 	<!-- Primary Meta Tags -->
 	<title>/camerashake | MCBE Command Wiki VN by Hg</title>
 	<meta name="title" content="/camerashake | MCBE Command Wiki VN by Hg">
-	<meta name="description" content="Làm rung lắc màn hình">
+	<meta name="description" content="Làm rung màn hình của Player với cường độ và thời lượng cụ thể">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://hgvn23.github.io/commands/camerashake">
 	<meta property="og:title" content="/camerashake | MCBE Command Wiki VN by Hg">
-	<meta property="og:description" content="Làm rung lắc màn hình">
+	<meta property="og:description" content="Làm rung màn hình của Player với cường độ và thời lượng cụ thể">
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/camerashake.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://hgvn23.github.io/commands/camerashake">
 	<meta property="twitter:title" content="/camerashake | MCBE Command Wiki VN by Hg">
-	<meta property="twitter:description" content="Làm rung lắc màn hình">
+	<meta property="twitter:description" content="Làm rung màn hình của Player với cường độ và thời lượng cụ thể">
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/camerashake.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/camerashake</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/camerashake</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Làm rung lắc màn hình</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Làm rung màn hình của Player với cường độ và thời lượng cụ thể</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
 				<div class="contentTitle">Cú pháp</div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/camerashake add &lt;player: target&gt; [intensity: float] [second: float] [shakeType: CameraShakeType]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">[intensity: float]</span> là cấp độ rung lắc</div>
-					<div class="contentText"><span class="textSyntax">[second: float]</span> là thời gian rung lắc</div>
-					<div class="contentText dropdown"><span class="textSyntax">[shakeType: CameraShakeType]</span> là loại rung lắc. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">positional</span> là chuyển động giữ nguyên. Màn hình sẽ chỉ di chuyển sang trái phải trên dưới</div>
-						<div class="contentText"><span class="textSyntax">rotational</span> là chyển động xoay. Màn hình sẽ bị xoay các hướng</div>
+				<p class="contentText dropdown">/camerashake add &lt;player: target&gt; [intensity: float] [second: float] [shakeType: CameraShakeType]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/camerashake add @a 3 10 positional</span> — All Player sẽ bị rung lắc màn hình trong 10 giây với cấp độ 3 trong trạng thái chuyển động giữ nguyên</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[intensity: float]</code> là cường độ rung lắc
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">0.00</code> đến bằng <code class="textSyntax">4</code></p>
+						<p class="contentText">Mặc định là <code class="textSyntax">0.5</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[second: float]</code> là thời gian rung lắc
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">0.0</code> đến bằng <span class="textNote">1 giới hạn bạn không muốn ghi nó ra</span></p>
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[shakeType: CameraShakeType]</code> là loại rung lắc
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">positional</code> là chuyển động giữ nguyên
+								<p class="contentText">Màn hình sẽ chỉ di chuyển sang trái phải trên dưới</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">rotational</code> là chyển động xoay
+								<p class="contentText">Màn hình sẽ bị xoay các hướng</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">positional</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/camerashake add Hg 3 10 positional</code>
+						<p class="contentText">Hg sẽ bị rung lắc màn hình trong 10 giây với cường độ 3 trong trạng thái chuyển động giữ nguyên</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/camerashake stop [player: target]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">stop</span> là dừng</div>
-					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textCommand">/camerashake stop @a</span> — All Player sẽ dừng rung lắc màn hình</div>
-				</div>
+				<p class="contentText dropdown">/camerashake stop [player: target]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">stop</code> là dừng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[player: target]</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">@a</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/camerashake stop Hg</code>
+						<p class="contentText">Hg sẽ dừng rung lắc màn hình</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText"><span class="textSyntax">[intensity: float]</span> trong giới hạn 0 ≤ x ≤ 4</div>
-			<div class="contentText">Cấp độ rung lắc = 0 thì sẽ không có rung lắc</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText"><code class="textSyntax">[intensity: float]</code> = <code class="textSyntax">0</code> thì sẽ không có rung lắc</p>
+		</section>
+	</article>
+</main>
 </body>

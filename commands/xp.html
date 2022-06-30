@@ -25,69 +25,87 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/xp.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/xp</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/xp</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Điều chỉnh kinh nghiệm của Player</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Điều chỉnh kinh nghiệm của Player</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/xp &lt;amount: int&gt; [player: target]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;amount: int&gt;</span> là điểm kinh nghiệm</div>
-					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textCommand">/xp 1 @a</span> — Điểm kinh nghiệm của All Player +1 điểm</div>
-				</div>
+				<p class="contentText dropdown">/xp &lt;amount: int&gt; [player: target]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;amount: int&gt;</code> là điểm kinh nghiệm</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">@s</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/xp 1 Hg</code>
+						<p class="contentText">Điểm kinh nghiệm của Hg +1 điểm</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/xp &lt;amount: int&gt;L [player: target]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;amount: int&gt;L</span> là Level kinh nghiệm</div>
-					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textCommand">/xp 1L @a</span> — Level kinh nghiệm của All Player +1 Level</div>
-				</div>
+				<p class="contentText dropdown">/xp &lt;amount: int&gt;L [player: target]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;amount: int&gt;L</code> là Level kinh nghiệm</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">@s</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/xp 1L Hg</code>
+						<p class="contentText">Level kinh nghiệm của Hg +1 Level</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText"><span class="textSyntax">&lt;amount: int&gt;</span> không có số âm</div>
-			<div class="contentText dropdown"><span class="textSyntax">&lt;amount: int&gt;L</span> có thể có số âm để trừ thay vì số dương để cộng</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textCommand">/xp -1L @a</span> — Level kinh nghiệm của All Player -1 Level</div>
-			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<div class="contentText"><code class="textSyntax">&lt;amount: int&gt;</code> không có số âm</div>
+			<p class="contentText dropdown"><code class="textSyntax">&lt;amount: int&gt;L</code> có thể có số âm để trừ thay vì số dương để cộng</p>
+			<div class="dropdownStart dropdownHide"><div>
+				<div class="dropdownText"><code class="textCommand">/xp -1L Hg</code>
+					<p class="contentText">Level kinh nghiệm của Hg -1 Level</p>
+				</div>
+				<div class="dropdownEnd"></div>
+			</div></div>
+		</section>
+	</article>
+</main>
 </body>

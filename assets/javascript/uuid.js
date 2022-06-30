@@ -7,5 +7,5 @@ function generator() {
 			uuid += "-";
 		uuid += uuidList[Math.floor(Math.random() * 16)];
 	};
-	document.querySelector(".uuid").innerHTML = uuid;
+	document.querySelector(".result").innerHTML = uuid;
 };

@@ -12,78 +12,89 @@
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://hgvn23.github.io/commands/help">
+	<meta property="og:url" content="https://hgvn23.github.io/commands/1help">
 	<meta property="og:title" content="/help | MCBE Command Wiki VN by Hg">
 	<meta property="og:description" content="Đưa ra danh sách và cú pháp Command mà Player có thể sử dụng">
-	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/help.png">
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/1help.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://hgvn23.github.io/commands/help">
+	<meta property="twitter:url" content="https://hgvn23.github.io/commands/1help">
 	<meta property="twitter:title" content="/help | MCBE Command Wiki VN by Hg">
 	<meta property="twitter:description" content="Đưa ra danh sách và cú pháp Command mà Player có thể sử dụng">
-	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/help.png">
+	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/1help.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/help</div>
-		<div class="contentBox">
+<body class="themeDark">
+	<article class="content">
+		<h1 class="contentHeader">/help</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Đưa ra danh sách và cú pháp Command mà Player có thể sử dụng</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Đưa ra danh sách và cú pháp Command mà Player có thể sử dụng</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player không có OP</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player không có OP</p>
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/help [command: CommandName]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">[command: CommandName]</span> là tên Command</div>
-					<div class="contentText"><span class="textCommand">/help clone</span> — sẽ hiện cú pháp Command clone</div>
-				</div>
+				<p class="contentText dropdown">/help [command: CommandName]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">[command: CommandName]</code> là tên Command
+						<p class="contentText">Nếu bạn bỏ qua thành phần này thì Command sẽ gửi danh sách các Command trong trang 1</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/help clone</code>
+						<p class="contentText">Hiện cú pháp <a class="textLink" href="clone.html">/clone</a></p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/help &lt;page: int&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;page: int&gt;</span> là số trang danh sách Command (tổng cộng có 24 trang)</div>
-					<div class="contentText"><span class="textCommand">/help 2</span> — sẽ hiện các Command trong trang 2</div>
-				</div>
+				<p class="contentText dropdown">/help &lt;page: int&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;page: int&gt;</code> là số trang danh sách Command
+						<p class="contentText">Đối với Player không có OP sẽ chỉ có 2 trang</p>
+						<p class="contentText">Đối với Player có OP sẽ có 24 trang</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/help 2</code>
+						<p class="contentText">Hiện các Command trong trang 2</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Danh sách Command có thể dùng của Player không có OP sẽ ngắn</div>
-			<div class="contentText">Command này chỉ giúp bạn biết cú pháp của All Command, không giải thích ý nghĩa của cú pháp</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Command này chỉ giúp bạn biết cú pháp của tất cả Command và các Command bạn có thể dùng, không giải thích ý nghĩa của cú pháp</p>
+		</section>
+	</article>
 </body>

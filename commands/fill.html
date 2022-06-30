@@ -25,116 +25,201 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/fill.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/fill</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/fill</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Lấp đầy khu vực trong khoảng giới hạn đã xác định</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Lấp đầy khu vực trong khoảng giới hạn đã xác định</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; &lt;blockStates: block states&gt; replace [replaceTileName: Block] [replaceDataValue: int]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
-					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
-					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
-					<div class="contentText"><span class="textSyntax">&lt;blockStates: block states&gt;</span> là trạng thái Block. <a class="link_text" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a></div>
-					<div class="contentText"><span class="textSyntax">replace</span> là thay thế</div>
-					<div class="contentText"><span class="textSyntax">[replaceTileName: Block]</span> là id Block được thay thế</div>
-					<div class="contentText"><span class="textSyntax">[replaceDataValue: int]</span> là dữ liệu Block được thay thế</div>
-					<div class="contentText"><span class="textCommand">/fill 1 1 1 2 2 2 wool ["color":14] replace stone 0</span> — từ tọa độ 1 1 1 đến 2 2 2 nếu có Stone dữ liệu 0 thì sẽ bị thay thế thành Wool dữ liệu 14</div>
-				</div>
+				<div class="contentText dropdown">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; &lt;blockStates: block states&gt; replace [replaceTileName: Block] [replaceBlockStates: block states]</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;from: x y z&gt;</code> là tọa độ bắt đầu</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;to: x y z&gt;</code> là tọa độ kết thúc</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;tileName: Block&gt;</code> là id Block</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;blockStates: block states&gt;</code> là trạng thái Block
+						<a class="contentText textLink" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">replace</code> là thay thế</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[replaceTileName: Block]</code> là id Block được thay thế
+						<p class="contentText">Mặc định là toàn bộ Id Block nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[replaceBlockStates: block states]</code> là trạng thái Block được thay thế
+						<a class="contentText textLink" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a>
+						<p class="contentText">Mặc định là <code class="textSyntax">-1</code> (tất cả Data) nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/fill 1 1 1 2 2 2 wool ["color":14] replace wool ["color":11]</code>
+						<p class="contentText">Từ tọa độ 1 1 1 đến 2 2 2 nếu có Wool dữ liệu 11 thì sẽ bị thay thế thành Wool dữ liệu 14</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; &lt;tileData: int&gt; replace [replaceTileName: Block] [replaceDataValue: int]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
-					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
-					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
-					<div class="contentText"><span class="textSyntax">&lt;tileData: int&gt;</span> là dữ liệu Block</div>
-					<div class="contentText"><span class="textSyntax">replace</span> là thay thế</div>
-					<div class="contentText"><span class="textSyntax">[replaceTileName: Block]</span> là id Block được thay thế</div>
-					<div class="contentText"><span class="textSyntax">[replaceDataValue: int]</span> là dữ liệu Block được thay thế</div>
-					<div class="contentText"><span class="textCommand">/fill 1 1 1 2 2 2 wool 14 replace stone 0</span> — từ tọa độ 1 1 1 đến 2 2 2 nếu có Stone dữ liệu 0 thì sẽ bị thay thế thành Wool dữ liệu 14</div>
-				</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;from: x y z&gt;</code> là tọa độ bắt đầu</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;to: x y z&gt;</code> là tọa độ kết thúc</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;tileName: Block&gt;</code> là id Block</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;tileData: int&gt;</code> là id Block</p>
+					<p class="dropdownText"><code class="textSyntax">replace</code> là thay thế</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[replaceTileName: Block]</code> là id Block được thay thế
+						<p class="contentText">Mặc định là toàn bộ Id Item nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[replaceDataValue: int]</code> là dữ liệu Block được thay thế
+						<p class="contentText">Mặc định là <code class="textSyntax">-1</code> (tất cả Data) nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/fill 1 1 1 2 2 2 wool 14 replace stone 0</code>
+						<p class="contentText">Từ tọa độ 1 1 1 đến 2 2 2 nếu có Stone dữ liệu 0 thì sẽ bị thay thế thành Wool dữ liệu 14</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; [blockStates: block states] [oldBlockHandling: FillMode]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
-					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
-					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
-					<div class="contentText"><span class="textSyntax">&lt;blockStates: block states&gt;</span> là trạng thái Block. <a class="link_text" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a></div>
-					<div class="contentText dropdown"><span class="textSyntax">[oldBlockHandling: FillMode]</span> là chế độ lấp đầy. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText">Bỏ qua phần này thì All Block trong khoảng sẽ bị ghi đè</div>
-						<div class="contentText"><span class="textSyntax">destroy</span> là phá hủy Block. Giống với Player đập Block</div>
-						<div class="contentText"><span class="textSyntax">hollow</span> là tạo khung có Air bên trong. Mọi Block bên trong khung sẽ bị ghi đè bằng Air</div>
-						<div class="contentText"><span class="textSyntax">keep</span> là giữ lại Block. Air sẽ bị ghi đè còn các Block khác giữ nguyên</div>
-						<div class="contentText"><span class="textSyntax">outline</span> là tạo khung không có Air bên trong. Mọi Block bên trong khung sẽ được giữ nguyên</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;from: x y z&gt;</code> là tọa độ bắt đầu</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;to: x y z&gt;</code> là tọa độ kết thúc</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;tileName: Block&gt;</code> là id Block</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[blockStates: block states]</code> là trạng thái Block
+						<a class="contentText textLink" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a>
+						<p class="contentText">Mặc định là <code class="textSyntax">-1</code> (tất cả Data) nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/fill 1 1 1 2 2 2 wool ["color":14] outline</span> — All Block ở khung sẽ bị ghi đè bằng Wool, còn các Block khác trong khung sẽ được giữ nguyên</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[oldBlockHandling: FillMode]</code> là chế độ lấp đầy
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">destroy</code> là phá hủy Block
+								<p class="contentText">Giống với Player đập Block</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">hollow</code> là tạo khung có Air bên trong
+								<p class="contentText">Mọi Block bên trong khung sẽ bị ghi đè bằng Air</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">keep</code> là giữ lại Block
+								<p class="contentText">Air sẽ bị ghi đè còn các Block khác giữ nguyên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">outline</code> là tạo khung không có Air bên trong
+								<p class="contentText">Mọi Block bên trong khung sẽ được giữ nguyên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">replace</code> là thay thế
+								<p class="contentText">Block sẽ bị thế, không Drop Item</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">replace</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/fill 1 1 1 2 2 2 wool ["color":14] outline</code>
+						<p class="contentText">Từ tọa độ 1 1 1 đến 2 2 2 tất cả Block ở khung sẽ bị ghi đè bằng Wool, còn các Block khác trong khung sẽ được giữ nguyên</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/fill &lt;from: x y z&gt; &lt;to: x y z&gt; &lt;tileName: Block&gt; [tileData: int] [oldBlockHandling: FillMode]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
-					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
-					<div class="contentText"><span class="textSyntax">&lt;tileName: Block&gt;</span> là id Block</div>
-					<div class="contentText"><span class="textSyntax">[tileData: int]</span> là dữ liệu Block</div>
-					<div class="contentText dropdown"><span class="textSyntax">[oldBlockHandling: FillMode]</span> là chế độ lấp đầy. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText">Bỏ qua phần này thì All Block trong khoảng sẽ bị ghi đè</div>
-						<div class="contentText"><span class="textSyntax">destroy</span> là phá hủy Block. Giống với Player đập Block</div>
-						<div class="contentText"><span class="textSyntax">hollow</span> là tạo khung có Air bên trong. Mọi Block bên trong khung sẽ bị ghi đè bằng Air</div>
-						<div class="contentText"><span class="textSyntax">keep</span> là giữ lại Block. Air sẽ bị ghi đè còn các Block khác giữ nguyên</div>
-						<div class="contentText"><span class="textSyntax">outline</span> là tạo khung không có Air bên trong. Mọi Block bên trong khung sẽ được giữ nguyên</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;from: x y z&gt;</code> là tọa độ bắt đầu</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;to: x y z&gt;</code> là tọa độ kết thúc</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;tileName: Block&gt;</code> là id Block
+						<p class="contentText">Danh sách id hiện khi ghi Command trên Chat</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/fill 1 1 1 2 2 2 dirt 0 outline</span> — All Block ở khung sẽ bị ghi đè bằng Dirt, còn các Block khác trong khung sẽ được giữ nguyên</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[tileData: int]</code> là dữ liệu Block
+						<p class="contentText">Mặc định là <code class="textSyntax">-1</code> (tất cả Data) nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[oldBlockHandling: FillMode]</code> là chế độ lấp đầy
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">destroy</code> là phá hủy Block
+								<p class="contentText">Giống với Player đập Block</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">hollow</code> là tạo khung có Air bên trong
+								<p class="contentText">Mọi Block bên trong khung sẽ bị ghi đè bằng Air</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">keep</code> là giữ lại Block
+								<p class="contentText">Air sẽ bị ghi đè còn các Block khác giữ nguyên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">outline</code> là tạo khung không có Air bên trong
+								<p class="contentText">Mọi Block bên trong khung sẽ được giữ nguyên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">replace</code> là thay thế
+								<p class="contentText">Block sẽ bị thế, không Drop Item</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">replace</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/fill 1 1 1 2 2 2 dirt 0 outline</code>
+						<p class="contentText">Từ tọa độ 1 1 1 đến 2 2 2 tất cả Block ở khung sẽ bị ghi đè bằng Dirt, còn các Block khác trong khung sẽ được giữ nguyên</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Giới hạn Block có thể Fill trong 1 lần phải nhỏ hơn 32768 Block</div>
-			<div class="contentText">Không thể Fill nếu tọa độ bắt đầu và tọa độ kết thúc không nằm trong Chunk của Player</div>
-			<div class="contentText dropdown"><span class="textSyntax">[replaceDataValue: int]</span> = <span class="textSyntax">-1</span> là mọi loại dữ liệu của Block</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textCommand">/fill 1 1 1 2 2 2 dirt 0 replace wool -1</span> — từ tọa độ 1 1 1 đến 2 2 2 nếu có Wool bất kì loại nào sẽ bị thay thế thành Dirt dữ liệu 0</div>
-			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Giới hạn Block có thể fill trong 1 lần phải nhỏ hơn 32768 Block</p>
+			<p class="contentText">Không thể Fill nếu tọa độ bắt đầu và tọa độ kết thúc không nằm trong vùng Load Chunk</p>
+			<p class="contentText dropdown"><code class="textSyntax">[replaceDataValue: int]</code> = <code class="textSyntax">-1</code> là mọi loại dữ liệu của Block</p>
+			<div class="dropdownStart dropdownHide"><div>
+				<div class="dropdownText">
+					<code class="textCommand">/fill 1 1 1 2 2 2 dirt 0 replace wool -1</code>
+					<p class="contentText">Từ tọa độ 1 1 1 đến 2 2 2 nếu có Wool bất kì loại nào sẽ bị thay thế thành Dirt dữ liệu 0</p>
+				</div>
+				<div class="dropdownEnd"></div>
+			</div></div>
+		</section>
+	</article>
+</main>
 </body>

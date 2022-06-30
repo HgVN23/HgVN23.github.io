@@ -25,132 +25,212 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/toan_tu_ki_tu.png">
 	
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">Toán tử kí tự</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">Toán tử kí tự</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">!</div>
+				<h2 class="contentTitle">!</h2>
 			</div>
-			<div class="contentText">Dùng để loại trừ trong Target</div>
-			<div class="contentText"><span class="textCommand">/testfor @e[type=!player]</span> - kiểm tra tất cả Entity ngoại trừ Player</div>
-			<div class="contentText dropdown">Dùng được trong:</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=!&lt;giá trị&gt;}]</span></div>
-				<div class="contentText"><span class="textSyntax">[tag=!&lt;chuổi kí tự&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[m=!&lt;loại gamemode&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[name=!&lt;tên đối tượng&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[type=!&lt;id Entity&gt;]</span></div>
-				<div class="contentText"><span class="textSyntax">[family=!&lt;loại family&gt;]</span></div>
-			</div>
-		</div>
-		<div class="contentBox">
-			<div class="contentGroup">
-				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">..</div>
-			</div>
-			<div class="contentText">Dùng để xét đoạn giá trị số trong Target</div>
-			<div class="contentText"><span class="textCommand">/testfor @a[scores={test=5..}]</span> - kiểm tra tất cả Player có điểm bằng 5 hoặc nhiều hơn 5 trong scoreboard test</div>
-			<div class="contentText"><span class="textCommand">/testfor @a[scores={test=..5}]</span> - kiểm tra tất cả Player có điểm bằng 5 hoặc ít hơn 5 trong scoreboard test</div>
-			<div class="contentText"><span class="textCommand">/testfor @a[scores={test=1..5}]</span> - kiểm tra tất cả Player có điểm từ 1 đến 5 trong scoreboard test</div>
-			<div class="contentText dropdown">Dùng được trong:</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị&gt;..}]</span></div>
-				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=..&lt;giá trị&gt;}]</span></div>
-				<div class="contentText"><span class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</span></div>
-				<div class="contentText"><span class="textSyntax">[hasitem={quantity=&lt;giá trị&gt;..}]</span></div>
-				<div class="contentText"><span class="textSyntax">[hasitem={quantity=..&lt;giá trị&gt;}]</span></div>
-				<div class="contentText"><span class="textSyntax">[hasitem={quantity=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</span></div>
-				<div class="contentText"><span class="textSyntax">[hasitem={slot=&lt;giá trị&gt;..}]</span></div>
-				<div class="contentText"><span class="textSyntax">[hasitem={slot=..&lt;giá trị&gt;}]</span></div>
-				<div class="contentText"><span class="textSyntax">[hasitem={slot=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</span></div>
-			</div>
-		</div>
-		<div class="contentBox">
-			<div class="contentGroup">
-				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">~</div>
-			</div>
-			<div class="contentText">Tính từ nơi đối tượng dùng Command</div>
-			<div class="contentText"><span class="textCommand">/setblock ~ ~-1 ~ dirt</span> - dirt sẽ được setblock ngay phía dưới</div>
-			<div class="contentText">Các Command có x y z đều có thể dùng ~</div>
+			<p class="contentText">Dùng để loại trừ trong Target</p>
 			<div>
-				<div class="contentText dropdown">Không nhất thiết phải dùng 3 ~</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/setblock ~ 1 ~ dirt</span> - dirt sẽ được setblock ở tầng y=1 tại vị trí dùng Command</div>
-				</div>
+				<p class="contentText dropdown">Ví dụ</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/testfor @e[type=!player]</code>
+						<p class="contentText">Kiểm tra tất cả Entity ngoại trừ Player</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">~ và ^ không thể sử dụng cùng lúc trong x y z</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> - Command bị lỗi</div>
-				</div>
+				<p class="contentText dropdown">Dùng được trong các bộ lọc Target</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">[scores={&lt;id bảng&gt;=!&lt;giá trị&gt;}]</code></p>
+					<p class="dropdownText"><code class="textSyntax">[tag=!&lt;chuổi kí tự&gt;]</code></p>
+					<p class="dropdownText"><code class="textSyntax">[m=!&lt;loại gamemode&gt;]</code></p>
+					<p class="dropdownText"><code class="textSyntax">[name=!&lt;tên đối tượng&gt;]</code></p>
+					<p class="dropdownText"><code class="textSyntax">[type=!&lt;id Entity&gt;]</code></p>
+					<p class="dropdownText"><code class="textSyntax">[family=!&lt;loại family&gt;]</code></p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">^</div>
+				<h2 class="contentTitle">..</h2>
+			</div>
+			<p class="contentText">Dùng để xét đoạn giá trị số trong Target</p>
+			<div>
+				<div class="contentText dropdown">Ví dụ</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/testfor @a[scores={test=5..}]</code>
+						<p class="contentText">Kiểm tra tất cả Player có điểm bằng 5 hoặc nhiều hơn 5 trong scoreboard test</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/testfor @a[scores={test=..5}]</code>
+						<p class="contentText">Kiểm tra tất cả Player có điểm bằng 5 hoặc ít hơn 5 trong scoreboard test</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/testfor @a[scores={test=1..5}]</code>
+						<p class="contentText">Kiểm tra tất cả Player có điểm từ 1 đến 5 trong scoreboard test</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Dùng được trong các bộ lọc Target</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<div class="contentText dropdown">scores</div>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị&gt;..}]</code></p>
+							<p class="dropdownText"><code class="textSyntax">[scores={&lt;id bảng&gt;=..&lt;giá trị&gt;}]</code></p>
+							<p class="dropdownText"><code class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</code></p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<div class="contentText dropdown">hasitem với quantity</div>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">[hasitem={quantity=&lt;giá trị&gt;..}]</code></p>
+							<p class="dropdownText"><code class="textSyntax">[hasitem={quantity=..&lt;giá trị&gt;}]</code></p>
+							<p class="dropdownText"><code class="textSyntax">[hasitem={quantity=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</code></p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<div class="contentText dropdown">hasitem với slot</div>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">[hasitem={slot=&lt;giá trị&gt;..}]</code></p>
+							<p class="dropdownText"><code class="textSyntax">[hasitem={slot=..&lt;giá trị&gt;}]</code></p>
+							<p class="dropdownText"><code class="textSyntax">[hasitem={slot=&lt;giá trị nhỏ&gt;..&lt;giá trị lớn&gt;}]</code></p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<h2 class="contentTitle">~</h2>
+			</div>
+			<p class="contentText">Tính từ nơi đối tượng dùng Command</p>
+			<div>
+				<div class="contentText dropdown">Ví dụ</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/setblock ~ ~-1 ~ dirt</code>
+						<p class="contentText">Dirt sẽ được setblock ngay phía dưới</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<p class="contentText">Các Command có x y z đều có thể dùng ~</p>
+			<div>
+				<p class="contentText dropdown">Không nhất thiết phải dùng 3 ~</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/setblock ~ 1 ~ dirt</code>
+						<p class="contentText">Dirt sẽ được setblock ở tầng y=1 tại vị trí dùng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">~ và ^ không thể sử dụng cùng lúc trong x y z</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/setblock ~ ^1 ^ dirt</code>
+						<p class="contentText">Command bị lỗi</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<h2 class="contentTitle">^</h2>
 			</div>
 			<div class="contentText">Tính từ hướng nhìn của đối tượng dùng Command</div>
-			<div class="contentText"><span class="textCommand">/setblock ^ ^ ^1 dirt</span> - dirt sẽ được setblock ngay phía trước theo hướng nhìn</div>
-			<div class="contentText">Các Command có x y z đều có thể dùng ^</div>
-			<div class="contentText">Bắt buộc phải dùng cả 3 ^</div>
-			<div class="contentText dropdown">~ và ^ không thể sử dụng cùng lúc trong x y z</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textCommand">/setblock ~ ^1 ^ dirt</span> - Command bị lỗi</div>
+			<div>
+				<div class="contentText dropdown">Ví dụ</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/setblock ^ ^ ^1 dirt</code>
+						<p class="contentText">Dirt sẽ được setblock ngay phía trước theo hướng nhìn</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Các Command có x y z đều có thể dùng ^</p>
+			<p class="contentText">Bắt buộc phải dùng cả 3 ^</p>
+			<div>
+				<p class="contentText dropdown">~ và ^ không thể sử dụng cùng lúc trong x y z</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/setblock ~ ^1 ^ dirt</code>
+						<p class="contentText">Command bị lỗi</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">§</div>
+				<h2 class="contentTitle">§</h2>
 			</div>
 			<div>
 				<div class="contentText">Định dạng văn bản</div>
 				<div>
-					<div class="contentText dropdown">Danh sách mã màu:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span style="color: #000000">§0 ◼◼◼◼◼◼◼◼◼</span><span style="color: #FFFFFF"> (Đen)</span></div>
-						<div class="contentText"><span style="color: #0000AA">§1 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #00AA00">§2 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #00AAAA">§3 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #AA0000">§4 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #AA00AA">§5 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #FFAA00">§6 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #AAAAAA">§7 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #555555">§8 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #5555FF">§9 ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #55FF55">§a ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #55FFFF">§b ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #FF5555">§c ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #FF55FF">§d ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #FFFF55">§e ◼◼◼◼◼◼◼◼◼</span></div>
-						<div class="contentText"><span style="color: #FFFFFF">§f  ◼◼◼◼◼◼◼◼◼</span><span style="color: #000000"> (Trắng)</span></div>
-						<div class="contentText"><span style="color: #DDD605">§g ◼◼◼◼◼◼◼◼◼</span></div>
-					</div>
+					<div class="contentText dropdown">Danh sách mã màu</div>
+					<div class="dropdownStart dropdownHide"><div>
+						<p class="dropdownText"><span style="color: #000000">§0 ◼◼◼◼◼◼◼◼◼</span><span style="color: #FFFFFF"> (Đen)</span></p>
+						<p class="dropdownText"><span style="color: #0000AA">§1 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #00AA00">§2 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #00AAAA">§3 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #AA0000">§4 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #AA00AA">§5 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #FFAA00">§6 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #AAAAAA">§7 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #555555">§8 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #5555FF">§9 ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #55FF55">§a ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #55FFFF">§b ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #FF5555">§c ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #FF55FF">§d ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #FFFF55">§e ◼◼◼◼◼◼◼◼◼</span></p>
+						<p class="dropdownText"><span style="color: #FFFFFF">§f ◼◼◼◼◼◼◼◼◼</span><span style="color: #000000"> (Trắng)</span></p>
+						<p class="dropdownText"><span style="color: #DDD605">§g ◼◼◼◼◼◼◼◼◼</span></p>
+						<div class="dropdownEnd"></div>
+					</div></div>
 				</div>
 				<div>
-					<div class="contentText dropdown">Danh sách mã định dạng:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText">§k (Ngẫu nhiên kí tự)</div>
-						<div class="contentText"><b>§l (Bôi đậm kí tự)</b></div>
-						<div class="contentText"><del>§m (Gạch ngang kí tự)</del> <a class="textLink textNote" href="https://bugs.mojang.com/browse/MCPE-41729" target="_blank">Định dạng này không hoạt động trong Game, ấn vào đây để xem báo cáo Bug</a></div>
-						<div class="contentText"><ins>§n (Gạch chân kí tự)</ins>  <a class="textLink textNote" href="https://bugs.mojang.com/browse/MCPE-41729" target="_blank">Định dạng này không hoạt động trong Game, ấn vào đây để xem báo cáo Bug</a></div>
-						<div class="contentText"><i>§o (Nghiêng kí tự)</i></div>
-						<div class="contentText">§r (Reset định dạng)</div>
-					</div>
+					<div class="contentText dropdown">Danh sách mã định dạng</div>
+					<div class="dropdownStart dropdownHide"><div>
+						<p class="dropdownText">§k (Ngẫu nhiên kí tự)</p>
+						<p class="dropdownText"><b>§l (Bôi đậm kí tự)</b></p>
+						<p class="dropdownText"><del>§m (Gạch ngang kí tự)</del> <a class="textLink textNote" href="https://bugs.mojang.com/browse/MCPE-41729" target="_blank">Định dạng này không hoạt động trong Game, ấn vào đây để xem báo cáo Bug</a></p>
+						<p class="dropdownText"><ins>§n (Gạch chân kí tự)</ins>  <a class="textLink textNote" href="https://bugs.mojang.com/browse/MCPE-41729" target="_blank">Định dạng này không hoạt động trong Game, ấn vào đây để xem báo cáo Bug</a></p>
+						<p class="dropdownText"><i>§o (Nghiêng kí tự)</i></p>
+						<p class="dropdownText">§r (Reset định dạng)</p>
+						<div class="dropdownEnd"></div>
+					</div></div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

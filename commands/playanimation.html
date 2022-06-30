@@ -25,53 +25,83 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/playanimation.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/playanimation</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/playanimation</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Làm cho Player thực hiện hoạt động</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Làm cho Player thực hiện hoạt động</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
-			<div class="contentText dropdown">/playanimation &lt;entity: target&gt; &lt;animation: string&gt; [next_state: string] [blend_out_time: float] [stop_expression: string] [controller: string]</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textSyntax">&lt;entity: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-				<div class="contentText"><span class="textSyntax">&lt;animation: string&gt;</span> là id Animation. <a class="textLink" href="../danhSachId/animationId.html" target="_blank">Danh sách</a></div>
-				<div class="contentText"><span class="textCommand">/playanimation @a animation.react_arm_1</span> — All Player sẽ có hoạt động React arm 1</div>
-				<div class="contentText"><span class="textSyntax">[next_state: string]</span> là chạy id Animation tiếp theo khi id Animation đầu hết. <a class="textLink" href="../danhSachId/animationId.html" target="_blank">Danh sách</a></div>
-				<div class="contentText"><span class="textSyntax">[blend_out_time: float]</span> là thời gian kết thúc dần hoạt động</div>
-				<div class="contentText"><span class="textSyntax">[stop_expression: string]</span> là điều kiện để dừng hoạt động</div>
-				<div class="contentText"><span class="textSyntax">[controller: string]</span> là điều khiển hoạt động</div>
-				<div class="contentText"><span class="textCommand">/playanimation @e[type=fox] sit sleep 0 "!query.is_on_ground"</span> — bắt Fox ngồi xuống cho đến khi chúng rời khỏi mặt đất. Sau khi rời khỏi mặt đất, những con Fox rơi vào trạng thái ngủ</div>
+			<div>
+				<p class="contentText dropdown">/playanimation &lt;entity: target&gt; &lt;animation: string&gt; [next_state: string] [blend_out_time: float] [stop_expression: string] [controller: string]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;entity: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;animation: string&gt;</code> là id Animation
+						<a class="contentText textLink" href="../danhSachId/animationId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[next_state: string]</code> là chạy id Animation tiếp theo khi id Animation đầu hết
+						<a class="contentText textLink" href="../danhSachId/animationId.html" target="_blank">Danh sách</a>
+						<p class="contentText">Mặc định là không có Animation nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[blend_out_time: float]</code> là thời gian kết thúc dần hoạt động
+						<p class="contentText">Mặc định là <code class="textSyntax">...</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[stop_expression: string]</code> là điều kiện để dừng hoạt động
+						<p class="contentText">Mặc định là <code class="textSyntax">...</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[controller: string]</code> là điều khiển hoạt động
+						<p class="contentText">Mặc định là <code class="textSyntax">...</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/playanimation @e[type=fox] sit sleep 0 "!query.is_on_ground"</span>
+						<p class="contentText">Bắt Fox ngồi xuống cho đến khi chúng rời khỏi mặt đất. Sau khi rời khỏi mặt đất, Fox rơi vào trạng thái ngủ</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<h2 class="contentTitle">Lưu ý</h2>
+			</div>
+			<p class="contentText">Có thể sử dụng các Animation lên Entity không có Animation đấy</p>
+		</section>
+	</article>
+</main>
 </body>

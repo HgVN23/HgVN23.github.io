@@ -9,7 +9,7 @@ function glyph() {
 		missing();
 	else {
 		var n = glyphTable + glyphRow + glyphCol;
-		document.querySelector(".glyph").innerHTML = `&#x${n};`;
+		document.querySelector(".result").innerHTML = `&#x${n};`;
 	}
 };
 

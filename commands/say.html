@@ -25,55 +25,61 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/say.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/say</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/say</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Khiến đối tượng sử dụng Command này gửi Chat đã ghi trong Command</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Khiến đối tượng sử dụng Command này gửi Chat đã ghi trong Command</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
-			<div class="contentText dropdown">/say &lt;message: message&gt;</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textSyntax">&lt;message: message&gt;</span> là tin nhắn</div>
-				<div class="contentText"><span class="textCommand">/say Hi</span> — đối tượng sử dụng sẽ Chat là Hi. Ví dụ Hg sử dụng thì Chat sẽ hiện là [Hg] Hi</div>
+			<div>
+				<p class="contentText dropdown">/say &lt;message: message&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;message: message&gt;</code> là đoạn Chat</p>
+					<div class="dropdownText">
+						<code class="textCommand">/say Hi</code>
+						<p class="contentText">Đối tượng sử dụng sẽ Chat là Hi</p>
+						<p class="contentText">Ví dụ Hg sử dụng thì Chat sẽ hiện là <code class="textSyntax">[Hg] Hi</code></p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Hover Note của Command Block không ghi gì thì đầu ra sẽ là [!]. Nếu Hover Note có ghi Test thì đầu ra sẽ là [Test]</div>
-			<div class="contentText">Khi sử dụng Command này All Player đều có thể thấy được Chat</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Hover Note của Command Block không ghi gì thì đầu ra sẽ là [!]. Nếu Hover Note có ghi Test thì đầu ra sẽ là [Test]</p>
+			<p class="contentText">Khi sử dụng Command này tất cả Player đều có thể thấy được Chat</p>
+		</section>
+	</article>
+</main>
 </body>

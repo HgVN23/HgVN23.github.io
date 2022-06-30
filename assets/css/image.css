@@ -8,33 +8,33 @@
 }
 .imageRx {
 	content: url(../media/image/rx.png);
-	width: 40%;
-	height: 40%;
+	width: 60%;
+	height: 60%;
 }
 .imageRy {
 	content: url(../media/image/ry.png);
-	width: 40%;
-	height: 40%;
+	width: 60%;
+	height: 60%;
 }
 .imageCmdbUi {
 	content: url(../media/image/cmdb_ui.png);
-	width: 40%;
-	height: 40%;
+	width: 50%;
+	height: 50%;
 }
 .imageCmdbType {
 	content: url(../media/image/cmdb_type.png);
-	width: 20%;
-	height: 20%;
+	width: 30%;
+	height: 30%;
 }
 .imageCmdbCondition {
 	content: url(../media/image/cmdb_condition.png);
-	width: 20%;
-	height: 20%;
+	width: 40%;
+	height: 40%;
 }
 .imageCmdbRedstone {
 	content: url(../media/image/cmdb_redstone.png);
-	width: 20%;
-	height: 20%;
+	width: 30%;
+	height: 30%;
 }
 .imageDamage {
 	content: url(../media/image/damage.png);

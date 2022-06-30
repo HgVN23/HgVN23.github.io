@@ -25,532 +25,787 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/target.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 	<link rel="stylesheet" href="../assets/css/image.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/table.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">Target</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">Danh sách Target</div>
+				<h2 class="contentTitle">Danh sách</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@p</span>: chọn Player gần đối tượng sử dụng Command nhất</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfore @p</span> - ghi trong chat thì kiểm tra Player ghi Command đó là người gần nhất</div>
-							<div class="contentText"><span class="textCommand">/testfore @p</span> - ghi trong Command Block thì kiểm tra Player đứng gần Command Block nhất</div>
-						</div>
+				<p class="contentText dropdown"><code class="textSyntax">@p</code> là chọn Player gần đối tượng sử dụng Command nhất</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfore @p</code>
+								<p class="contentText">Ghi trong chat thì kiểm tra Player ghi Command đó là người gần nhất</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfore @p</code>
+								<p class="contentText">Ghi trong Command Block thì kiểm tra Player đứng gần Command Block nhất</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Chỉ chọn Player còn sống</p>
+							<div class="dropdownText">
+								<p class="contentText">Nếu có nhiều Player trong cùng khoảng cách thì sẽ chọn Player mới vào Map</p>
+								<p class="contentText">Ví dụ A vào Map trước B, A và B trong cùng khoảng cách thì B sẽ được chọn</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">@r</code> là chọn ngẫu nhiên một Entity</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfore @r</code>
+								<p class="contentText">Kiểm tra ngẫu nhiên 1 Player</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfore @r[type=cow]</code>
+								<p class="contentText">Kiểm tra ngẫu nhiên 1 Cow</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Chỉ chọn Entity còn sống</p>
+							<p class="dropdownText">Nếu không có bộ lọc <code class="textSyntax">type</code> thì mặc định chọn của <code class="textSyntax">@r</code> là Player</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">@a</code> là chọn tất cả Player</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a</code>
+								<p class="contentText">Kiểm tra tất cả Player</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
 						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Chỉ chọn Player còn sống</div>
-							<div class="contentText">Nếu có nhiều Player trong cùng khoảng cách thì sẽ chọn Player mới vào Map (Ví dụ A vào Map trước B, A và B trong cùng khoảng cách thì B sẽ được chọn)</div>
-						</div>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Chọn cả Player còn sống và chết</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@r</span>: chọn ngẫu nhiên một Entity</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
+				<p class="contentText dropdown"><code class="textSyntax">@e</code> là chọn tất cả Entity</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @e</code>
+								<p class="contentText">Kiểm tra tất cả Entity</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Chỉ chọn Entity còn sống</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">@s</code> là chọn bản thân đối tượng sử dụng</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
 						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfore @r</span> - kiểm tra ngẫu nhiên 1 Player</div>
-							<div class="contentText"><span class="textCommand">/testfore @r[type=cow]</span> - kiểm tra ngẫu nhiên 1 Cow</div>
-						</div>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @s</code>
+								<p class="contentText">Kiểm tra bản thân đối tượng sử dụng</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
+					<div class="dropdownText">
 						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Chỉ chọn Entity còn sống</div>
-							<div class="contentText">Nếu không có bộ lọc <span class="textSyntax">type</span> thì mặc định chọn của <span class="textSyntax">@r</span> là Player</div>
-						</div>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">Chọn cả Entity còn sống và chết</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @s</code>
+								<p class="contentText">Ghi trong Command Block thì sẽ không có gì xảy ra vì Command Block không phải là 1 Entity (trừ Minecart with Command Block)</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@a</span>: chọn tất cả Player</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a</span> - kiểm tra tất cả Player</div>
-						</div>
+				<p class="contentText dropdown"><code class="textSyntax">@initiator</code> là chọn Player ấn nút trong bảng NPC</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Chỉ hoạt động trong nút bấm chạy Command của bảng NPC</p>
+							<p class="dropdownText">Video giải thích <a class="textLink" href="https://youtu.be/a6_tm01j778" target="_blank">Xem tại đây</a></p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Chọn cả Player còn sống và chết</div>
-						</div>
-					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@e</span>: chọn tất cả Entity</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @e</span> - kiểm tra tất cả Entity</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Chỉ chọn Entity còn sống</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@s</span>: chọn bản thân đối tượng sử dụng</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @s</span> - kiểm tra bản thân đối tượng sử dụng</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Chọn cả Entity còn sống và chết</div>
-							<div class="contentText"><span class="textCommand">/testfor @s</span> - ghi trong Command Block thì sẽ không có gì xảy ra vì Command Block không phải là 1 Entity (trừ Minecart with Command Block)</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">@initiator</span>: chọn Player ấn nút trong bảng NPC</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText dropdown">Lưu ý</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText">Chỉ hoạt động trong nút bấm chạy Command của bảng NPC</div>
-						<div class="contentText">Video giải thích <a class="textLink" href="https://youtu.be/a6_tm01j778" target="_blank">Xem tại đây</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">Danh sách bộ lọc Target</div>
+				<h2 class="contentTitle">Danh sách bộ lọc</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[x=&lt;giá trị&gt;,y=&lt;giá trị&gt;,z=&lt;giá trị&gt;]</span>: tọa độ x y z</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[x=1,y=1,z=1,r=0]</span> - kiểm tra tất cả Player trong tọa độ 1 1 1</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">x, y, z phải có thêm cả r hoặc dx,dy,dz vì nếu không có r hoặc dx,dy,dz thì nó vẫn sẽ chọn toàn Map</div>
-							<div>
-								<div class="contentText dropdown">Có thể dùng x,y,z riêng biệt</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/testfor @a[x=1,dx=0]</span> - kiểm tra tất cả Player ở x=1, y và z bất kì</div>
-									<div class="contentText"><span class="textCommand">/testfor @a[x=1,z=1,dx=0,dz=0]</span> - kiểm tra tất cả Player ở x=1, z=1 và y bất kì</div>
-								</div>
+				<p class="contentText dropdown"><code class="textSyntax">[x=&lt;giá trị&gt;,y=&lt;giá trị&gt;,z=&lt;giá trị&gt;]</code> là tọa độ x y z</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[x=1,y=1,z=1,r=0]</code> 
+								<p class="contentText">Kiểm tra tất cả Player trong tọa độ 1 1 1</p>
 							</div>
-							<div>
-								<div class="contentText dropdown">Có thể dùng ~ trong x,y,z</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/testfor @a[x=~1,dx=0]</span> - kiểm tra tất cả Player ở vị trí đối tượng dùng Command x+1, y và z bất kì</div>
-								</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">x, y, z phải có thêm cả r hoặc dx,dy,dz vì nếu không có r hoặc dx,dy,dz thì nó vẫn sẽ chọn toàn Map</p>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Có thể dùng x,y,z riêng biệt</p>
+								<div class="dropdownStart dropdownHide"><div>
+									<div class="dropdownText">
+										<code class="textCommand">/testfor @a[x=1,dx=0]</code>
+										<p class="contentText">Kiểm tra tất cả Player ở x=1, y và z bất kì</p>
+									</div>
+									<div class="dropdownText">
+										<code class="textCommand">/testfor @a[x=1,z=1,dx=0,dz=0]</code>
+										<p class="contentText">Kiểm tra tất cả Player ở x=1, z=1 và y bất kì</p>
+									</div>
+									<div class="dropdownEnd"></div>
+								</div></div>
 							</div>
-							<div>
-								<div class="contentText dropdown">Có thể kết hợp ~ với số</div>
-								<div class="dropdownTab dropdownHide">
-									<div class="contentText"><span class="textCommand">/testfor @a[x=~1,y=1,dx=0,dy=0]</span> - kiểm tra tất cả Player ở vị trí đối tượng dùng Command x+1, y=1 và z bất kì</div>
-								</div>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Có thể dùng ~ trong x,y,z</p>
+								<div class="dropdownStart dropdownHide"><div>
+									<div class="dropdownText">
+										<code class="textCommand">/testfor @a[x=~1,dx=0]</code>
+										<p class="contentText">Kiểm tra tất cả Player ở vị trí đối tượng dùng Command x+1, y và z bất kì</p>
+									</div>
+									<div class="dropdownEnd"></div>
+								</div></div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[dx=&lt;giá trị&gt;,dy=&lt;giá trị&gt;,dz=&lt;giá trị&gt;]</span>: tăng hoặc giảm kích thước cho tọa độ x y z</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[x=1,y=1,z=1,dx=2,dy=3,dz=1]</span> - kiểm tra tất cả Player trong khoảng tọa độ 1 1 1 đến 3 4 2 (1+2=3, 1+3=4, 1+1=2)</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">dx,dy,dz phải đi kèm với x,y,z</div>
-							<div class="contentText"><span class="textSyntax">&lt;giá trị&gt;</span> nếu không ghi dấu hoặc ghi kèm dấu + là tăng (dx=1 hoặc dx=+1), kèm dấu - là giảm (dy=-1)</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[rm=&lt;giá trị&gt;,r=&lt;giá trị&gt;]</span>: khoảng cách; trong đó rm là min, r là max</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText dropdown">Ví dụ</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textCommand">/testfor @e[r=3]</span> - kiểm tra tất cả Entity trong khu vực rộng 3 Block tính từ đối tượng dùng Command</div>
-						<div class="contentText"><span class="textCommand">/testfor @e[rm=3,r=5]</span> - kiểm tra tất cả Entity trong khu vực từ Block thứ 3 đến thứ 5. Nếu đứng trong Block 1, 2 hoặc 6, 7, ... thì không kiểm tra được</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[rxm=&lt;giá trị&gt;,rx=&lt;giá trị&gt;]</span>: xoay dọc lên xuống; trong đó rxm là min, rx là max</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[rxm=0,rx=0]</span> - kiểm tra tất cả Player nhìn vào góc 0 độ</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[rxm=0,rx=30]</span> - kiểm tra tất cả Player nhìn trong khoảng góc 0 đến 30 độ</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[rxm=30]</span> - kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở lên</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[rx=30]</span> - kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở xuống</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Giới hạn của rxm -&gt; rx là 0 -&gt; 180</div>
-							<div class="image imageRx"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[rym=&lt;giá trị&gt;,ry=&lt;giá trị&gt;]</span>: xoay ngang trái phải; trong đó rym là min, ry là max</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[rym=0,ry=0]</span> - kiểm tra tất cả Player nhìn vào góc 0 độ</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[rym=0,ry=30]</span> - kiểm tra tất cả Player nhìn trong khoảng góc 0 đến 30 độ</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[rym=30]</span> - kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở lên</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[ry=30]</span> - kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở xuống</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Giới hạn của rym -&gt; ry là -179,9 -&gt; 180</div>
-							<div class="image imageRy"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[lm=&lt;giá trị&gt;,l=&lt;giá trị&gt;]</span>: kinh nghiệm Level; trong đó lm là min, l là max</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText dropdown">Ví dụ</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textCommand">/testfor @a[lm=3,l=3]</span> - kiểm tra tất cả Player có Level là 3</div>
-						<div class="contentText"><span class="textCommand">/testfor @a[lm=3,l=5]</span> - kiểm tra tất cả Player có Level từ 3 đến 5</div>
-						<div class="contentText"><span class="textCommand">/testfor @a[lm=3]</span> - kiểm tra tất cả Player có Level là 3 trở lên</div>
-						<div class="contentText"><span class="textCommand">/testfor @a[l=3]</span> - kiểm tra tất cả Player có Level là 3 trở xuống</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị&gt;}]</span>: điểm trong Scoreboard</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[scores={test=5}]</span> - kiểm tra tất cả Player trong Scoreboard test mà có điểm là 5</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Bạn có thể gộp <span class="textSyntax">[scores={&lt;id bảng 1&gt;=&lt;giá trị 1&gt;,&lt;id bảng 2&gt;=&lt;giá trị 2&gt;,...}]</span></div>
-							<div class="contentText"><span class="textCommand">/testfor @a[scores={test=..5}]</span> - kiểm tra tất cả Player trong Scoreboard test mà có điểm nhỏ hơn hoặc bằng 5</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[scores={test=5..}]</span> - kiểm tra tất cả Player trong Scoreboard test mà có điểm lớn hơn hoặc bằng 5</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[scores={test=0..5}]</span> - kiểm tra tất cả Player trong Scoreboard test mà có điểm từ 0 đến 5</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[c=&lt;giá trị&gt;]</span>: giới hạn</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[c=3]</span> - kiểm tra 3 Player đứng gần đối tượng sử dụng Command</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">c=3</span> thì là 3 Player gần nhất tính từ đối tượng sử dụng Command</div>
-							<div class="contentText"><span class="textSyntax">c=-3</span> thì là 3 Player xa nhất tính từ đối tượng sử dụng Command</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[tag=&lt;chuỗi kí tự&gt;]</span>: gán thẻ</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[tag=live]</span> - kiểm tra tất cả Player có Tag live</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Bạn có thể gộp <span class="textSyntax">[tag=&lt;chuỗi kí tự1&gt;,tag=&lt;chuỗi kí tự2&gt;,...]</span></div>
-							<div class="contentText"><span class="textCommand">/testfor @a[tag=]</span> - kiểm tra tất cả Player không có bất kì 1 loại Tag</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[tag=!]</span> - kiểm tra tất cả Player có bất kì 1 loại Tag</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[m=&lt;loại gamemode&gt;]</span>: chế độ chơi</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/gamemode a @a[m=survival]</span> - Player đang ở chế độ sinh tồn sẽ bị chuyển sang chế độ phiêu lưu</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText dropdown">Có thể ghi ngắn lại thành các chữ cái đầu hoặc số</div>
-							<div class="dropdownTab dropdownHide">
-								<div class="contentText">s và 0 là survival; <span class="textSyntax">[m=s]</span> hoặc <span class="textSyntax">[m=0]</span></div>
-								<div class="contentText">c và 1 là creative; <span class="textSyntax">[m=c]</span> hoặc <span class="textSyntax">[m=1]</span></div>
-								<div class="contentText">a và 2 là adventure; <span class="textSyntax">[m=s]</span> hoặc <span class="textSyntax">[m=2]</span></div>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Có thể kết hợp ~ với số</p>
+								<div class="dropdownStart dropdownHide"><div>
+									<div class="dropdownText">
+										<code class="textCommand">/testfor @a[x=~1,y=1,dx=0,dy=0]</code>
+										<p class="contentText">Kiểm tra tất cả Player ở vị trí đối tượng dùng Command x+1, y=1 và z bất kì</p>
+									</div>
+									<div class="dropdownEnd"></div>
+								</div></div>
 							</div>
-						</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[name=&lt;tên đối tượng&gt;]</span>: tên</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @e[name=Diamond]</span> - kiểm tra tất cả Entity có tên là Diamond</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText dropdown">Nếu tên Entity mà có khoảng trống hoặc có kí tự đặc biệt hoặc có dùng mã màu (§) thì phải dùng <span class="textSyntax">[name="..."]</span></div>
-							<div class="dropdownTab dropdownHide">
-								<div class="contentText"><span class="textCommand">/testfor @e[name="§bDiamond §elà nhất"]</span></div>
+				<p class="contentText dropdown"><code class="textSyntax">[dx=&lt;giá trị&gt;,dy=&lt;giá trị&gt;,dz=&lt;giá trị&gt;]</code> là tăng hoặc giảm kích thước cho tọa độ x y z</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[x=1,y=1,z=1,dx=2,dy=3,dz=1]</code>
+								<p class="contentText">Kiểm tra tất cả Player trong khoảng tọa độ 1 1 1 đến 3 4 2 (1+2=3, 1+3=4, 1+1=2)</p>
 							</div>
-						</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-				</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">dx,dy,dz phải đi kèm với x,y,z</p>
+							<p class="dropdownText"><code class="textSyntax">&lt;giá trị&gt;</code> nếu không ghi dấu hoặc ghi kèm dấu + là tăng (dx=1 hoặc dx=+1), kèm dấu - là giảm (dy=-1)</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[type=&lt;id Entity&gt;]</span>: loại</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @e[type=cow]</span> - kiểm tra tất cả Cow</div>
-						</div>
+				<p class="contentText dropdown"><code class="textSyntax">[rm=&lt;giá trị&gt;,r=&lt;giá trị&gt;]</code> là khoảng cách; trong đó rm là min, r là max</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @e[r=3]</code>
+								<p class="contentText">Kiểm tra tất cả Entity trong khu vực rộng 3 Block tính từ đối tượng dùng Command</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @e[rm=3,r=5]</code>
+								<p class="contentText">Kiểm tra tất cả Entity trong khu vực từ Block thứ 3 đến thứ 5</p>
+								<p class="contentText">Nếu đứng trong Block 1, 2 hoặc 6, 7, ... thì không kiểm tra được</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Bạn không thể gộp <span class="textSyntax">[type=&lt;entityType1&gt;,type=&lt;entityType2&gt;,...]</span></div>
-						</div>
-					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[family=&lt;loại family&gt;]</span>: gia đình, tập hợp 1 nhóm</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown">Danh sách</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">Dành cho riêng từng Entity như <span class="textSyntax">armor_stand</span>, <span class="textSyntax">bat</span>, ...</div>
-							<div class="contentText"><span class="textSyntax">mob</span>: các quái/động vật</div>
-							<div class="contentText"><span class="textSyntax">monster</span>: các quái vật</div>
-							<div class="contentText"><span class="textSyntax">undead</span>: các quái vốn đã chết như Zombie, Husk, ...</div>
-							<div class="contentText"><span class="textSyntax">inanimate</span>: các thứ vô tri vô giác như Boat, TNT, ...</div>
-							<div class="contentText"><span class="textSyntax">arthropod</span>: các Mob chân đốt như Spider</div>
-							<div class="contentText"><span class="textSyntax">illager</span>: các Mob trong Raid</div>
-							<div class="contentText"><span class="textSyntax">fish</span>: các Mob là cá</div>
-							<div class="contentText">Các cái khác nhỏ lẻ nữa</div>
-						</div>
+				<p class="contentText dropdown"><code class="textSyntax">[rxm=&lt;giá trị&gt;,rx=&lt;giá trị&gt;]</code> là xoay dọc lên xuống; trong đó rxm là min, rx là max</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[rxm=0,rx=0]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn vào góc 0 độ</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[rxm=0,rx=30]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn trong khoảng góc 0 đến 30 độ</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[rxm=30]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở lên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[rx=30]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở xuống</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
-						<div class="contentText dropdown">Ví dụ</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @e[family=mob]</span> - kiểm tra tất cả Mob như Cow, Bee, Zombie,...</div>
-						</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">Giới hạn của rxm -&gt; rx là 0 -&gt; 180</p>
+								<div class="image imageRx"></div>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText">family phần lớn sẽ được sử dụng trong Addon là chủ yếu</div>
-							<div class="contentText">family có thể được tạo ra thông qua Behavior của Entity</div>
-						</div>
-					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[hasitem={&lt;chỉ định 1&gt;=&lt;giá trị 1&gt;,&lt;chỉ định 2&gt;=&lt;giá trị 2&gt;,...}]</span>: vật phẩm cụ thể</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">item</span>: id vật phẩm</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=stick}]</span> - kiểm tra tất cả Player có stick trong người</div>
-						</div>
+				<p class="contentText dropdown"><code class="textSyntax">[rym=&lt;giá trị&gt;,ry=&lt;giá trị&gt;]</code> là xoay ngang trái phải; trong đó rym là min, ry là max</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[rym=0,ry=0]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn vào góc 0 độ</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[rym=0,ry=30]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn trong khoảng góc 0 đến 30 độ</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[rym=30]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở lên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[ry=30]</code>
+								<p class="contentText">Kiểm tra tất cả Player nhìn trong khoảng góc 30 độ trở xuống</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">quantity</span>: số lượng</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=wool,quantity=1}]</span> - kiểm tra tất cả Player có 1 wool trong người</div>
-						</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">Giới hạn của rym -&gt; ry là -179,9 -&gt; 180</p>
+								<div class="image imageRy"></div>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">data</span>: dữ liệu vật phẩm</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=wool,data=14}]</span> - kiểm tra tất cả Player có wool màu đỏ trong người</div>
-						</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[lm=&lt;giá trị&gt;,l=&lt;giá trị&gt;]</code> là kinh nghiệm Level; trong đó lm là min, l là max</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[lm=3,l=3]</code>
+								<p class="contentText">Kiểm tra tất cả Player có Level là 3</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[lm=3,l=5]</code>
+								<p class="contentText">Kiểm tra tất cả Player có Level từ 3 đến 5</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[lm=3]</code>
+								<p class="contentText">Kiểm tra tất cả Player có Level là 3 trở lên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[l=3]</code>
+								<p class="contentText">Kiểm tra tất cả Player có Level là 3 trở xuống</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">location</span>: loại ô của Entity</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText dropdown">Danh sách</div>
-							<div class="dropdownTab dropdownHide">
-								<div class="table">
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[scores={&lt;id bảng&gt;=&lt;giá trị&gt;}]</code> là điểm trong Scoreboard</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[scores={test=5}]</code>
+								<p class="contentText">Kiểm tra tất cả Player trong Scoreboard test mà có điểm là 5</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Bạn có thể gộp <code class="textSyntax">[scores={&lt;id bảng 1&gt;=&lt;giá trị 1&gt;,&lt;id bảng 2&gt;=&lt;giá trị 2&gt;,...}]</code></p>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[scores={test=..5}]</code>
+								<p class="contentText">Kiểm tra tất cả Player trong Scoreboard test mà có điểm nhỏ hơn hoặc bằng 5</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[scores={test=5..}]</code>
+								<p class="contentText">Kiểm tra tất cả Player trong Scoreboard test mà có điểm lớn hơn hoặc bằng 5</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[scores={test=0..5}]</code>
+								<p class="contentText">Kiểm tra tất cả Player trong Scoreboard test mà có điểm từ 0 đến 5</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[c=&lt;giá trị&gt;]</code> là giới hạn</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[c=3]</code>
+								<p class="contentText">Kiểm tra 3 Player đứng gần đối tượng sử dụng Command</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">c=3</code> thì là 3 Player gần nhất tính từ đối tượng sử dụng Command</p>
+							<p class="dropdownText"><code class="textSyntax">c=-3</code> thì là 3 Player xa nhất tính từ đối tượng sử dụng Command</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[tag=&lt;chuỗi kí tự&gt;]</code> là gán thẻ</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[tag=live]</code>
+								<p class="contentText">Kiểm tra tất cả Player có Tag live</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Bạn có thể gộp <code class="textSyntax">[tag=&lt;chuỗi kí tự 1&gt;,tag=&lt;chuỗi kí tự 2&gt;,...]</code></p>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[tag=]</code>
+								<p class="contentText">Kiểm tra tất cả Player không có bất kì 1 loại Tag</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[tag=!]</code>
+								<p class="contentText">Kiểm tra tất cả Player có bất kì 1 loại Tag</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[m=&lt;loại gamemode&gt;]</code> là chế độ chơi</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/gamemode a @a[m=survival]</code>
+								<p class="contentText">Player đang ở chế độ sinh tồn sẽ bị chuyển sang chế độ phiêu lưu</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Có thể ghi ngắn lại thành các chữ cái đầu hoặc số</p>
+								<div class="dropdownStart dropdownHide"><div>
+									<div class="dropdownText">
+										<p class="contentText">s và 0 là survival</p>
+										<p class="contentText"><code class="textSyntax">[m=s]</code> hoặc <code class="textSyntax">[m=0]</code></p>
+									</div>
+									<div class="dropdownText">
+										<p class="contentText">c và 1 là creative</p>
+										<p class="contentText"><code class="textSyntax">[m=c]</code> hoặc <code class="textSyntax">[m=1]</code></p>
+									</div>
+									<div class="dropdownText">
+										<p class="contentText">a và 2 là adventure</p>
+										<p class="contentText"><code class="textSyntax">[m=s]</code> hoặc <code class="textSyntax">[m=2]</code></p>
+									</div>
+									<div class="dropdownEnd"></div>
+								</div></div>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[name=&lt;tên đối tượng&gt;]</code> là tên</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @e[name=Diamond]</code>
+								<p class="contentText">Kiểm tra tất cả Entity có tên là Diamond</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Nếu tên Entity mà có khoảng trống hoặc có kí tự đặc biệt hoặc có dùng mã màu (§) thì phải dùng <code class="textSyntax">[name="..."]</code></p>
+								<div class="dropdownStart dropdownHide"><div>
+									<p class="dropdownText"><code class="textCommand">/testfor @e[name="§bDiamond §elà nhất"]</code></p>
+									<div class="dropdownEnd"></div>
+								</div></div>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[type=&lt;id Entity&gt;]</code> là loại</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @e[type=cow]</code>
+								<p class="contentText">Kiểm tra tất cả Cow</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Bạn không thể gộp <code class="textSyntax">[type=&lt;entityType1&gt;,type=&lt;entityType2&gt;,...]</code></p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[family=&lt;loại family&gt;]</code> là gia đình, tập hợp 1 nhóm</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Dành cho riêng từng Entity như <code class="textSyntax">armor_stand</code>, <code class="textSyntax">bat</code>, ...</p>
+							<p class="dropdownText"><code class="textSyntax">mob</code> là các quái/động vật</p>
+							<p class="dropdownText"><code class="textSyntax">monster</code> là các quái vật</p>
+							<p class="dropdownText"><code class="textSyntax">undead</code> là các quái vốn đã chết như Zombie, Husk, ...</p>
+							<p class="dropdownText"><code class="textSyntax">inanimate</code> là các thứ vô tri vô giác như Boat, TNT, ...</p>
+							<p class="dropdownText"><code class="textSyntax">arthropod</code> là các Mob chân đốt như Spider</p>
+							<p class="dropdownText"><code class="textSyntax">illager</code> là các Mob trong Raid</p>
+							<p class="dropdownText"><code class="textSyntax">fish</code> là các Mob là cá</p>
+							<p class="dropdownText">Các cái khác nhỏ lẻ nữa</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Ví dụ</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @e[family=mob]</code>
+								<p class="contentText">Kiểm tra tất cả Mob như Cow, Bee, Zombie,...</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">family phần lớn sẽ được sử dụng trong Addon là chủ yếu</p>
+							<p class="dropdownText">family có thể được tạo ra thông qua Behavior của Entity</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">[hasitem={&lt;chỉ định 1&gt;=&lt;giá trị 1&gt;,&lt;chỉ định 2&gt;=&lt;giá trị 2&gt;,...}]</code> là vật phẩm cụ thể</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText dropdown"><code class="textSyntax">item</code> là id vật phẩm</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={item=stick}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có stick trong người</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown"><code class="textSyntax">quantity</code> là số lượng</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={item=wool,quantity=1}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có 1 wool trong người</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown"><code class="textSyntax">data</code> là dữ liệu vật phẩm</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={item=wool,data=14}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có wool màu đỏ trong người</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown"><code class="textSyntax">location</code> là loại ô của Entity</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Danh sách</p>
+								<div class="dropdownHide table">
 									<table>
 										<tr>
 											<th>Id chữ</th>
 											<th>Giải thích</th>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.armor</td>
+											<td><code class="textSyntax">slot.armor</code></td>
 											<td>Ô giáp cho ngựa và thảm cho lạc đà</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.armor.chest</td>
+											<td><code class="textSyntax">slot.armor.chest</code></td>
 											<td>Ô để giáp ngực</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.armor.feet</td>
+											<td><code class="textSyntax">slot.armor.feet</code></td>
 											<td>Ô để giáp chân</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.armor.head</td>
+											<td><code class="textSyntax">slot.armor.head</code></td>
 											<td>Ô để giáp đầu</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.armor.legs</td>
+											<td><code class="textSyntax">slot.armor.legs</code></td>
 											<td>Ô để giáp chân</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.chest</td>
+											<td><code class="textSyntax">slot.chest</code></td>
 											<td>Ô để Chest cho lừa, la và lạc đà</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.enderchest</td>
+											<td><code class="textSyntax">slot.enderchest</code></td>
 											<td>Ô kho đồ Ender Chest</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.equippable</td>
+											<td><code class="textSyntax">slot.equippable</code></td>
 											<td>Chưa được hỗ trợ</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.hotbar</td>
+											<td><code class="textSyntax">slot.hotbar</code></td>
 											<td>Ô công cụ hiện trên màn hình</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.inventory</td>
+											<td><code class="textSyntax">slot.inventory</code></td>
 											<td>Ô kho đồ</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.saddle</td>
+											<td><code class="textSyntax">slot.saddle</code></td>
 											<td>Ô để yên cưỡi</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.weapon.mainhand</td>
+											<td><code class="textSyntax">slot.weapon.mainhand</code></td>
 											<td>Ô tay phải</td>
 										</tr>
 										<tr>
-											<td class="textSyntax">slot.weapon.offhand</td>
+											<td><code class="textSyntax">slot.weapon.offhand</code></td>
 											<td>Ô tay trái</td>
 										</tr>
 									</table>
 								</div>
 							</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={location=slot.hotbar,item=wool}]</span> - kiểm tra tất cả Player có wool trong thanh Hotbar</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">slot</span>: vị trí ô</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=0,item=wool}]</span> - kiểm tra tất cả Player có wool trong thanh Hotbar ở ô đầu tiên</div>
-						</div>
-					</div>
-					<div>
-						<div class="contentText dropdown">Lưu ý</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">item</span> bắt buộc phải có</div>
-							<div class="contentText"><span class="textSyntax">quantity</span> không bắt buộc phải có</div>
-							<div class="contentText"><span class="textSyntax">data</span> không bắt buộc phải có</div>
-							<div class="contentText"><span class="textSyntax">location</span> bắt buộc phải có nếu có dùng <span class="textSyntax">slot</span></div>
-							<div class="contentText"><span class="textSyntax">slot</span> không bắt buộc phải có</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=wool,quantity=5..}]</span> - kiểm tra tất cả Player có 5 hoặc nhiều hơn 5 wool trong người</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=wool,quantity=..5}]</span> - kiểm tra tất cả Player có 5 hoặc ít hơn 5 wool trong người</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={item=wool,quantity=1..5}]</span> - kiểm tra tất cả Player có từ 1 đến 5 wool trong người</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=5..,item=wool}]</span> - kiểm tra tất cả Player có wool trong thanh Hotbar từ ô id 5 trở lên</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=..5,item=wool}]</span> - kiểm tra tất cả Player có wool trong thanh Hotbar từ ô id 5 trở xuống</div>
-							<div class="contentText"><span class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=1..5,item=wool}]</span> - kiểm tra tất cả Player có wool trong thanh Hotbar từ ô id 1 đến 5</div>
-							<div class="contentText dropdown">Bạn có thể nhóm nhiều Item lại với nhau <span class="textSyntax">[hasitem=[{...},{...},...]]</span></div>
-							<div class="dropdownTab dropdownHide">
-								<div class="contentText"><span class="textCommand">/testfor @a[hasitem=[{item=stick},{item=wool,data=11}]]</span> - kiểm tra tất cả Player có stick và wool màu đỏ trong người</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={location=slot.hotbar,item=wool}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có wool trong thanh Hotbar</p>
 							</div>
-							<div class="contentText">Lời khuyên: nên sử dụng theo trình tự như dùng <a class="textLink" href="../commands/replaceitem.html">/replaceitem</a> để dễ nhớ. <span class="textSyntax">[hasitem={location, slot, item, quantity, data}]</span></div>
-						</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-				</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown"><code class="textSyntax">slot</code> là vị trí ô</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=0,item=wool}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có wool trong thanh Hotbar ở ô đầu tiên</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Lưu ý</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">item</code> bắt buộc phải có</p>
+							<p class="dropdownText"><code class="textSyntax">quantity</code> không bắt buộc phải có</p>
+							<p class="dropdownText"><code class="textSyntax">data</code> không bắt buộc phải có</p>
+							<p class="dropdownText"><code class="textSyntax">location</code> bắt buộc phải có nếu có dùng <code class="textSyntax">slot</code></p>
+							<p class="dropdownText"><code class="textSyntax">slot</code> không bắt buộc phải có</p>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={item=wool,quantity=5..}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có 5 hoặc nhiều hơn 5 wool trong người</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={item=wool,quantity=..5}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có 5 hoặc ít hơn 5 wool trong người</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={item=wool,quantity=1..5}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có từ 1 đến 5 wool trong người</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=5..,item=wool}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có wool trong thanh Hotbar từ ô id 5 trở lên</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=..5,item=wool}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có wool trong thanh Hotbar từ ô id 5 trở xuống</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/testfor @a[hasitem={location=slot.hotbar,slot=1..5,item=wool}]</code>
+								<p class="contentText">Kiểm tra tất cả Player có wool trong thanh Hotbar từ ô id 1 đến 5</p>
+							</div>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Bạn có thể nhóm nhiều Item lại với nhau <code class="textSyntax">[hasitem=[{...},{...},...]]</code></p>
+								<div class="dropdownStart dropdownHide"><div>
+									<div class="dropdownText">
+										<code class="textCommand">/testfor @a[hasitem=[{item=stick},{item=wool,data=11}]]</code>
+										<p class="contentText">Kiểm tra tất cả Player có stick và wool màu đỏ trong người</p>
+									</div>
+									<div class="dropdownEnd"></div>
+								</div></div>
+							</div>
+							<p class="dropdownText">Lời khuyên: nên sử dụng theo trình tự như dùng <a class="textLink" href="../commands/replaceitem.html">/replaceitem</a> để dễ nhớ. <code class="textSyntax">[hasitem={location, slot, item, quantity, data}]</code></p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">Có thể ghép các bộ lọc lại với nhau</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/testfor @e[type=item,name=diamond]</span></div>
-				</div>
+				<p class="contentText dropdown">Có thể ghép các bộ lọc lại với nhau</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textCommand">/testfor @e[type=item,name=diamond]</code></p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">Có thể ghi tên Player thay vì dùng <span class="textSyntax">@a[name=...]</span></div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/testfor HgVN23</span></div>
-				</div>
+				<p class="contentText dropdown">Có thể ghi tên Player thay vì dùng <code class="textSyntax">@a[name=...]</code></p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textCommand">/testfor HgVN23</code></p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-			<div class="contentText">Đọc thêm <a class="textLink" href="../thongTinLienQuan/toanTuKiTu.html">Toán tử kí tự</a> để biết thêm 1 vài thông tin</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Đọc thêm <a class="textLink" href="../thongTinLienQuan/toanTuKiTu.html">Toán tử kí tự</a> để biết thêm 1 vài thông tin</p>
+		</section>
+	</article>
+</main>
 </body>

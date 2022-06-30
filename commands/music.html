@@ -25,97 +25,149 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/music.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/music</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/music</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Phát nhạc</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Phát nhạc</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/music queue &lt;trackName: string&gt; [volume: float] [fadeSeconds: float] [repeatMode: MusicReapeatMode]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">queue</span> là hàng đợi, bài nhạc đầu mà hết thì bài sau sẽ phát</div>
-					<div class="contentText"><span class="textSyntax">&lt;trackName: string&gt;</span> là id bài nhạc. <a class="textLink" href="../danhSachId/trackId.html" target="_blank">Danh sách</a></div>
-					<div class="contentText"><span class="textSyntax">[volume: float]</span> là âm lượng</div>
-					<div class="contentText"><span class="textSyntax">[fadeSeconds: float]</span> là thời gian vào nhạc</div>
-					<div class="contentText dropdown"><span class="textSyntax">[repeatMode: MusicReapeatMode]</span> là chế độ nghe. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">loop</span> là lặp</div>
-						<div class="contentText"><span class="textSyntax">play_once</span> là 1 lần</div>
+				<p class="contentText dropdown">/music queue &lt;trackName: string&gt; [volume: float] [fadeSeconds: float] [repeatMode: MusicReapeatMode]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">queue</code> là hàng đợi
+						<p class="contentText">Bài nhạc đầu mà hết thì bài sau sẽ phát</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/music queue record.pigstep 1 10 play_once</span> — khi hết bài trước (nếu có) sẽ phát bài Pigstep với âm lượng là 1, thời gian vào bài là 10 giây và phát 1 lần</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/music play &lt;trackName: string&gt; [volume: float] [fadeSeconds: float] [repeatMode: MusicReapeatMode]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">play</span> là phát</div>
-					<div class="contentText"><span class="textSyntax">&lt;trackName: string&gt;</span> là id bài nhạc. <a class="textLink" href="../danhSachId/trackId.html" target="_blank">Danh sách</a></div>
-					<div class="contentText"><span class="textSyntax">[volume: float]</span> là âm lượng</div>
-					<div class="contentText"><span class="textSyntax">[fadeSeconds: float]</span> là thời gian vào nhạc</div>
-					<div class="contentText dropdown"><span class="textSyntax">[repeatMode: MusicReapeatMode]</span> là chế độ nghe. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">loop</span> là lặp</div>
-						<div class="contentText"><span class="textSyntax">play_once</span> là 1 lần</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;trackName: string&gt;</code> là id bài nhạc
+						<a class="contentText textLink" href="../danhSachId/trackId.html" target="_blank">Danh sách</a>
 					</div>
-					<div class="contentText"><span class="textCommand">/music play record.pigstep 1 10 play_once</span> — sẽ tắt bài trước (nếu có) và phát bài Pigstep với âm lượng là 1, thời gian vào bài là 10 giây và phát 1 lần</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[volume: float]</code> là âm lượng
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">0.00</code> đến bằng <code class="textSyntax">1</code></p>
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[fadeSeconds: float]</code> là thời gian vào nhạc
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">0.00</code> đến bằng <code class="textSyntax">10</code></p>
+						<p class="contentText">Mặc định là <code class="textSyntax">0</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[repeatMode: MusicReapeatMode]</code> là chế độ nghe
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">loop</code> là lặp</p>
+							<p class="dropdownText"><code class="textSyntax">play_once</code> là 1 lần</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">play_once</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/music queue record.pigstep 1 10 play_once</code>
+						<p class="contentText">Khi hết bài trước (nếu có) sẽ phát bài Pigstep với âm lượng là 1, thời gian vào bài là 10 giây và phát 1 lần</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/music stop</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">stop</span> là dừng</div>
-					<div class="contentText"><span class="textCommand">/music stop 1</span> — sẽ tắt dần bài đang phát trong 1 giây</div>
-				</div>
+				<p class="contentText dropdown">/music play &lt;trackName: string&gt; [volume: float] [fadeSeconds: float] [repeatMode: MusicReapeatMode]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">play</code> là phát</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;trackName: string&gt;</code> là id bài nhạc
+						<a class="contentText textLink" href="../danhSachId/trackId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[volume: float]</code> là âm lượng
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">0.00</code> đến bằng <code class="textSyntax">1</code></p>
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[fadeSeconds: float]</code> là thời gian vào nhạc
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">0.00</code> đến bằng <code class="textSyntax">10</code></p>
+						<p class="contentText">Mặc định là <code class="textSyntax">0</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[repeatMode: MusicReapeatMode]</code> là chế độ nghe
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">loop</code> là lặp</p>
+							<p class="dropdownText"><code class="textSyntax">play_once</code> là 1 lần</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">play_once</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/music play record.pigstep 1 10 play_once</code>
+						<p class="contentText">Sẽ tắt bài trước (nếu có) và phát bài Pigstep với âm lượng là 1, thời gian vào bài là 10 giây và phát 1 lần</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/music volume &lt;volume: float&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">volume</span> là điều chỉnh âm lượng</div>
-					<div class="contentText"><span class="textSyntax">&lt;volume: float&gt;</span> là âm lượng</div>
-					<div class="contentText"><span class="textCommand">/music volume 1</span> — âm lượng sẽ lên 1</div>
-				</div>
+				<p class="contentText dropdown">/music stop [fadeSeconds: float]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">stop</code> là dừng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[fadeSeconds: float]</code> là thời gian vào nhạc
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">0.00</code> đến bằng <code class="textSyntax">10</code></p>
+						<p class="contentText">Mặc định là <code class="textSyntax">0</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/music stop 1</code>
+						<p class="contentText">Sẽ tắt dần bài đang phát trong 1 giây</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+			<div>
+				<p class="contentText dropdown">/music volume &lt;volume: float&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">volume</code> là điều chỉnh âm lượng</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;volume: float&gt;</code> là âm lượng</p>
+					<div class="dropdownText">
+						<code class="textCommand">/music volume 1</code>
+						<p class="contentText">Âm lượng sẽ lên 1</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText"><span class="textSyntax">[volume: float]</span> trong giới hạn 0 < x ≤ 1, có thể lấy 0.?? Giá trị được chia cho 100. Nếu bạn để 1 tức là âm lượng ở 100, nếu để 0.23 tức là âm lượng đang ở 23</div>
-			<div class="contentText">Độ xa của nhạc có thể phát đến 3,5 Chunk (ước lượng) tùy thuộc vào Setting âm lượng của Player</div>
-			<div class="contentText"><span class="textSyntax">[fadeSeconds: float]</span> trong giới hạn 0 ≤ x ≤ 10</div>
-			<div class="contentText">Nếu bạn chỉ ghi <span class="textSyntax">/music play &lt;trackName: string&gt;</span> thì mặc định <span class="textSyntax">[volume: float] [fadeSeconds: float] [repeatMode: MusicReapeatMode]</span> lần lượt là <span class="textSyntax">1 0 play_once</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Độ xa của nhạc có thể phát đến 3,5 Chunk (ước lượng) tùy thuộc vào Setting âm lượng của Player</p>
+		</section>
+	</article>
+</main>
 </body>

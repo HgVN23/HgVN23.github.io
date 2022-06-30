@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
-	
+
 	<!-- Primary Meta Tags -->
 	<title>/tell | MCBE Command Wiki VN by Hg</title>
 	<meta name="title" content="/tell | MCBE Command Wiki VN by Hg">
@@ -25,56 +25,67 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/tell.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/tell</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/tell</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Gửi Chat riêng cho Player khác</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Gửi Chat riêng cho Player khác</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player không có OP</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player không có OP</p>
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
-			<div class="contentText dropdown">/tell &lt;target: target&gt; &lt;message: message&gt;</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textSyntax">&lt;target: target&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Player)</div>
-				<div class="contentText"><span class="textSyntax">&lt;message: message&gt;</span> là đoạn Chat</div>
-				<div class="contentText"><span class="textCommand">/tell Someone123 Hello</span> — Player tên Someone123 sẽ nhận được Chat của bạn</div>
+			<div>
+				<p class="contentText dropdown">/tell &lt;target: target&gt; &lt;message: message&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;target: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;message: message&gt;</code> là đoạn Chat
+						<p class="contentText">Mặc định là không đoạn Chat nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tell Hg Hello</code>
+						<p class="contentText">Hg sẽ nhận được Chat của bạn</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Player có OP sẽ nhìn được Chat riêng</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Player có OP sẽ nhìn được Chat riêng</p>
+		</section>
+	</article>
+</main>
 </body>

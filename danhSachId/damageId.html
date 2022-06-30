@@ -25,19 +25,19 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/damage_id.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/table.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">Id Damage</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">Danh sách Id Damage</div>
+				<h2 class="contentTitle">Danh sách</h2>
 			</div>
 			<div class="table">
 				<table>
@@ -47,12 +47,12 @@
 						<th>Thông báo chết</th>
 					</tr>
 					<tr>
-						<td class="textSyntax">anvil</td>
+						<td><code class="textSyntax">anvil</code></td>
 						<td>Đe đè</td>
 						<td>%1$s was squashed by a falling anvil</td>
 					</tr>
 					<tr>
-						<td class="textSyntax" rowspan="2">block_explosion</td>
+						<td rowspan="2"><code class="textSyntax">block_explosion</code></td>
 						<td rowspan="2">Block phát nổ</td>
 						<td>%1$s blew up</td>
 					</tr>
@@ -60,27 +60,33 @@
 						<td>%1$s was blown up by %2$s</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">charging</td>
+						<td><code class="textSyntax">charging</code></td>
 						<td>???</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">contact</td>
-						<td>???</td>
+						<td rowspan="2"><code class="textSyntax">contact</code></td>
+						<td rowspan="2">???</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">drowning</td>
+						<td>%1$s was slain by %2$s</td>
+					</tr>
+					<tr>
+						<td><code class="textSyntax">drowning</code></td>
 						<td>Chết đuối</td>
 						<td>%1$s drowned</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">entity_attack</td>
-						<td>Entity tấn công</td>
+						<td rowspan="2"><code class="textSyntax">entity_attack</code></td>
+						<td rowspan="2">Entity tấn công</td>
+						<td>%1$s died</td>
+					</tr>
+					<tr>
 						<td>%1$s was slain by %2$s</td>
 					</tr>
 					<tr>
-						<td class="textSyntax" rowspan="2">entity_explosion</td>
+						<td rowspan="2"><code class="textSyntax">entity_explosion</code></td>
 						<td rowspan="2">Entity phát nổ</td>
 						<td>%1$s blew up</td>
 					</tr>
@@ -88,77 +94,80 @@
 						<td>%1$s was blown up by %2$s</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">fall</td>
+						<td><code class="textSyntax">fall</code></td>
 						<td>Ngã</td>
 						<td>%1$s hit the ground too hard</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">falling_block</td>
+						<td><code class="textSyntax">falling_block</code></td>
 						<td>Block rơi gây ngạt thở</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">fire</td>
+						<td><code class="textSyntax">fire</code></td>
 						<td>Chết trong lửa</td>
 						<td>%1$s went up in flames</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">fire_tick</td>
+						<td><code class="textSyntax">fire_tick</code></td>
 						<td>Thiêu chết</td>
 						<td>%1$s burned to death</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">fireworks</td>
+						<td><code class="textSyntax">fireworks</code></td>
 						<td>Pháo hoa nổ</td>
 						<td>%1$s went off with a bang</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">fly_into_wall</td>
+						<td><code class="textSyntax">fly_into_wall</code></td>
 						<td>Lao, bay mạnh vào tường</td>
 						<td>%1$s experienced kinetic energy</td>
-					</td>
+					</tr>
 					<tr>
-						<td class="textSyntax">freezing</td>
+						<td><code class="textSyntax">freezing</code></td>
 						<td>Chết cóng</td>
 						<td>%1$s froze to death</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">lava</td>
+						<td><code class="textSyntax">lava</code></td>
 						<td>Chết trong Lava</td>
 						<td>%1$s tried to swim in lava</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">lightning</td>
+						<td><code class="textSyntax">lightning</code></td>
 						<td>Sét đánh</td>
 						<td>%1$s was struck by lightning</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">magic</td>
-						<td>Thuốc hại chết</td>
+						<td rowspan="2"><code class="textSyntax">magic</code></td>
+						<td rowspan="2">Thuốc hại chết</td>
+						<td>%1$s was killed by magic</td>
+					</tr>
+					<tr>
 						<td>%1$s was killed by %2$s using magic</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">magma</td>
+						<td><code class="textSyntax">magma</code></td>
 						<td>Đứng trên Magma</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">none</td>
+						<td><code class="textSyntax">none</code></td>
 						<td>Không</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">override</td>
+						<td><code class="textSyntax">override</code></td>
 						<td>???</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">piston</td>
+						<td><code class="textSyntax">piston</code></td>
 						<td>???</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax" rowspan="2">projectile</td>
+						<td rowspan="2"><code class="textSyntax">projectile</code></td>
 						<td rowspan="2">Vật ném, đạn bay trúng</td>
 						<td>%1$s died</td>
 					</tr>
@@ -166,53 +175,53 @@
 						<td>%1$s was slain by %2$s</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">stalactite</td>
+						<td><code class="textSyntax">stalactite</code></td>
 						<td>Dripstone rơi trúng</td>
 						<td>%1$s was skewered by a falling stalactite</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">stalagmite</td>
+						<td><code class="textSyntax">stalagmite</code></td>
 						<td>Rơi trúng Dripstone</td>
 						<td>%1$s was impaled on a stalagmite</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">starve</td>
+						<td><code class="textSyntax">starve</code></td>
 						<td>Chết đói</td>
 						<td>%1$s starved to death</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">suffocation</td>
+						<td><code class="textSyntax">suffocation</code></td>
 						<td>Ngạt thở trong Block, cần ở trong Block để Command hoạt động</td>
 						<td>%1$s suffocated in a wall</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">suicide</td>
+						<td><code class="textSyntax">suicide</code></td>
 						<td>Tự sát</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">temperature</td>
+						<td><code class="textSyntax">temperature</code></td>
 						<td>Nhiệt độ</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">thorns</td>
+						<td><code class="textSyntax">thorns</code></td>
 						<td>Giáp gai đâm</td>
 						<td>%1$s died</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">void</td>
+						<td><code class="textSyntax">void</code></td>
 						<td>Rơi xuống Void</td>
 						<td>%1$s fell out of the world</td>
 					</tr>
 					<tr>
-						<td class="textSyntax">wither</td>
+						<td><code class="textSyntax">wither</code></td>
 						<td>Khô héo</td>
 						<td>%1$s withered away</td>
 					</tr>
 				</table>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

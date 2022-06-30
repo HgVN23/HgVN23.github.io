@@ -25,86 +25,116 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/gamemode.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
+<body class="themeDark">
+<main>
+	<article class="content">
 		<div class="contentHeader">/gamemode</div>
-		<div class="contentBox">
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Tùy chỉnh chế độ chơi của Player</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Tùy chỉnh chế độ chơi của Player</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/gamemode &lt;gameMode: GameMode&gt; [player: target]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText dropdown"><span class="textSyntax">&lt;gameMode: GameMode&gt;</span> là chế độ. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">default</span> là mặc định theo cài đặt Map</div>
-						<div class="contentText"><span class="textSyntax">adventure</span> là phiêu lưu</div>
-						<div class="contentText"><span class="textSyntax">creative</span> là sáng tạo</div>
-						<div class="contentText"><span class="textSyntax">survival</span> là sinh tồn</div>
-						<div class="contentText"><span class="textSyntax">spectator</span> là khán giả</div>
+				<p class="contentText dropdown">/gamemode &lt;gameMode: GameMode&gt; [player: target]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;gameMode: GameMode&gt;</code> là chế độ
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">default</code> là mặc định theo cài đặt Map</p>
+							<p class="dropdownText"><code class="textSyntax">adventure</code> là phiêu lưu</p>
+							<p class="dropdownText"><code class="textSyntax">creative</code> là sáng tạo</p>
+							<p class="dropdownText"><code class="textSyntax">survival</code> là sinh tồn</p>
+							<p class="dropdownText"><code class="textSyntax">spectator</code> là khán giả</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textCommand">/gamemode adventure @a</span> — All Player chuyển sang chế độ phiêu lưu</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[player: target]</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">@s</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/gamemode adventure Hg</code>
+						<p class="contentText">Hg chuyển sang chế độ phiêu lưu</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/gamemode &lt;gameMode: int&gt; [player: target]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText dropdown"><span class="textSyntax">&lt;gameMode: int&gt;</span> là chế độ biểu thị bằng số. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">0</span> là survival</div>
-						<div class="contentText"><span class="textSyntax">1</span> là creative</div>
-						<div class="contentText"><span class="textSyntax">2</span> là adventure</div>
-						<div class="contentText"><span class="textSyntax">5</span> là default</div>
-						<div class="contentText"><span class="textSyntax">6</span> là spectator</div>
+				<p class="contentText dropdown">/gamemode &lt;gameMode: int&gt; [player: target]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;gameMode: GameMode&gt;</code> là chế độ biểu thị bằng số
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">0</code> là survival</p>
+							<p class="dropdownText"><code class="textSyntax">1</code> là creative</p>
+							<p class="dropdownText"><code class="textSyntax">2</code> là adventure</p>
+							<p class="dropdownText"><code class="textSyntax">5</code> là default</p>
+							<p class="dropdownText"><code class="textSyntax">6</code> là spectator</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[player: target]</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">@s</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/gamemode 2 Hg</code>
+						<p class="contentText">Hg chuyển sang chế độ phiêu lưu</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Để sử dụng Spectator cần bật Spectator Mode trong Setting World trước khi vào chơi</div>
-			<div class="contentText dropdown">Các chế độ có thể được viết tắt:</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textSyntax">a</span> là <span class="textSyntax">adventure</span></div>
-				<div class="contentText"><span class="textSyntax">c</span> là <span class="textSyntax">creative</span></div>
-				<div class="contentText"><span class="textSyntax">d</span> là <span class="textSyntax">default</span></div>
-				<div class="contentText"><span class="textSyntax">s</span> là <span class="textSyntax">survival</span></div>
-				<div class="contentText"><span class="textCommand">/gamemode a @a</span> — All Player chuyển sang chế độ phiêu lưu</div>
+			<p class="contentText">Để sử dụng Spectator cần bật Spectator Mode trong Setting World trước khi vào chơi</p>
+			<div>
+				<p class="contentText dropdown">Các chế độ có thể được viết tắt</p>
+				<div class="dropdownStart dropdownHide"><div>
+						<p class="dropdownText"><code class="textSyntax">a</code> là <code class="textSyntax">adventure</code></p>
+						<p class="dropdownText"><code class="textSyntax">c</code> là <code class="textSyntax">creative</code></p>
+						<p class="dropdownText"><code class="textSyntax">d</code> là <code class="textSyntax">default</code></p>
+						<p class="dropdownText"><code class="textSyntax">s</code> là <code class="textSyntax">survival</code></p>
+						<div class="dropdownText">
+							<code class="textCommand">/gamemode a Hg</code>
+							<p class="contentText">Hg chuyển sang chế độ phiêu lưu</p>
+						</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

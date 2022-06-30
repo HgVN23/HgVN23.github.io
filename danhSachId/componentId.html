@@ -25,56 +25,55 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/component_id.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">Id Component</h1>
 		<div class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">Danh sách Id Component</div>
+				<h2 class="contentTitle">Danh sách</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">can_place_on</span> là chỉ có thể đặt lên Block</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"minecraft:can_place_on":{"blocks":["grass"]}}</div>
-				</div>
+				<p class="contentText dropdown"><code class="textSyntax">can_place_on</code> là chỉ có thể đặt lên Block</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textCommand">/give Hg dirt 1 0 {"minecraft:can_place_on":{"blocks":["grass"]}}</code></p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">can_destroy</span> là chỉ có thể đập Block</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"minecraft:can_destroy":{"blocks":["grass"]}}</div>
-				</div>
+				<p class="contentText dropdown"><code class="textSyntax">can_destroy</code> là chỉ có thể đập Block</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textCommand">/give Hg dirt 1 0 {"minecraft:can_destroy":{"blocks":["grass"]}}</code></p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">keep_on_death</span> là khi chết Item vẫn còn trong Inventory</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"keep_on_death":{}}</div>
-				</div>
+				<p class="contentText dropdown"><code class="textSyntax">keep_on_death</code> là khi chết Item vẫn còn trong Inventory</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textCommand">/give Hg dirt 1 0 {"keep_on_death":{}}</code></p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">item_lock</span> là khóa Item. Danh sách:</div>
-				<div class="dropdownTab dropdownHide">
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">lock_in_inventory</span> là chỉ có thể di chuyển trong Inventoy, không thể Drop hoặc Craft</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"item_lock":{"mode":"lock_in_inventory"}}</span></div>
-						</div>
+				<p class="contentText dropdown"><code class="textSyntax">item_lock</code> là khóa Item. Danh sách</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">lock_in_inventory</code> là chỉ có thể di chuyển trong Inventoy, không thể Drop hoặc Craft
+						<p class="contentText"><code class="textCommand">/give Hg dirt 1 0 {"item_lock":{"mode":"lock_in_inventory"}}</code></p>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">lock_in_slot</span> là không thể di chuyển ra khỏi Slot đó, không thể Drop hoặc Craft</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textCommand">/give @a dirt 1 0 {"item_lock":{"mode":"lock_in_slot"}}</span></div>
-						</div>
+					<div class="dropdownText">
+						<code class="textSyntax">lock_in_slot</code> là không thể di chuyển ra khỏi Slot đó, không thể Drop hoặc Craft
+						<p class="contentText"><code class="textCommand">/give Hg dirt 1 0 {"item_lock":{"mode":"lock_in_slot"}}</code></p>
 					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 		</div>
-	</div>
-	<footer id="footer"></footer>
+	</article>
+</main>
 </body>

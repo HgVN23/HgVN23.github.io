@@ -25,244 +25,312 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/replaceitem.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/table.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/replaceitem</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/replaceitem</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Thay thế Item trong Slot của Entity hoặc Block</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Thay thế Item trong Slot của Entity hoặc Block</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">block</span> là Block có thể chứa Item như Chest hoặc Barrel, ...</div>
-					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ</div>
-					<div class="contentText"><span class="textSyntax">slot.container</span> là ô chứa Item trong Block</div>
-					<div class="contentText"><span class="textSyntax">&lt;slotId: int&gt;</span> là Id ô</div>
-					<div class="contentText"><span class="textSyntax">&lt;itemName: Item&gt;</span> là Id Item</div>
-					<div class="contentText"><span class="textCommand">/replaceitem block 1 1 1 slot.container 0 diamond</span> — Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên</div>
-					<div class="contentText"><span class="textSyntax">[amount: int]</span> là số lượng Item</div>
-					<div class="contentText"><span class="textSyntax">[data: int]</span> là Data Item</div>
-					<div class="contentText"><span class="textSyntax">[components: json]</span> là cụm chỉ định. <a class="textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a></div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">block</span> là Block có thể chứa Item như Chest hoặc Barrel, ...</div>
-					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ</div>
-					<div class="contentText"><span class="textSyntax">slot.container</span> là ô chứa Item trong Block</div>
-					<div class="contentText"><span class="textSyntax">&lt;slotId: int&gt;</span> là Id ô</div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;oldItemHandling: ReplaceMode&gt;</span> là chế độ thay thế. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">destroy</span> là thay thế Item đã có trong ô đó</div>
-						<div class="contentText"><span class="textSyntax">keep</span> là giữ nguyên Item trong ô đó</div>
+				<p class="contentText dropdown">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">block</code> là Block có thể chứa Item như Chest hoặc Barrel, ...</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;position: x y z&gt;</code> là tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">slot.container</code> là ô chứa Item trong Block</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;slotId: int&gt;</code> là id ô</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;itemName: Item&gt;</code> là id Item</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[amount: int]</code> là số lượng Item
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;itemName: Item&gt;</span> là Id Item</div>
-					<div class="contentText"><span class="textCommand">/replaceitem block 1 1 1 slot.container 0 destroy diamond</span> — Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên</div>
-					<div class="contentText"><span class="textSyntax">[amount: int]</span> là số lượng Item</div>
-					<div class="contentText"><span class="textSyntax">[data: int]</span> là Data Item</div>
-					<div class="contentText"><span class="textSyntax">[components: json]</span> là cụm chỉ định. <a class="textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a></div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[data: int]</code> là dữ liệu Item
+						<p class="contentText">Mặc định là <code class="textSyntax">0</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[components: json]</code> là thẻ dữ liệu
+						<a class="contentText textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a>
+						<p class="contentText">Mặc định là không có nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/replaceitem block 1 1 1 slot.container 0 diamond</span>
+						<p class="contentText">Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">entity</span> là vật thể</div>
-					<div class="contentText"><span class="textSyntax">&lt;target: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="table">
+				<p class="contentText dropdown">/replaceitem block &lt;position: x y z&gt; slot.container &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">block</code> là Block có thể chứa Item như Chest hoặc Barrel, ...</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;position: x y z&gt;</code> là tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">slot.container</code> là ô chứa Item trong Block</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;slotId: int&gt;</code> là id ô</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;oldItemHandling: ReplaceMode&gt;</code> là chế độ thay thế
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">destroy</code> là thay thế Item đã có trong ô đó</p>
+							<p class="dropdownText"><code class="textSyntax">keep</code> là giữ nguyên Item trong ô đó</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;itemName: Item&gt;</code> là id Item</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[amount: int]</code> là số lượng Item
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[data: int]</code> là dữ liệu Item
+						<p class="contentText">Mặc định là <code class="textSyntax">0</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[components: json]</code> là thẻ dữ liệu
+						<a class="contentText textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a>
+						<p class="contentText">Mặc định là không có nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/replaceitem block 1 1 1 slot.container 0 destroy diamond</span>
+						<p class="contentText">Block ở tọa độ 1 1 1 có Diamond ở ô đầu tiên</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">entity</code> là vật thể</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;target: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity (trừ các Entity không có Slot chứa)</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;slotType: EntityEquipmentSlot&gt;</code> là loại ô của Entity
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownHide">
 							<table>
 								<tr>
 									<th>Id chữ</th>
 									<th>Giải thích</th>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.armor</td>
+									<td><code class="textSyntax">slot.armor</code></td>
 									<td>Ô giáp cho ngựa và thảm cho lạc đà</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.armor.chest</td>
+									<td><code class="textSyntax">slot.armor.chest</code></td>
 									<td>Ô để giáp ngực</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.armor.feet</td>
+									<td><code class="textSyntax">slot.armor.feet</code></td>
 									<td>Ô để giáp chân</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.armor.head</td>
+									<td><code class="textSyntax">slot.armor.head</code></td>
 									<td>Ô để giáp đầu</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.armor.legs</td>
+									<td><code class="textSyntax">slot.armor.legs</code></td>
 									<td>Ô để giáp chân</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.chest</td>
+									<td><code class="textSyntax">slot.chest</code></td>
 									<td>Ô để Chest cho lừa, la và lạc đà</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.enderchest</td>
+									<td><code class="textSyntax">slot.enderchest</code></td>
 									<td>Ô kho đồ Ender Chest</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.equippable</td>
+									<td><code class="textSyntax">slot.equippable</code></td>
 									<td>Chưa được hỗ trợ</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.hotbar</td>
+									<td><code class="textSyntax">slot.hotbar</code></td>
 									<td>Ô công cụ hiện trên màn hình</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.inventory</td>
+									<td><code class="textSyntax">slot.inventory</code></td>
 									<td>Ô kho đồ</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.saddle</td>
+									<td><code class="textSyntax">slot.saddle</code></td>
 									<td>Ô để yên cưỡi</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.weapon.mainhand</td>
+									<td><code class="textSyntax">slot.weapon.mainhand</code></td>
 									<td>Ô tay phải</td>
 								</tr>
 								<tr>
-									<td class="textSyntax">slot.weapon.offhand</td>
+									<td><code class="textSyntax">slot.weapon.offhand</code></td>
 									<td>Ô tay trái</td>
 								</tr>
 							</table>
 						</div>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;slotId: int&gt;</span> là Id ô</div>
-					<div class="contentText"><span class="textSyntax">&lt;itemName: Item&gt;</span> là Id Item</div>
-					<div class="contentText"><span class="textCommand">/replaceitem entity @a slot.armor.chest 0 diamond_chestplate</span> — All Player sẽ có giáp Diamond trong ô chứa giáp ngực diamond_chestplate</div>
-					<div class="contentText"><span class="textSyntax">[amount: int]</span> là số lượng Item</div>
-					<div class="contentText"><span class="textSyntax">[data: int]</span> là Data Item</div>
-					<div class="contentText"><span class="textSyntax">[components: json]</span> là cụm chỉ định. <a class="textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a></div>
-				</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;slotId: int&gt;</code> là id ô</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;itemName: Item&gt;</code> là id Item</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[amount: int]</code> là số lượng Item
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[data: int]</code> là dữ liệu Item
+						<p class="contentText">Mặc định là <code class="textSyntax">0</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[components: json]</code> là thẻ dữ liệu
+						<a class="contentText textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a>
+						<p class="contentText">Mặc định là không có nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/replaceitem entity Hg slot.armor.chest 0 diamond_chestplate</span>
+						<p class="contentText">Hg sẽ có giáp Diamond trong ô chứa giáp ngực diamond_chestplate</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">entity</span> là vật thể</div>
-					<div class="contentText"><span class="textSyntax">&lt;target: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank" title="Mở Target trong Tab mới">mục tiêu</a> (Entity)</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">&lt;slotType: EntityEquipmentSlot&gt;</span> là loại ô của Entity. Danh sách:</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="table">
-								<table>
-									<tr>
-										<th>Id chữ</th>
-										<th>Giải thích</th>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.armor</td>
-										<td>Ô giáp cho ngựa và thảm cho lạc đà</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.armor.chest</td>
-										<td>Ô để giáp ngực</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.armor.feet</td>
-										<td>Ô để giáp chân</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.armor.head</td>
-										<td>Ô để giáp đầu</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.armor.legs</td>
-										<td>Ô để giáp chân</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.chest</td>
-										<td>Ô để Chest cho lừa, la và lạc đà</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.enderchest</td>
-										<td>Ô kho đồ Ender Chest</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.equippable</td>
-										<td>Chưa được hỗ trợ</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.hotbar</td>
-										<td>Ô công cụ hiện trên màn hình</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.inventory</td>
-										<td>Ô kho đồ</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.saddle</td>
-										<td>Ô để yên cưỡi</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.weapon.mainhand</td>
-										<td>Ô tay phải</td>
-									</tr>
-									<tr>
-										<td class="textSyntax">slot.weapon.offhand</td>
-										<td>Ô tay trái</td>
-									</tr>
-								</table>
-							</div>
+				<p class="contentText dropdown">/replaceitem entity &lt;target: target&gt; &lt;slotType: EntityEquipmentSlot&gt; &lt;slotId: int&gt; &lt;oldItemHandling: ReplaceMode&gt; &lt;itemName: Item&gt; [amount: int] [data: int] [components: json]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">entity</code> là vật thể</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;target: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity (trừ các Entity không có Slot chứa)</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;slotType: EntityEquipmentSlot&gt;</code> là loại ô của Entity
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownHide">
+							<table>
+								<tr>
+									<th>Id chữ</th>
+									<th>Giải thích</th>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.armor</code></td>
+									<td>Ô giáp cho ngựa và thảm cho lạc đà</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.armor.chest</code></td>
+									<td>Ô để giáp ngực</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.armor.feet</code></td>
+									<td>Ô để giáp chân</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.armor.head</code></td>
+									<td>Ô để giáp đầu</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.armor.legs</code></td>
+									<td>Ô để giáp chân</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.chest</code></td>
+									<td>Ô để Chest cho lừa, la và lạc đà</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.enderchest</code></td>
+									<td>Ô kho đồ Ender Chest</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.equippable</code></td>
+									<td>Chưa được hỗ trợ</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.hotbar</code></td>
+									<td>Ô công cụ hiện trên màn hình</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.inventory</code></td>
+									<td>Ô kho đồ</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.saddle</code></td>
+									<td>Ô để yên cưỡi</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.weapon.mainhand</code></td>
+									<td>Ô tay phải</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">slot.weapon.offhand</code></td>
+									<td>Ô tay trái</td>
+								</tr>
+							</table>
 						</div>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;slotId: int&gt;</span> là Id ô</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">&lt;oldItemHandling: ReplaceMode&gt;</span> là chế độ thay thế. Danh sách:</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">destroy</span> là thay thế Item đã có trong ô đó</div>
-							<div class="contentText"><span class="textSyntax">keep</span> là giữ nguyên Item trong ô đó</div>
-						</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;slotId: int&gt;</code> là id ô</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;oldItemHandling: ReplaceMode&gt;</code> là chế độ thay thế
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">destroy</code> là thay thế Item đã có trong ô đó</p>
+							<p class="dropdownText"><code class="textSyntax">keep</code> là giữ nguyên Item trong ô đó</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;itemName: Item&gt;</span> là Id Item</div>
-					<div class="contentText"><span class="textCommand">/replaceitem entity @a slot.weapon.mainhand 0 destroy diamond</span> — All Player đang cầm Item trên tay phải sẽ bị thay thế thành Diamond</div>
-					<div class="contentText"><span class="textSyntax">[amount: int]</span> là số lượng Item</div>
-					<div class="contentText"><span class="textSyntax">[data: int]</span> là Data Item</div>
-					<div class="contentText"><span class="textSyntax">[components: json]</span> là cụm chỉ định. <a class="textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a></div>
-				</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;itemName: Item&gt;</code> là id Item</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[amount: int]</code> là số lượng Item
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[data: int]</code> là dữ liệu Item
+						<p class="contentText">Mặc định là <code class="textSyntax">0</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[components: json]</code> là thẻ dữ liệu
+						<a class="contentText textLink" href="../danhSachId/componentId.html" target="_blank">Danh sách</a>
+						<p class="contentText">Mặc định là không có nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/replaceitem entity Hg slot.weapon.mainhand 0 destroy diamond</span>
+						<p class="contentText">Hg đang cầm Item trên tay phải sẽ bị thay thế thành Diamond</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">&lt;slotId: int&gt; có tối đa 27 ô (Còn tùy vào Block và Entity có bao nhiêu ô)</div>
-			<div class="contentText">ID ô từ 0 -> 26</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText"><code class="textSyntax">&lt;slotId: int&gt;</code> có tối đa 27 ô (Còn tùy vào Block và Entity có bao nhiêu ô)</p>
+			<p class="contentText">id ô từ 0 -> 26</p>
+		</section>
+	</article>
+</main>
 </body>

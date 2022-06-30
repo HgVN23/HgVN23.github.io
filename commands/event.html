@@ -8,79 +8,92 @@
 	<!-- Primary Meta Tags -->
 	<title>/event | MCBE Command Wiki VN by Hg</title>
 	<meta name="title" content="/event | MCBE Command Wiki VN by Hg">
-	<meta name="description" content="Kích hoạt Event của Entity">
+	<meta name="description" content="Kích hoạt event của Entity">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://hgvn23.github.io/commands/event">
 	<meta property="og:title" content="/event | MCBE Command Wiki VN by Hg">
-	<meta property="og:description" content="Kích hoạt Event của Entity">
+	<meta property="og:description" content="Kích hoạt event của Entity">
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/event.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://hgvn23.github.io/commands/event">
 	<meta property="twitter:title" content="/event | MCBE Command Wiki VN by Hg">
-	<meta property="twitter:description" content="Kích hoạt Event của Entity">
+	<meta property="twitter:description" content="Kích hoạt event của Entity">
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/event.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/event</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/event</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Kích hoạt Event của Entity</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Kích hoạt event của Entity</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/event entity &lt;target: target&gt; &lt;eventName: string&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">entity</span> là vật thể</div>
-					<div class="contentText"><span class="textSyntax">&lt;target: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText"><span class="textSyntax">&lt;eventName: string&gt;</span> là tên sự kiện. <a class="textLink" href="../danhSachId/eventId.html" target="_blank">Danh sách</a> hiện thị khi ghi Command</div>
-					<div class="contentText"><span class="textCommand">/event entity @e[type=creeper] minecraft:start_exploding</span> — All Creeper sẽ phát nổ</div>
-				</div>
+				<p class="contentText dropdown">/event entity &lt;target: target&gt; &lt;eventName: string&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">entity</code> là vật thể</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;target: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;eventName: string&gt;</code> là tên sự kiện
+						<a class="contentText textLink" href="../danhSachId/eventId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/event entity @e[type=creeper] minecraft:start_exploding</code>
+						<p class="contentText">Tất cả Creeper sẽ phát nổ</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText dropdown">Mỗi Entity đều có Event riêng vậy nên không thể dùng với Entity không có Event đó</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText"><span class="textCommand">/event entity @e[type=pig] minecraft:start_exploding</span> — Command sẽ không hoạt động vì Pig không thể phát nổ</div>
-			</div>
-			<div class="contentText">Event có thể được tạo ra thông qua Behavior của Entity. Nếu bạn thêm Event nổ cho Pig thì Command trên sẽ hoạt động</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText dropdown">Mỗi Entity đều có Event riêng vậy nên không thể dùng với Entity không có Event đó</p>
+			<div class="dropdownStart dropdownHide"><div>
+				<div class="dropdownText">
+					<code class="textCommand">/event entity @e[type=pig] minecraft:start_exploding</code>
+					<p class="contentText">Command sẽ không hoạt động vì Pig không thể phát nổ</p>
+				</div>
+				<div class="dropdownEnd"></div>
+			</div></div>
+			<p class="contentText">Event có thể được tạo ra thông qua Behavior của Entity. Nếu bạn thêm Event nổ cho Pig thì Command trên sẽ hoạt động</p>
+		</section>
+	</article>
+</main>
 </body>

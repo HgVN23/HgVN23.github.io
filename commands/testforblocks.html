@@ -25,57 +25,64 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/testforblocks.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/testforblocks</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/testforblocks</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">So sánh khoảng giới hạn Block với khoảng giới hạn khác</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">So sánh khoảng giới hạn Block với khoảng giới hạn khác</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/testforblocks &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [masked|all]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;begin: x y z&gt;</span> là tọa độ bắt đầu giới hạn</div>
-					<div class="contentText"><span class="textSyntax">&lt;end: x y z&gt;</span> là tọa độ kết thúc giới hạn</div>
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ khoảng giới hạn khác</div>
-					<div class="contentText dropdown"><span class="textSyntax">[masked|all]</span> là phương thức so sánh. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">masked</span> là không tính Air nếu khoảng giới hạn đầu có Air</div>
-						<div class="contentText"><span class="textSyntax">all</span> là tính Air nếu nếu khoảng giới hạn đầu có Air</div>
+				<p class="contentText dropdown">/testforblocks &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; [masked|all]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;begin: x y z&gt;</code> là tọa độ bắt đầu giới hạn</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;end: x y z&gt;</code> là tọa độ kết thúc giới hạn</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ khoảng giới hạn khác</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[masked|all]</code> là phương thức so sánh
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">masked</code> là không tính Air nếu khoảng giới hạn đầu có Air</p>
+							<p class="dropdownText"><code class="textSyntax">all</code> là tính Air nếu nếu khoảng giới hạn đầu có Air</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">all</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/testforblocks 1 1 1 2 1 2 3 1 3 all</span> — so sánh khoảng giới hạn từ 1 1 1 đến 2 1 2 gồm cả Air nếu có với khoảng giới hạn từ 3 1 3 đến 4 1 4</div>
+					<div class="dropdownText">
+						<code class="textCommand">/testforblocks 1 1 1 2 1 2 3 1 3 all</code>
+						<p class="contentText">So sánh khoảng giới hạn từ 1 1 1 đến 2 1 2 gồm cả Air nếu có với khoảng giới hạn từ 3 1 3 đến 4 1 4</p>
 					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

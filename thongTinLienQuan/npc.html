@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+
+	<!-- Primary Meta Tags -->
+	<title>NPC | MCBE Command Wiki VN by Hg</title>
+	<meta name="title" content="NPC | MCBE Command Wiki VN by Hg">
+	<meta name="description" content="NPC">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hgvn23.github.io/thongTinLienQuan/npc">
+	<meta property="og:title" content="NPC | MCBE Command Wiki VN by Hg">
+	<meta property="og:description" content="NPC">
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/npc.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://hgvn23.github.io/thongTinLienQuan/npc">
+	<meta property="twitter:title" content="NPC | MCBE Command Wiki VN by Hg">
+	<meta property="twitter:description" content="NPC">
+	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/npc.png">
+	
+	<!-- CSS/Script -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/image.css">
+	<script src="../assets/javascript/scripts.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
+</head>
+<body  class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">NPC</h1>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<h2 class="contentTitle">Công dụng</h2>
+			</div>
+			<p class="contentText">Thực thi Command được ghi trong đó</p>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command Block</h2>
+			</div>
+			<p class="contentText">Player không có OP (kích hoạt qua Redstone)</p>
+			<p class="contentText">Player có OP (kích hoạt qua Redstone + có thể đặt, phá và sửa thành phần trong Block)</p>
+			<p class="contentText">Chủ Map (kích hoạt qua Redstone + có thể đặt, phá và sửa thành phần trong Block)</p>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<h2 class="contentTitle">Các thành phần</h2>
+			</div>
+			<div class="image imageCmdbUi"></div>
+			<p class="contentText">Hover Note là ô ghi chú <span class="textNote">1</span></p>
+			<div>
+				<p class="contentText dropdown">Block Type là loại Block <span class="textNote">2</span>. Danh sách</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Impulse là xung, chạy 1 lần mỗi lần kích hoạt</p>
+					<p class="dropdownText">Chain là liền chuỗi, chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động</p>
+					<p class="dropdownText">Repeat là lặp, chạy lặp mỗi lần kích hoạt</p>
+					<div><div class="image imageCmdbType"></div></div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">Condition là điều kiện, kiểm tra Command Block phía sau hướng vào nó có thực thi được Command không <span class="textNote">3</span>. Danh sách</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">Condition là có điều kiện</div>
+					<div class="dropdownText">Uncondition là không điều kiện</div>
+					<div><div class="image imageCmdbCondition"></div></div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">Redstone là năng lượng <span class="textNote">4</span>. Danh sách</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">Always Active là luôn hoạt động, không cần năng lượng Redstone để kích hoạt</div>
+					<div class="dropdownText">Needs Redstone là cần năng lượng Redstone để kích hoạt</div>
+					<div><div class="image imageCmdbRedstone"></div></div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<p class="contentText">Execute on First Tick là hoạt động ngay từ Tick đầu tiên <span class="textNote">5</span></p>
+			<p class="contentText">Delay in Ticks là độ trễ của Tick <span class="textNote">6</span></p>
+			<p class="contentText">Cancel là hủy thay đổi <span class="textNote">7</span></p>
+			<p class="contentText">Command Input là nơi nhập Command (Cạnh đó có dấu + để mở rộng bảng ghi) <span class="textNote">8</span></p>
+			<p class="contentText">Previous Output là thông báo đầu ra Command trước đó (Nút trên đó để bật tắt hiện thông báo trong Block) <span class="textNote">9</span></p>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<h2 class="contentTitle">Chi tiết về tổ hợp Block Type + Condition + Redstone</h2>
+			</div>
+			<div>
+				<div class="contentText dropdown">Impulse + Unconditional + Needs Redstone</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Impulse + Unconditional + Always Active</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Impulse + Condition + Needs Redstone</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Impulse + Condition + Always Active</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Chain + Unconditional + Needs Redstone</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block hướng vào nó hoạt động</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Chain + Unconditional + Always Active</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Chain + Condition + Needs Redstone</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Chain + Condition + Always Active</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy 1 lần mỗi lần có Command Block phía sau hướng vào nó phải thực thi được Command</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Reapeat + Unconditional + Needs Redstone</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt bằng đá đỏ</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Reapeat + Unconditional + Always Active</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Reapeat + Condition + Needs Redstone</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<div class="contentText dropdown">Reapeat + Condition + Always Active</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<h2 class="contentTitle">Lưu ý</h2>
+			</div>
+			<p class="contentText"><code class="textCommand">/gamerule comamndblockoutput false</code> sẽ tắt Previous Output. Bạn vẫn có thể bật nó lên bằng nút trong Block</p>
+		</section>
+	</article>
+</main>
+</body>

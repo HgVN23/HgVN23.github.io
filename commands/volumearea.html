@@ -25,103 +25,122 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/volumearea.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/volumearea</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/volumearea</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Giới hạn vùng Fog qua tệp tin Volume</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Giới hạn vùng Fog qua tệp tin Volume</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/volumearea add &lt;identifier: string&gt; &lt;from: x y z&gt; &lt;to: x y z&gt; [name: string]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">add</span> là tạo</div>
-					<div class="contentText"><span class="textSyntax">&lt;identifier: string&gt;</span> là id File volumearea bạn tạo qua Addon</div>
-					<div class="contentText"><span class="textSyntax">&lt;from: x y z&gt;</span> là tọa độ bắt đầu</div>
-					<div class="contentText"><span class="textSyntax">&lt;to: x y z&gt;</span> là tọa độ kết thúc</div>
-					<div class="contentText"><span class="textSyntax">[name: string]</span> là đặt id cho volumearea</div>
-					<div class="contentText"><span class="textCommand">/volumearea add custom:test 0 0 0 0 0 0 test</span> - tạo giới hạn Fog custom:test dưới id là test trong khoảng 0 0 0 đến 0 0 0</div>
-				</div>
+				<p class="contentText dropdown">/volumearea add &lt;identifier: string&gt; &lt;from: x y z&gt; &lt;to: x y z&gt; [name: string]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">add</code> là tạo</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;identifier: string&gt;</code> là id File volumearea bạn tạo qua Addon</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;from: x y z&gt;</code> là tọa độ bắt đầu</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;to: x y z&gt;</code> là tọa độ kết thúc</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[name: string]</code> là đặt id cho volumearea
+						<p class="contentText">Mặc định là Volume + i với i là số từ 0 đến 99 nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/volumearea add custom:test 0 0 0 0 0 0 test</code>
+						<p class="contentText">Tạo giới hạn Fog custom:test dưới id là test trong khoảng 0 0 0 đến 0 0 0</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/volumearea list [all-dimensions: VolumeAreaAllDimensions]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">list</span> là danh sách volumearea</div>
-					<div class="contentText"><span class="textSyntax">[all-dimensions: VolumeAreaAllDimensions]</span> là tất cả chiều không gian</div>
-				</div>
+				<p class="contentText dropdown">/volumearea list [all-dimensions: VolumeAreaAllDimensions]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">list</code> là danh sách volumearea</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[all-dimensions: VolumeAreaAllDimensions]</code> là tất cả chiều không gian
+						<p class="contentText">Mặc định là chiều không gian bạn đang đứng nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/volumearea remove &lt;name: string&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">remove</span> là bỏ</div>
-					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là id của volumearea đã tạo</div>
-					<div class="contentText"><span class="textCommand">/volumearea remove test</span> - bỏ test</div>
-				</div>
+				<p class="contentText dropdown">/volumearea remove &lt;name: string&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">remove</code> là bỏ</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;name: string&gt;</code> là id của volumearea đã tạo</p>
+					<div class="dropdownText">
+						<code class="textCommand">/volumearea remove test</code>
+						<p class="contentText">Bỏ test</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/volumearea remove &lt;position: x y z&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">remove</span> là bỏ</div>
-					<div class="contentText"><span class="textSyntax">&lt;position: x y z&gt;</span> là tọa độ volumearea đã tạo</div>
-					<div class="contentText"><span class="textCommand">/volumearea remove 0 0 0</span> - bỏ tất cả volumearea chứa tọa độ 0 0 0</div>
-				</div>
+				<p class="contentText dropdown">/volumearea remove &lt;position: x y z&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">remove</code> là bỏ</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;position: x y z&gt;</code> là tọa độ volumearea đã tạo</p>
+					<div class="dropdownText">
+						<code class="textCommand">/volumearea remove 0 0 0</code>
+						<p class="contentText">Bỏ tất cả volumearea chứa tọa độ 0 0 0</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/volumearea remove_all</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">remove_all</span> là bỏ tất cả</div>
-				</div>
+				<p class="contentText dropdown">/volumearea remove_all</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">remove_all</code> là bỏ tất cả</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">Hướng dẫn tạo File Volume cơ bản</div>
+				<h2 class="contentTitle">Hướng dẫn tạo File Volume cơ bản</h2>
 			</div>
-			<div class="contentText">Trước tiên ấn <a class="textLink" download href="https://github.com/HgVN23/HgVN23.github.io/blob/main/assets/download/volumearea.zip?raw=true">Download</a> để tải Pack mẫu về, sau đó giải nén và chuyển thư mục đó vào behavior_packs</div>
-			<div class="contentText">B1: Mở thư mục volumes</div>
-			<div class="contentText">B2: Nhân bản tệp tin template.json và đổi tên bất kì (không đổi tên cũng được) hoặc sửa trực tiếp tệp đó luôn</div>
-			<div class="contentText">B3: Mở tệp tin vừa tạo, sửa dòng 5 là id của volume và dòng 9 là id của fog. Sau khi xong nhớ ấn lưu</div>
-			<div class="contentText"><a class="textLink" href="../danhSachId/fogId.html" target="_blank">Danh sách</a> id fog hoặc sử dụng id fog do bạn tạo cũng được</div>
-			<div class="contentText">Doc về volumearea nếu bạn muốn làm nâng cao <a class="textLink" href="https://docs.microsoft.com/en-us/minecraft/creator/reference/content/volumereference/" target="_blank">Xem tại đây</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Trước tiên ấn <a class="textLink" download href="https://github.com/HgVN23/HgVN23.github.io/blob/main/assets/download/volumearea.zip?raw=true">Download</a> để tải Pack mẫu về, sau đó giải nén và chuyển thư mục đó vào behavior_packs</p>
+			<p class="contentText">B1: Mở thư mục volumes</p>
+			<p class="contentText">B2: Nhân bản tệp tin template.json và đổi tên bất kì (không đổi tên cũng được) hoặc sửa trực tiếp tệp đó luôn</p>
+			<p class="contentText">B3: Mở tệp tin vừa tạo, sửa dòng 5 là id của volume và dòng 9 là id của fog. Sau khi xong nhớ ấn lưu</p>
+			<p class="contentText"><a class="textLink" href="../danhSachId/fogId.html" target="_blank">Danh sách</a> id fog hoặc sử dụng id fog do bạn tạo cũng được</p>
+			<p class="contentText">Doc về volumearea nếu bạn muốn làm nâng cao <a class="textLink" href="https://docs.microsoft.com/en-us/minecraft/creator/reference/content/volumereference/" target="_blank">Xem tại đây</a></p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Phải bật Upcoming Creator Features</div>
-			<div class="contentText"><span class="textSyntax">/volumearea</span> sử dụng được tối đa 100 lần</div>
-			<div class="contentText"><span class="textSyntax">/volumearea</span> ảnh hưởng theo góc nhìn của Player và chỉ hoạt động ở ngang đầu Player (bạn đứng ở y = 30 mà giới hạn y 30 - 30 thì sẽ không có gì thay đổi, giới hạn 30 - 31 hoặc 31 - 31 thì sẽ có thay đổi)</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Phải bật Upcoming Creator Features</p>
+			<p class="contentText"><code class="textSyntax">/volumearea</code> sử dụng được tối đa 100 lần</p>
+			<p class="contentText"><code class="textSyntax">/volumearea</code> ảnh hưởng theo góc nhìn của Player và chỉ hoạt động ở ngang đầu Player (bạn đứng ở y = 30 mà giới hạn y 30 - 30 thì sẽ không có gì thay đổi, giới hạn 30 - 31 hoặc 31 - 31 thì sẽ có thay đổi)</p>
+		</section>
+	</article>
+</main>
 </body>

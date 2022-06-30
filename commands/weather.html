@@ -25,69 +25,83 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/weather.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/weather</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/weather</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Điều chỉnh thời tiết</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Điều chỉnh thời tiết</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/weather &lt;clear|rain|thunder&gt; [duration: int]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText dropdown"><span class="textSyntax">&lt;clear|rain|thunder&gt;</span> là trạng thái thời tiết. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">clear</span> là trong lành</div>
-						<div class="contentText"><span class="textSyntax">rain</span> là mưa</div>
-						<div class="contentText"><span class="textSyntax">thunder</span> là mưa kèm sấm sét</div>
+				<p class="contentText dropdown">/weather &lt;clear|rain|thunder&gt; [duration: int]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;clear|rain|thunder&gt;</code> là trạng thái thời tiết
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">clear</code> là trong lành</p>
+							<p class="dropdownText"><code class="textSyntax">rain</code> là mưa</p>
+							<p class="dropdownText"><code class="textSyntax">thunder</code> là mưa kèm sấm sét</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div class="contentText"><span class="textSyntax">[duration: int]</span> là thời gian tồn tại</div>
-					<div class="contentText"><span class="textCommand">/weather rain 10</span> — Mưa trong 10 giây</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[duration: int]</code> là thời gian tồn tại
+						<p class="contentText">Mặc định là ngẫu nhiên trong khoảng từ bằng <code class="textSyntax">300</code> đến bằng <code class="textSyntax">900</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/weather rain 10</code>
+						<p class="contentText">Mưa trong 10 giây</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/weather query</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">query</span> là cho biết hiện tại</div>
-					<div class="contentText"><span class="textCommand">/weather query</span> — Hiện tại mưa thì sẽ gửi thông tin là đang mưa</div>
-				</div>
+				<p class="contentText dropdown">/weather query</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">query</code> là cho biết hiện tại</p>
+					<div class="dropdownText">
+						<code class="textCommand">/weather query</code>
+						<p class="contentText">Hiện tại mưa thì sẽ gửi thông tin là đang mưa</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText"><span class="textCommand">/gamerule doweathercycle false</span> sẽ làm thành phần <span class="textSyntax">[duration: int]</span> không còn hoạt động</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText"><code class="textCommand">/gamerule doweathercycle false</code> sẽ làm thành phần <code class="textSyntax">[duration: int]</code> không còn hoạt động</p>
+		</section>
+	</article>
+</main>
 </body>

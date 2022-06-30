@@ -25,45 +25,138 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/danhSachId/raw_message_id.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">Id Raw message</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
-				<div class="contentTitle">Danh sách Id Raw message</div>
+				<h2 class="contentTitle">Danh sách</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">{"text":"..."}</span> là văn bản</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/tellraw @a {"rawtext":[{"text":"Hi"}]}</span> — All Player nhận được Chat Hi</div>
-				</div>
+				<p class="contentText dropdown"><code class="textSyntax">{"text": "..."}</code> là văn bản</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"text": "Hi"}]}</code>
+						<p class="contentText">Hg nhận được Chat Hi</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">{"translate":"..."}</span> là dịch văn bản trong en_?.lang</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/tellraw @a {"rawtext":[{"translate":"menu.copyright"}]}</span> — All Player nhận được Chat @Mojang AB</div>
-				</div>
+				<p class="contentText dropdown"><code class="textSyntax">{"translate": "..."}</code> là dịch văn bản trong en_?.lang hoặc nếu không có sẽ gửi cái bạn ghi</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "menu.copyright"}]}</code>
+						<p class="contentText">Hg nhận được Chat @Mojang AB</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "test.abc"}]}</code>
+						<p class="contentText">Hg nhận được Chat test.abc vì .lang không có cái bạn ghi</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">{"selector":"..."}</span> là hiện tên <a class="textLink" href="target.html" target="_blank">mục tiêu</a> (Entity)</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/tellraw @a {"rawtext":[{"selector":"@a"}]}</span> — All Player nhận được Chat tên của All Player</div>
-				</div>
+				<p class="contentText dropdown"><code class="textSyntax">{"translate": "...", "with": ["..."]}</code> là thế phần trong with vào %s</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "commands.op.success", "with": ["The3T"]}]}</code>
+						<p class="contentText">Hg nhận được Chat Opped: The3T thay vì Opped: %s</p>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Có thể dùng Raw message trong with</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">"with": {"rawtext": [...]}</code>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "commands.op.success", "with": {"rawtext": [{"text": "The3T"}]}}]}</code>
+								<p class="contentText">Hg nhận được Chat Opped: The3T thay vì Opped: %s</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown"><span class="textSyntax">{"score":{"name":"...","objective":"..."}}</span> là hiện điểm của <a class="textLink" href="target.html" target="_blank">mục tiêu</a> trong Scoreboard</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/tellraw @a {"rawtext":[{"score":{"name":"@a","objective":"a"}}]}</span> — All Player nhận được Chat điểm của All Player có trong Scoreboard a</div>
-				</div>
+				<p class="contentText dropdown"><code class="textSyntax">{"selector": "..."}</code> là hiện tên <a class="textLink" href="target.html" target="_blank">mục tiêu</a></p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">Mục tiêu là Entity</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"selector": "Hg"}]}</code>
+						<p class="contentText">Hg nhận được Chat tên của Hg</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">{"score": {"name": "...", "objective": "..."}}</code> là hiện điểm của <a class="textLink" href="target.html" target="_blank">mục tiêu</a> trong Scoreboard</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"score": {"name": "Hg", "objective": "a"}}]}</code>
+						<p class="contentText">Hg nhận được Chat điểm của Hg có trong Scoreboard a</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<h2 class="contentTitle">Thêm thông tin</h2>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">\n</code> là xuống dòng</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"text": "Hg\nVN"}]}</code>
+						<p class="contentText">Hg nhận được Chat Hg và VN không cùng 1 dòng</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown"><code class="textSyntax">%%s</code> là bị with thế vào</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "Hg%%s", "with": ["VN"]}]}</code>
+						<p class="contentText">Hg nhận được Chat HgVN</p>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Có thể sử dụng nhiều %%s</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "Hg%%s%%s", "with": ["VN", "23"]}]}</code>
+								<p class="contentText">Hg nhận được Chat HgVN23</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Có thể sắp xếp vị trí %%s</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "Hg%%1%%2", "with": ["VN", "23"]}]}</code>
+								<p class="contentText">Hg nhận được Chat HgVN23</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textCommand">/tellraw Hg {"rawtext": [{"translate": "Hg%%2%%1", "with": ["VN", "23"]}]}</code>
+								<p class="contentText">Hg nhận được Chat Hg23VN</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+	</article>
+</main>
 </body>

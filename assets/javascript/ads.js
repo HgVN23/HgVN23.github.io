@@ -1,7 +1,7 @@
 const ads = `
 	<div class="contentGroup">
 		<div class="contentIcon iconAds"></div>
-		<div class="contentTitle">Ads</div>
+		<p class="contentTitle">Ads</p>
 	</div>
 	<!-- Ads 1 -->
 	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2430509461017367" data-ad-slot="6618344666" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -15,7 +15,7 @@ const ads = `
 const adsCreate = document.createElement('div');
 adsCreate.classList.add('contentBox');
 adsCreate.innerHTML = ads;
-document.querySelector(".content").appendChild(adsCreate);
+document.querySelector("body").appendChild(adsCreate);
 
 for (var i = 0; i < 3; i++)
 	(adsbygoogle = window.adsbygoogle || []).push({});

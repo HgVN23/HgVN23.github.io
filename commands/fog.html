@@ -25,73 +25,92 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/fog.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/fog</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/fog</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Tạo hoặc xóa sương mù cho Player</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Tạo hoặc xóa sương mù cho Player</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/fog &lt;victim: target&gt; push &lt;fogId: string&gt; &lt;userProvideId: string&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">push</span> là đẩy, xuất hiện</div>
-					<div class="contentText"><span class="textSyntax">&lt;fogId: string&gt;</span> là id của Fog. <a class="textLink" href="../danhSachId/fogId.html" target="_blank">Danh sách</a></div>
-					<div class="contentText"><span class="textSyntax">&lt;userProvideId: string&gt;</span> là set id Fog cho Player</div>
-					<div class="contentText"><span class="textCommand">/fog @a push minecraft:fog_soulsand_valley a</span> — All Player sẽ có Fog của Soulsand Valley id là a</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown">/fog &lt;victim: target&gt; &lt;mode: delete&gt; &lt;userProvideId: string&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;mode: delete&gt;</span> là chế độ xóa. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">pop</span> là từ từ tan biến</div>
-						<div class="contentText"><span class="textSyntax">delete</span> là biến mất luôn</div>
+				<p class="contentText dropdown">/fog &lt;victim: target&gt; push &lt;fogId: string&gt; &lt;userProvideId: string&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;victim: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;userProvideId: string&gt;</span> là set id Fog cho Player</div>
-					<div class="contentText"><span class="textCommand">/fog @a pop a</span> — All Player có Fog id là a sẽ từ từ tan biến</div>
-				</div>
+					<p class="dropdownText"><code class="textSyntax">push</code> là xuất hiện</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;fogId: string&gt;</code> là id của Fog
+						<a class="contentText textLink" href="../danhSachId/fogId.html" target="_blank">Danh sách</a>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;userProvideId: string&gt;</code> là đặt id Fog cho Player</p>
+					<div class="dropdownText">
+						<code class="textCommand">/fog Hg push minecraft:fog_soulsand_valley a</code>
+						<p class="contentText">Hg sẽ có Fog của Soulsand Valley id là a</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+			<div>
+				<p class="contentText dropdown">/fog &lt;victim: target&gt; &lt;mode: delete&gt; &lt;userProvideId: string&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;victim: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;mode: delete&gt;</code> là chế độ xóa
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">pop</code> là từ từ tan biến</p>
+							<p class="dropdownText"><code class="textSyntax">delete</code> là biến mất luôn</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;userProvideId: string&gt;</code> là đặt id Fog cho Player</p>
+					<div class="dropdownText">
+						<code class="textCommand">/fog @a pop a</code>
+						<p class="contentText">Hg có Fog id là a sẽ từ từ tan biến</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">1 Player có thể có nhiều Fog nhưng nó sẽ không hiện cùng lúc. Player này được Set Fog a trước sau đó là b thì cái b sẽ được hiện còn a sẽ bị ẩn</div>
-			<div class="contentText">Fog có thể Set chung id nhưng khi xóa thì sẽ phải xóa nhiều lần. Player có Fog1 là a, Fog2 là a thì khi xóa a sẽ xóa cái Fog2 trước sau đó mới xóa được Fog1</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">1 Player có thể có nhiều Fog nhưng nó sẽ không hiện cùng lúc. Player này được đặt Fog a trước sau đó là b thì cái b sẽ được hiện còn a sẽ bị ẩn</p>
+			<p class="contentText">Fog có thể đặt chung id nhưng khi xóa thì sẽ phải xóa nhiều lần. Player có Fog1 là a, Fog2 là a thì khi xóa a sẽ xóa cái Fog2 trước sau đó mới xóa được Fog1</p>
+		</section>
+	</article>
+</main>
 </body>

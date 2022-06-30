@@ -25,74 +25,105 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/enchant.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/enchant</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/enchant</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Phù phép vũ khí, dụng cụ, giáp được Player cầm trên tay</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Phù phép vũ khí, dụng cụ, giáp được Player cầm trên tay</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/enchant &lt;player: target&gt; &lt;enchantmentId: int&gt; [level: int]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">&lt;enchantmentId: int&gt;</span> là id số của phù phép. <a class="textLink" href="../danhSachId/enchantmentId.html" target="_blank">Danh sách</a> hiện thị khi ghi Command</div>
-					<div class="contentText"><span class="textSyntax">[level: int]</span> là cấp độ phù phép</div>
-					<div class="contentText"><span class="textCommand">/enchant @a 36 1</span> — All Player đang cầm Item có thể có Enchant này sẽ được phù phép, còn lại không cầm hay Item không thể có Enchant này sẽ không được phù phép</div>
-				</div>
+				<p class="contentText dropdown">/enchant &lt;player: target&gt; &lt;enchantmentId: int&gt; [level: int]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;enchantmentId: int&gt;</code> là id số của phù phép
+						<a class="contentText textLink" href="../danhSachId/enchantmentId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[level: int]</code> là cấp độ phù phép
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">1</code> đến bằng giới hạn cấp độ của Enchant</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/enchant Hg 36 1</code>
+						<p class="contentText">Hg đang cầm Item có thể có Enchant này sẽ được phù phép, còn lại không cầm hay Item không thể có Enchant này sẽ không được phù phép</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/enchant &lt;player: target&gt; &lt;enchantmentName: Enchant&gt; [level: int]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">&lt;enchantmentName: Enchant&gt;</span> là id chữ của phù phép. <a class="textLink" href="../danhSachId/enchantmentId.html" target="_blank">Danh sách</a> hiện thị khi ghi Command</div>
-					<div class="contentText"><span class="textSyntax">[level: int]</span> là cấp độ phù phép</div>
-					<div class="contentText"><span class="textCommand">/enchant @a lure 1</span> — All Player đang cầm Item có thể có Enchant này thì sẽ được Enchant, còn lại không cầm hay Item không thể có Enchant này sẽ không được Enchant</div>
-				</div>
+				<p class="contentText dropdown">/enchant &lt;player: target&gt; &lt;enchantmentName: Enchant&gt; [level: int]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;enchantmentName: Enchant&gt;</code> là id chữ của phù phép
+						<a class="contentText textLink" href="../danhSachId/enchantmentId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[level: int]</code> là cấp độ phù phép
+						<p class="contentText">Giới hạn bằng <code class="textSyntax">1</code> đến bằng giới hạn cấp độ của Enchant</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">1</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/enchant Hg lure 1</code>
+						<p class="contentText">Hg đang cầm Item có thể có Enchant này sẽ được phù phép, còn lại không cầm hay Item không thể có Enchant này sẽ không được phù phép</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText dropdown"><span class="textSyntax">/enchant</span> vẫn tuân theo nguyên tắc trong Game:</div>
-			<div class="dropdownTab dropdownHide">
-				<div class="contentText">Chỉ có vũ khí, dụng cụ, giáp mới Enchant được</div>
-				<div class="contentText">Cùng loại và cùng cấp sẽ được tăng cấp</div>
-				<div class="contentText">Có loại Enchant này rồi thì không thể có loại kia</div>
-				<div class="contentText"><span class="textSyntax">[level: int]</span> dựa theo cấp độ giới hạn trực tiếp trong Game. Ví dụ Mending chỉ có 1 cấp độ thì chỉ ghi được cấp độ 1</div>
-			</div>
-			<div class="contentText">Nếu đang cầm Book có số lượng lớn hơn 1 thì khi dùng <span class="textSyntax">/enchant</span> sẽ chỉ được 1 Enchanted Book, số Book còn lại mất</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<div class="contentText dropdown"><code class="textSyntax">/enchant</code> vẫn tuân theo nguyên tắc trong Game</div>
+			<div class="dropdownStart dropdownHide"><div>
+				<p class="dropdownText">Chỉ có vũ khí, dụng cụ, giáp mới Enchant được</p>
+				<p class="dropdownText">Cùng loại và cùng cấp sẽ được tăng cấp</p>
+				<p class="dropdownText">Có loại Enchant này rồi thì không thể có loại kia</p>
+				<div class="dropdownText">
+					<code class="textSyntax">[level: int]</code> dựa theo cấp độ giới hạn trực tiếp trong Game
+					<p class="contentText">Ví dụ Mending chỉ có 1 cấp độ thì chỉ ghi được cấp độ 1</p>
+				</div>
+				<div class="dropdownEnd"></div>
+			</div></div>
+			<p class="contentText">Nếu đang cầm Book có số lượng lớn hơn 1 thì khi dùng <code class="textSyntax">/enchant</code> sẽ chỉ được 1 Enchanted Book, số Book còn lại mất</p>
+		</section>
+	</article>
+</main>
 </body>

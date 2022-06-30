@@ -25,85 +25,94 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/time.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/time</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/time</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Điều chỉnh thời gian</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Điều chỉnh thời gian</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/time add &lt;amount: int&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">add</span> là thêm</div>
-					<div class="contentText"><span class="textSyntax">&lt;amount: int&gt;</span> là thời gian</div>
-				</div>
+				<p class="contentText dropdown">/time add &lt;amount: int&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">add</code> là thêm</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;amount: int&gt;</code> là thời gian</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/time query &lt;time: TimeQuery&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">query</span> là cho biết hiện tại</div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;time: TimeQuery&gt;</span> là loại thời gian. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">day</span> là ngày</div>
-						<div class="contentText"><span class="textSyntax">daytime</span> là thời gian trong ngày (tính theo tick)</div>
-						<div class="contentText"><span class="textSyntax">gametime</span> là thời gian Map đã được chơi (tính theo tick)</div>
+				<p class="contentText dropdown">/time query &lt;time: TimeQuery&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">query</code> là cho biết hiện tại</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;time: TimeQuery&gt;</code> là loại thời gian
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">day</code> là ngày</p>
+							<p class="dropdownText"><code class="textSyntax">daytime</code> là thời gian trong ngày (tính theo tick)</p>
+							<p class="dropdownText"><code class="textSyntax">gametime</code> là thời gian World đã được chơi (tính theo tick)</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/time set &lt;amount: int&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">set</span> là đặt</div>
-					<div class="contentText"><span class="textSyntax">&lt;amount: int&gt;</span> là thời gian</div>
-				</div>
+				<p class="contentText dropdown">/time set &lt;amount: int&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">set</code> là đặt</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;amount: int&gt;</code> là thời gian</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/time set &lt;time: TimeSpec&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">set</span> là đặt</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">&lt;time: TimeSpec&gt;</span> là loại thời gian. Danh sách:</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">day</span> là ngày</div>
-							<div class="contentText"><span class="textSyntax">midnight</span> là đêm</div>
-							<div class="contentText"><span class="textSyntax">night</span> là tối</div>
-							<div class="contentText"><span class="textSyntax">noon</span> là trưa</div>
-							<div class="contentText"><span class="textSyntax">sunrise</span> là bình minh</div>
-							<div class="contentText"><span class="textSyntax">sunset</span> là hoàng hôn</div>
-						</div>
+				<p class="contentText dropdown">/time set &lt;time: TimeSpec&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText"><code class="textSyntax">set</code> là đặt</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;time: TimeSpec&gt;</code> là loại thời gian
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">day</code> là ngày</p>
+							<p class="dropdownText"><code class="textSyntax">midnight</code> là đêm</p>
+							<p class="dropdownText"><code class="textSyntax">night</code> là tối</p>
+							<p class="dropdownText"><code class="textSyntax">noon</code> là trưa</p>
+							<p class="dropdownText"><code class="textSyntax">sunrise</code> là bình minh</p>
+							<p class="dropdownText"><code class="textSyntax">sunset</code> là hoàng hôn</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-				</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

@@ -25,70 +25,87 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/tag.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/tag</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/tag</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Đánh dấu Entity</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Đánh dấu Entity</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tag &lt;entity: target&gt; &lt;add|remove&gt; &lt;name: string&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;entity: target&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Entity)</span></div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;add|remove&gt;</span>. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">add</span> là thêm</div>
-						<div class="contentText"><span class="textSyntax">remove</span> là xóa</div>
+				<p class="contentText dropdown">/tag &lt;entity: target&gt; &lt;add|remove&gt; &lt;name: string&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;entity: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;name: string&gt;</span> là tên của Tag</div>
-					<div class="contentText"><span class="textCommand">/tag @a add abc</span> — All Player có Tag abc</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;add|remove&gt;</code>
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">add</code> là thêm</p>
+							<p class="dropdownText"><code class="textSyntax">remove</code> là xóa</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;name: string&gt;</code> là tên của Tag</p>
+					<div class="dropdownText">
+						<code class="textCommand">/tag Hg add abc</code>
+						<p class="contentText">Hg có Tag abc</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tag &lt;entity: target&gt; list</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;entity: target&gt;</span> là <a class="textLink" href="../danh-sach/target.html" target="_blank">mục tiêu</a> (Entity)</div>
-					<div class="contentText"><span class="textSyntax">list</span> là danh sách</div>
-					<div class="contentText"><span class="textCommand">/tag @s list</span> — Hiện danh sách tag cho đối tượng dùng Command này</div>
-				</div>
+				<p class="contentText dropdown">/tag &lt;entity: target&gt; list</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;entity: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">list</code> là danh sách</p>
+					<div class="dropdownText">
+						<code class="textCommand">/tag Hg list</code>
+						<p class="contentText">Hiện danh sách tag của Hg</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Không thể xóa hay thêm hay xem danh sách Tag Player không tồn tại trong Map</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Không thể xóa hay thêm hay xem danh sách Tag Player không tồn tại trong Map</p>
+		</section>
+	</article>
+</main>
 </body>

@@ -8,105 +8,126 @@
 	<!-- Primary Meta Tags -->
 	<title>/ability | MCBE Command Wiki VN by Hg</title>
 	<meta name="title" content="/ability | MCBE Command Wiki VN by Hg">
-	<meta name="description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<meta name="description" content="Chỉnh khả năng của Player">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://hgvn23.github.io/commands/ability">
 	<meta property="og:title" content="/ability | MCBE Command Wiki VN by Hg">
-	<meta property="og:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<meta property="og:description" content="Chỉnh khả năng của Player">
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/ability.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://hgvn23.github.io/commands/ability">
 	<meta property="twitter:title" content="/ability | MCBE Command Wiki VN by Hg">
-	<meta property="twitter:description" content="Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat">
+	<meta property="twitter:description" content="Chỉnh khả năng của Player">
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/ability.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/ability</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/ability</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Chỉnh khả năng của Player như bay hoặc đặt/phá Block hoặc Chat</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Chỉnh khả năng của Player</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/ability &lt;player: target&gt; &lt;ability: Ability&gt; &lt;value: Boolean&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">&lt;ability: Ability&gt;</span> là khả năng. Danh sách:</span></div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">mayfly</span> là khả năng bay</div>
-							<div class="contentText"><span class="textSyntax">mute</span> là khả năng mất Chat</div>
-							<div class="contentText"><span class="textSyntax">worldbuilder</span> là khả năng đặt/phá Block</div>
-						</div>
+				<p class="contentText dropdown">/ability &lt;player: target&gt; &lt;ability: Ability&gt; &lt;value: Boolean&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">&lt;value: Boolean&gt;</span> là phần trạng thái. Danh sách:</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">true</span> là bật</div>
-							<div class="contentText"><span class="textSyntax">false</span> là tắt</div>
-						</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;ability: Ability&gt;</code> là khả năng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">mayfly</code> là khả năng bay</p>
+							<p class="dropdownText"><code class="textSyntax">mute</code> là khả năng câm lặng</p>
+							<p class="dropdownText"><code class="textSyntax">worldbuilder</code> là khả năng đặt hay phá Block</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
 					</div>
-					<div class="contentText"><span class="textCommand">/ability @a mayfly true</span> — All Player sẽ có khả năng bay</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;value: Boolean&gt;</code> là trạng thái
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">true</code> là bật</p>
+							<p class="dropdownText"><code class="textSyntax">false</code> là tắt</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/ability Hg mayfly true</code>
+						<p class="contentText">Hg sẽ có khả năng bay</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/ability &lt;player: target&gt; [ability: Ability]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText dropdown"><span class="textSyntax">[ability: Ability]</span> là khả năng. Danh sách:</span></div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">worldbuilder</span> là khả năng đặt/phá Block</div>
-						<div class="contentText"><span class="textSyntax">mayfly</span> là khả năng bay</div>
-						<div class="contentText"><span class="textSyntax">mute</span> là khả năng mất Chat</div>
+				<p class="contentText dropdown">/ability &lt;player: target&gt; [ability: Ability]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
 					</div>
-				<div class="contentText"><span class="textCommand">/ability @a mayfly</span> — All Player sẽ có khả năng bay. Cấu trúc này sẽ bớt phần true nhưng để tắt khả năng đó đi thì cần thêm false cuối Command</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[ability: Ability]</code> là khả năng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">mayfly</code> là khả năng bay</p>
+							<p class="dropdownText"><code class="textSyntax">mute</code> là khả năng câm lặng</p>
+							<p class="dropdownText"><code class="textSyntax">worldbuilder</code> là khả năng đặt hay phá Block</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Nếu bạn bỏ qua thành phần này thì Command sẽ gửi danh sách các khả năng</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/ability Hg mayfly</code>
+						<p class="contentText">Thông báo trạng thái mayfly của Hg đang bật hoặc tắt</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
 				<div class="contentTitle">Lưu ý</div>
 			</div>
-			<div class="contentText">Cần bật chế độ EDU để dùng Command</div>
-			<div class="contentText"><span class="textSyntax">worldbuilder</span> đang bị lỗi nên không thực hiện được bật/tắt</div>
-			<div class="contentText">Thoát Map và vào lại thì phải dùng lại lệnh đế bật/tắt khả năng lại</div>
-			<div class="contentText">Khi chuyển gamemode sẽ reset lại khả năng</div>
-			<div class="contentText">Thông báo Command hoạt động thành công sẽ không bị <span class="textCommand"><a class="textLink" href="gamerule.html">/gamerule</a> sendcommandfeedback false</span> ẩn</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Cần bật Education Edition trong Setting World để dùng Command</p>
+			<p class="contentText"><code class="textSyntax">worldbuilder</code> đang bị lỗi nên không thực hiện được bật hay tắt</p>
+			<p class="contentText">Khi vào lại World thì mọi khả năng sẽ bị Reset lại ban đầu</p>
+			<p class="contentText">Khi chuyển Gamemode sẽ Reset lại <code class="textSyntax">mayfly</code></p>
+		</section>
+	</article>
+</main>
 </body>

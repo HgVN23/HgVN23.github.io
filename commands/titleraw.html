@@ -25,88 +25,121 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/titleraw.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/titleraw</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/titleraw</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Hiện chữ dưới dạng mã lên màn hình</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Hiện chữ dưới dạng mã lên màn hình</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/titleraw &lt;player: target&gt; &lt;title|subtitle|actionbar&gt; &lt;raw json message: json&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText dropdown"><span class="textSyntax">&lt;title|subtitle|actionbar&gt;</span> là vị trí hiện chữ trên màn hình. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">title</span> là hiện chữ ngay giữa màn hình</div>
-						<div class="contentText"><span class="textSyntax">subtitle</span> là hiện chữ dưới title</div>
-						<div class="contentText"><span class="textSyntax">actionbar</span> là hiện chữ trên Hotbar</div>
+				<p class="contentText dropdown">/titleraw &lt;player: target&gt; &lt;title|subtitle|actionbar&gt; &lt;raw json message: json&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
 					</div>
-					<div class="contentText"><span class="textSyntax">&lt;raw json message: json&gt;</span> là tin nhắn viết dưới dạng {"rawtext":[...]}. <a class="textLink" href="../danhSachId/rawMessageId.html" target="_blank">Danh sách</a></div>
-					<div class="contentText"><span class="textCommand">/titleraw @a title {"rawtext":[{"text":"Hi"}]}</span> — All Player sẽ có chữ Hi hiện trên màn hình</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;title|subtitle|actionbar&gt;</code> là vị trí hiện chữ trên màn hình
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">title</code> là hiện chữ ngay giữa màn hình</p>
+							<p class="dropdownText"><code class="textSyntax">subtitle</code> là hiện chữ dưới title</p>
+							<p class="dropdownText"><code class="textSyntax">actionbar</code> là hiện chữ trên Hotbar</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;raw json message: json&gt;</code> là tin nhắn viết dưới dạng <code class="textSyntax">{"rawtext": [...]}</code>
+						<a class="contentText textLink" href="../danhSachId/rawMessageId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/titleraw Hg title {"rawtext": [{"text": "Hi"}]}</code>
+						<p class="contentText">Hg sẽ có chữ Hi hiện trên màn hình</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/titleraw &lt;player: target&gt; clear</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">clear</span> là dừng hiện title</div>
-				</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">clear</code> là dừng hiện title</p>
+					<div class="dropdownText">
+						<code class="textCommand">/titleraw Hg clear</code>
+						<p class="contentText">Hg sẽ không còn hiện chữ nếu trước đó title hoặc subtitle được sử dụng</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/titleraw &lt;player: target&gt; reset</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">reset</span> là đặt lại times của title</div>
-				</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">reset</code> là đặt lại times của title</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
 				<div class="contentText dropdown">/titleraw &lt;player: target&gt; times &lt;fadeIn: int&gt; &lt;stay: int&gt; &lt;fadeOut: int&gt;</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;player: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">times</span> là thời gian hiện của title</div>
-					<div class="contentText"><span class="textSyntax">&lt;fadeIn: int&gt;</span> độ trễ khi hiện title (tính theo giây)</div>
-					<div class="contentText"><span class="textSyntax">&lt;stay: int&gt;</span> là thời gian hiện title (tính theo giây)</div>
-					<div class="contentText"><span class="textSyntax">&lt;fadeOut: int&gt;</span> là độ trễ khi title biến mất (tính theo giây)</div>
-				</div>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;player: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">times</code> là thời gian hiện của title</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;fadeIn: int&gt;</code> độ trễ khi hiện title (tính theo giây)</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;stay: int&gt;</code> là thời gian hiện title (tính theo giây)</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;fadeOut: int&gt;</code> là độ trễ khi title biến mất (tính theo giây)</p>
+					<div class="dropdownText">
+						<code class="textCommand">/titleraw Hg times 10 20 10</code>
+						<p class="contentText">Hg sẽ có thời gian của title và subtitle như sau: hiện là 10, tồn tại là 20, mất là 10</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
 			<div class="contentText"><span class="textSyntax">subtitle</span> chỉ hoạt động khi <span class="textSyntax">title</span> hiện, dùng <span class="textSyntax">subtitle</span> trước sau đó dùng <span class="textSyntax">title</span> (ngược lại không được)</div>
 			<div class="contentText"><span class="textSyntax">clear</span>, <span class="textSyntax">reset</span>, <span class="textSyntax">times</span> không có tác dụng với <span class="textSyntax">actionbar</span></div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

@@ -25,201 +25,372 @@
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/tp.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/image.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/tp</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/tp</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Dịch chuyển đến 1 mục tiêu hoặc tọa độ</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Dịch chuyển đến 1 mục tiêu hoặc tọa độ</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;destination: target&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;destination: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> đến</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;destination: target&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;destination: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> đến
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;destination: x y z&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;destination: x y z&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp 1 1 1 true</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 nếu ở đó không có Block</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp 1 1 1 true</code>
+						<p class="contentText">Dịch chuyển đối tượng sử dụng Command đến 1 1 1 nếu ở đó không có Block</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[yRot: value]</span> là xoay hướng nhìn ngang</div>
-						<div class="dropdownHide imageRy"></div>
+				<p class="contentText dropdown">/tp &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[yRot: value]</code> là xoay hướng nhìn ngang
+						<p class="contentText dropdown">Ảnh minh họa</p>
+						<div class="dropdownHide image imageRy"></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">~</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[xRot: value]</span> là xoay hướng nhìn dọc</div>
-						<div class="dropdownHide imageRx"></div>
+					<div class="dropdownText">
+						<code class="textSyntax">[xRot: value]</code> là xoay hướng nhìn dọc
+						<p class="contentText dropdown">Ảnh minh họa</p>
+						<div class="dropdownHide image imageRx"></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">~</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-							<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
-						</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp 1 1 1 0 0 false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và xoay Player theo hướng 0 0</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp 1 1 1 0 0 false</code>
+						<p class="contentText">Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và xoay theo hướng 0 0</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div class="contentText"><span class="textSyntax">facing</span> là hướng phải nhìn</div>
-					<div class="contentText"><span class="textSyntax">&lt;lookAtEntity: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> phải nhìn</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<p class="dropdownText"><code class="textSyntax">facing</code> là hướng phải nhìn</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;lookAtEntity: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> phải nhìn
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp 1 1 1 facing @e[c=1,name=a] false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và Player phải nhìn 1 mục tiêu gần nhất tên là a</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp 1 1 1 facing @e[c=1,name=a] false</code>
+						<p class="contentText">Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và phải nhìn 1 mục tiêu gần nhất tên là a</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div class="contentText"><span class="textSyntax">facing</span> là hướng phải nhìn</div>
-					<div class="contentText"><span class="textSyntax">&lt;lookAtPosition: x y z&gt;</span> là tọa độ phải nhìn</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<p class="dropdownText"><code class="textSyntax">facing</code> là hướng phải nhìn</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;lookAtPosition: x y z&gt;</code> là tọa độ phải nhìn</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp 1 1 1 facing 10 10 10 false</span> — Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và Player phải nhìn tọa độ 10 10 10</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp 1 1 1 facing 10 10 10 false</code>
+						<p class="contentText">Dịch chuyển đối tượng sử dụng Command đến 1 1 1 và phải nhìn tọa độ 10 10 10</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: target&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển</div>
-					<div class="contentText"><span class="textSyntax">&lt;destination: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> đến</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: target&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;victim: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp @a @s false</span> — Dịch chuyển All Player đến đối tượng sử dụng Command</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;destination: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> đến
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp Hg The3T false</code>
+						<p class="contentText">Dịch chuyển Hg đến The3T</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển</div>
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;victim: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp @a 1 1 1 false</span> — Dịch chuyển All Player đến tọa độ 1 1 1</div>
-				</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp Hg 1 1 1 false</code>
+						<p class="contentText">Dịch chuyển Hg đến tọa độ 1 1 1</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển</div>
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[yRot: value]</span> là xoay hướng nhìn ngang</div>
-						<div class="dropdownHide imageRy"></div>
+				<p class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; [yRot: value] [xRot: value] [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;victim: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[xRot: value]</span> là xoay hướng nhìn dọc</div>
-						<div class="dropdownHide imageRx"></div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[yRot: value]</code> là xoay hướng nhìn ngang
+						<p class="contentText dropdown">Ảnh minh họa</p>
+						<div class="dropdownHide image imageRy"></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">~</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div>
-						<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-						<div class="dropdownTab dropdownHide">
-							<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-							<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
-						</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[xRot: value]</code> là xoay hướng nhìn dọc
+						<p class="contentText dropdown">Ảnh minh họa</p>
+						<div class="dropdownHide image imageRx"></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">~</code> nếu bỏ qua thành phần này</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp @a 1 1 1 0 0 false</span> — Dịch chuyển All Player đến 1 1 1 và xoay Player theo hướng 0 0</div>
-				</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp Hg 1 1 1 0 0 false</code>
+						<p class="contentText">Dịch chuyển Hg đến 1 1 1 và xoay theo hướng 0 0</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển</div>
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div class="contentText"><span class="textSyntax">facing</span> là hướng phải nhìn</div>
-					<div class="contentText"><span class="textSyntax">&lt;lookAtEntity: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> phải nhìn</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtEntity: target&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;victim: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp @a 1 1 1 facing @e[c=1,name=a] false</span> — Dịch chuyển All Player đến 1 1 1 và Player phải nhìn 1 mục tiêu gần nhất tên là a</div>
-				</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<p class="dropdownText"><code class="textSyntax">facing</code> là hướng phải nhìn</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;lookAtEntity: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> phải nhìn
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp Hg 1 1 1 facing @e[c=1,name=a] false</code>
+						<p class="contentText">Dịch chuyển Hg đến 1 1 1 và Player phải nhìn 1 mục tiêu gần nhất tên là a</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
 			<div>
-				<div class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">&lt;victim: target&gt;</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển</div>
-					<div class="contentText"><span class="textSyntax">&lt;destination: x y z&gt;</span> là tọa độ đến</div>
-					<div class="contentText"><span class="textSyntax">facing</span> là hướng phải nhìn</div>
-					<div class="contentText"><span class="textSyntax">&lt;lookAtEntity: x y z&gt;</span> là tọa độ phải nhìn</div>
-					<div class="contentText dropdown"><span class="textSyntax">[checkForBlocks: Boolean]</span> là kiểm tra Player kẹt trong Block. Danh sách:</div>
-					<div class="dropdownTab dropdownHide">
-						<div class="contentText"><span class="textSyntax">true</span> là có. Nếu có Block là không dịch chuyển</div>
-						<div class="contentText"><span class="textSyntax">false</span> là không. Nếu có Block hoặc không có Block là vẫn dịch chuyển</div>
+				<p class="contentText dropdown">/tp &lt;victim: target&gt; &lt;destination: x y z&gt; facing &lt;lookAtPosition: x y z&gt; [checkForBlocks: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;victim: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> bị dịch chuyển
+						<p class="contentText">Mục tiêu là Entity</p>
 					</div>
-					<div class="contentText"><span class="textCommand">/tp @a 1 1 1 facing 10 10 10 false</span> — Dịch chuyển All Player đến 1 1 1 và Player phải nhìn tọa độ 10 10 10</div>
-				</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ đến</p>
+					<p class="dropdownText"><code class="textSyntax">facing</code> là hướng phải nhìn</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;lookAtPosition: x y z&gt;</code> là tọa độ phải nhìn</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[checkForBlocks: Boolean]</code> là kiểm tra kẹt trong Block
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<code class="textSyntax">true</code> là có
+								<p class="contentText">Nếu có Block là không dịch chuyển</p>
+							</div>
+							<div class="dropdownText">
+								<code class="textSyntax">false</code> là không
+								<p class="contentText">Nếu có Block hoặc không có Block là vẫn dịch chuyển</p>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/tp Hg 1 1 1 facing 10 10 10 false</code>
+						<p class="contentText">Dịch chuyển Hg đến 1 1 1 và Player phải nhìn tọa độ 10 10 10</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
-			<div class="contentGroup">
-				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
-			</div>
-			<div class="contentText"><span class="textSyntax">[checkForBlocks: Boolean]</span> có thể bỏ qua. Mặc định khi không ghi gì sẽ là false</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+		</section>
+	</article>
+</main>
 </body>

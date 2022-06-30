@@ -8,90 +8,97 @@
 	<!-- Primary Meta Tags -->
 	<title>/clear | MCBE Command Wiki VN by Hg</title>
 	<meta name="title" content="/clear | MCBE Command Wiki VN by Hg">
-	<meta name="description" content="Xóa item được chọn hoặc toàn bộ trong kho đồ của Player">
+	<meta name="description" content="Xóa vật phẩm trong kho đồ của Player">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://hgvn23.github.io/commands/clear">
 	<meta property="og:title" content="/clear | MCBE Command Wiki VN by Hg">
-	<meta property="og:description" content="Xóa item được chọn hoặc toàn bộ trong kho đồ của Player">
+	<meta property="og:description" content="Xóa vật phẩm trong kho đồ của Player">
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/clear.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://hgvn23.github.io/commands/clear">
 	<meta property="twitter:title" content="/clear | MCBE Command Wiki VN by Hg">
-	<meta property="twitter:description" content="Xóa item được chọn hoặc toàn bộ trong kho đồ của Player">
+	<meta property="twitter:description" content="Xóa vật phẩm trong kho đồ của Player">
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/clear.png">
 
 	<!-- CSS/Script -->
-	<link rel="stylesheet" href="../assets/css/defaults.css">
-	<script src="../assets/javascript/defaults.js"></script>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
 </head>
-<body onload="defaults()" class="themeDark">
-	<div id="script"></div>
-	<header id="header"></header>
-	<div id="sidebar"></div>
-	<div class="content">
-		<div class="contentHeader">/clear</div>
-		<div class="contentBox">
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/clear</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
-				<div class="contentTitle">Công dụng</div>
+				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<div class="contentText">Xóa item được chọn hoặc toàn bộ trong kho đồ của Player</div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Xóa vật phẩm trong kho đồ của Player</p>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<div class="contentTitle">Đối tượng có thể dùng Command</div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
 			</div>
-			<div class="contentText">Player có OP</div>
-			<div class="contentText">Chủ Map</div>
-			<div class="contentText">Addon</div>
-			<div class="contentText"><a class="textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a></div>
-			<div class="contentText"><a class="textLink" href="execute.html">/execute</a></div>
-			<div class="contentText"><a class="textLink" href="function.html">/function</a></div>
-			<div class="contentText"><a class="textLink" href="gametest.html">/gametest</a></div>
-		</div>
-		<div class="contentBox">
+			<p class="contentText">Player có OP</p>
+			<p class="contentText">Chủ Map</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="../thongTinLienQuan/commandBlock.html">Command Block</a>
+			<a class="contentText textLink" href="execute.html">/execute</a>
+			<a class="contentText textLink" href="function.html">/function</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCuPhap"></div>
-				<div class="contentTitle">Cú pháp</div>
+				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<div class="contentText dropdown">/clear [player: target] [itemName: Item] [data: int] [maxCount: int]</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textSyntax">[player: target]</span> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a> (Player)</div>
-					<div class="contentText"><span class="textSyntax">[itemName: Item]</span> là id Item</div>
-					<div class="contentText"><span class="textSyntax">[data: int]</span> là dữ liệu Item</div>
-					<div class="contentText"><span class="textSyntax">[maxCount: int]</span> là số lượng Item</div>
-					<div class="contentText"><span class="textCommand">/clear @a diamond 0 1</span> — All Player sẽ bị xóa 1 viên kim cương</div>
-					<div class="contentText"><span class="textCommand">/clear @a wool 14 2</span> — All Player sẽ bị xóa 2 len đỏ (14 là màu đỏ)</div>
-				</div>
+				<p class="contentText dropdown">/clear [player: target] [itemName: Item] [data: int] [maxCount: int]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">[player: target]</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Chỉ được chọn mục tiêu là Player</p>
+						<p class="contentText">Mặc định là <code class="textSyntax">@s</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[itemName: Item]</code> là id Item
+						<p class="contentText">Mặc định là toàn bộ Id Item nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[data: int]</code> là dữ liệu Item
+						<p class="contentText">Mặc định là <code class="textSyntax">-1</code> (tất cả Data) nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[maxCount: int]</code> là số lượng Item
+						<p class="contentText">Mặc định là toàn bộ số lượng theo Id Item nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/clear Hg diamond 0 1</code> là id Item
+						<p class="contentText">Hg sẽ bị xóa 1 Diamond có Data 0</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/clear Hg wool 14 2</code> là id Item
+						<p class="contentText">Hg sẽ bị xóa 2 Red Wool (Data 14 là màu đỏ)</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
 			</div>
-		</div>
-		<div class="contentBox">
+		</section>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconLuuY"></div>
-				<div class="contentTitle">Lưu ý</div>
+				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<div class="contentText">Command vẫn sẽ hoạt động kể cả khi số lượng Item trong kho đồ ít hơn số lượng clear trong Command, kể cả trong kho đồ Player không có</div>
-			<div class="contentText"><span class="textSyntax">[maxCount: int]</span> bằng 0 thì Command vẫn sẽ hoạt động nhưng không có Item nào bị xóa</div>
-			<div>
-				<div class="contentText dropdown">Nếu muốn clear toàn bộ Item đã chọn thì bỏ qua <span class="textSyntax">[data: int] [maxCount: int]</span></div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/clear @a wool</span> — All Player sẽ bị xóa hết len</div>
-				</div>
-			</div>
-			<div>
-				<div class="contentText dropdown"><span class="textSyntax">[data: int]</span> bằng -1 là mọi loại dữ liệu của Item</div>
-				<div class="dropdownTab dropdownHide">
-					<div class="contentText"><span class="textCommand">/clear @a wool -1 2</span> — All Player sẽ bị xóa 2 len các loại</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer id="footer"></footer>
+			<p class="contentText">Command vẫn sẽ hoạt động kể cả khi số lượng Item trong kho đồ ít hơn số lượng clear trong Command, kể cả trong kho đồ Player không có</p>
+			<p class="contentText"><code class="textSyntax">[maxCount: int]</code> = <code class="textSyntax">0</code> thì Command vẫn sẽ hoạt động nhưng không có Item nào bị xóa</p>
+		</section>
+	</article>
+</main>
 </body>
