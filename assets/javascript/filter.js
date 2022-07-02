@@ -95,6 +95,7 @@ const filter = [
 	"toanTuKiTu",
 	"cauTrucCommand",
 	"commandBlock",
+	"npc",
 
 	"uuidV4Generator",
 	"glyph",
@@ -200,7 +201,8 @@ const danhSachId = [
 const thongTinLienQuan = [
 	"toanTuKiTu",
 	"cauTrucCommand",
-	"commandBlock"
+	"commandBlock",
+	"npc"
 ];
 
 const webTool = [

@@ -8,20 +8,20 @@
 	<!-- Primary Meta Tags -->
 	<title>NPC | MCBE Command Wiki VN by Hg</title>
 	<meta name="title" content="NPC | MCBE Command Wiki VN by Hg">
-	<meta name="description" content="NPC">
+	<meta name="description" content="Non Player Character hay gọi tắt là NPC, Player có thể tương tác thông qua dialogue hiện thị đoạn hội thoại hay chạy Command">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://hgvn23.github.io/thongTinLienQuan/npc">
 	<meta property="og:title" content="NPC | MCBE Command Wiki VN by Hg">
-	<meta property="og:description" content="NPC">
+	<meta property="og:description" content="Non Player Character hay gọi tắt là NPC, Player có thể tương tác thông qua dialogue hiện thị đoạn hội thoại hay chạy Command">
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/npc.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://hgvn23.github.io/thongTinLienQuan/npc">
 	<meta property="twitter:title" content="NPC | MCBE Command Wiki VN by Hg">
-	<meta property="twitter:description" content="NPC">
+	<meta property="twitter:description" content="Non Player Character hay gọi tắt là NPC, Player có thể tương tác thông qua dialogue hiện thị đoạn hội thoại hay chạy Command">
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/thongTinLienQuan/npc.png">
 	
 	<!-- CSS/Script -->
@@ -33,150 +33,100 @@
 <body  class="themeDark">
 <main>
 	<article class="content">
-		<h1 class="contentHeader textWip">NPC</h1>
-		<!-- <section class="contentBox">
+		<h1 class="contentHeader">NPC</h1>
+		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
 				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<p class="contentText">Thực thi Command được ghi trong đó</p>
+			<p class="contentText">Non Player Character hay gọi tắt là NPC, Player có thể tương tác thông qua dialogue hiện thị đoạn hội thoại hay chạy Command</p>
 		</section>
 		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconDoiTuong"></div>
-				<h2 class="contentTitle">Đối tượng có thể dùng Command Block</h2>
+				<h2 class="contentTitle">Đối tượng có thể dùng NPC</h2>
 			</div>
-			<p class="contentText">Player không có OP (kích hoạt qua Redstone)</p>
-			<p class="contentText">Player có OP (kích hoạt qua Redstone + có thể đặt, phá và sửa thành phần trong Block)</p>
-			<p class="contentText">Chủ Map (kích hoạt qua Redstone + có thể đặt, phá và sửa thành phần trong Block)</p>
+			<p class="contentText">Player không có OP (tương tác)</p>
+			<p class="contentText">Player có OP (tương tác + chỉnh sửa dialogue ở chế độ Creative)</p>
+			<p class="contentText">Chủ Map (tương tác + chỉnh sửa dialogue ở chế độ Creative)</p>
 		</section>
 		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
 				<h2 class="contentTitle">Các thành phần</h2>
 			</div>
-			<div class="image imageCmdbUi"></div>
-			<p class="contentText">Hover Note là ô ghi chú <span class="textNote">1</span></p>
+			<div class="image imageNPC1"></div>
+			<p class="contentText">Ảnh trên đây là giao diện khi tương tác với NPC gồm phần tên, Skin NPC đang dùng, đoạn hội thoại và các nút bấm</p>
+			<div class="image imageNPC2"></div>
 			<div>
-				<p class="contentText dropdown">Block Type là loại Block <span class="textNote">2</span>. Danh sách</p>
+				<p class="contentText dropdown">Ảnh trên đây là giao diện chỉnh sửa dialogue dành cho chủ Map và Player có OP gồm</p>
 				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Impulse là xung, chạy 1 lần mỗi lần kích hoạt</p>
-					<p class="dropdownText">Chain là liền chuỗi, chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động</p>
-					<p class="dropdownText">Repeat là lặp, chạy lặp mỗi lần kích hoạt</p>
-					<div><div class="image imageCmdbType"></div></div>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<p class="contentText dropdown">Condition là điều kiện, kiểm tra Command Block phía sau hướng vào nó có thực thi được Command không <span class="textNote">3</span>. Danh sách</p>
-				<div class="dropdownStart dropdownHide"><div>
-					<div class="dropdownText">Condition là có điều kiện</div>
-					<div class="dropdownText">Uncondition là không điều kiện</div>
-					<div><div class="image imageCmdbCondition"></div></div>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<p class="contentText dropdown">Redstone là năng lượng <span class="textNote">4</span>. Danh sách</p>
-				<div class="dropdownStart dropdownHide"><div>
-					<div class="dropdownText">Always Active là luôn hoạt động, không cần năng lượng Redstone để kích hoạt</div>
-					<div class="dropdownText">Needs Redstone là cần năng lượng Redstone để kích hoạt</div>
-					<div><div class="image imageCmdbRedstone"></div></div>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<p class="contentText">Execute on First Tick là hoạt động ngay từ Tick đầu tiên <span class="textNote">5</span></p>
-			<p class="contentText">Delay in Ticks là độ trễ của Tick <span class="textNote">6</span></p>
-			<p class="contentText">Cancel là hủy thay đổi <span class="textNote">7</span></p>
-			<p class="contentText">Command Input là nơi nhập Command (Cạnh đó có dấu + để mở rộng bảng ghi) <span class="textNote">8</span></p>
-			<p class="contentText">Previous Output là thông báo đầu ra Command trước đó (Nút trên đó để bật tắt hiện thông báo trong Block) <span class="textNote">9</span></p>
-		</section>
-		<section class="contentBox">
-			<div class="contentGroup">
-				<div class="contentIcon iconInfo"></div>
-				<h2 class="contentTitle">Chi tiết về tổ hợp Block Type + Condition + Redstone</h2>
-			</div>
-			<div>
-				<div class="contentText dropdown">Impulse + Unconditional + Needs Redstone</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Impulse + Unconditional + Always Active</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Impulse + Condition + Needs Redstone</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Impulse + Condition + Always Active</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Chain + Unconditional + Needs Redstone</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block hướng vào nó hoạt động</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Chain + Unconditional + Always Active</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần có Command Block hướng vào nó hoạt động</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Chain + Condition + Needs Redstone</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Chain + Condition + Always Active</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy 1 lần mỗi lần có Command Block phía sau hướng vào nó phải thực thi được Command</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Reapeat + Unconditional + Needs Redstone</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt bằng đá đỏ</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Reapeat + Unconditional + Always Active</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Reapeat + Condition + Needs Redstone</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt bằng đá đỏ có Command Block phía sau hướng vào nó phải thực thi được Command</p>
-					<div class="dropdownEnd"></div>
-				</div></div>
-			</div>
-			<div>
-				<div class="contentText dropdown">Reapeat + Condition + Always Active</div>
-				<div class="dropdownStart dropdownHide"><div>
-					<p class="dropdownText">Chạy lặp mỗi lần kích hoạt có Command Block phía sau hướng vào nó phải thực thi được Command</p>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Name là đặt tên cho NPC</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Giới hạn kí tự ghi được là 32</p>
+							<p class="dropdownText">Mặc định màu chữ là §e</p>
+							<p class="dropdownText">Mặc định tên là NPC</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Dialog là đoạn hội thoại</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Có nút Edit Dialog, khi ấn vào sẽ hiện giao diện tương tác</p>
+							<div><div class="image imageNPC3"></div></div>
+							<p class="dropdownText">Type Dialog Here... là ghi đoạn hội thoại ở đây</p>
+							<p class="dropdownText">Giới hạn kí tự ghi được là 256</p>
+							<p class="dropdownText">Mặc định là không có đoạn hội thoại nếu bỏ qua</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Appearance là chọn Skin cho NPC</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText">Có 35 Skin để lựa chọn</p>
+							<p class="dropdownText">Mặc định là Skin đầu tiên nếu bỏ qua</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText dropdown">Advanced Settigns là cài đặt nâng cao như Add Command cho NPC</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div><div class="image imageNPC4"></div></div>
+							<p class="dropdownText">Có nút Add Command, khi ấn vào sẽ hiện giao diện thêm Command</p>
+							<p class="dropdownText">Giới hạn Add Command là 6</p>
+							<div><div class="image imageNPC5"></div></div>
+							<div class="dropdownText">
+								<p class="contentText dropdown">Type Command Here... là ghi Command ở đây</p>
+								<div class="dropdownStart dropdownHide"><div>
+									<p class="dropdownText">Giới hạn kí tự ghi được là 1024</p>
+									<p class="dropdownText">Mặc định là không có Command nếu bỏ qua</p>
+									<div class="dropdownEnd"></div>
+								</div></div>
+							</div>
+							<p class="dropdownText">Dấu cộng là để mở rộng bản ghi Command</p>
+							<p class="dropdownText">Dòng lưu ý về URL nói chỉ hỗ trợ URL bắt đầu bằng http và https <span class="textNote">Thực ra URL không hoạt động</span></p>
+							<div class="dropdownText">
+								<p class="contentText dropdown">3 lựa chọn phương thức kích hoạt Command khi Player tương tác dialogue</p>
+								<div class="dropdownStart dropdownHide"><div>
+									<div class="dropdownText">
+										<p class="contentText dropdown">Button Mode là ấn nút để chạy Command</p>
+										<div class="dropdownStart dropdownHide"><div>
+											<div><div class="image imageNPC6"></div></div>
+											<p class="dropdownText">Có 1 ô để đặt tên nút</p>
+											<p class="dropdownText">Giới hạn kí tự ghi được là 16</p>
+											<p class="dropdownText">Mặc định là không có nếu bỏ qua</p>
+											<div class="dropdownEnd"></div>
+										</div></div>
+									</div>
+									<p class="dropdownText">On Enter là mở giao diện tương tác sẽ chạy Command</p>
+									<p class="dropdownText">On Exit là thoát giao diện tương tác sẽ chạy Command</p>
+									<div class="dropdownEnd"></div>
+								</div></div>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
 					<div class="dropdownEnd"></div>
 				</div></div>
 			</div>
@@ -186,8 +136,11 @@
 				<div class="contentIcon iconLuuY"></div>
 				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
-			<p class="contentText"><code class="textCommand">/gamerule comamndblockoutput false</code> sẽ tắt Previous Output. Bạn vẫn có thể bật nó lên bằng nút trong Block</p>
-		</section> -->
+			<p class="contentText"><code class="textCommand">/give @s spawn_egg 1 51</code> để lấy trứng NPC hoặc <code class="textCommand">/summon npc</code> để triệu hồi NPC</p>
+			<p class="contentText">NPC chỉ bị tiêu diệt bởi Player Creative có OP, Void và <code class="textCommand">/kill</code></p>
+			<p class="contentText">NPC có thể bị di chuyển bởi Water, Lava, Piston</p>
+			<p class="contentText">Có thể tạo dialogue cho NPC thông qua Addon, thông tin thêm bên <a class="textLink" href="../commands/dialogue.html" target="_blank">/dialogue</a></p>
+		</section>
 	</article>
 </main>
 </body>

@@ -453,9 +453,6 @@
 	.textNote::after {
 		content: ")";
 	}
-	.textNote:hover {
-		font-size: 1.5rem;
-	}
 	.textWip:after {
 		content: " (WIP) ";
 		color: yellow;
@@ -739,9 +736,6 @@
 	}
 	.textNote {
 		cursor: zoom-in;
-	}
-	.textNote:hover {
-		font-size: 1.125rem;
 	}
 	.textWip {
 		cursor: progress;

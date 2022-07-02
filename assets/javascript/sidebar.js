@@ -110,6 +110,7 @@ const sidebar = `
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/thongTinLienQuan/toanTuKiTu.html">Toán tử kí tự</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/thongTinLienQuan/cauTrucCommand.html">Cấu trúc Command</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/thongTinLienQuan/commandBlock.html">Command Block</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/thongTinLienQuan/npc.html">NPC</a>
 				<div class="dropdownEnd"></div>
 			</div></div>
 		</div>

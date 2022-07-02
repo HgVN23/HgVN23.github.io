@@ -1,5 +1,5 @@
 .image {
-	margin: 5px auto 5px auto;
+	margin: 16px auto;
 }
 .image404 {
 	content: url(../media/image/404_error.png);
@@ -55,6 +55,36 @@
 	width: 30%;
 	height: 30%;
 }
+.imageNPC1 {
+	content: url(../media/image/npc_1.png);
+	width: 40%;
+	height: 40%;
+}
+.imageNPC2 {
+	content: url(../media/image/npc_2.png);
+	width: 40%;
+	height: 40%;
+}
+.imageNPC3 {
+	content: url(../media/image/npc_3.png);
+	width: 40%;
+	height: 40%;
+}
+.imageNPC4 {
+	content: url(../media/image/npc_4.png);
+	width: 40%;
+	height: 40%;
+}
+.imageNPC5 {
+	content: url(../media/image/npc_5.png);
+	width: 40%;
+	height: 40%;
+}
+.imageNPC6 {
+	content: url(../media/image/npc_6.png);
+	width: 40%;
+	height: 40%;
+}
 @media (max-width: 767px) {
 	.image404 {
 		width: 80%;
@@ -100,5 +130,14 @@
 	.imageGlyph {
 		width: 80%;
 		height: 80%;
+	}
+	.imageNPC1,
+	.imageNPC2,
+	.imageNPC3,
+	.imageNPC4,
+	.imageNPC5,
+	.imageNPC6 {
+		width: 90%;
+		height: 90%;
 	}
 }
