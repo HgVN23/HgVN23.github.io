@@ -50,11 +50,6 @@
 	width: 20%;
 	height: 20%;
 }
-.imageGlyph {
-	content: url(../media/image/glyph.png);
-	width: 30%;
-	height: 30%;
-}
 .imageNPC1 {
 	content: url(../media/image/npc_1.png);
 	width: 40%;

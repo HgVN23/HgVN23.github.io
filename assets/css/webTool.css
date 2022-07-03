@@ -1,64 +1,86 @@
-.colorText {
-	text-align: center;
-}
-.cButton {
-	background-color: transparent;
-	border: var(--border);
-	margin: 20px;
-	padding: 5px;
-	font-size: 1.25rem;
-}
-.cButton:hover {
-	border-color: var(--hover-color);
-}
-.cButton:active {
-	border-color: yellow;
-}
-.buttonGroup {
-	display: flex;
-	justify-content: center;
-}
-.result {
-	user-select: text;
-	font-size: 1.875rem;
-	text-align: center;
-}
-.uuid {
-	margin: 30px 0 30px 0;
-}
-.glyph {
-	margin: 10px 0 10px 0;
-}
-.glyphFlex {
-	width: 30%;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto 0 auto;
-}
-.cInput, .cTextarea {
-	background-color: transparent;
-	border: none;
-	border-bottom: var(--border);
-	outline: none;
-	margin-left: 20px;
-	resize: none;
-	font-size: 1rem;
-}
-.cInput:hover {
-	border-bottom: 2px solid var(--hover-color);
-}
-.dialogueSpace {
-	margin-bottom: 20px;
-}
-.dialogueFlex {
-	display: flex;
-	flex-wrap: wrap;
-}
-@media (max-width: 767px) {
+/*==================================================*/
+	.result {
+		margin: 10px 0;
+		user-select: text;
+		font-size: 1.875rem;
+		text-align: center;
+	}
+	.buttonGroup {
+		display: flex;
+		justify-content: space-around;
+	}
+	.cButton {
+		background-color: transparent;
+		border: var(--border);
+		padding: 5px;
+		font-size: 1.25rem;
+	}
+	.cButton:hover {
+		border-color: var(--hover-color);
+	}
+	.cButton:active {
+		border-color: yellow;
+	}
+	.cInput, .cTextarea {
+		background-color: transparent;
+		border: none;
+		border-bottom: var(--border);
+		outline: none;
+		margin-left: 20px;
+		resize: none;
+		font-size: 1rem;
+	}
+	.cInput:hover {
+		border-bottom: 2px solid var(--hover-color);
+	}
+/*==================================================*/
+/*Glyph*/
+	.glyphFlex1 {
+		display: flex;
+	}
+	.glyphFlex2 {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.glyphTable th,
+	.glyphTable td {
+		width: 26px;
+		height: 26px;
+		padding: 0;
+		text-align: center;
+	}
+	.glyphTable td:hover {
+		border-color: var(--hover-color);
+		outline: 2px solid var(--hover-color);
+	}
+/*==================================================*/
+
+	.colorText {
+		text-align: center;
+	}
 	.uuid {
+		margin: 30px 0;
+	}
+	.dialogueSpace {
+		margin-bottom: 20px;
+	}
+	.dialogueFlex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+@media (max-width: 767px) {
+	.cButton {
+		font-size: 1rem;
+	}
+	.cInput,
+	.cTextarea {
 		font-size: .75rem;
 	}
-	.glyphFlex {
-		width: 70%;
+	.glyphFlex1 {
+		flex-wrap: wrap;
+	}
+	.uuid {
+		font-size: .75rem;
 	}
 }

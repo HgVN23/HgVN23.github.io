@@ -26,6 +26,7 @@
 
 	<!-- CSS/Script -->
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/table.css">
 	<link rel="stylesheet" href="../assets/css/image.css">
 	<link rel="stylesheet" href="../assets/css/webTool.css">
 	<script src="../assets/javascript/scripts.js"></script>
@@ -37,25 +38,360 @@
 		<h1 class="contentHeader">Tìm kiếm Glyph</h1>
 		<section class="contentBox">
 			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<h2 class="contentTitle">Hướng dẫn</h2>
+			</div>
+			<p class="contentText">Nhập mã glyph chứa kí tự bạn muốn tìm vào phần nhập và ấn Tạo</p>
+			<p class="contentText">Sau khi ấn Tạo thì khung kí tự sẽ hiện hết các kí tự có trong glyph đó</p>
+			<p class="contentText">Tìm kí tự bạn muốn và ấn vào kí tự đó trong khung rồi sau đó ấn Sao chép để Copy vào máy</p>
+			<p class="contentText">Ví dụ bạn muốn kí tự # trong glyph_00.png thì ghi mã là 00 vào phần nhập và ấn Tạo. Sau đó tìm # trong khung kí tự, ấn vào kí tự đó rồi ấn Sao chép và thế là xong</p>
+			<p class="contentText">Ví dụ bạn muốn kí tự ࿊ trong glyph_0F.png thì ghi mã là 0F vào phần nhập và ấn Tạo. Sau đó tìm ࿊ trong khung kí tự, ấn vào kí tự đó rồi ấn Sao chép và thế là xong</p>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
 				<h2 class="contentTitle">Nơi tìm</h2>
 			</div>
-			<div class="image imageGlyph"></div>
-			<div class="glyphFlex">
-				<div class="contentText">Bảng glyph (0-9, A-F)</div>
-				<input class="cInput" id="glyphTable" type="text" placeholder="Ví dụ: 12 hoặc 3B">
-				<div class="contentText">Hàng (0-9, A-F)</div>
-				<input class="cInput" id="glyphRow" type="text" placeholder="Ví dụ: 1 hoặc C">
-				<div class="contentText">Cột (0-9, A-F)</div>
-				<input class="cInput" id="glyphCol" type="text" placeholder="Ví dụ: 1 hoặc C">
-				<div class="result glyph" id="copyThis">???</div>
+			<div class="glyphFlex1">
+				<div class="table">
+					<table class="glyphTable">
+						<tr>
+							<th></th>
+							<th>0</th>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							<th>4</th>
+							<th>5</th>
+							<th>6</th>
+							<th>7</th>
+							<th>8</th>
+							<th>9</th>
+							<th>A</th>
+							<th>B</th>
+							<th>C</th>
+							<th>D</th>
+							<th>E</th>
+							<th>F</th>
+						</tr>
+						<tr>
+							<th>0</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>1</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>2</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>3</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>4</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>5</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>6</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>7</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>8</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>9</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>A</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>B</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>C</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>D</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>E</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>F</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="glyphFlex2">
+					<div class="contentText">Nhập mã bảng glyph (0-9, A-F)</div>
+					<input class="cInput" id="glyphTable" type="text" placeholder="Ví dụ: 12 hoặc 3B">
+					<div class="result" id="copyThis">???</div>
+					<div class="buttonGroup">
+						<button class="cButton" id="create">Tạo</button>
+						<button class="cButton" id="copy">Sao chép</button>
+					</div>
+				</div>
 			</div>
-			<div class="buttonGroup">
-				<button class="cButton" onclick="glyph()" id="create">Tạo</button>
-				<button class="cButton" onclick="copy()" id="copy">Sao chép</button>
-			</div>
-			<script src="../assets/javascript/copy.js"></script>
-			<script src="../assets/javascript/glyph.js"></script>
+			<script src="../assets/javascript/webTool/glyph.js"></script>
+			<script src="../assets/javascript/webTool/copy.js"></script>
 		</section>
 	</article>
 </main>
