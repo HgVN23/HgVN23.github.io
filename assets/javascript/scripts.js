@@ -24,8 +24,8 @@ window.onload = function() {
 
 	scriptF(scriptList1);
 	
-	const scriptTimeout1 = setTimeout(scriptF(scriptList2), 300);
-	const scriptTimeout2 = setTimeout(scriptF(scriptList3), 300);
+	const scriptTimeout1 = setTimeout(scriptF(scriptList2), 500);
+	const scriptTimeout2 = setTimeout(scriptF(scriptList3), 500);
 }
 
 function scriptF(scriptList) {
