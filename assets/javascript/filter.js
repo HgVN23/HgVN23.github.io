@@ -97,10 +97,10 @@ const filter = [
 	"commandBlock",
 	"npc",
 
-	"uuidV4Generator",
-	"glyph",
-	"color",
-	"dialogueGenerator"
+	"uuidV4Gen",
+	"glyphSearch",
+	"colorConvert",
+	"dialogueGen"
 ];
 
 const commands = [
@@ -206,8 +206,8 @@ const thongTinLienQuan = [
 ];
 
 const webTool = [
-	"uuidV4Generator",
-	"glyph",
-	"color",
-	"dialogueGenerator"
+	"uuidV4Gen",
+	"glyphSearch",
+	"colorConvert",
+	"dialogueGen"
 ]

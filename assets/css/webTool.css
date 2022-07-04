@@ -7,13 +7,13 @@
 	}
 	.buttonGroup {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 	.cButton {
 		background-color: transparent;
 		border: var(--border);
 		padding: 5px;
-		font-size: 1.25rem;
+		font-size: 1rem;
 	}
 	.cButton:hover {
 		border-color: var(--hover-color);
@@ -21,16 +21,20 @@
 	.cButton:active {
 		border-color: yellow;
 	}
-	.cInput, .cTextarea {
+	.cInput,
+	.cTextarea {
+		width: 90%;
 		background-color: transparent;
 		border: none;
 		border-bottom: var(--border);
 		outline: none;
 		margin-left: 20px;
+		padding-bottom: 3px;
 		resize: none;
 		font-size: 1rem;
 	}
-	.cInput:hover {
+	.cInput:hover,
+	.cTextarea:hover {
 		border-bottom: 2px solid var(--hover-color);
 	}
 /*==================================================*/
@@ -55,23 +59,27 @@
 		outline: 2px solid var(--hover-color);
 	}
 /*==================================================*/
-
+/*Dialogue*/
+	.dialogueBox {
+		border: var(--border);
+		margin: 10px 0;
+		padding: 16px;
+	}
+	.dialogueHeader {
+		font-size: 1.5rem;
+	}
+/*==================================================*/
 	.colorText {
 		text-align: center;
 	}
+/*==================================================*/
 	.uuid {
 		margin: 30px 0;
 	}
-	.dialogueSpace {
-		margin-bottom: 20px;
-	}
-	.dialogueFlex {
-		display: flex;
-		flex-wrap: wrap;
-	}
+/*==================================================*/
 @media (max-width: 767px) {
 	.cButton {
-		font-size: 1rem;
+		font-size: .75rem;
 	}
 	.cInput,
 	.cTextarea {
@@ -80,7 +88,11 @@
 	.glyphFlex1 {
 		flex-wrap: wrap;
 	}
+	.dialogueHeader {
+		font-size: 1rem;
+	}
 	.uuid {
 		font-size: .75rem;
 	}
 }
+/*==================================================*/

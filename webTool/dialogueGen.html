@@ -6,22 +6,22 @@
 	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
 
 	<!-- Primary Meta Tags -->
-	<title>Tạo dialogue.json | Web Tool by Hg</title>
-	<meta name="title" content="Tạo dialogue.json | Web Tool by Hg">
-	<meta name="description" content="Tạo dialogue.json">
+	<title>Tạo File dialogue | Web Tool by Hg</title>
+	<meta name="title" content="Tạo File dialogue | Web Tool by Hg">
+	<meta name="description" content="Tạo File dialogue">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://hgvn23.github.io/webTool/dialogueGen">
-	<meta property="og:title" content="Tạo dialogue.json | Web Tool by Hg">
-	<meta property="og:description" content="Tạo dialogue.json">
+	<meta property="og:title" content="Tạo File dialogue | Web Tool by Hg">
+	<meta property="og:description" content="Tạo File dialogue">
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/dialogue.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://hgvn23.github.io/webTool/dialogueGen">
-	<meta property="twitter:title" content="Tạo dialogue.json | Web Tool by Hg">
-	<meta property="twitter:description" content="Tạo dialogue.json">
+	<meta property="twitter:title" content="Tạo File dialogue | Web Tool by Hg">
+	<meta property="twitter:description" content="Tạo File dialogue">
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/webTool/dialogue.png">
 	
 	<!-- CSS/Script -->
@@ -33,78 +33,141 @@
 <body class="themeDark">
 <main>
 	<article class="content">
-		<h1 class="contentHeader">Tạo dialogue.json</h1>
+		<h1 class="contentHeader">Tạo File dialogue</h1>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconInfo"></div>
+				<h2 class="contentTitle">Hướng dẫn</h2>
+			</div>
+			<p class="contentText">Điền vào nơi Nhập và khi điền xong ấn nút Tải File ở cuối cùng</p>
+		</section>
 		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
 				<h2 class="contentTitle">Nơi tạo</h2>
 			</div>
-			<div class="dialogueSpace">
-				<div class="contentText">Tên File (bỏ qua đuôi .json) <span class="textNote">Bắt buộc</span></div>
-				<input class="cInput" id="fileName" type="text" placeholder="Nhập tên File">
-			</div>
-			<div class="dialogueSpace">
-				<div class="contentText">scene_tag (id bảng) <span class="textNote">Bắt buộc</span></div>
-				<input class="cInput" id="scene_tag" type="text" placeholder="Nhập id bảng">
-			</div>
-			<div class="dialogueSpace">
-				<div class="contentText">npc_name (tên bảng)</div>
-				<input class="cInput" id="npc_name" type="text" placeholder="Nhập tên bảng">
-			</div>
-			<div class="dialogueSpace">
-				<div class="contentText">text (đoạn hội thoại)</div>
-				<textarea class="cTextarea" id="text" type="text" placeholder="Nhập đoạn hội thoại" rows="3"></textarea>
-			</div>
-			<div class="dialogueSpace">
-				<div class="contentText">buttons (các nút bấm) <span class="textNote">Nếu bạn muốn có nút trống không hãy nhập dấu cách/ấn Space</span></div>
-				<div class="dialogueFlex">
-					<div class="dropdownTab">
-						<div class="contentText">name (tên nút bấm)</div>
-						<input class="cInput" id="name1" type="text" placeholder="Nhập tên nút 1">
-						<div class="contentText">commands (tên nút bấm)</div>
-						<textarea class="cTextarea" id="commands1" type="text" placeholder="Nhập Command 1" rows="3"></textarea>
-					</div>
-					<div class="dropdownTab">
-						<div class="contentText">name (tên nút bấm)</div>
-						<input class="cInput" id="name2" type="text" placeholder="Nhập tên nút 2">
-						<div class="contentText">commands (tên nút bấm)</div>
-						<textarea class="cTextarea" id="commands2" type="text" placeholder="Nhập Command 2" rows="3"></textarea>
-					</div>
-					<div class="dropdownTab">
-						<div class="contentText">name (tên nút bấm)</div>
-						<input class="cInput" id="name3" type="text" placeholder="Nhập tên nút 3">
-						<div class="contentText">commands (tên nút bấm)</div>
-						<textarea class="cTextarea" id="commands3" type="text" placeholder="Nhập Command 3" rows="3"></textarea>
-					</div>
+			<div class="dialogueBox">
+				<h3 class="dialogueHeader">Phần quan trọng <span class="textNote">bắt buộc</span></h3>
+				<div>
+					<p class="contentText">Tên File (không ghi .json)</p>
+					<input class="cInput" id="fileName" type="text" placeholder="Nhập tên File">
 				</div>
-				<div class="dialogueFlex">
-					<div class="dropdownTab">
-						<div class="contentText">name (tên nút bấm)</div>
-						<input class="cInput" id="name4" type="text" placeholder="Nhập tên nút 4">
-						<div class="contentText">commands (tên nút bấm)</div>
-						<textarea class="cTextarea" id="commands4" type="text" placeholder="Nhập Command 4" rows="3"></textarea>
-					</div>
-					<div class="dropdownTab">
-						<div class="contentText">name (tên nút bấm)</div>
-						<input class="cInput" id="name5" type="text" placeholder="Nhập tên nút 5">
-						<div class="contentText">commands (tên nút bấm)</div>
-						<textarea class="cTextarea" id="commands5" type="text" placeholder="Nhập Command 5" rows="3"></textarea>
-					</div>
-					<div class="dropdownTab">
-						<div class="contentText">name (tên nút bấm)</div>
-						<input class="cInput" id="name6" type="text" placeholder="Nhập tên nút 6">
-						<div class="contentText">commands (tên nút bấm)</div>
-						<textarea class="cTextarea" id="commands6" type="text" placeholder="Nhập Command 6" rows="3"></textarea>
-					</div>
+				<div>
+					<p class="contentText">scene_tag (id bảng)</p>
+					<input class="cInput" id="scene_tag" type="text" placeholder="Nhập id bảng">
 				</div>
 			</div>
-			
-			<div class="contentText">on_open_commands (mở bảng thì chạy Command)</div>
-			<textarea class="cTextarea" id="on_open_commands" type="text" placeholder="Nhập Command" rows="3"></textarea>
-			
-			<div class="contentText">on_close_commands (đóng bảng thì chạy Command)</div>
-			<textarea class="cTextarea" id="on_close_commands" type="text" placeholder="Nhập Command" rows="3"></textarea>
-
+			<div class="dialogueBox">
+				<h3 class="dialogueHeader">Thông tin cơ bản</h3>
+				<div>
+					<p class="contentText">npc_name (tên bảng)</p>
+					<input class="cInput" id="npc_name" type="text" placeholder="Nhập tên bảng">
+				</div>
+				<div>
+					<p class="contentText">text (đoạn hội thoại)</p>
+					<textarea class="cTextarea" id="text" type="text" placeholder="Nhập đoạn hội thoại" rows="4"></textarea>
+				</div>
+			</div>
+			<div class="dialogueBox">
+				<h3 class="dialogueHeader">Chạy Command khi mở/đóng giao diện dialogue</h3>
+				<div>
+					<p class="contentText">on_open_commands (mở bảng thì chạy Command)</p>
+					<textarea class="cTextarea" id="on_open_commands" type="text" placeholder="Nhập Command" rows="4"></textarea>
+				</div>
+				<div>
+					<p class="contentText">on_close_commands (đóng bảng thì chạy Command)</p>
+					<textarea class="cTextarea" id="on_close_commands" type="text" placeholder="Nhập Command" rows="4"></textarea>
+				</div>
+			</div>
+			<div class="dialogueBox">
+				<h3 class="dialogueHeader">buttons (các nút bấm)</h3>
+				<p class="contentText"><span class="textNote">Nếu bạn muốn có nút trống không hãy nhập dấu cách/Space</p>
+					<div>
+						<p class="contentText dropdown">Nút thứ 1</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">name (tên nút bấm)</p>
+								<input class="cInput" id="name1" type="text" placeholder="Nhập tên nút">
+							</div>
+							<div class="dropdownText">
+								<p class="contentText">commands (tên nút bấm)</p>
+								<textarea class="cTextarea" id="commands1" type="text" placeholder="Nhập Command" rows="4"></textarea>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div>
+						<p class="contentText dropdown">Nút thứ 2</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">name (tên nút bấm)</p>
+								<input class="cInput" id="name2" type="text" placeholder="Nhập tên nút">
+							</div>
+							<div class="dropdownText">
+								<p class="contentText">commands (tên nút bấm)</p>
+								<textarea class="cTextarea" id="commands2" type="text" placeholder="Nhập Command" rows="4"></textarea>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div>
+						<p class="contentText dropdown">Nút thứ 3</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">name (tên nút bấm)</p>
+								<input class="cInput" id="name3" type="text" placeholder="Nhập tên nút">
+							</div>
+							<div class="dropdownText">
+								<p class="contentText">commands (tên nút bấm)</p>
+								<textarea class="cTextarea" id="commands3" type="text" placeholder="Nhập Command" rows="4"></textarea>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div>
+						<p class="contentText dropdown">Nút thứ 4</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">name (tên nút bấm)</p>
+								<input class="cInput" id="name4" type="text" placeholder="Nhập tên nút">
+							</div>
+							<div class="dropdownText">
+								<p class="contentText">commands (tên nút bấm)</p>
+								<textarea class="cTextarea" id="commands4" type="text" placeholder="Nhập Command" rows="4"></textarea>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div>
+						<p class="contentText dropdown">Nút thứ 5</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">name (tên nút bấm)</p>
+								<input class="cInput" id="name5" type="text" placeholder="Nhập tên nút">
+							</div>
+							<div class="dropdownText">
+								<p class="contentText">commands (tên nút bấm)</p>
+								<textarea class="cTextarea" id="commands5" type="text" placeholder="Nhập Command" rows="4"></textarea>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div>
+						<p class="contentText dropdown">Nút thứ 6</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<div class="dropdownText">
+								<p class="contentText">name (tên nút bấm)</p>
+								<input class="cInput" id="name6" type="text" placeholder="Nhập tên nút">
+							</div>
+							<div class="dropdownText">
+								<p class="contentText">commands (tên nút bấm)</p>
+								<textarea class="cTextarea" id="commands6" type="text" placeholder="Nhập Command" rows="4"></textarea>
+							</div>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+				</div>
+			</div>
 			<div class="buttonGroup">
 				<button class="cButton" id="saveFile">Tải File</button>
 			</div>

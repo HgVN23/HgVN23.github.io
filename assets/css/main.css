@@ -464,13 +464,13 @@
 		flex-direction: column;
 	}
 	.contentHeader {
-		/*background-color: var(--bg);*/
 		border-bottom: var(--border);
 		margin: 25px 0 0;
 		padding-bottom: 2px;
 		align-self: center;
 		font-size: 2rem;
 		font-weight: bold;
+		text-align: center;
 	}
 	.contentBox {
 		/*background-color: var(--bg);*/
