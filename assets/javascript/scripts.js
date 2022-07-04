@@ -1,14 +1,14 @@
 const scriptList1 = [
 	"header",
-	"ads"
+	"ads",
+	"goTop"
 ]
 
 const scriptList2 = [
 	"theme",
 	"sidebar",
 	"filter",
-	"search",
-	"goTop"
+	"search"
 ];
 
 const scriptList3 = [
@@ -24,8 +24,8 @@ window.onload = function() {
 
 	scriptF(scriptList1);
 	
-	const scriptTimeout1 = setTimeout(scriptF(scriptList2), 500);
-	const scriptTimeout2 = setTimeout(scriptF(scriptList3), 1000);
+	const scriptTimeout1 = setTimeout(scriptF(scriptList2), 2000);
+	const scriptTimeout2 = setTimeout(scriptF(scriptList3), 4000);
 }
 
 function scriptF(scriptList) {
