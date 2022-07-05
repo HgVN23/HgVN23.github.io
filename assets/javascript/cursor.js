@@ -19,11 +19,15 @@ const cursorExpand = document.getElementsByClassName("dropdown");
 const cursorSocialLogo = document.getElementsByClassName("socialLogo");
 
 const cursorColor = document.getElementById("color");
+const cursorGlyph = document.getElementsByClassName("cursorTd");
 
 const cursorA = document.getElementsByTagName("a");
 const cursorButton = document.getElementsByTagName("button");
 const cursorInput = document.getElementsByTagName("input");
 const cursorTextarea = document.getElementsByTagName("textarea");
+const cursorOption = document.getElementsByTagName("option");
+
+var i;
 
 document.addEventListener('mousemove', (e) => {
 	var x = e.clientX;
@@ -54,37 +58,37 @@ if(cursorResult != null) {
 	cursorResult.addEventListener('mouseleave', removeCopy)
 }
 
-for (var i = 0; i < cursorSidebarIcon.length; i++) {
+for (i = 0; i < cursorSidebarIcon.length; i++) {
 	cursorSidebarIcon[i].addEventListener("mouseenter", addClick);
 	cursorSidebarIcon[i].addEventListener("mouseleave", removeClick);
 }
 
-for (var i = 0; i < cursorThemeIcon.length; i++) {
+for (i = 0; i < cursorThemeIcon.length; i++) {
 	cursorThemeIcon[i].addEventListener("mouseenter", addClick);
 	cursorThemeIcon[i].addEventListener("mouseleave", removeClick);
 }
 
-for (var i = 0; i < cursorCmd.length; i++) {
+for (i = 0; i < cursorCmd.length; i++) {
 	cursorCmd[i].addEventListener("mouseenter", addCopy);
 	cursorCmd[i].addEventListener("mouseleave", removeCopy);
 }
 
-for (var i = 0; i < cursorSyntax.length; i++) {
+for (i = 0; i < cursorSyntax.length; i++) {
 	cursorSyntax[i].addEventListener("mouseenter", addCopy);
 	cursorSyntax[i].addEventListener("mouseleave", removeCopy);
 }
 
-for (var i = 0; i < cursorNote.length; i++) {
+for (i = 0; i < cursorNote.length; i++) {
 	cursorNote[i].addEventListener("mouseenter", addZoom);
 	cursorNote[i].addEventListener("mouseleave", removeZoom);
 }
 
-for (var i = 0; i < cursorWip.length; i++) {
+for (i = 0; i < cursorWip.length; i++) {
 	cursorWip[i].addEventListener("mouseenter", addWip);
 	cursorWip[i].addEventListener("mouseleave", removeWip);
 }
 
-for (var i = 0; i < cursorExpand.length; i++) {
+for (i = 0; i < cursorExpand.length; i++) {
 	cursorExpand[i].addEventListener("mouseenter", addExpand);
 	cursorExpand[i].addEventListener("mouseleave", removeExpand);
 	// cursorExpand[i].addEventListener("click", createCollapse);
@@ -102,7 +106,7 @@ function removeExpand() {
 // }
 // function createCollapse() {
 // 	var cursorCollapse = document.getElementsByClassName("dropdownActive");
-// 	for (var i = 0; i < cursorCollapse.length; i++) {
+// 	for (i = 0; i < cursorCollapse.length; i++) {
 // 		cursorCollapse[i].addEventListener("mouseenter", addCollapse);
 // 		cursorCollapse[i].addEventListener("mouseleave", removeCollapse);
 // 		cursorCollapse[i].addEventListener("click", eventCollapse);
@@ -121,30 +125,39 @@ function removeExpand() {
 // 	removeCollapse();
 // }
 
-for (var i = 0; i < cursorSocialLogo.length; i++) {
+for (i = 0; i < cursorSocialLogo.length; i++) {
 	cursorSocialLogo[i].addEventListener("mouseenter", addClick);
 	cursorSocialLogo[i].addEventListener("mouseleave", removeClick);
 }
+
 if(cursorColor != null) {
 	cursorColor.addEventListener("mouseenter", addClick);
 	cursorColor.addEventListener("mouseleave", removeClick);
 }
+for (i = 0; i < cursorGlyph.length; i++) {
+	cursorGlyph[i].addEventListener("mouseenter", addClick);
+	cursorGlyph[i].addEventListener("mouseleave", removeClick);
+}
 
-for (var i = 0; i < cursorA.length; i++) {
+for (i = 0; i < cursorA.length; i++) {
 	cursorA[i].addEventListener("mouseenter", addClick);
 	cursorA[i].addEventListener("mouseleave", removeClick);
 }
-for (var i = 0; i < cursorButton.length; i++) {
+for (i = 0; i < cursorButton.length; i++) {
 	cursorButton[i].addEventListener("mouseenter", addClick);
 	cursorButton[i].addEventListener("mouseleave", removeClick);
 }
-for (var i = 0; i < cursorInput.length; i++) {
+for (i = 0; i < cursorInput.length; i++) {
 	cursorInput[i].addEventListener("mouseenter", addTyping);
 	cursorInput[i].addEventListener("mouseleave", removeTyping);
 }
-for (var i = 0; i < cursorTextarea.length; i++) {
+for (i = 0; i < cursorTextarea.length; i++) {
 	cursorTextarea[i].addEventListener("mouseenter", addTyping);
 	cursorTextarea[i].addEventListener("mouseleave", removeTyping);
+}
+for (i = 0; i < cursorOption.length; i++) {
+	cursorOption[i].addEventListener("mouseenter", addClick);
+	cursorOption[i].addEventListener("mouseleave", removeClick);
 }
 
 function addClick() {

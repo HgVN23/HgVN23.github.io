@@ -22,7 +22,8 @@
 		border-color: yellow;
 	}
 	.cInput,
-	.cTextarea {
+	.cTextarea,
+	.cSelect {
 		width: 90%;
 		background-color: transparent;
 		border: none;
@@ -36,6 +37,16 @@
 	.cInput:hover,
 	.cTextarea:hover {
 		border-bottom: 2px solid var(--hover-color);
+	}
+	.cInput ~ .cInput {
+		margin-top: 5px;
+	}
+	.cRadio ~ .contentText {
+		display: inline-block;
+		margin: 0;
+	}
+	.cSelect option:hover {
+		background-color: var(--hover-color);
 	}
 /*==================================================*/
 /*Glyph*/
@@ -78,11 +89,11 @@
 	}
 /*==================================================*/
 @media (max-width: 767px) {
-	.cButton {
-		font-size: .75rem;
-	}
+	.cButton,
 	.cInput,
-	.cTextarea {
+	.cTextarea,
+	.cSelect optgroup,
+	.cSelect option {
 		font-size: .75rem;
 	}
 	.glyphFlex1 {
