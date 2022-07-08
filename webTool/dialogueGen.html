@@ -40,6 +40,8 @@
 				<h2 class="contentTitle">Hướng dẫn</h2>
 			</div>
 			<p class="contentText">Điền vào nơi Nhập và khi điền xong ấn nút Tải File ở cuối cùng</p>
+			<p class="contentText">Nếu bạn nào dùng translate thì mình có 1 vài lưu ý là phần with bạn có nhiều từ thì ghi kèm dấu , để phân tách kiểu a, b như vậy hệ thống sẽ tự cho vào " ". Nếu bạn with với rawtext thì phải ghi đúng cú pháp {"rawtext": [{...}]} <span class="textNote">kĩ năng Javascript của mình không được tốt nên Logic với string bị hạn chế, chính vì vậy bạn sẽ phải ghi chuẩn xác</span></p>
+			<p class="contentText">Đọc thêm phần translate tại <a class="textLink" href="../danhSachId/rawMessageId.html" target="_blank">Danh sách Id Raw message</a></p>
 		</section>
 		<section class="contentBox">
 			<div class="contentGroup">
@@ -61,11 +63,27 @@
 				<h3 class="dialogueHeader">Thông tin cơ bản</h3>
 				<div>
 					<p class="contentText">npc_name (tên bảng)</p>
+
+					<input class="cRadio" type="radio" name="npc_name" value="text" checked>
+					<p class="contentText">text</p>
+
+					<input class="cRadio" type="radio" name="npc_name" value="translate">
+					<p class="contentText">translate</p>
+
 					<input class="cInput" id="npc_name" type="text" placeholder="Nhập tên bảng">
+					<input style="display: none;" class="cInput with" id="npcNameWith" type="text" placeholder="Nhập thêm with nếu cần">
 				</div>
 				<div>
 					<p class="contentText">text (đoạn hội thoại)</p>
+
+					<input class="cRadio" type="radio" name="text" value="text" checked>
+					<p class="contentText">text</p>
+
+					<input class="cRadio" type="radio" name="text" value="translate">
+					<p class="contentText">translate</p>
+
 					<textarea class="cTextarea" id="text" type="text" placeholder="Nhập đoạn hội thoại" rows="4"></textarea>
+					<input style="display: none;" class="cInput with" id="textWith" type="text" placeholder="Nhập thêm with nếu cần">
 				</div>
 			</div>
 			<div class="dialogueBox">
@@ -87,7 +105,15 @@
 						<div class="dropdownStart dropdownHide"><div>
 							<div class="dropdownText">
 								<p class="contentText">name (tên nút bấm)</p>
+					
+								<input class="cRadio" type="radio" name="name1" value="text" checked>
+								<p class="contentText">text</p>
+
+								<input class="cRadio" type="radio" name="name1" value="translate">
+								<p class="contentText">translate</p>
+
 								<input class="cInput" id="name1" type="text" placeholder="Nhập tên nút">
+								<input style="display: none;" class="cInput with" id="name1With" type="text" placeholder="Nhập thêm with nếu cần">
 							</div>
 							<div class="dropdownText">
 								<p class="contentText">commands (tên nút bấm)</p>
@@ -101,7 +127,15 @@
 						<div class="dropdownStart dropdownHide"><div>
 							<div class="dropdownText">
 								<p class="contentText">name (tên nút bấm)</p>
+					
+								<input class="cRadio" type="radio" name="name2" value="text" checked>
+								<p class="contentText">text</p>
+
+								<input class="cRadio" type="radio" name="name2" value="translate">
+								<p class="contentText">translate</p>
+
 								<input class="cInput" id="name2" type="text" placeholder="Nhập tên nút">
+								<input style="display: none;" class="cInput with" id="name2With" type="text" placeholder="Nhập thêm with nếu cần">
 							</div>
 							<div class="dropdownText">
 								<p class="contentText">commands (tên nút bấm)</p>
@@ -115,7 +149,15 @@
 						<div class="dropdownStart dropdownHide"><div>
 							<div class="dropdownText">
 								<p class="contentText">name (tên nút bấm)</p>
+					
+								<input class="cRadio" type="radio" name="name3" value="text" checked>
+								<p class="contentText">text</p>
+
+								<input class="cRadio" type="radio" name="name3" value="translate">
+								<p class="contentText">translate</p>
+
 								<input class="cInput" id="name3" type="text" placeholder="Nhập tên nút">
+								<input style="display: none;" class="cInput with" id="name3With" type="text" placeholder="Nhập thêm with nếu cần">
 							</div>
 							<div class="dropdownText">
 								<p class="contentText">commands (tên nút bấm)</p>
@@ -129,7 +171,15 @@
 						<div class="dropdownStart dropdownHide"><div>
 							<div class="dropdownText">
 								<p class="contentText">name (tên nút bấm)</p>
+					
+								<input class="cRadio" type="radio" name="name4" value="text" checked>
+								<p class="contentText">text</p>
+
+								<input class="cRadio" type="radio" name="name4" value="translate">
+								<p class="contentText">translate</p>
+
 								<input class="cInput" id="name4" type="text" placeholder="Nhập tên nút">
+								<input style="display: none;" class="cInput with" id="name4With" type="text" placeholder="Nhập thêm with nếu cần">
 							</div>
 							<div class="dropdownText">
 								<p class="contentText">commands (tên nút bấm)</p>
@@ -143,7 +193,15 @@
 						<div class="dropdownStart dropdownHide"><div>
 							<div class="dropdownText">
 								<p class="contentText">name (tên nút bấm)</p>
+					
+								<input class="cRadio" type="radio" name="name5" value="text" checked>
+								<p class="contentText">text</p>
+
+								<input class="cRadio" type="radio" name="name5" value="translate">
+								<p class="contentText">translate</p>
+
 								<input class="cInput" id="name5" type="text" placeholder="Nhập tên nút">
+								<input style="display: none;" class="cInput with" id="name5With" type="text" placeholder="Nhập thêm with nếu cần">
 							</div>
 							<div class="dropdownText">
 								<p class="contentText">commands (tên nút bấm)</p>
@@ -157,7 +215,15 @@
 						<div class="dropdownStart dropdownHide"><div>
 							<div class="dropdownText">
 								<p class="contentText">name (tên nút bấm)</p>
+					
+								<input class="cRadio" type="radio" name="name6" value="text" checked>
+								<p class="contentText">text</p>
+
+								<input class="cRadio" type="radio" name="name6" value="translate">
+								<p class="contentText">translate</p>
+
 								<input class="cInput" id="name6" type="text" placeholder="Nhập tên nút">
+								<input style="display: none;" class="cInput with" id="name6With" type="text" placeholder="Nhập thêm with nếu cần">
 							</div>
 							<div class="dropdownText">
 								<p class="contentText">commands (tên nút bấm)</p>
