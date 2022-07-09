@@ -8,6 +8,7 @@ const sidebar = `
 			<div class="dropdownStart dropdownHide"><div>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/1help.html">/?</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/ability.html">/ability</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/agent.html">/agent</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/alwaysday.html">/alwaysday</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/camerashake.html">/camerashake</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/clear.html">/clear</a>

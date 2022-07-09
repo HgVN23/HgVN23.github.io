@@ -3,6 +3,7 @@ const filter = [
 
 	"?",
 	"ability",
+	"agent",
 	"alwaysday",
 	"camerashake",
 	"clear",
@@ -106,6 +107,7 @@ const filter = [
 const commands = [
 	"?",
 	"ability",
+	"agent",
 	"alwaysday",
 	"camerashake",
 	"clear",
