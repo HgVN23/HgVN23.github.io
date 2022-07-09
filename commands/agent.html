@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../assets/media/logo/logo_wiki.png">
+
+	<!-- Primary Meta Tags -->
+	<title>/agent | MCBE Command Wiki VN by Hg</title>
+	<meta name="title" content="/agent | MCBE Command Wiki VN by Hg">
+	<meta name="description" content="Điều khiển Agent">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hgvn23.github.io/commands/">
+	<meta property="og:title" content="/agent | MCBE Command Wiki VN by Hg">
+	<meta property="og:description" content="Điều khiển Agent">
+	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/agent.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://hgvn23.github.io/commands/">
+	<meta property="twitter:title" content="/agent | MCBE Command Wiki VN by Hg">
+	<meta property="twitter:description" content="Điều khiển Agent">
+	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/agent.png">
+
+	<!-- CSS/Script -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/javascript/scripts.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2430509461017367" crossorigin="anonymous"></script>
+</head>
+<body class="themeDark">
+<main>
+	<article class="content">
+		<h1 class="contentHeader">/agent</h1>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCongDung"></div>
+				<h2 class="contentTitle">Công dụng</h2>
+			</div>
+			<p class="contentText">Điều khiển Agent</p>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconDoiTuong"></div>
+				<h2 class="contentTitle">Đối tượng có thể dùng Command</h2>
+			</div>
+			<p class="contentText">Player có OP (thông qua /execute trên NPC)</p>
+			<p class="contentText">Chủ Map (thông qua /execute trên NPC)</p>
+			<p class="contentText">Addon</p>
+			<a class="contentText textLink" href="../thongTinLienQuan/npc.html">NPC</a>
+			<a class="contentText textLink" href="execute.html">/execute (thông qua NPC)</a>
+			<a class="contentText textLink" href="gametest.html">/gametest</a>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconCuPhap"></div>
+				<h2 class="contentTitle">Cú pháp</h2>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent create</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">create</code> là tạo</p>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent move &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">move</code> là di chuyển</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent move forward</code>
+						<p class="contentText">Agent di chuyển lên trước</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent turn &lt;turnDirection&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">turn</code> là xoay</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;turnDirection&gt;</code> là hướng xoay
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent turn left</code>
+						<p class="contentText">Agent xoay sang trái</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent attack &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">attack</code> là tấn công</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent attack forward</code>
+						<p class="contentText">Agent tấn công Mob trước nó nếu có</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent drop &lt;int:slotNum&gt; &lt;int:quantity&gt; &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">drop</code> là thả</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;int:slotNum&gt;</code> là ô chứa của Agent
+						<p class="contentText">Giới hạn từ bằng <code class="textSyntax">1</code> đến bằng <code class="textSyntax">27</code></p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;int:quantity&gt;</code> là số lượng Item</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent drop 1 1 forward</code>
+						<p class="contentText">Agent drop 1 item ở ô chứa thứ 1 ra phía trước nó</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent dropall &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">dropall</code> là thả tất cả</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent dropall forward</code>
+						<p class="contentText">Agent drop hết Item ra phía trước nó</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent place &lt;int:slotNum&gt; &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">place</code> là đặt</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;int:slotNum&gt;</code> là ô chứa của Agent
+						<p class="contentText">Giới hạn từ bằng <code class="textSyntax">1</code> đến bằng <code class="textSyntax">27</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent place 1 forward</code>
+						<p class="contentText">Agent đặt item ở ô chứa thứ 1 ra phía trước nó</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent interact &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">interact</code> là tương tác</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent interact forward</code>
+						<p class="contentText">Agent tương tác phía trước nó nếu tương tác được như cửa, trapdoor, ...</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent destroy &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">destroy</code> là phá</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent destroy forward</code>
+						<p class="contentText">Agent phá Block phía trước nó</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent collect &lt;string:item&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">collect</code> là nhặt Item</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;string:item&gt;</code> là id Item</p>
+					<div class="dropdownText">
+						<code class="textCommand">/agent collect diamond</code>
+						<p class="contentText">Agent nhặt diamond xung quang nó 1 Block nếu có</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent transfer &lt;int:srcSlotNum&gt; &lt;int:quantity&gt; &lt;int:dstSlotNum&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">transfer</code> là chuyển</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;int:srcSlotNum&gt;</code> là ô chứa Item cần chuyển của Agent
+						<p class="contentText">Giới hạn từ bằng <code class="textSyntax">1</code> đến bằng <code class="textSyntax">27</code></p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;int:quantity&gt;</code> là số lượng Item</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;int:dstSlotNum&gt;</code> là ô chứa Item chuyển đến của Agent
+						<p class="contentText">Giới hạn từ bằng <code class="textSyntax">1</code> đến bằng <code class="textSyntax">27</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent transfer 1 1 3</code>
+						<p class="contentText">Chuyển 1 Item ở ô chứa thứ 1 nếu có Item sang ô chứ thứ 3 nếu ô đó trống hoặc cùng Item</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent till &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">till</code> là cuốc đát</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;direction&gt;</code> là hướng
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">forward</code> là trước</p>
+							<p class="dropdownText"><code class="textSyntax">back</code> là sau</p>
+							<p class="dropdownText"><code class="textSyntax">left</code> là trái</p>
+							<p class="dropdownText"><code class="textSyntax">right</code> là phải</p>
+							<p class="dropdownText"><code class="textSyntax">up</code> là trên</p>
+							<p class="dropdownText"><code class="textSyntax">down</code> là dưới</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/agent till forward</code>
+						<p class="contentText">Agent cuốc đất phía trước nó nếu có đất ở dưới phía trước</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent tp &lt;coordinates&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">tp</code> là dịch chuyển</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;coordinates&gt;</code> là tọa độ</p>
+					<div class="dropdownText">
+						<code class="textCommand">/agent tp 1 1 1</code>
+						<p class="contentText">Agent dịch chuyển đến 1 1 1</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/agent tp &lt;coordinates&gt; facing &lt;direction&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">tp</code> là dịch chuyển</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;coordinates&gt;</code> là tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">facing</code> là hướng nhìn</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;direction&gt;</code> là hướng tọa độ</p>
+					<div class="dropdownText">
+						<code class="textCommand">/agent tp 1 1 1 facing 5 5 5</code>
+						<p class="contentText">Agent dịch chuyển đến 1 1 1 hướng nhìn đến 5 5 5</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText">/agent remove <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent placeonmove &lt;int:slotNum&gt; &lt;true/false&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent inspect &lt;direction&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent inspectdata &lt;direction&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent detect &lt;direction&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent detectredstone &lt;direction&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent getitemcount &lt;int:slotNum&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent getitemspace &lt;int:slotNum&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+			<div>
+				<p class="contentText">/agent getitemdetail &lt;int:slotNum&gt; <span class="textNote">không hoạt động</span></p>
+			</div>
+		</section>
+		<section class="contentBox">
+			<div class="contentGroup">
+				<div class="contentIcon iconLuuY"></div>
+				<h2 class="contentTitle">Lưu ý</h2>
+			</div>
+			<p class="contentText">Hg xem được cách dùng /agent trên NPC từ <a class="textLink" href="https://youtu.be/2iDsMvkDzWs" target="_blank">Video của Element X</a> <span class="textNote">nên xem Video của Element X để biết cách dùng Command</span></p>
+			<p class="contentText">Bạn sẽ phải dùng Command trong NPC cùng với <a class="textLink" href="execute.html" target="_blank">/execute</a></p>
+			<p class="contentText">Không thể loại bỏ Agent khỏi World <span class="textNote">chắc là dùng Addon được nhưng mình không biết cách</span></p>
+		</section>
+	</article>
+</main>
+</body>
