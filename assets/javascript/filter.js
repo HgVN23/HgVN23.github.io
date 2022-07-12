@@ -80,6 +80,7 @@ const filter = [
 	"animationId",
 	"blockStateId",
 	"componentId",
+	"controllerId",
 	"damageId",
 	"effectId",
 	"enchantmentId",
@@ -89,8 +90,8 @@ const filter = [
 	"lootId",
 	"particleId",
 	"rawMessageId",
-	"target",
 	"soundId",
+	"target",
 	"trackId",
 	
 	"toanTuKiTu",
@@ -186,6 +187,7 @@ const danhSachId = [
 	"animationId",
 	"blockStateId",
 	"componentId",
+	"controllerId",
 	"damageId",
 	"effectId",
 	"enchantmentId",
@@ -195,8 +197,8 @@ const danhSachId = [
 	"lootId",
 	"particleId",
 	"rawMessageId",
-	"target",
 	"soundId",
+	"target",
 	"trackId"
 ];
 

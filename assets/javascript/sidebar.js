@@ -90,6 +90,7 @@ const sidebar = `
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/animationId.html">Animation</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/blockStateId.html">Block state</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/componentId.html">Component</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/controllerId.html">Controller</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/damageId.html">Damage</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/effectId.html">Effect</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/enchantmentId.html">Enchantment</a>
@@ -99,8 +100,8 @@ const sidebar = `
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/lootId.html">Loot</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/particleId.html">Particle</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/rawMessageId.html">Raw message</a>
-				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/target.html">Target</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/soundId.html">Sound</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/target.html">Target</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/trackId.html">Track</a>
 				<div class="dropdownEnd"></div>
 			</div></div>
