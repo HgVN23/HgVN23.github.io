@@ -24,6 +24,7 @@ const sidebar = `
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/enchant.html">/enchant</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/event.html">/event</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/execute.html">/execute</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/executeEX.html">/execute mới</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/fill.html">/fill</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/fog.html">/fog</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/commands/function.html">/function</a>
@@ -88,6 +89,7 @@ const sidebar = `
 			<p class="contentText dropdown">Danh sách Id</p>
 			<div class="dropdownStart dropdownHide"><div>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/animationId.html">Animation</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/biomeId.html">Biome</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/blockStateId.html">Block state</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/componentId.html">Component</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/controllerId.html">Controller</a>

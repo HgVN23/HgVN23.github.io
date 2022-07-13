@@ -19,6 +19,7 @@ const filter = [
 	"enchant",
 	"event",
 	"execute",
+	"executeEX",
 	"fill",
 	"fog",
 	"function",
@@ -78,6 +79,7 @@ const filter = [
 	"xp",
 
 	"animationId",
+	"biomeId",
 	"blockStateId",
 	"componentId",
 	"controllerId",
@@ -124,6 +126,7 @@ const commands = [
 	"enchant",
 	"event",
 	"execute",
+	"executeEX",
 	"fill",
 	"fog",
 	"function",
@@ -185,6 +188,7 @@ const commands = [
 
 const danhSachId = [
 	"animationId",
+	"biomeId",
 	"blockStateId",
 	"componentId",
 	"controllerId",

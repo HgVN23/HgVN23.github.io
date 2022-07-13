@@ -61,7 +61,7 @@
 				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
 			<div>
-				<p class="contentText dropdown">/locate &lt;feature: Feature&gt; [useNewChunksOnly: Boolean]</p>
+				<p class="contentText dropdown">/locate &lt;feature: Structure&gt; [useNewChunksOnly: Boolean]</p>
 				<div class="dropdownStart dropdownHide"><div>
 					<div class="dropdownText">
 						<code class="textSyntax">&lt;feature: Feature&gt;</code> là id công trình
@@ -71,6 +71,10 @@
 								<tr>
 									<th>Id chữ</th>
 									<th>Giải thích</th>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">ancientcity</code></td>
+									<td>Thành phố cổ đại của Warden</td>
 								</tr>
 								<tr>
 									<td><code class="textSyntax">bastionremnant</code></td>
@@ -143,6 +147,114 @@
 					</div>
 					<div class="dropdownText">
 						<span class="textCommand">/locate village true</span>
+						<p class="contentText">Thông báo tọa độ x và z của Village gần nhất mà chưa Player nào Load ở Chunk đó cho Player</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/locate biome &lt;biome: Biome&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">biome</code> là quần xã</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;biome: Biome&gt;</code> là id quần xã
+						<a class="contentText textLink" href="../danhSachId/biomeId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/locate biome beach</span>
+						<p class="contentText">Thông báo tọa độ x và z của Biome beach gần nhất</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/locate structure &lt;structure: Structure&gt; [useNewChunksOnly: Boolean]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">structure</code> là công trình</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;feature: Feature&gt;</code> là id công trình
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownHide">
+							<table>
+								<tr>
+									<th>Id chữ</th>
+									<th>Giải thích</th>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">ancientcity</code></td>
+									<td>Thành phố cổ đại của Warden</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">bastionremnant</code></td>
+									<td>Tàn tích pháo đài của Piglin</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">buriedtreasure</code></td>
+									<td>Kho báu bị chôn vùi</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">endcity</code></td>
+									<td>Thành phố End</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">fortress</code></td>
+									<td>Pháo đài Nether</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">mansion</code></td>
+									<td>Biệt thự của Illager</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">mineshaft</code></td>
+									<td>Mỏ bỏ hoang</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">monument</code></td>
+									<td>Đền biển</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">pillageroutpost</code></td>
+									<td>Đồn điền của Pillager</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">ruinedportal</code></td>
+									<td>Tan tích Nether Portal</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">ruins</code></td>
+									<td>Khe nứt</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">shipwreck</code></td>
+									<td>Tàu đắm</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">stronghold</code></td>
+									<td>Thành trì bỏ hoang nơi có End Portal</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">temple</code></td>
+									<td>Đền rừng, đền sa mạc, lều tuyết, lều đầm lầy</td>
+								</tr>
+								<tr>
+									<td><code class="textSyntax">village</code></td>
+									<td>Làng</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[useNewChunksOnly: Boolean]</code> là xét trong Chunk chưa Load
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">true</code> là có</p>
+							<p class="dropdownText"><code class="textSyntax">false</code> là không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+						<p class="contentText">Mặc định là <code class="textSyntax">false</code> nếu bỏ qua thành phần này</p>
+					</div>
+					<div class="dropdownText">
+						<span class="textCommand">/locate structure village true</span>
 						<p class="contentText">Thông báo tọa độ x và z của Village gần nhất mà chưa Player nào Load ở Chunk đó cho Player</p>
 					</div>
 					<div class="dropdownEnd"></div>
