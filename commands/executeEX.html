@@ -8,20 +8,20 @@
 	<!-- Primary Meta Tags -->
 	<title>/execute mới | MCBE Command Wiki VN by Hg</title>
 	<meta name="title" content="/execute mới | MCBE Command Wiki VN by Hg">
-	<meta name="description" content="Khiến Entity hoặc Block thực hiện Command">
+	<meta name="description" content="Khiến Entity hoặc Command Block thực hiện Command">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://hgvn23.github.io/commands/executeEX">
 	<meta property="og:title" content="/execute mới | MCBE Command Wiki VN by Hg">
-	<meta property="og:description" content="Khiến Entity hoặc Block thực hiện Command">
+	<meta property="og:description" content="Khiến Entity hoặc Command Block thực hiện Command">
 	<meta property="og:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/execute_EX.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://hgvn23.github.io/commands/executeEX">
 	<meta property="twitter:title" content="/execute mới | MCBE Command Wiki VN by Hg">
-	<meta property="twitter:description" content="Khiến Entity hoặc Block thực hiện Command">
+	<meta property="twitter:description" content="Khiến Entity hoặc Command Block thực hiện Command">
 	<meta property="twitter:image" content="https://raw.githubusercontent.com/HgVN23/HgVN23.github.io/main/assets/media/thumbnail/commands/execute_EX.png">
 	
 	<!-- CSS/Script -->
@@ -32,13 +32,13 @@
 <body class="themeDark">
 <main>
 	<article class="content">
-		<h1 class="contentHeader textWip">/execute mới</h1>
+		<h1 class="contentHeader">/execute mới</h1>
 		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconCongDung"></div>
 				<h2 class="contentTitle">Công dụng</h2>
 			</div>
-			<p class="contentText">Khiến Entity hoặc Block thực hiện Command</p>
+			<p class="contentText">Khiến Entity hoặc Command Block thực hiện Command</p>
 		</section>
 		<section class="contentBox">
 			<div class="contentGroup">
@@ -59,6 +59,318 @@
 				<div class="contentIcon iconCuPhap"></div>
 				<h2 class="contentTitle">Cú pháp</h2>
 			</div>
+			<div>
+				<p class="contentText dropdown">/execute &lt;subcommand: Option_If_Unless&gt; block &lt;position: x y z&gt; &lt;block: Block&gt; &lt;blockStates: block states&gt; [chainedCommand: ExecuteChainedOption_0]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;subcommand: Option_If_Unless&gt;</code> là phần phụ điều kiện hoạt động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">if</code> là nếu</p>
+							<p class="dropdownText"><code class="textSyntax">unless</code> là nếu không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">block</code> là 1 khối</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;position: x y z&gt;</code> là tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;block: Block&gt;</code> là id Block</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;blockStates: block states&gt;</code> là trạng thái Block
+						<a class="contentText textLink" href="../danhSachId/blockStateId.html" target="_blank">Danh sách</a>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[chainedCommand: ExecuteChainedOption_0]</code> là chuỗi nối tiếp của /execute
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ kiểm tra điều kiện đúng hay không</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute if block 1 1 1 wool ["color":14] run say Hi</code>
+						<p class="contentText">Nếu block ở tọa độ 1 1 1 là wool màu đỏ thì chạy execute lên đối tượng sử dụng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute &lt;subcommand: Option_If_Unless&gt; block &lt;position: x y z&gt; &lt;block: Block&gt; &lt;data: int&gt; [chainedCommand: ExecuteChainedOption_0]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;subcommand: Option_If_Unless&gt;</code> là phần phụ điều kiện hoạt động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">if</code> là nếu</p>
+							<p class="dropdownText"><code class="textSyntax">unless</code> là nếu không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">block</code> là 1 khối</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;position: x y z&gt;</code> là tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;block: Block&gt;</code> là id Block</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;data: int&gt;</code> là dữ liệu Block</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[chainedCommand: ExecuteChainedOption_0]</code> là chuỗi nối tiếp của /execute
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ kiểm tra điều kiện đúng hay không</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute if block 1 1 1 wool 14 run say Hi</code>
+						<p class="contentText">Nếu block ở tọa độ 1 1 1 là wool màu đỏ thì chạy execute lên đối tượng sử dụng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute &lt;subcommand: Option_If_Unless&gt; block &lt;position: x y z&gt; &lt;block: Block&gt; [chainedCommand: ExecuteChainedOption_0]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;subcommand: Option_If_Unless&gt;</code> là phần phụ điều kiện hoạt động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">if</code> là nếu</p>
+							<p class="dropdownText"><code class="textSyntax">unless</code> là nếu không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">block</code> là 1 khối</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;position: x y z&gt;</code> là tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;block: Block&gt;</code> là id Block</p>
+					<div class="dropdownText">
+						<code class="textSyntax">[chainedCommand: ExecuteChainedOption_0]</code> là chuỗi nối tiếp của /execute
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ kiểm tra điều kiện đúng hay không</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute if block 1 1 1 wool run say Hi</code>
+						<p class="contentText">Nếu block ở tọa độ 1 1 1 là wool với bất kì màu nào thì chạy execute lên đối tượng sử dụng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute &lt;subcommand: Option_If_Unless&gt; blocks &lt;begin: x y z&gt; &lt;end: x y z&gt; &lt;destination: x y z&gt; &lt;scan mode: BlocksScanMode&gt; [chainedCommand: ExecuteChainedOption_0]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;subcommand: Option_If_Unless&gt;</code> là phần phụ điều kiện hoạt động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">if</code> là nếu</p>
+							<p class="dropdownText"><code class="textSyntax">unless</code> là nếu không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">blocks</code> là nhiều khối</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;begin: x y z&gt;</code> là tọa độ bắt đầu giới hạn</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;end: x y z&gt;</code> là tọa độ kết thúc giới hạn</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;destination: x y z&gt;</code> là tọa độ khoảng giới hạn khác</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;scan mode: BlocksScanMode&gt;</code> là phương thức so sánh
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">all</code> là tính Air nếu khoảng giới hạn đầu có Air</p>
+							<p class="dropdownText"><code class="textSyntax">masked</code> là không tính Air nếu khoảng giới hạn đầu có Air</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[chainedCommand: ExecuteChainedOption_0]</code> là chuỗi nối tiếp của /execute
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ kiểm tra điều kiện đúng hay không</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute if blocks 0 0 0 2 2 2 4 4 4 all run say Hi</code>
+						<p class="contentText">Nếu blocks ở tọa độ 0 0 0 đến 2 2 2 gồm air giống với blocks ở tọa độ 4 4 4 đến 6 6 6 thì chạy execute lên đối tượng sử dụng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute &lt;subcommand: Option_If_Unless&gt; entity &lt;target: target&gt; [chainedCommand: ExecuteChainedOption_0]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;subcommand: Option_If_Unless&gt;</code> là phần phụ điều kiện hoạt động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">if</code> là nếu</p>
+							<p class="dropdownText"><code class="textSyntax">unless</code> là nếu không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">entity</code> là vật thể</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;target: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[chainedCommand: ExecuteChainedOption_0]</code> là chuỗi nối tiếp của /execute
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ kiểm tra điều kiện đúng hay không</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute if entity @e[type=cow] run say Hi</code>
+						<p class="contentText">Nếu entity Cow tồn tại trong vùng Load Chunk thì chạy execute lên đối tượng sử dụng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute &lt;subcommand: Option_If_Unless&gt; score &lt;target: target&gt; &lt;objective: string&gt; &lt;operation: compare operator&gt; [chainedCommand: ExecuteChainedOption_0]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;subcommand: Option_If_Unless&gt;</code> là phần phụ điều kiện hoạt động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">if</code> là nếu</p>
+							<p class="dropdownText"><code class="textSyntax">unless</code> là nếu không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">score</code> là điểm</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;target: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;operation: compare operator&gt;</code> là phép so sánh
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">&lt;</code> là nhỏ hơn</p>
+							<p class="dropdownText"><code class="textSyntax">&lt;=</code> là nhở hơn hoặc bằng</p>
+							<p class="dropdownText"><code class="textSyntax">=</code> là bằng</p>
+							<p class="dropdownText"><code class="textSyntax">&gt;</code> là lớn hơn</p>
+							<p class="dropdownText"><code class="textSyntax">&gt;=</code> là lớn hơn hoặc bằng</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[chainedCommand: ExecuteChainedOption_0]</code> là chuỗi nối tiếp của /execute
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ kiểm tra điều kiện đúng hay không</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute if score Hg test = The3T test run say Hi</code>
+						<p class="contentText">Nếu score của Hg trong bảng test = điểm của The3T trong bảng test thì chạy execute lên đối tượng sử dụng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute &lt;subcommand: Option_If_Unless&gt; score &lt;target: target&gt; &lt;objective: string&gt; matches &lt;range: integer range&gt; [chainedCommand: ExecuteChainedOption_0]</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;subcommand: Option_If_Unless&gt;</code> là phần phụ điều kiện hoạt động
+						<p class="contentText dropdown">Danh sách</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">if</code> là nếu</p>
+							<p class="dropdownText"><code class="textSyntax">unless</code> là nếu không</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">score</code> là điểm</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;target: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;objective: string&gt;</code> là id bảng</p>
+					<p class="dropdownText"><code class="textSyntax">matches</code> là trùng khớp</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;range: integer range&gt;</code> là khoảng giá trị
+						<p class="contentText dropdown">Các trường hợp</p>
+						<div class="dropdownStart dropdownHide"><div>
+							<p class="dropdownText"><code class="textSyntax">1</code> là giá trị 1</p>
+							<p class="dropdownText"><code class="textSyntax">!1</code> là khác giá trị 1</p>
+							<p class="dropdownText"><code class="textSyntax">1..</code> là giá trị lớn hơn hoặc bằng 1</p>
+							<p class="dropdownText"><code class="textSyntax">..1</code> là giá trị nhỏ hơn hoặc bằng 1</p>
+							<p class="dropdownText"><code class="textSyntax">1..10</code> là giá trị từ bằng 1 đến bằng 10</p>
+							<div class="dropdownEnd"></div>
+						</div></div>
+					</div>
+					<div class="dropdownText">
+						<code class="textSyntax">[chainedCommand: ExecuteChainedOption_0]</code> là chuỗi nối tiếp của /execute
+						<p class="contentText">Nếu bỏ qua thành phần này thì Command sẽ kiểm tra điều kiện đúng hay không</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute if score Hg test matches 10 run say Hi</code>
+						<p class="contentText">Nếu score của Hg trong bảng test trùng khớp với khoảng giá trị là 10 thì chạy execute lên đối tượng sử dụng Command</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute as &lt;origin: target&gt; &lt;chainedCommand: ExecuteChainedOption_0&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">as</code> là chọn đối tượng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;origin: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;chainedCommand: ExecuteChainedOption_0&gt;</code> là chuỗi nối tiếp của /execute</p>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as Hg run say Hi</code>
+						<p class="contentText">Chọn Hg say Hi</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as Hg at The3T run say Hi</code>
+						<p class="contentText">Chọn Hg để đổi chọn The3T say Hi</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute at &lt;origin: target&gt; &lt;chainedCommand: ExecuteChainedOption_0&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">at</code> là đổi đối tượng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;origin: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;chainedCommand: ExecuteChainedOption_0&gt;</code> là chuỗi nối tiếp của /execute</p>
+					<div class="dropdownText">
+						<code class="textCommand">/execute at Hg run say Hi</code>
+						<p class="contentText">Chưa có chọn đối tượng nên không đổi được, Command sẽ chọn đối tượng sử dụng Command này say Hi</p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute at Hg as The3T run say Hi</code>
+						<p class="contentText">Chưa có chọn đối tượng nên không đổi được, chọn The3T say Hi</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute positioned &lt;position: x y z&gt; &lt;chainedCommand: ExecuteChainedOption_0&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">positioned</code> là vị trí tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;position: x y z&gt;</code> là tọa độ</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;chainedCommand: ExecuteChainedOption_0&gt;</code> là chuỗi nối tiếp của /execute</p>
+					<div class="dropdownText">
+						<code class="textCommand">/execute positioned 1 1 1 run testfor @e[r=3]</code>
+						<p class="contentText">Kiểm tra xem tại vị trí 1 1 1 bán kính 3 Block có Entity nào không</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute positioned as &lt;origin: target&gt; &lt;chainedCommand: ExecuteChainedOption_0&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">positioned</code> là vị trí đối tượng</p>
+					<p class="dropdownText"><code class="textSyntax">as</code> là chọn đối tượng</p>
+					<div class="dropdownText">
+						<code class="textSyntax">&lt;origin: target&gt;</code> là <a class="textLink" href="../danhSachId/target.html" target="_blank">mục tiêu</a>
+						<p class="contentText">Mục tiêu là Entity</p>
+					</div>
+					<p class="dropdownText"><code class="textSyntax">&lt;chainedCommand: ExecuteChainedOption_0&gt;</code> là chuỗi nối tiếp của /execute</p>
+					<div class="dropdownText">
+						<code class="textCommand">/execute positioned as Hg run testfor @e[type=cow,r=3]</code>
+						<p class="contentText">Kiểm tra xem tại vị trí của Hg bán kính 3 Block có Cow nào không</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
+			<div>
+				<p class="contentText dropdown">/execute run &lt;command: command&gt;</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<p class="dropdownText"><code class="textSyntax">run</code> là chạy Command</p>
+					<p class="dropdownText"><code class="textSyntax">&lt;command: command&gt;</code> là Command</p>
+					<div class="dropdownText">
+						<code class="textCommand">/execute run say Hi</code>
+						<p class="contentText">Khiến đối tượng sử dụng Command này say Hi</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
 		</section>
 		<section class="contentBox">
 			<div class="contentGroup">
@@ -66,6 +378,62 @@
 				<h2 class="contentTitle">Lưu ý</h2>
 			</div>
 			<p class="contentText">Phải bật Upcoming Creator Features trong Setting World</p>
+			<div>
+				<p class="contentText dropdown">Sự tương đương của /execute mới với cũ</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] if block ~~-1 ~ wool ["color":14] run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow] ~~~ detect ~~-1 ~ wool 14 say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] if block ~~-1 ~ wool 14 run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow] ~~~ detect ~~-1 ~ wool 14 say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] if block ~~-1 ~ wool run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow] ~~~ detect ~~-1 ~ wool -1 say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] if entity @a run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @a ~~~ execute @e[type=cow] ~~~ say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] if score @s test = @e[name=abc] test run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow, scores={test=10}] ~~~ execute @e[name=abc, scores={test=10}] ~~~ say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] if score @s test matches 10 run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow, scores={test=10}] ~~~ say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow] ~~~ say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute as @e[type=cow] at @a run say Hi</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow] ~~~ execute @a ~~~ say Hi</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute positioned 1 1 1 run testfor @e[r=3]</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e ~~~ testfor @s[x=1, y=1, z=1, r=3]</code></p>
+					</div>
+					<div class="dropdownText">
+						<code class="textCommand">/execute positioned as @e[type=cow] run testfor @e[name=abc, r=3]</code>
+						<p class="contentText">Tương đương với</p>
+						<p class="contentText"><code class="textCommand">/execute @e[type=cow] ~~~ testfor @e[name=abc, r=3]</code></p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
 		</section>
 	</article>
 </main>
