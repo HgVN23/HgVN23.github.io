@@ -28,7 +28,7 @@ function scriptF(scriptList) {
 			// scriptCreate.src = `../assets/javascript/${script}.js`;
 			// scriptCreate.src = `assets/javascript/${script}.js`;
 			document.getElementById("script").appendChild(scriptCreate);
-		}, timeOut*50);
+		}, timeOut*60);
 		timeOut++;
 	};
 };
