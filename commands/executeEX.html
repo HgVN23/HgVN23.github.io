@@ -434,6 +434,20 @@
 					<div class="dropdownEnd"></div>
 				</div></div>
 			</div>
+			<div>
+				<p class="contentText dropdown">Khi dùng <code class="textSyntax">as</code> <code class="textSyntax">if</code> trong Command Block phải dùng thêm <code class="textSyntax">at</code> vì nếu không có <code class="textSyntax">at</code> phần <code class="textSyntax">if</code> sẽ chạy trên đối tượng sử dụng Command</p>
+				<div class="dropdownStart dropdownHide"><div>
+					<div class="dropdownText">
+						<p class="contentText"><code class="textCommand">/execute as Hg if block ~~-1 ~ wool 11 give @s diamond</code></p>
+						<p class="contentText">Khi không có at thì if chạy trên Commmand, nếu có Wool 11 dưới Command Block thì Hg sẽ được give diamond, nếu không có Wool 11 dưới Command Block thì Hg không được give diamond</p>
+					</div>
+					<div class="dropdownText">
+						<p class="contentText"><code class="textCommand">/execute as Hg at @s if block ~~-1 ~ wool 11 give @s diamond</code></p>
+						<p class="contentText">Khi có at thì if chạy trên at, nếu có Wool 11 dưới @s (@s trong at ở đây là bản thân Hg) thì Hg sẽ được give diamond, nếu không có Wool 11 dưới @s (@s trong at ở đây là bản thân Hg) thì Hg không được give diamond</p>
+					</div>
+					<div class="dropdownEnd"></div>
+				</div></div>
+			</div>
 		</section>
 	</article>
 </main>
