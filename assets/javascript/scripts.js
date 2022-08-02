@@ -1,4 +1,5 @@
 const scriptList = [
+	"preloader",
 	"ads",
 	"header",
 	"theme",
@@ -8,7 +9,8 @@ const scriptList = [
 	"dropdown",
 	"goTop",
 	"cursor",
-	"footer"
+	"footer",
+	"done"
 ];
 
 window.onload = function() {
@@ -19,7 +21,7 @@ window.onload = function() {
 	scriptF(scriptList);
 };
 
-let timeOut = 1;
+let timeOut = 0;
 function scriptF(scriptList) {
 	for(let script of scriptList) {
 		setTimeout(function sF() {
@@ -28,7 +30,7 @@ function scriptF(scriptList) {
 			// scriptCreate.src = `../assets/javascript/${script}.js`;
 			// scriptCreate.src = `assets/javascript/${script}.js`;
 			document.getElementById("script").appendChild(scriptCreate);
-		}, timeOut*60);
+		}, timeOut*80);
 		timeOut++;
 	};
 };

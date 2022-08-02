@@ -31,6 +31,9 @@
 		background-color: #262626;
 		font-size: 16px;
 	}
+	main {
+		display: none;
+	}
 	/*Custom Scrollbar*/
 	::-webkit-scrollbar {
 		background-color: #262626;
@@ -57,6 +60,95 @@
 	}
 	ins {
 		text-decoration: underline;
+	}
+/*==================================================*/
+/*Preloader*/
+	.preloader {
+		background: #262626;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+	}
+	.cube {
+		width: 150px;
+		height: 150px;
+		position: relative;
+		transform-style: preserve-3d;
+		transform: rotateX(-30deg);	
+		animation: preload 3s linear infinite;
+		margin: auto 0;
+	}
+	@keyframes preload {
+		0% {
+			transform: rotateX(-30deg) rotateY(0deg);
+		}
+		100% {
+			transform: rotateX(-30deg) rotateY(-360deg);
+		}
+	}
+	.cube div {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform-style: preserve-3d;
+	}
+	.cube div span {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+	}
+	.top {
+		background: url(../media/preload/top.png);
+		background-size: 100%;
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: rotateX(90deg) rotateZ(180deg) translateZ(75px);
+	}
+	.front {
+		background: url(../media/preload/front.png);
+		background-size: 100%;
+	}
+	.side1 {
+		background: url(../media/preload/side1.png);
+		background-size: 100%;
+	}
+	.back {
+		background: url(../media/preload/back.png);
+		background-size: 100%;
+	}
+	.side2 {
+		background: url(../media/preload/side2.png);
+		background-size: 100%;
+	}
+	.top::before {
+		content: '';
+		background: black;
+		filter: blur(30px);
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateZ(-220px);
+	}
+	.loading {
+		margin: 0 0 auto 0;
+		font-size: 2rem;
+		font-weight: bold;
 	}
 /*==================================================*/
 /*Custom Cursor*/
