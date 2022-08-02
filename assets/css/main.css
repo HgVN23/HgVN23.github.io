@@ -119,19 +119,19 @@
 		transform: rotateX(90deg) rotateZ(180deg) translateZ(75px);
 	}
 	.front {
-		background: url(../media/preload/front.png);
+		background: url(../media/preloader/front.png);
 		background-size: 100%;
 	}
 	.side1 {
-		background: url(../media/preload/side1.png);
+		background: url(../media/preloader/side1.png);
 		background-size: 100%;
 	}
 	.back {
-		background: url(../media/preload/back.png);
+		background: url(../media/preloader/back.png);
 		background-size: 100%;
 	}
 	.side2 {
-		background: url(../media/preload/side2.png);
+		background: url(../media/preloader/side2.png);
 		background-size: 100%;
 	}
 	.top::before {
