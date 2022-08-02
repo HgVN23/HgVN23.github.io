@@ -191,7 +191,7 @@
 	}
 /*==================================================*/
 /*Theme*/
-	.themeLight {
+	.themeLight, .themeLight .preloader {
 		background-color: #f3f3f3;
 	}
 	.themeLight * {
@@ -202,19 +202,22 @@
 		border-bottom-color: var(--border-light);
 		color: black;
 	}
-	.themeLight ::-webkit-scrollbar {
+	.themeLight ::-webkit-scrollbar,
+	.themeLight::-webkit-scrollbar {
 		background-color: #f3f3f3;
 	}
-	.themeLight ::-webkit-scrollbar-thumb {
+	.themeLight ::-webkit-scrollbar-thumb,
+	.themeLight::-webkit-scrollbar-thumb {
 		background-color: var(--bg-light);
 		border-color: var(--border-light);
 	}
-	.themeLight ::-webkit-scrollbar-thumb:hover {
+	.themeLight ::-webkit-scrollbar-thumb:hover,
+	.themeLight::-webkit-scrollbar-thumb:hover {
 		border: 2px solid var(--hover-color);
 	}
-	.themeLight .sidebar::-webkit-scrollbar-thumb:hover {
+	/*.themeLight .sidebar::-webkit-scrollbar-thumb:hover {
 		border: 2px solid var(--hover-color);
-	}
+	}*/
 	.themeLight .sidebarIconClose {
 		filter: brightness(0);
 	}
