@@ -109,7 +109,7 @@
 		transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
 	}
 	.top {
-		background: url(../media/preload/top.png);
+		background: url(../media/preloader/top.png);
 		background-size: 100%;
 		width: 150px;
 		height: 150px;
