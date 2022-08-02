@@ -1,6 +1,5 @@
 const scriptList = [
 	"preloader",
-	"ads",
 	"header",
 	"theme",
 	"sidebar",
@@ -9,6 +8,7 @@ const scriptList = [
 	"dropdown",
 	"goTop",
 	"cursor",
+	"ads",
 	"footer",
 	"done"
 ];
