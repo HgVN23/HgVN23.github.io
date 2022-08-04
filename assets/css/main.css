@@ -78,13 +78,13 @@
 	.cube {
 		width: 150px;
 		height: 150px;
+		margin: auto 0;
 		position: relative;
 		transform-style: preserve-3d;
 		transform: rotateX(-30deg);	
-		animation: preload 3s linear infinite;
-		margin: auto 0;
+		animation: spin 3s linear infinite;
 	}
-	@keyframes preload {
+	@keyframes spin {
 		0% {
 			transform: rotateX(-30deg) rotateY(0deg);
 		}
@@ -149,6 +149,20 @@
 		margin: 0 0 auto 0;
 		font-size: 2rem;
 		font-weight: bold;
+		transform: translateX(-100px);
+	}
+	.loading span {
+		position: absolute;
+		transform: translateX(calc(20px * var(--i)));
+		animation: bounch .6s infinite alternate;
+	}
+	@keyframes bounch {
+		100% {
+			transform: translateX(calc(20px * var(--i))) translateY(-30px);
+		}
+	}
+	.loading span:nth-child(n+1) {
+		animation-delay: calc(.1s * var(--i));
 	}
 /*==================================================*/
 /*Custom Cursor*/
