@@ -99,6 +99,7 @@ const sidebar = `
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/eventId.html">Event</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/fogId.html">Fog</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/gameruleId.html">Gamerule</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/itemId.html">Item</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/lootId.html">Loot</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/particleId.html">Particle</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/rawMessageId.html">Raw message</a>
