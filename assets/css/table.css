@@ -43,6 +43,26 @@ tr {
 	background-color: #9bd4e4;
 }
 
+.tSearch {
+	width: 50%;
+	margin: 10px;
+}
+.tSearchBar {
+	border-bottom: var(--border);
+	display: flex;
+	align-items: center;
+}
+.tSearchBar:hover {
+	border-bottom-color: var(--hover-color);
+}
+.tSearchInput {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	font-size: 1rem;
+}
+
 @media (max-width: 767px) {
 	table {
 		font-size: .75rem;
