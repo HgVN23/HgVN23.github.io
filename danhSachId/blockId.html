@@ -34,7 +34,7 @@
 <body class="themeDark">
 <main>
 	<article class="content">
-		<h1 class="contentHeader">Id Block</h1>
+		<h1 class="contentHeader textWip">Id Block</h1>
 		<section class="contentBox">
 			<div class="contentGroup">
 				<div class="contentIcon iconInfo"></div>
@@ -534,39 +534,154 @@
 							<td><code class="textSyntax">["facing_direction": 5]</code></td>
 						</tr>
 						<tr>
-							<td>Activator Rail</td>
+							<td>Activator Rail (hướng nối Bắc - Nam, không nghiêng, không kích hoạt)</td>
 							<td><code class="textSyntax">activator_rail</code></td>
-							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">0</code>, <code class="textSyntax">6</code>, <code class="textSyntax">7</code>, <code class="textSyntax">16</code> > ...</td>
+							<td><code class="textSyntax">["rail_data_bit": false, "rail_direction": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nối Đông - Tây, không nghiêng, không kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["rail_data_bit": false, "rail_direction": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Tây, nghiêng, không kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["rail_data_bit": false, "rail_direction": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Đông, nghiêng, không kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["rail_data_bit": false, "rail_direction": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Nam, nghiêng, không kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["rail_data_bit": false, "rail_direction": 4]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Bắc, nghiêng, không kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["rail_data_bit": false, "rail_direction": 5]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nối Bắc - Nam, không nghiêng, kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">8</code>, <code class="textSyntax">14</code>, <code class="textSyntax">15</code></td>
+							<td><code class="textSyntax">["rail_data_bit": true, "rail_direction": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nối Đông - Tây, không nghiêng, kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">9</code></td>
+							<td><code class="textSyntax">["rail_data_bit": true, "rail_direction": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Tây, nghiêng, kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">10</code></td>
+							<td><code class="textSyntax">["rail_data_bit": true, "rail_direction": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Đông, nghiêng, kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">11</code></td>
+							<td><code class="textSyntax">["rail_data_bit": true, "rail_direction": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Nam, nghiêng, kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">12</code></td>
+							<td><code class="textSyntax">["rail_data_bit": true, "rail_direction": 4]</code></td>
+						</tr>
+						<tr>
+							<td>Activator Rail (hướng nhìn Bắc, nghiêng, kích hoạt)</td>
+							<td><code class="textSyntax">activator_rail</code></td>
+							<td><code class="textSyntax">13</code></td>
+							<td><code class="textSyntax">["rail_data_bit": true, "rail_direction": 5]</code></td>
 						</tr>
 						<tr>
 							<td>Air</td>
 							<td><code class="textSyntax">air</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Allow</td>
 							<td><code class="textSyntax">allow</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Block of Amethyst</td>
 							<td><code class="textSyntax">amethyst_block</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Amethyst Cluster</td>
 							<td><code class="textSyntax">amethyst_cluster</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Ancient Debris</td>
 							<td><code class="textSyntax">ancient_debris</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
-							<td>Andesite Stairs</td>
+							<td>Andesite Stairs (hướng nhìn Đông, đặt dưới)</td>
 							<td><code class="textSyntax">andesite_stairs</code></td>
-							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">0</code>, <code class="textSyntax">8</code> > ...</td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Andesite Stairs (hướng nhìn Tây, đặt dưới)</td>
+							<td><code class="textSyntax">andesite_stairs</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Andesite Stairs (hướng nhìn Nam, đặt dưới)</td>
+							<td><code class="textSyntax">andesite_stairs</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Andesite Stairs (hướng nhìn Bắc, đặt dưới)</td>
+							<td><code class="textSyntax">andesite_stairs</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Andesite Stairs (hướng nhìn Đông, đặt trên)</td>
+							<td><code class="textSyntax">andesite_stairs</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 4]</code></td>
+						</tr>
+						<tr>
+							<td>Andesite Stairs (hướng nhìn Tây, đặt trên)</td>
+							<td><code class="textSyntax">andesite_stairs</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 5]</code></td>
+						</tr>
+						<tr>
+							<td>Andesite Stairs (hướng nhìn Nam, đặt trên)</td>
+							<td><code class="textSyntax">andesite_stairs</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 6]</code></td>
+						</tr>
+						<tr>
+							<td>Acacia Stairs (hướng nhìn Bắc, đặt trên)</td>
+							<td><code class="textSyntax">acacia_stairs</code></td>
+							<td><code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 7]</code></td>
 						</tr>
 						<tr>
 							<td>Anvil</td>
@@ -592,16 +707,19 @@
 							<td>Azalea</td>
 							<td><code class="textSyntax">azalea</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Azalea Leaves</td>
 							<td><code class="textSyntax">azalea_leaves</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Azalea Leaves Flowered</td>
 							<td><code class="textSyntax">azalea_leaves_flowered</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Bamboo</td>
