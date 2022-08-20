@@ -80,6 +80,7 @@ const filter = [
 
 	"animationId",
 	"biomeId",
+	"blockId",
 	"blockStateId",
 	"componentId",
 	"controllerId",
@@ -190,6 +191,7 @@ const commands = [
 const danhSachId = [
 	"animationId",
 	"biomeId",
+	"blockId",
 	"blockStateId",
 	"componentId",
 	"controllerId",

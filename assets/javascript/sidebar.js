@@ -90,6 +90,7 @@ const sidebar = `
 			<div class="dropdownStart dropdownHide"><div>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/animationId.html">Animation</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/biomeId.html">Biome</a>
+				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/blockId.html">Block</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/blockStateId.html">Block state</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/componentId.html">Component</a>
 				<a class="dropdownText textLink" href="https://hgvn23.github.io/danhSachId/controllerId.html">Controller</a>
