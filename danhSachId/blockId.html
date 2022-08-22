@@ -40,14 +40,15 @@
 				<div class="contentIcon iconInfo"></div>
 				<h2 class="contentTitle">Thông tin cần biết</h2>
 			</div>
-			<p class="contentText">Không kích hoạt: năng lượng Redstone tắt</p>
-			<p class="contentText">Kích hoạt: năng lượng Redstone bật</p>
+			<p class="contentText">Hướng nhìn: hướng nhìn của Block ngược hướng nhìn của Player khi đặt Block. Ví dụ Player đặt nút ở trên thì hướng nhìn của nút đó sẽ là hướng nhìn xuống</p>
 			<p class="contentText">Hướng nhìn xuống: -y, y giảm</p>
 			<p class="contentText">Hướng nhìn lên: +y, y tăng</p>
 			<p class="contentText">Hướng nhìn Bắc: -z, z giảm</p>
 			<p class="contentText">Hướng nhìn Nam: +z, z tăng</p>
 			<p class="contentText">Hướng nhìn Tây: -x, x giảm</p>
 			<p class="contentText">Hướng nhìn Đông: +x, x tăng</p>
+			<p class="contentText">Không kích hoạt: năng lượng Redstone tắt</p>
+			<p class="contentText">Kích hoạt: năng lượng Redstone bật</p>
 		</section>
 		<section class="contentBox">
 			<div class="contentGroup">
@@ -684,24 +685,100 @@
 							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 7]</code></td>
 						</tr>
 						<tr>
-							<td>Anvil</td>
+							<td>Anvil (hướng nhìn Tây, chưa thiệt hại)</td>
 							<td><code class="textSyntax">anvil</code></td>
-							<td><code class="textSyntax">0</code> > <code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">["damage": undamaged, "direction": 0]</code></td>
 						</tr>
 						<tr>
-							<td>Slightly Damaged Anvil</td>
+							<td>Anvil (hướng nhìn Bắc, chưa thiệt hại)</td>
 							<td><code class="textSyntax">anvil</code></td>
-							<td><code class="textSyntax">4</code> > <code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["damage": undamaged, "direction": 1]</code></td>
 						</tr>
 						<tr>
-							<td>Damaged Anvil</td>
+							<td>Anvil (hướng nhìn Đông, chưa thiệt hại)</td>
 							<td><code class="textSyntax">anvil</code></td>
-							<td><code class="textSyntax">8</code> > <code class="textSyntax">11</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["damage": undamaged, "direction": 2]</code></td>
 						</tr>
 						<tr>
-							<td>Anvil (dùng 1 lần)</td>
+							<td>Anvil (hướng nhìn Nam, chưa thiệt hại)</td>
 							<td><code class="textSyntax">anvil</code></td>
-							<td><code class="textSyntax">12</code> > <code class="textSyntax">15</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["damage": undamaged, "direction": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Slightly Damaged Anvil (hướng nhìn Tây, thiệt hại nhẹ)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["damage": slightly_damaged, "direction": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Slightly Damaged Anvil (hướng nhìn Bắc, thiệt hại nhẹ)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["damage": slightly_damaged, "direction": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Slightly Damaged Anvil (hướng nhìn Đông, thiệt hại nhẹ)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["damage": slightly_damaged, "direction": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Slightly Damaged Anvil (hướng nhìn Nam, thiệt hại nhẹ)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">["damage": slightly_damaged, "direction": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Damaged  Anvil (hướng nhìn Tây, thiệt hại nặng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">8</code></td>
+							<td><code class="textSyntax">["damage": very_damaged, "direction": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Damaged Anvil (hướng nhìn Bắc, thiệt hại nặng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">9</code></td>
+							<td><code class="textSyntax">["damage": very_damaged, "direction": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Damaged Anvil (hướng nhìn Đông, thiệt hại nặng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">10</code></td>
+							<td><code class="textSyntax">["damage": very_damaged, "direction": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Damaged Anvil (hướng nhìn Nam, thiệt hại nặng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">11</code></td>
+							<td><code class="textSyntax">["damage": very_damaged, "direction": 3]</code></td>
+						</tr>
+						<tr>
+							<td> Anvil (hướng nhìn Tây, hỏng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">12</code></td>
+							<td><code class="textSyntax">["damage": broken, "direction": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Anvil (hướng nhìn Bắc, hỏng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">13</code></td>
+							<td><code class="textSyntax">["damage": broken, "direction": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Anvil (hướng nhìn Đông, hỏng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">14</code></td>
+							<td><code class="textSyntax">["damage": broken, "direction": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Anvil (hướng nhìn Nam, hỏng)</td>
+							<td><code class="textSyntax">anvil</code></td>
+							<td><code class="textSyntax">15</code></td>
+							<td><code class="textSyntax">["damage": broken, "direction": 3]</code></td>
 						</tr>
 						<tr>
 							<td>Azalea</td>
@@ -722,109 +799,118 @@
 							<td>...</td>
 						</tr>
 						<tr>
-							<td>Bamboo</td>
+							<td>Bamboo (cỡ 2x2, không lá)</td>
 							<td><code class="textSyntax">bamboo</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">["age_bit": true, "bamboo_leaf_size": no_leaves, "bamboo_stalk_thickness": thin]</code></td>
 						</tr>
 						<tr>
-							<td>Black Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">0</code></td>
-						</tr>
-						<tr>
-							<td>Red Banner</td>
-							<td><code class="textSyntax">banner</code></td>
+							<td>Bamboo (cỡ 3x3, không lá)</td>
+							<td><code class="textSyntax">bamboo</code></td>
 							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["age_bit": true, "bamboo_leaf_size": no_leaves, "bamboo_stalk_thickness": thick]</code></td>
 						</tr>
 						<tr>
-							<td>Green Banner</td>
-							<td><code class="textSyntax">banner</code></td>
+							<td>Bamboo (cỡ 2x2, lá nhỏ)</td>
+							<td><code class="textSyntax">bamboo</code></td>
 							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["age_bit": true, "bamboo_leaf_size": small_leaves, "bamboo_stalk_thickness": thin]</code></td>
 						</tr>
 						<tr>
-							<td>Brown Banner</td>
-							<td><code class="textSyntax">banner</code></td>
+							<td>Bamboo (cỡ 3x3, lá nhỏ)</td>
+							<td><code class="textSyntax">bamboo</code></td>
 							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["age_bit": true, "bamboo_leaf_size": small_leaves, "bamboo_stalk_thickness": thick]</code></td>
 						</tr>
 						<tr>
-							<td>Blue Banner</td>
-							<td><code class="textSyntax">banner</code></td>
+							<td>Bamboo (cỡ 2x2, lá lớn)</td>
+							<td><code class="textSyntax">bamboo</code></td>
 							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["age_bit": true, "bamboo_leaf_size": large_leaves, "bamboo_stalk_thickness": thin]</code></td>
 						</tr>
 						<tr>
-							<td>Purple Banner</td>
-							<td><code class="textSyntax">banner</code></td>
+							<td>Bamboo (cỡ 3x3, lá lớn)</td>
+							<td><code class="textSyntax">bamboo</code></td>
 							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["age_bit": true, "bamboo_leaf_size": large_leaves, "bamboo_stalk_thickness": thick]</code></td>
 						</tr>
 						<tr>
-							<td>Cyan Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">6</code></td>
+							<td>Bamboo (Sapling) (phát triển)</td>
+							<td><code class="textSyntax">bamboo_sapling</code></td>
+							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">["age_bit": true]</code></td>
 						</tr>
 						<tr>
-							<td>Light Gray Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">7</code></td>
+							<td>Bamboo (Sapling) (phát triển)</td>
+							<td><code class="textSyntax">bamboo_sapling</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["age_bit": true]</code></td>
 						</tr>
 						<tr>
-							<td>Gray Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">8</code></td>
-						</tr>
-						<tr>
-							<td>Pink Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">9</code></td>
-						</tr>
-						<tr>
-							<td>Lime Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">10</code></td>
-						</tr>
-						<tr>
-							<td>Yellow Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">11</code></td>
-						</tr>
-						<tr>
-							<td>Light Blue Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">12</code></td>
-						</tr>
-						<tr>
-							<td>Magenta Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">13</code></td>
-						</tr>
-						<tr>
-							<td>Orange Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">14</code></td>
-						</tr>
-						<tr>
-							<td>White Banner</td>
-							<td><code class="textSyntax">banner</code></td>
-							<td><code class="textSyntax">15</code></td>
-						</tr>
-						<tr>
-							<td>Barrel</td>
+							<td>Barrel (hướng nhìn xuống)</td>
 							<td><code class="textSyntax">barrel</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">["facing_direction": 0, "open_bit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Barrel (hướng nhìn lên)</td>
+							<td><code class="textSyntax">barrel</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["facing_direction": 1, "open_bit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Barrel (hướng nhìn Đông)</td>
+							<td><code class="textSyntax">barrel</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["facing_direction": 2, "open_bit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Barrel (hướng nhìn Tây)</td>
+							<td><code class="textSyntax">barrel</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["facing_direction": 3, "open_bit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Barrel (hướng nhìn Nam)</td>
+							<td><code class="textSyntax">barrel</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["facing_direction": 4, "open_bit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Barrel (hướng nhìn Bắc)</td>
+							<td><code class="textSyntax">barrel</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["facing_direction": 5, "open_bit": false]</code></td>
 						</tr>
 						<tr>
 							<td>Barrier</td>
 							<td><code class="textSyntax">barrier</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
-							<td>Basalt</td>
+							<td>Basalt (trục y)</td>
 							<td><code class="textSyntax">basalt</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">["pillar_axis": y]</code></td>
+						</tr>
+						<tr>
+							<td>Basalt (trục x)</td>
+							<td><code class="textSyntax">basalt</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["pillar_axis": x]</code></td>
+						</tr>
+						<tr>
+							<td>Basalt (trục z)</td>
+							<td><code class="textSyntax">basalt</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["pillar_axis": z]</code></td>
 						</tr>
 						<tr>
 							<td>Beacon</td>
 							<td><code class="textSyntax">beacon</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>White Bed</td>
@@ -5490,6 +5576,86 @@
 							<td>Yellow Glazed Terracotta</td>
 							<td><code class="textSyntax">yellow_glazed_terracotta</code></td>
 							<td><code class="textSyntax">0</code></td>
+						</tr>
+						<tr>
+							<td>Black Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">0</code></td>
+						</tr>
+						<tr>
+							<td>Red Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">1</code></td>
+						</tr>
+						<tr>
+							<td>Green Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">2</code></td>
+						</tr>
+						<tr>
+							<td>Brown Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">3</code></td>
+						</tr>
+						<tr>
+							<td>Blue Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">4</code></td>
+						</tr>
+						<tr>
+							<td>Purple Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">5</code></td>
+						</tr>
+						<tr>
+							<td>Cyan Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">6</code></td>
+						</tr>
+						<tr>
+							<td>Light Gray Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">7</code></td>
+						</tr>
+						<tr>
+							<td>Gray Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">8</code></td>
+						</tr>
+						<tr>
+							<td>Pink Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">9</code></td>
+						</tr>
+						<tr>
+							<td>Lime Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">10</code></td>
+						</tr>
+						<tr>
+							<td>Yellow Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">11</code></td>
+						</tr>
+						<tr>
+							<td>Light Blue Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">12</code></td>
+						</tr>
+						<tr>
+							<td>Magenta Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">13</code></td>
+						</tr>
+						<tr>
+							<td>Orange Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">14</code></td>
+						</tr>
+						<tr>
+							<td>White Banner</td>
+							<td><code class="textSyntax">banner</code></td>
+							<td><code class="textSyntax">15</code></td>
 						</tr>
 					</tbody>
 				</table>
