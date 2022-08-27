@@ -1,6 +1,6 @@
 const scriptList = [
 	"preloader",
-	"ads",
+	// "ads", Turn off
 	"header",
 	"theme",
 	"sidebar",
