@@ -2077,54 +2077,406 @@
 							<td>...</td>
 						</tr>
 						<tr>
-							<td>Brick Stairs</td>
+							<td>Brick Stairs (hướng nhìn Đông, đặt dưới)</td>
 							<td><code class="textSyntax">brick_stairs</code></td>
-							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">0</code>, <code class="textSyntax">8</code> > ...</td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 0]</code></td>
 						</tr>
 						<tr>
-							<td>Brown Candle</td>
+							<td>Brick Stairs (hướng nhìn Tây, đặt dưới)</td>
+							<td><code class="textSyntax">brick_stairs</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Brick Stairs (hướng nhìn Nam, đặt dưới)</td>
+							<td><code class="textSyntax">brick_stairs</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Brick Stairs (hướng nhìn Bắc, đặt dưới)</td>
+							<td><code class="textSyntax">brick_stairs</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 0, "weirdo_direction": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Brick Stairs (hướng nhìn Đông, đặt trên)</td>
+							<td><code class="textSyntax">brick_stairs</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 4]</code></td>
+						</tr>
+						<tr>
+							<td>Brick Stairs (hướng nhìn Tây, đặt trên)</td>
+							<td><code class="textSyntax">brick_stairs</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 5]</code></td>
+						</tr>
+						<tr>
+							<td>Brick Stairs (hướng nhìn Nam, đặt trên)</td>
+							<td><code class="textSyntax">brick_stairs</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 6]</code></td>
+						</tr>
+						<tr>
+							<td>Brick Stairs (hướng nhìn Bắc, đặt trên)</td>
+							<td><code class="textSyntax">brick_stairs</code></td>
+							<td><code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">["upside_down_bit": 1, "weirdo_direction": 7]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 1, không cháy)</td>
 							<td><code class="textSyntax">brown_candle</code></td>
-							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">0</code>, <code class="textSyntax">8</code> > ...</td>
+							<td><code class="textSyntax">["candles": 0, "lit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 2, không cháy)</td>
+							<td><code class="textSyntax">brown_candle</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["candles": 1, "lit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 3, không cháy)</td>
+							<td><code class="textSyntax">brown_candle</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["candles": 2, "lit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 4, không cháy)</td>
+							<td><code class="textSyntax">brown_candle</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["candles": 3, "lit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 1, đang cháy)</td>
+							<td><code class="textSyntax">brown_candle</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["candles": 0, "lit": true]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 2, đang cháy)</td>
+							<td><code class="textSyntax">brown_candle</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["candles": 1, "lit": true]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 3, đang cháy)</td>
+							<td><code class="textSyntax">brown_candle</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["candles": 2, "lit": true]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Candle (nhóm 4, đang cháy)</td>
+							<td><code class="textSyntax">brown_candle</code></td>
+							<td><code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">["candles": 3, "lit": true]</code></td>
+						</tr>
+						<tr>
+							<td>Cake with Brown Candle (không cháy)</td>
+							<td><code class="textSyntax">brown_candle_cake</code></td>
+							<td><code class="textSyntax">0</code>, <code class="textSyntax">2</code> > ...</td>
+							<td><code class="textSyntax">["lit": false]</code></td>
+						</tr>
+						<tr>
+							<td>Cake with Brown Candle (đang cháy)</td>
+							<td><code class="textSyntax">brown_candle_cake</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["lit": true]</code></td>
 						</tr>
 						<tr>
 							<td>Brown Glazed Terracotta</td>
 							<td><code class="textSyntax">brown_glazed_terracotta</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
 							<td>Brown Mushroom</td>
 							<td><code class="textSyntax">brown_mushroom</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
-							<td>Brown Mushroom Block</td>
+							<td>Brown Mushroom Block (6 mặt không nâu)</td>
 							<td><code class="textSyntax">brown_mushroom_block</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Tây, Bắc nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Bắc nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Bắc, Đông nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Tây nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 4]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 5]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Đông nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 6]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Nam, Tây nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 7]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Nam nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">8</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 8]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (mặt trên, Đông, Nam nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">9</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 9]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (4 mặt bên trắng)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">10</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 10]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (6 mặt không nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">11</code>, <code class="textSyntax">12</code>, <code class="textSyntax">13</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 11]</code>, <code class="textSyntax">["huge_mushroom_bits": 12]</code>, <code class="textSyntax">["huge_mushroom_bits": 13]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (6 mặt nâu)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">14</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 14]</code></td>
+						</tr>
+						<tr>
+							<td>Brown Mushroom Block (6 mặt trắng)</td>
+							<td><code class="textSyntax">brown_mushroom_block</code></td>
+							<td><code class="textSyntax">15</code></td>
+							<td><code class="textSyntax">["huge_mushroom_bits": 15]</code></td>
 						</tr>
 						<tr>
 							<td>Budding Amethyst</td>
 							<td><code class="textSyntax">budding_amethyst</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
-							<td>Cactus</td>
+							<td>Cactus (phát triển 0)</td>
 							<td><code class="textSyntax">cactus</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">["age": 0]</code></td>
 						</tr>
 						<tr>
-							<td>Cake</td>
+							<td>Cactus (phát triển 1)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["age": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 2)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["age": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 3)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["age": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 4)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["age": 4]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 5)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["age": 5]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 6)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["age": 6]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 7)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">["age": 7]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 8)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">8</code></td>
+							<td><code class="textSyntax">["age": 8]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 9)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">9</code></td>
+							<td><code class="textSyntax">["age": 9]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 10)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">10</code></td>
+							<td><code class="textSyntax">["age": 10]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 11)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">11</code></td>
+							<td><code class="textSyntax">["age": 11]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 12)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">12</code></td>
+							<td><code class="textSyntax">["age": 12]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 13)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">13</code></td>
+							<td><code class="textSyntax">["age": 13]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 14)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">14</code></td>
+							<td><code class="textSyntax">["age": 14]</code></td>
+						</tr>
+						<tr>
+							<td>Cactus (phát triển 15)</td>
+							<td><code class="textSyntax">cactus</code></td>
+							<td><code class="textSyntax">15</code></td>
+							<td><code class="textSyntax">["age": 15]</code></td>
+						</tr>
+						<tr>
+							<td>Cake (7 miếng)</td>
 							<td><code class="textSyntax">cake</code></td>
-							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">0</code>, <code class="textSyntax">7</code> > ...</td>
+							<td><code class="textSyntax">["bite_counter": 0]</code></td>
+						</tr>
+						<tr>
+							<td>Cake (6 miếng)</td>
+							<td><code class="textSyntax">cake</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["bite_counter": 1]</code></td>
+						</tr>
+						<tr>
+							<td>Cake (5 miếng)</td>
+							<td><code class="textSyntax">cake</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["bite_counter": 2]</code></td>
+						</tr>
+						<tr>
+							<td>Cake (4 miếng)</td>
+							<td><code class="textSyntax">cake</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["bite_counter": 3]</code></td>
+						</tr>
+						<tr>
+							<td>Cake (3 miếng)</td>
+							<td><code class="textSyntax">cake</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["bite_counter": 4]</code></td>
+						</tr>
+						<tr>
+							<td>Cake (2 miếng)</td>
+							<td><code class="textSyntax">cake</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["bite_counter": 5]</code></td>
+						</tr>
+						<tr>
+							<td>Cake (1 miếng)</td>
+							<td><code class="textSyntax">cake</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["bite_counter": 6]</code></td>
 						</tr>
 						<tr>
 							<td>Calcite</td>
 							<td><code class="textSyntax">calcite</code></td>
 							<td><code class="textSyntax">0</code></td>
+							<td>...</td>
 						</tr>
 						<tr>
-							<td>Campfire</td>
+							<td>Campfire (hướng nhìn Đông, đang cháy)</td>
 							<td><code class="textSyntax">campfire</code></td>
-							<td><code class="textSyntax">0</code></td>
+							<td><code class="textSyntax">0</code>, <code class="textSyntax">8</code> > ...</td>
+							<td><code class="textSyntax">["direction": 0, "extinguished": false]</code></td>
+						</tr>
+						<tr>
+							<td>Campfire (hướng nhìn Tây, đang cháy)</td>
+							<td><code class="textSyntax">campfire</code></td>
+							<td><code class="textSyntax">1</code></td>
+							<td><code class="textSyntax">["direction": 1, "extinguished": false]</code></td>
+						</tr>
+						<tr>
+							<td>Campfire (hướng nhìn Nam, đang cháy)</td>
+							<td><code class="textSyntax">campfire</code></td>
+							<td><code class="textSyntax">2</code></td>
+							<td><code class="textSyntax">["direction": 2, "extinguished": false]</code></td>
+						</tr>
+						<tr>
+							<td>Campfire (hướng nhìn Bắc, đang cháy)</td>
+							<td><code class="textSyntax">campfire</code></td>
+							<td><code class="textSyntax">3</code></td>
+							<td><code class="textSyntax">["direction": 3, "extinguished": false]</code></td>
+						</tr>
+						<tr>
+							<td>Campfire (hướng nhìn Đông, không cháy)</td>
+							<td><code class="textSyntax">campfire</code></td>
+							<td><code class="textSyntax">4</code></td>
+							<td><code class="textSyntax">["direction": 0, "extinguished": true]</code></td>
+						</tr>
+						<tr>
+							<td>Campfire (hướng nhìn Tây, không cháy)</td>
+							<td><code class="textSyntax">campfire</code></td>
+							<td><code class="textSyntax">5</code></td>
+							<td><code class="textSyntax">["direction": 1, "extinguished": true]</code></td>
+						</tr>
+						<tr>
+							<td>Campfire (hướng nhìn Nam, không cháy)</td>
+							<td><code class="textSyntax">campfire</code></td>
+							<td><code class="textSyntax">6</code></td>
+							<td><code class="textSyntax">["direction": 2, "extinguished": true]</code></td>
+						</tr>
+						<tr>
+							<td>Campfire (hướng nhìn Bắc, không cháy)</td>
+							<td><code class="textSyntax">campfire</code></td>
+							<td><code class="textSyntax">7</code></td>
+							<td><code class="textSyntax">["direction": 3, "extinguished": true]</code></td>
 						</tr>
 						<tr>
 							<td>Candle</td>
