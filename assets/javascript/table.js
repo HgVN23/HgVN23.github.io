@@ -1,7 +1,7 @@
 const tSearch = `
 	<div class="tSearchBar">
 		<div class="searchIcon"></div>
-		<input class="tSearchInput" placeholder="Nhập để lọc theo Tên gọi" type="text">
+		<input class="tSearchInput" placeholder="Nhập để lọc theo Cột đầu tiên" type="text">
 	</div>
 `;
 
