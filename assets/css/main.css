@@ -538,6 +538,7 @@
 		border-radius: 3px;
 		padding: 1px 4px;
 		user-select: text;
+		word-break: break-word;
 	}
 	.textCommand {
 		color: #c67d4e;
