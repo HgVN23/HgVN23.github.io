@@ -8,8 +8,8 @@ const scriptList = [
 	"search",
 	"dropdown",
 	"goTop",
-	"cursor",
 	"footer",
+	"cursor",
 	"done"
 ];
 

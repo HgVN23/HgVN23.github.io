@@ -1,9 +1,9 @@
 const footer = `
 	<div>
-		<a class="socialLogo logoYoutube" href="https://youtube.com/c/HgVN23?sub_confirmation=1" target="_blank"></a>
-		<a class="socialLogo logoDiscord" href="https://discordapp.com/users/451348781460619264/" target="_blank"></a>
-		<a class="socialLogo logoTwitter" href="https://twitter.com/HgVN23?s=0" target="_blank"></a>
-		<a class="socialLogo logoFacebook" href="https://www.facebook.com/HgVN23" target="_blank"></a>
+		<a class="socialLogo logoYoutube cursorClickE" href="https://youtube.com/c/HgVN23?sub_confirmation=1" target="_blank"></a>
+		<a class="socialLogo logoDiscord cursorClickE" href="https://discordapp.com/users/451348781460619264/" target="_blank"></a>
+		<a class="socialLogo logoTwitter cursorClickE" href="https://twitter.com/HgVN23?s=0" target="_blank"></a>
+		<a class="socialLogo logoFacebook cursorClickE" href="https://www.facebook.com/HgVN23" target="_blank"></a>
 	</div>
 	<div class="copyright">
 		<div class="copyright1">Copyright © 2021-<div class="year"></div></div>
