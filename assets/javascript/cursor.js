@@ -26,6 +26,10 @@ const cursorListTyping = [
 	cursorTextarea
 ];
 
+const soundClick = new Audio();
+soundClick.src = 'https://github.com/misode/mcmeta/blob/7c8fb06018888d8435ccafd91162c132d90806a2/assets/minecraft/sounds/random/click.ogg?raw=true';
+soundClick.volume = 0.5;
+
 document.addEventListener('mousemove', (e) => {
 	var x = e.clientX;
 	var y = e.clientY;
@@ -42,6 +46,7 @@ for(let cursorI of cursorListClick) {
 	for(let i = 0; i < cursorI.length; i++) {
 		cursorI[i].addEventListener('mouseenter', addClick);
 		cursorI[i].addEventListener('mouseleave', removeClick);
+		cursorI[i].addEventListener('click', playsoundClick);
 	};
 };
 for(let cursorI of cursorListTyping) {
@@ -82,6 +87,10 @@ function addWip() {
 }
 function removeWip() {
 	cursor.classList.remove('cursorWip');
+}
+function playsoundClick() {
+	soundClick.load();
+	soundClick.play();
 }
 
 // const cursorLogoWiki = document.querySelector(".logoWiki");
