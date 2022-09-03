@@ -38,6 +38,7 @@
 	::-webkit-scrollbar {
 		background-color: #262626;
 		width: 10px;
+		height: 10px;
 	}
 	::-webkit-scrollbar-thumb {
 		background-color: var(--bg);
@@ -204,12 +205,51 @@
 		transform: rotateZ(-45deg);
 	}
 /*==================================================*/
+/*Custom Toast*/
+	.toast {
+		background-color: #3a3b3c;
+		border: var(--border);
+		border-radius: 10px;
+		width: 200px;
+		padding: 5px;
+		position: fixed;
+		bottom: 3%;
+		right: 1%;
+		transform: translateX(300px);
+		transition: 1s;
+	}
+	#toastCopy {
+		overflow-x: auto;
+	}
+	#toastClose {
+		content: url(../media/icon/icon_close.png);
+		filter: brightness(100);
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 6px;
+		right: 6px;
+	}
+	#toastClose:hover {
+		filter: brightness(1);
+	}
+/*==================================================*/
 /*Theme*/
-	.themeLight, .themeLight .preloader {
+	.themeLight,
+	.themeLight .preloader {
 		background-color: #f3f3f3;
 	}
 	.themeLight * {
 		color: black;
+	}
+	.themeLight .toast {
+		background-color: #9bd4e4;
+	}
+	.themeLight #toastClose {
+		filter: brightness(0);
+	}
+	.themeLight #toastClose:hover {
+		filter: brightness(1);
 	}
 	.themeLight header {
 		background-color: var(--bg-light);
@@ -750,6 +790,10 @@
 	}
 	.cursor {
 		display: none;
+	}
+	.toast {
+		width: 150px;
+		font-size: .75rem;
 	}
 	.themeLight .sidebar {
 		border-left-color: var(--border-light);

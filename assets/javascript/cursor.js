@@ -28,9 +28,23 @@ const cursorListTyping = [
 const soundClick = new Audio();
 soundClick.src = 'https://github.com/HgVN23/HgVN23.github.io/blob/main/assets/media/sound/click.ogg?raw=true';
 soundClick.volume = 0.5;
+
 const soundCopy = new Audio();
 soundCopy.src = 'https://github.com/HgVN23/HgVN23.github.io/blob/main/assets/media/sound/toast.mp3?raw=true';
 soundCopy.volume = 0.5;
+const toast = `
+	<div>Bạn vừa sao chép</div>
+	<br>
+	<div id="toastCopy">Không có Easter Egg ở đây đâu :D</div>
+	<div id="toastClose" class="cursorClickE">x</div>
+`;
+const toastCreate = document.createElement('div');
+toastCreate.innerHTML = toast;
+toastCreate.classList.add('toast');
+document.querySelector('body').appendChild(toastCreate);
+const toastStyle = document.querySelector('.toast');
+document.querySelector('#toastClose').addEventListener('click', toastClose)
+let toastTime;
 
 document.addEventListener('mousemove', (e) => {
 	var x = e.clientX;
@@ -88,9 +102,17 @@ function playsoundClick() {
 function copyClick() {
 	navigator.clipboard.writeText(this.textContent);
 	soundCopy.play();
-	window.alert(`Bạn vừa Copy\n\n${this.textContent}`);
+	document.querySelector('#toastCopy').textContent = this.textContent;
+	toastShow();
 }
-
+function toastShow() {
+	clearTimeout(toastTime)
+	toastStyle.style.transform = 'translateX(0)';
+	toastTime = setTimeout(toastClose, 3000);
+}
+function toastClose() {
+	toastStyle.style.transform = 'translateX(300px)';
+}
 // const cursorLogoWiki = document.querySelector(".logoWiki");
 // const cursorSearchIcon = document.querySelector(".searchIcon");
 // const cursorSearchBox = document.querySelector(".searchBox");
