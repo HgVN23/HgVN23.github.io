@@ -2,7 +2,7 @@ const copy = document.getElementById("copy");
 copy.addEventListener('click', copyRun);
 
 function copyRun() {
-	var copyText = document.getElementById("copyThis").innerHTML;
+	var copyText = document.getElementById("copyThis").textContent;
 	navigator.clipboard.writeText(copyText);
 
 	copy.innerHTML = "Đã sao chép";

@@ -5,7 +5,6 @@ document.querySelector('body').appendChild(cursorCreate);
 const cursor = document.querySelector('.cursor');
 const cursorClick = document.getElementsByClassName('cursorClickE');
 const cursorDropdown = document.getElementsByClassName('dropdown');
-const cursorWip = document.getElementsByClassName('textWip');
 
 const cursorA = document.getElementsByTagName('a');
 const cursorButton = document.getElementsByTagName('button');
@@ -27,8 +26,11 @@ const cursorListTyping = [
 ];
 
 const soundClick = new Audio();
-soundClick.src = 'https://github.com/misode/mcmeta/blob/7c8fb06018888d8435ccafd91162c132d90806a2/assets/minecraft/sounds/random/click.ogg?raw=true';
+soundClick.src = 'https://github.com/HgVN23/HgVN23.github.io/blob/main/assets/media/sound/click.ogg?raw=true';
 soundClick.volume = 0.5;
+const soundCopy = new Audio();
+soundCopy.src = 'https://github.com/HgVN23/HgVN23.github.io/blob/main/assets/media/sound/toast.mp3?raw=true';
+soundCopy.volume = 0.5;
 
 document.addEventListener('mousemove', (e) => {
 	var x = e.clientX;
@@ -58,11 +60,8 @@ for(let cursorI of cursorListTyping) {
 for(let i = 0; i < cursorCode.length; i++) {
 	cursorCode[i].addEventListener('mouseenter', addCopy);
 	cursorCode[i].addEventListener('mouseleave', removeCopy);
+	cursorCode[i].addEventListener('click', copyClick);
 };
-for(let i = 0; i < cursorWip.length; i++) {
-	cursorWip[i].addEventListener('mouseenter', addWip);
-	cursorWip[i].addEventListener('mouseleave', removeWip);
-}
 
 function addClick() {
 	cursor.classList.add('cursorClick');
@@ -82,15 +81,14 @@ function addCopy() {
 function removeCopy() {
 	cursor.classList.remove('cursorCopy');
 }
-function addWip() {
-	cursor.classList.add('cursorWip');
-}
-function removeWip() {
-	cursor.classList.remove('cursorWip');
-}
 function playsoundClick() {
-	soundClick.load();
+	// soundClick.load();
 	soundClick.play();
+}
+function copyClick() {
+	navigator.clipboard.writeText(this.textContent);
+	soundCopy.play();
+	window.alert(`Bạn vừa Copy\n\n${this.textContent}`);
 }
 
 // const cursorLogoWiki = document.querySelector(".logoWiki");
@@ -104,6 +102,7 @@ function playsoundClick() {
 // const cursorCmd = document.getElementsByClassName("textCommand");
 // const cursorSyntax = document.getElementsByClassName("textSyntax");
 // const cursorNote = document.getElementsByClassName("textNote");
+// const cursorWip = document.getElementsByClassName('textWip');
 // const cursorSocialLogo = document.getElementsByClassName("socialLogo");
 
 // const cursorColor = document.getElementById("color");
@@ -149,6 +148,11 @@ function playsoundClick() {
 // for (i = 0; i < cursorNote.length; i++) {
 // 	cursorNote[i].addEventListener("mouseenter", addZoom);
 // 	cursorNote[i].addEventListener("mouseleave", removeZoom);
+// }
+
+// for(let i = 0; i < cursorWip.length; i++) {
+// 	cursorWip[i].addEventListener('mouseenter', addWip);
+// 	cursorWip[i].addEventListener('mouseleave', removeWip);
 // }
 
 // for (i = 0; i < cursorExpand.length; i++) {
@@ -232,4 +236,10 @@ function playsoundClick() {
 // }
 // function removeZoom() {
 // 	cursor.classList.remove("cursorZoom");
+// }
+// function addWip() {
+// 	cursor.classList.add('cursorWip');
+// }
+// function removeWip() {
+// 	cursor.classList.remove('cursorWip');
 // }
