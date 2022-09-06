@@ -1,0 +1,17 @@
+.hear {
+	content: url(../media/icon/icon_sound.png);
+	width: 24px;
+	height: 24px;
+	margin: auto;
+}
+.hear:hover {
+	outline: 2px solid var(--hover-color);
+}
+.hear:active {
+	width: 20px;
+	height: 20px;
+	transition: .1s;
+}
+.hidePath {
+	display: none;
+}
